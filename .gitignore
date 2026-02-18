@@ -1,24 +1,26 @@
+# Data / experiment artifacts
+data/**
+outputs/**
+output/**
+*.mcap
+*.bag
+*.db3
+*.sqlite3
+*.ply
+*.pcd
+
 # Python
 __pycache__/
 *.pyc
 .venv/
-.env
-
-# Jupyter
+venv/
 .ipynb_checkpoints/
 
-# Data
-data/
-*.ply
-*.pcd
-*.bag
+# OS / editors
+.DS_Store
+.vscode/
+.idea/
 
-output/
-*ply
-*pcd
-*bag
-
-# ROS
-build/
-install/
-log/
+# Logs
+*.log
+.ros/

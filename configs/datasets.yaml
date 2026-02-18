@@ -1,0 +1,7 @@
+data_root: ${ICUAS2026_DATA_DIR}
+output_root: ${ICUAS2026_OUT_DIR}
+
+datasets:
+  my_room_01:
+    mcap_dir: "mcaps/my_room_01/reconstruction_experiment_20260217_185017/zed2i_recording"
+    ply_dir: "zed_ply/my_room_01"
