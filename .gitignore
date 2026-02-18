@@ -13,6 +13,11 @@ data/
 *.pcd
 *.bag
 
+output/
+*ply
+*pcd
+*bag
+
 # ROS
 build/
 install/
