@@ -1,3 +1,4 @@
+# scripts/export_pointcloud2_to_ply.py
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
@@ -22,6 +23,11 @@ import os
 from dataclasses import dataclass
 from pathlib import Path
 from typing import Optional, Tuple
+
+import hashlib
+import json
+from datetime import datetime
+from typing import Dict
 
 import numpy as np
 import open3d as o3d
@@ -143,6 +149,48 @@ def _to_open3d_cloud(
     return pcd
 
 
+def _cloud_signature(msg: PointCloud2) -> str:
+    parts = [
+        str(msg.is_bigendian),
+        str(msg.point_step),
+        str(len(msg.fields)),
+        *(f"{f.name}:{f.offset}:{f.datatype}:{f.count}" for f in msg.fields),
+    ]
+    raw = "|".join(parts).encode("utf-8")
+    return hashlib.sha1(raw).hexdigest()
+
+
+def _extract_xyz_rgb_from_raw(raw: np.ndarray) -> Tuple[np.ndarray, Optional[np.ndarray]]:
+    if "x" not in raw.dtype.names or "y" not in raw.dtype.names or "z" not in raw.dtype.names:
+        raise ValueError("PointCloud2 must contain x, y, z fields.")
+
+    xyz = np.vstack((raw["x"], raw["y"], raw["z"])).T.astype(np.float32, copy=False)
+
+    rgb = None
+    # common variants: 'rgb' or 'rgba'
+    field_name = "rgb" if "rgb" in raw.dtype.names else ("rgba" if "rgba" in raw.dtype.names else None)
+    if field_name is None:
+        return xyz, None
+
+    field = raw[field_name]
+
+    # Case A: packed float32 (ROS convention)
+    if field.dtype == np.float32:
+        packed = field.view(np.uint32)
+    # Case B: packed uint32 already
+    elif field.dtype == np.uint32:
+        packed = field
+    else:
+        # fallback: try view
+        packed = field.view(np.uint32)
+
+    r = (packed >> 16) & 0xFF
+    g = (packed >> 8) & 0xFF
+    b = packed & 0xFF
+    rgb = np.vstack((r, g, b)).T.astype(np.uint8, copy=False)
+    return xyz, rgb
+
+
 class PointCloudExporter(Node):
     """ROS2 node that subscribes to PointCloud2 and exports frames to PLY."""
 
@@ -168,6 +216,24 @@ class PointCloudExporter(Node):
             f"voxel={cfg.voxel:.3f}, remove_nans={cfg.remove_nans}"
         )
 
+        self._dtype_cache: Dict[str, np.dtype] = {}
+        self._run_id = datetime.now().strftime("%Y%m%d_%H%M%S")
+        self._write_run_metadata()
+
+    def _write_run_metadata(self) -> None:
+        meta = {
+            "run_id": self._run_id,
+            "topic": self._cfg.topic,
+            "out_dir": str(self._cfg.out_dir),
+            "max_frames": self._cfg.max_frames,
+            "every_k": self._cfg.every_k,
+            "voxel": self._cfg.voxel,
+            "remove_nans": self._cfg.remove_nans,
+        }
+        path = self._cfg.out_dir / "run_metadata.json"
+        with path.open("w", encoding="utf-8") as f:
+            json.dump(meta, f, indent=2)
+
     def _callback(self, msg: PointCloud2) -> None:
         self._msg_count += 1
         if self._msg_count % self._cfg.every_k != 0:
@@ -176,18 +242,27 @@ class PointCloudExporter(Node):
             return
 
         try:
-            xyz, rgb = _extract_xyz_rgb(msg)
+            sig = _cloud_signature(msg)
+            if sig not in self._dtype_cache:
+                self._dtype_cache[sig] = _build_struct_dtype(msg)
+
+            cloud_dtype = self._dtype_cache[sig]
+            raw = np.frombuffer(msg.data, dtype=cloud_dtype)
+
+            xyz, rgb = _extract_xyz_rgb_from_raw(raw)
             pcd = _to_open3d_cloud(
                 xyz=xyz,
                 rgb=rgb,
                 remove_nans=self._cfg.remove_nans,
                 voxel=self._cfg.voxel,
             )
+
         except Exception as exc:
             self.get_logger().error(f"Failed to parse cloud: {exc}")
             return
 
-        out_path = self._cfg.out_dir / f"frame_{self._saved:05d}.ply"
+        stamp_ns = int(msg.header.stamp.sec) * 1_000_000_000 + int(msg.header.stamp.nanosec)
+        out_path = self._cfg.out_dir / f"frame_{self._saved:05d}_t{stamp_ns}.ply"
         ok = o3d.io.write_point_cloud(str(out_path), pcd, write_ascii=False, compressed=False)
         if ok:
             self.get_logger().info(

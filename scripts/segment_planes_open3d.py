@@ -1,3 +1,4 @@
+# scripts/segment_planes_open3d.py
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
@@ -136,6 +137,33 @@ def _color_for_plane_id(plane_id: int, rng: np.random.Generator) -> np.ndarray:
     return c
 
 
+def _stabilize_normal(n: np.ndarray) -> np.ndarray:
+    # Convention: keep normal pointing to +Z when possible
+    if n[2] < 0.0:
+        return -n
+    return n
+
+
+def _plane_extent_pca_2d(points: np.ndarray, n: np.ndarray) -> List[float]:
+    # Build orthonormal basis (u, v) deterministically from PCA on projected points
+    centroid = points.mean(axis=0)
+    centered = points - centroid
+
+    # remove normal component -> project to plane
+    proj = centered - (centered @ n)[:, None] * n[None, :]
+
+    # PCA on projected coordinates in 3D gives two principal directions in-plane
+    _, _, vh = np.linalg.svd(proj, full_matrices=False)
+    u = vh[0]
+    v = vh[1]
+
+    pu = proj @ u
+    pv = proj @ v
+    dx = float(pu.max() - pu.min())
+    dy = float(pv.max() - pv.min())
+    return [dx, dy]
+
+
 def _segment_planes_iterative_numpy(
     pcd: o3d.geometry.PointCloud,
     cfg: SegConfig,
@@ -188,6 +216,10 @@ def _segment_planes_iterative_numpy(
 
         # Refit with SVD for a more stable model
         n_refit, d_refit = _refit_plane_svd(inlier_pts)
+        n_refit = _stabilize_normal(n_refit)
+        d_refit = -float(n_refit.dot(inlier_pts.mean(axis=0)))
+
+        extent_xy = _plane_extent_pca_2d(inlier_pts, n_refit)
 
         signed = _point_plane_distances(inlier_pts, n_refit, d_refit)
         absd = np.abs(signed)
@@ -199,13 +231,15 @@ def _segment_planes_iterative_numpy(
         centroid = inlier_pts.mean(axis=0).astype(float).tolist()
         extent_xy = _plane_extent_on_basis(inlier_pts, n_refit)
 
-        inlier_ratio = float(inliers_global.size / max(1, remaining_idx.size))
+        inlier_ratio_remaining = float(inliers_global.size / max(1, remaining_idx.size))
+        inlier_ratio_total = float(inliers_global.size / max(1, pts_all.shape[0]))
 
         metrics.append(
             PlaneMetrics(
                 plane_id=int(plane_id),
                 num_inliers=int(inliers_global.size),
-                inlier_ratio=inlier_ratio,
+                inlier_ratio=inlier_ratio_remaining,
+                inlier_ratio_total=inlier_ratio_total,
                 rmse=rmse,
                 mean_abs_dist=mean_abs,
                 std_abs_dist=std_abs,
@@ -338,7 +372,8 @@ def _process_frame(frame_path: Path, frame_idx: int, cfg: SegConfig) -> Dict:
             "sor_std_ratio": cfg.sor_std_ratio,
         },
         "num_points": int(np.asarray(pcd.points).shape[0]),
-        "planes": [asdict(m) for m in metrics],
+        "planes": [{**asdict(m), "inlier_ratio_total": inlier_ratio_total} for m, inlier_ratio_total in zip(metrics, [float(m.num_inliers / max(1, np.asarray(pcd.points).shape[0])) for m in metrics])],
+
     }
     _write_json(out_json, payload)
 
