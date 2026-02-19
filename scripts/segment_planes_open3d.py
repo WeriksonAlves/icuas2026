@@ -42,12 +42,13 @@ class PlaneModel:
 class PlaneMetrics:
     plane_id: int
     num_inliers: int
-    inlier_ratio: float
+    inlier_ratio: float           # ratio w.r.t. remaining points
+    inlier_ratio_total: float     # ratio w.r.t. all points in the frame
     rmse: float
     mean_abs_dist: float
     std_abs_dist: float
-    extent_xy: List[float]  # [dx, dy] on plane basis
-    centroid: List[float]  # [x, y, z]
+    extent_xy: List[float]        # [dx, dy] on plane basis
+    centroid: List[float]         # [x, y, z]
     model: PlaneModel
 
 
@@ -358,6 +359,8 @@ def _process_frame(frame_path: Path, frame_idx: int, cfg: SegConfig) -> Dict:
     o3d.io.write_point_cloud(str(out_ply), colored, write_ascii=False, compressed=False)
 
     out_json = cfg.out_dir / f"planes_{frame_idx:05d}.json"
+    num_points = int(np.asarray(pcd.points).shape[0])
+
     payload = {
         "frame_idx": frame_idx,
         "input_file": str(frame_path),
@@ -371,9 +374,8 @@ def _process_frame(frame_path: Path, frame_idx: int, cfg: SegConfig) -> Dict:
             "sor_nb_neighbors": cfg.sor_nb_neighbors,
             "sor_std_ratio": cfg.sor_std_ratio,
         },
-        "num_points": int(np.asarray(pcd.points).shape[0]),
-        "planes": [{**asdict(m), "inlier_ratio_total": inlier_ratio_total} for m, inlier_ratio_total in zip(metrics, [float(m.num_inliers / max(1, np.asarray(pcd.points).shape[0])) for m in metrics])],
-
+        "num_points": num_points,
+        "planes": [asdict(m) for m in metrics],
     }
     _write_json(out_json, payload)
 
