@@ -67,6 +67,92 @@ class SegConfig:
     seed: int
 
 
+def _safe_acos(x: float) -> float:
+    """Clamp x to [-1, 1] before calling acos, to avoid NaNs."""
+    return math.acos(max(min(x, 1.0), -1.0))
+
+
+def _estimate_vertical_axis(planes: List[PlaneMetrics]) -> np.ndarray:
+    """
+    Estimate a dominant 'vertical' axis from plane normals.
+
+    We assume that either floor/ceiling or walls are large and
+    their normals will cluster around one canonical axis (x, y or z).
+    """
+    if not planes:
+        raise ValueError("Cannot estimate vertical axis with no planes.")
+
+    normals = np.array([p.model.n for p in planes], dtype=np.float64)
+    weights = np.array([p.inlier_ratio_total for p in planes], dtype=np.float64)
+
+    axes = np.eye(3, dtype=np.float64)  # ex, ey, ez
+    # scores[i, k] = |n_i . e_k| * weight_i
+    scores = np.abs(normals @ axes) * weights[:, None]
+    total_scores = scores.sum(axis=0)
+
+    best_axis_idx = int(np.argmax(total_scores))
+    return axes[best_axis_idx]
+
+
+def _classify_floor_and_wall(
+    planes: List[PlaneMetrics],
+    ground_angle_deg: float = 25.0,
+    wall_angle_deg: float = 65.0,
+) -> Dict[str, object]:
+    """
+    Classify floor-like (horizontal) and main wall (vertical) planes.
+
+    Returns a dict with:
+      - vertical_axis: [vx, vy, vz]
+      - floor_plane_id: int or None
+      - main_wall_plane_id: int or None
+    """
+    if not planes:
+        return {
+            "vertical_axis": None,
+            "floor_plane_id": None,
+            "main_wall_plane_id": None,
+        }
+
+    v = _estimate_vertical_axis(planes)
+    v_norm = np.linalg.norm(v)
+
+    best_floor_id: int | None = None
+    best_floor_score = -1.0
+
+    best_wall_id: int | None = None
+    best_wall_score = -1.0
+
+    for p in planes:
+        n = np.array(p.model.n, dtype=np.float64)
+        n_norm = np.linalg.norm(n)
+        if n_norm < 1e-9 or v_norm < 1e-9:
+            continue
+
+        cos_theta = abs(float(n.dot(v)) / (n_norm * v_norm))
+        theta_deg = math.degrees(_safe_acos(cos_theta))
+
+        # Horizontal candidate (floor/table)
+        if theta_deg <= ground_angle_deg:
+            score = p.inlier_ratio_total
+            if score > best_floor_score:
+                best_floor_score = score
+                best_floor_id = p.plane_id
+
+        # Vertical candidate (wall)
+        if theta_deg >= wall_angle_deg:
+            score = p.inlier_ratio_total
+            if score > best_wall_score:
+                best_wall_score = score
+                best_wall_id = p.plane_id
+
+    return {
+        "vertical_axis": v.tolist(),
+        "floor_plane_id": best_floor_id,
+        "main_wall_plane_id": best_wall_id,
+    }
+
+
 def _unit_normal_and_d(a: float, b: float, c: float, d: float) -> Tuple[np.ndarray, float]:
     """Normalize plane coefficients (a,b,c,d) so that ||n||=1."""
     n = np.array([a, b, c], dtype=np.float64)
@@ -352,6 +438,7 @@ def _process_frame(frame_path: Path, frame_idx: int, cfg: SegConfig) -> Dict:
     pcd = _apply_sor(pcd, nb_neighbors=cfg.sor_nb_neighbors, std_ratio=cfg.sor_std_ratio)
 
     metrics, colored = _segment_planes_iterative_numpy(pcd, cfg, rng)
+    classification = _classify_floor_and_wall(metrics)
 
     cfg.out_dir.mkdir(parents=True, exist_ok=True)
 
@@ -376,6 +463,7 @@ def _process_frame(frame_path: Path, frame_idx: int, cfg: SegConfig) -> Dict:
         },
         "num_points": num_points,
         "planes": [asdict(m) for m in metrics],
+        "classification": classification,
     }
     _write_json(out_json, payload)
 
