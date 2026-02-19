@@ -98,58 +98,107 @@ def _classify_floor_and_wall(
     planes: List[PlaneMetrics],
     ground_angle_deg: float = 25.0,
     wall_angle_deg: float = 65.0,
+    min_table_area_ratio: float = 0.05,
+    max_table_area_ratio: float = 0.8,
+    min_height_gap: float = 0.10,
 ) -> Dict[str, object]:
     """
-    Classify floor-like (horizontal) and main wall (vertical) planes.
+    Classify floor-like (horizontal), table-like (horizontal above floor)
+    and main wall (vertical) planes.
 
     Returns a dict with:
       - vertical_axis: [vx, vy, vz]
       - floor_plane_id: int or None
+      - table_plane_id: int or None
       - main_wall_plane_id: int or None
     """
     if not planes:
         return {
             "vertical_axis": None,
             "floor_plane_id": None,
+            "table_plane_id": None,
             "main_wall_plane_id": None,
         }
 
     v = _estimate_vertical_axis(planes)
     v_norm = np.linalg.norm(v)
+    if v_norm < 1e-9:
+        return {
+            "vertical_axis": None,
+            "floor_plane_id": None,
+            "table_plane_id": None,
+            "main_wall_plane_id": None,
+        }
 
-    best_floor_id: int | None = None
-    best_floor_score = -1.0
-
-    best_wall_id: int | None = None
-    best_wall_score = -1.0
+    horizontal_planes = []  # (plane, angle_deg, height, area, weight)
+    vertical_planes = []    # (plane, angle_deg, weight)
 
     for p in planes:
         n = np.array(p.model.n, dtype=np.float64)
         n_norm = np.linalg.norm(n)
-        if n_norm < 1e-9 or v_norm < 1e-9:
+        if n_norm < 1e-9:
             continue
 
         cos_theta = abs(float(n.dot(v)) / (n_norm * v_norm))
         theta_deg = math.degrees(_safe_acos(cos_theta))
 
-        # Horizontal candidate (floor/table)
-        if theta_deg <= ground_angle_deg:
-            score = p.inlier_ratio_total
-            if score > best_floor_score:
-                best_floor_score = score
-                best_floor_id = p.plane_id
+        c = np.array(p.centroid, dtype=np.float64)
+        height = float(v.dot(c))
+        dx, dy = p.extent_xy
+        area = float(dx * dy)
+        weight = p.inlier_ratio_total
 
-        # Vertical candidate (wall)
+        if theta_deg <= ground_angle_deg:
+            horizontal_planes.append((p, theta_deg, height, area, weight))
         if theta_deg >= wall_angle_deg:
-            score = p.inlier_ratio_total
-            if score > best_wall_score:
-                best_wall_score = score
-                best_wall_id = p.plane_id
+            vertical_planes.append((p, theta_deg, weight))
+
+    # --- floor (largest horizontal by area * weight) ---
+    floor_plane_id: int | None = None
+    floor_area = 0.0
+    floor_height = 0.0
+
+    if horizontal_planes:
+        best_score = -1.0
+        for p, _, h, area, w in horizontal_planes:
+            score = area * w
+            if score > best_score:
+                best_score = score
+                floor_plane_id = p.plane_id
+                floor_area = area
+                floor_height = h
+
+    # --- table (another horizontal, smaller area, height gap from floor) ---
+    table_plane_id: int | None = None
+    if floor_plane_id is not None:
+        best_score = -1.0
+        for p, _, h, area, w in horizontal_planes:
+            if p.plane_id == floor_plane_id:
+                continue
+            area_ratio = area / floor_area if floor_area > 0.0 else 0.0
+            if area_ratio < min_table_area_ratio or area_ratio > max_table_area_ratio:
+                continue
+            if abs(h - floor_height) < min_height_gap:
+                continue
+            score = area * w
+            if score > best_score:
+                best_score = score
+                table_plane_id = p.plane_id
+
+    # --- main wall (vertical with largest weight) ---
+    main_wall_plane_id: int | None = None
+    if vertical_planes:
+        best_score = -1.0
+        for p, _, w in vertical_planes:
+            if w > best_score:
+                best_score = w
+                main_wall_plane_id = p.plane_id
 
     return {
         "vertical_axis": v.tolist(),
-        "floor_plane_id": best_floor_id,
-        "main_wall_plane_id": best_wall_id,
+        "floor_plane_id": floor_plane_id,
+        "table_plane_id": table_plane_id,
+        "main_wall_plane_id": main_wall_plane_id,
     }
 
 
@@ -217,8 +266,21 @@ def _apply_sor(pcd: o3d.geometry.PointCloud, nb_neighbors: int, std_ratio: float
 
 def _color_for_plane_id(plane_id: int, rng: np.random.Generator) -> np.ndarray:
     """
-    Deterministic-ish color per plane. We use RNG seeded per frame for reproducibility.
+    Fixed colors for the first planes, random for the rest.
+
+    Convention (MVP):
+      - plane_id 0: floor-like (green)
+      - plane_id 1: table-like (orange)
+      - plane_id 2: main wall (blue)
+      - others: random but bright
     """
+    if plane_id == 0:
+        return np.array([1.0, 0.0, 0.0], dtype=np.float64)  # R
+    if plane_id == 1:
+        return np.array([0.0, 0.1, 0.0], dtype=np.float64)  # G
+    if plane_id == 2:
+        return np.array([0.0, 0.0, 0.1], dtype=np.float64)  # B
+
     c = rng.random(3)
     c = 0.15 + 0.85 * c  # avoid too dark colors
     return c
