@@ -1,3 +1,4 @@
+# scripts/segment_planes_open3d.py
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
@@ -41,12 +42,13 @@ class PlaneModel:
 class PlaneMetrics:
     plane_id: int
     num_inliers: int
-    inlier_ratio: float
+    inlier_ratio: float           # ratio w.r.t. remaining points
+    inlier_ratio_total: float     # ratio w.r.t. all points in the frame
     rmse: float
     mean_abs_dist: float
     std_abs_dist: float
-    extent_xy: List[float]  # [dx, dy] on plane basis
-    centroid: List[float]  # [x, y, z]
+    extent_xy: List[float]        # [dx, dy] on plane basis
+    centroid: List[float]         # [x, y, z]
     model: PlaneModel
 
 
@@ -63,6 +65,141 @@ class SegConfig:
     sor_nb_neighbors: int
     sor_std_ratio: float
     seed: int
+
+
+def _safe_acos(x: float) -> float:
+    """Clamp x to [-1, 1] before calling acos, to avoid NaNs."""
+    return math.acos(max(min(x, 1.0), -1.0))
+
+
+def _estimate_vertical_axis(planes: List[PlaneMetrics]) -> np.ndarray:
+    """
+    Estimate a dominant 'vertical' axis from plane normals.
+
+    We assume that either floor/ceiling or walls are large and
+    their normals will cluster around one canonical axis (x, y or z).
+    """
+    if not planes:
+        raise ValueError("Cannot estimate vertical axis with no planes.")
+
+    normals = np.array([p.model.n for p in planes], dtype=np.float64)
+    weights = np.array([p.inlier_ratio_total for p in planes], dtype=np.float64)
+
+    axes = np.eye(3, dtype=np.float64)  # ex, ey, ez
+    # scores[i, k] = |n_i . e_k| * weight_i
+    scores = np.abs(normals @ axes) * weights[:, None]
+    total_scores = scores.sum(axis=0)
+
+    best_axis_idx = int(np.argmax(total_scores))
+    return axes[best_axis_idx]
+
+
+def _classify_floor_and_wall(
+    planes: List[PlaneMetrics],
+    ground_angle_deg: float = 25.0,
+    wall_angle_deg: float = 65.0,
+    min_table_area_ratio: float = 0.05,
+    max_table_area_ratio: float = 0.8,
+    min_height_gap: float = 0.10,
+) -> Dict[str, object]:
+    """
+    Classify floor-like (horizontal), table-like (horizontal above floor)
+    and main wall (vertical) planes.
+
+    Returns a dict with:
+      - vertical_axis: [vx, vy, vz]
+      - floor_plane_id: int or None
+      - table_plane_id: int or None
+      - main_wall_plane_id: int or None
+    """
+    if not planes:
+        return {
+            "vertical_axis": None,
+            "floor_plane_id": None,
+            "table_plane_id": None,
+            "main_wall_plane_id": None,
+        }
+
+    v = _estimate_vertical_axis(planes)
+    v_norm = np.linalg.norm(v)
+    if v_norm < 1e-9:
+        return {
+            "vertical_axis": None,
+            "floor_plane_id": None,
+            "table_plane_id": None,
+            "main_wall_plane_id": None,
+        }
+
+    horizontal_planes = []  # (plane, angle_deg, height, area, weight)
+    vertical_planes = []    # (plane, angle_deg, weight)
+
+    for p in planes:
+        n = np.array(p.model.n, dtype=np.float64)
+        n_norm = np.linalg.norm(n)
+        if n_norm < 1e-9:
+            continue
+
+        cos_theta = abs(float(n.dot(v)) / (n_norm * v_norm))
+        theta_deg = math.degrees(_safe_acos(cos_theta))
+
+        c = np.array(p.centroid, dtype=np.float64)
+        height = float(v.dot(c))
+        dx, dy = p.extent_xy
+        area = float(dx * dy)
+        weight = p.inlier_ratio_total
+
+        if theta_deg <= ground_angle_deg:
+            horizontal_planes.append((p, theta_deg, height, area, weight))
+        if theta_deg >= wall_angle_deg:
+            vertical_planes.append((p, theta_deg, weight))
+
+    # --- floor (largest horizontal by area * weight) ---
+    floor_plane_id: int | None = None
+    floor_area = 0.0
+    floor_height = 0.0
+
+    if horizontal_planes:
+        best_score = -1.0
+        for p, _, h, area, w in horizontal_planes:
+            score = area * w
+            if score > best_score:
+                best_score = score
+                floor_plane_id = p.plane_id
+                floor_area = area
+                floor_height = h
+
+    # --- table (another horizontal, smaller area, height gap from floor) ---
+    table_plane_id: int | None = None
+    if floor_plane_id is not None:
+        best_score = -1.0
+        for p, _, h, area, w in horizontal_planes:
+            if p.plane_id == floor_plane_id:
+                continue
+            area_ratio = area / floor_area if floor_area > 0.0 else 0.0
+            if area_ratio < min_table_area_ratio or area_ratio > max_table_area_ratio:
+                continue
+            if abs(h - floor_height) < min_height_gap:
+                continue
+            score = area * w
+            if score > best_score:
+                best_score = score
+                table_plane_id = p.plane_id
+
+    # --- main wall (vertical with largest weight) ---
+    main_wall_plane_id: int | None = None
+    if vertical_planes:
+        best_score = -1.0
+        for p, _, w in vertical_planes:
+            if w > best_score:
+                best_score = w
+                main_wall_plane_id = p.plane_id
+
+    return {
+        "vertical_axis": v.tolist(),
+        "floor_plane_id": floor_plane_id,
+        "table_plane_id": table_plane_id,
+        "main_wall_plane_id": main_wall_plane_id,
+    }
 
 
 def _unit_normal_and_d(a: float, b: float, c: float, d: float) -> Tuple[np.ndarray, float]:
@@ -129,11 +266,51 @@ def _apply_sor(pcd: o3d.geometry.PointCloud, nb_neighbors: int, std_ratio: float
 
 def _color_for_plane_id(plane_id: int, rng: np.random.Generator) -> np.ndarray:
     """
-    Deterministic-ish color per plane. We use RNG seeded per frame for reproducibility.
+    Fixed colors for the first planes, random for the rest.
+
+    Convention (MVP):
+      - plane_id 0: floor-like (green)
+      - plane_id 1: table-like (orange)
+      - plane_id 2: main wall (blue)
+      - others: random but bright
     """
+    if plane_id == 0:
+        return np.array([1.0, 0.0, 0.0], dtype=np.float64)  # R
+    if plane_id == 1:
+        return np.array([0.0, 0.1, 0.0], dtype=np.float64)  # G
+    if plane_id == 2:
+        return np.array([0.0, 0.0, 0.1], dtype=np.float64)  # B
+
     c = rng.random(3)
     c = 0.15 + 0.85 * c  # avoid too dark colors
     return c
+
+
+def _stabilize_normal(n: np.ndarray) -> np.ndarray:
+    # Convention: keep normal pointing to +Z when possible
+    if n[2] < 0.0:
+        return -n
+    return n
+
+
+def _plane_extent_pca_2d(points: np.ndarray, n: np.ndarray) -> List[float]:
+    # Build orthonormal basis (u, v) deterministically from PCA on projected points
+    centroid = points.mean(axis=0)
+    centered = points - centroid
+
+    # remove normal component -> project to plane
+    proj = centered - (centered @ n)[:, None] * n[None, :]
+
+    # PCA on projected coordinates in 3D gives two principal directions in-plane
+    _, _, vh = np.linalg.svd(proj, full_matrices=False)
+    u = vh[0]
+    v = vh[1]
+
+    pu = proj @ u
+    pv = proj @ v
+    dx = float(pu.max() - pu.min())
+    dy = float(pv.max() - pv.min())
+    return [dx, dy]
 
 
 def _segment_planes_iterative_numpy(
@@ -188,6 +365,10 @@ def _segment_planes_iterative_numpy(
 
         # Refit with SVD for a more stable model
         n_refit, d_refit = _refit_plane_svd(inlier_pts)
+        n_refit = _stabilize_normal(n_refit)
+        d_refit = -float(n_refit.dot(inlier_pts.mean(axis=0)))
+
+        extent_xy = _plane_extent_pca_2d(inlier_pts, n_refit)
 
         signed = _point_plane_distances(inlier_pts, n_refit, d_refit)
         absd = np.abs(signed)
@@ -199,13 +380,15 @@ def _segment_planes_iterative_numpy(
         centroid = inlier_pts.mean(axis=0).astype(float).tolist()
         extent_xy = _plane_extent_on_basis(inlier_pts, n_refit)
 
-        inlier_ratio = float(inliers_global.size / max(1, remaining_idx.size))
+        inlier_ratio_remaining = float(inliers_global.size / max(1, remaining_idx.size))
+        inlier_ratio_total = float(inliers_global.size / max(1, pts_all.shape[0]))
 
         metrics.append(
             PlaneMetrics(
                 plane_id=int(plane_id),
                 num_inliers=int(inliers_global.size),
-                inlier_ratio=inlier_ratio,
+                inlier_ratio=inlier_ratio_remaining,
+                inlier_ratio_total=inlier_ratio_total,
                 rmse=rmse,
                 mean_abs_dist=mean_abs,
                 std_abs_dist=std_abs,
@@ -317,6 +500,7 @@ def _process_frame(frame_path: Path, frame_idx: int, cfg: SegConfig) -> Dict:
     pcd = _apply_sor(pcd, nb_neighbors=cfg.sor_nb_neighbors, std_ratio=cfg.sor_std_ratio)
 
     metrics, colored = _segment_planes_iterative_numpy(pcd, cfg, rng)
+    classification = _classify_floor_and_wall(metrics)
 
     cfg.out_dir.mkdir(parents=True, exist_ok=True)
 
@@ -324,6 +508,8 @@ def _process_frame(frame_path: Path, frame_idx: int, cfg: SegConfig) -> Dict:
     o3d.io.write_point_cloud(str(out_ply), colored, write_ascii=False, compressed=False)
 
     out_json = cfg.out_dir / f"planes_{frame_idx:05d}.json"
+    num_points = int(np.asarray(pcd.points).shape[0])
+
     payload = {
         "frame_idx": frame_idx,
         "input_file": str(frame_path),
@@ -337,8 +523,9 @@ def _process_frame(frame_path: Path, frame_idx: int, cfg: SegConfig) -> Dict:
             "sor_nb_neighbors": cfg.sor_nb_neighbors,
             "sor_std_ratio": cfg.sor_std_ratio,
         },
-        "num_points": int(np.asarray(pcd.points).shape[0]),
+        "num_points": num_points,
         "planes": [asdict(m) for m in metrics],
+        "classification": classification,
     }
     _write_json(out_json, payload)
 

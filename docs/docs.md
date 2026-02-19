@@ -331,3 +331,129 @@ Se você me disser **como estão os dados hoje** (formato e como você acessa: R
 
 ---
 ---
+
+3. Sobre o eixo vertical [1, 0, 0]
+
+Ele ter escolhido [1, 0, 0] como vertical não é um problema — só significa que, no frame da ZED:
+
+a maioria das normais dos planos horizontais tem módulo maior na componente X,
+
+então o método de votação ponderada (S_k) apontou eixo X como mais alinhado com “up/down”.
+
+Isso não precisa coincidir com o “Z pra cima” físico do mundo; o que importa para a regra é a coerência relativa:
+
+“planos horizontais” = normais quase paralelas ao eixo escolhido,
+
+“planos verticais” = normais quase ortogonais.
+
+Do ponto de vista de classificação, está consistente.
+
+Se no futuro você quiser amarrar isso ao mundo (por exemplo, usando IMU ou TF map → camera), aí sim podemos mudar a heurística e assumir um eixo vertical global.
+
+---
+
+Vou te passar patches bem localizados no código, sem refatorar tudo.
+
+1. Separar “chão” e “mesa” entre os planos horizontais
+Ideia geométrica
+
+Já temos:
+
+eixo vertical estimado: v = vertical_axis
+
+para cada plano p:
+
+normal n
+
+extent_xy = [dx, dy]
+
+centroid = c
+
+inlier_ratio_total (quanto do frame o plano ocupa).
+
+Para cada plano horizontal (Ângulo com v ≤ ground_angle_deg):
+
+altura relativa no eixo vertical:
+
+ℎ
+𝑖
+=
+𝑣
+⊤
+𝑐
+𝑖
+h
+i
+	​
+
+=v
+⊤
+c
+i
+	​
+
+
+área projetada aproximada:
+
+𝐴
+𝑖
+=
+𝑑
+𝑥
+𝑖
+⋅
+𝑑
+𝑦
+𝑖
+A
+i
+	​
+
+=dx
+i
+	​
+
+⋅dy
+i
+	​
+
+
+Heurística:
+
+chão: plano horizontal com maior área (e normalmente também maior inlier_ratio_total).
+
+mesa: outro plano horizontal que:
+
+tenha área menor que o chão, mas não desprezível
+(ex.: 
+0.05
+≤
+𝐴
+mesa
+/
+𝐴
+ch
+a
+˜
+o
+≤
+0.8
+0.05≤A
+mesa
+	​
+
+/A
+ch
+a
+˜
+o
+	​
+
+≤0.8);
+
+esteja a uma altura diferente do chão
+(|h_mesa − h_chao| ≥ 0.1 m);
+
+escolhemos o que tiver maior inlier_ratio_total entre os candidatos.
+
+Isso é simples e funciona bem para a cena que você mostrou: chão grande + mesa menor, mais alta.
