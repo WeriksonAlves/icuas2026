@@ -544,10 +544,11 @@ In another terminal, run the exporter:
 
 ```bash
 python scripts/export_pointcloud2_to_ply.py \
-  --topic /zed2i/point_cloud/cloud_registered \
+  --topic /zed/zed_node/point_cloud/cloud_registered \
   --out_dir data/zed_ply/my_room \
   --max_frames 50 \
   --every_k 10
+  --voxel 0.03
 ```
 
 The exporter subscribes to the replayed topic and writes PLY frames.
