@@ -275,14 +275,13 @@ class PointCloudExporter(Node):
         self._dtype_cache: Dict[str, np.dtype] = {}
 
         self.get_logger().info(
-            "PointCloudExporter initialized: topic=%s, out_dir=%s, "
-            "max_frames=%d, every_k=%d, voxel=%.4f, remove_nans=%s",
-            cfg.topic,
-            str(cfg.out_dir),
-            cfg.max_frames,
-            cfg.every_k,
-            cfg.voxel,
-            cfg.remove_nans,
+            "PointCloudExporter initialized: "
+            f"topic={cfg.topic}, "
+            f"out_dir={cfg.out_dir}, "
+            f"max_frames={cfg.max_frames}, "
+            f"every_k={cfg.every_k}, "
+            f"voxel={cfg.voxel:.4f}, "
+            f"remove_nans={cfg.remove_nans}"
         )
 
     @property
@@ -332,11 +331,8 @@ class PointCloudExporter(Node):
 
         self._saved += 1
         self.get_logger().info(
-            "Saved frame %d to %s (%d/%d)",
-            frame_idx,
-            str(out_path),
-            self._saved,
-            self._cfg.max_frames,
+            f"Saved frame {frame_idx} to {out_path} "
+            f"({self._saved}/{self._cfg.max_frames})"
         )
 
 
