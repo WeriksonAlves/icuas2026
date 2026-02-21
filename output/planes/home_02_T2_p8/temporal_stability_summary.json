@@ -1,0 +1,42 @@
+{
+  "input_dir": "/home/werikson/ufv/icuas2026/output/planes/home_02_T2_p8/json",
+  "num_series": 2,
+  "series": {
+    "Floor": {
+      "name": "Floor",
+      "num_samples": 75,
+      "mean_angle_to_first_deg": 6.399794916288045,
+      "std_angle_to_first_deg": 2.6289188937311834,
+      "max_angle_to_first_deg": 12.467030835801742,
+      "mean_delta_angle_deg": 2.1053766025961167,
+      "std_delta_angle_deg": 1.4958481328403956,
+      "max_delta_angle_deg": 6.421955107480558,
+      "mean_delta_d": 0.016420542842821108,
+      "std_delta_d": 0.022552852007229715,
+      "max_delta_d": 0.12540509359578156,
+      "mean_delta_centroid": 0.16177702014427758,
+      "std_delta_centroid": 0.10818352115849536,
+      "max_delta_centroid": 0.4886560825602038,
+      "mean_inlier_ratio": 0.6607964719548368,
+      "std_inlier_ratio": 0.0839488418993922
+    },
+    "Main wall": {
+      "name": "Main wall",
+      "num_samples": 24,
+      "mean_angle_to_first_deg": 59.14328300964002,
+      "std_angle_to_first_deg": 29.128459745673428,
+      "max_angle_to_first_deg": 88.04052973579529,
+      "mean_delta_angle_deg": 22.717420135023307,
+      "std_delta_angle_deg": 19.87321303484576,
+      "max_delta_angle_deg": 67.84406206528861,
+      "mean_delta_d": 0.30730139649043636,
+      "std_delta_d": 0.266690833669851,
+      "max_delta_d": 0.9006166464170688,
+      "mean_delta_centroid": 0.3680701420726144,
+      "std_delta_centroid": 0.2757258362658412,
+      "max_delta_centroid": 0.9939712616555204,
+      "mean_inlier_ratio": 0.19972303328453278,
+      "std_inlier_ratio": 0.04823861023979663
+    }
+  }
+}
