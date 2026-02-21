@@ -482,7 +482,13 @@ def process_frame(
 
     cfg.out_dir.mkdir(parents=True, exist_ok=True)
 
-    out_ply = cfg.out_dir / f"colored_planes_{frame_idx:05d}.ply"
+    ply_dir = cfg.out_dir / "ply_colored"
+    json_dir = cfg.out_dir / "json"
+
+    ply_dir.mkdir(parents=True, exist_ok=True)
+    json_dir.mkdir(parents=True, exist_ok=True)
+
+    out_ply = ply_dir / f"planes_{frame_idx:05d}.ply"
     o3d.io.write_point_cloud(
         str(out_ply),
         colored,
@@ -490,7 +496,7 @@ def process_frame(
         compressed=False,
     )
 
-    out_json = cfg.out_dir / f"planes_{frame_idx:05d}.json"
+    out_json = json_dir / f"planes_{frame_idx:05d}.json"
     num_points = int(np.asarray(pcd.points).shape[0])
 
     payload = {

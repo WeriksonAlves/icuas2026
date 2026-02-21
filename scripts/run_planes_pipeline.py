@@ -153,7 +153,7 @@ def derive_paths(experiment_name: str, max_planes: int) -> dict:
 
     ply_dir = Path("data") / "zed_ply" / experiment_name
     planes_dir = Path("output") / "planes" / f"{base_id}_p{max_planes}"
-    json_planes_dir = planes_dir / "json_planes"
+    json_planes_dir = planes_dir / "json"
     tracks_path = planes_dir / "plane_tracks.json"
     confidence_path = planes_dir / "track_confidence.json"
     classification_path = planes_dir / "classification_stable.json"
