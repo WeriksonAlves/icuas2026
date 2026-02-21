@@ -252,6 +252,8 @@ def main() -> None:
             str(tracks_path),
             "--confidence",
             str(confidence_path),
+            "--output",
+            str(classification_path),
             # All other thresholds / vertical axis will use the defaults
             # defined inside classify_tracks_stably.py.
         ]
