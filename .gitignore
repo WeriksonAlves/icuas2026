@@ -80,7 +80,7 @@ data/zed_ply/
 # output/
 output/planes/my_room/*.ply
 output/planes/my_room/semantic/*.ply
-output/planes/my_room/semantic/*.ply
+output/planes/my_room/stable_semantic_2/*.ply
 
 # Standalone summary files created at the root
 recolor_summary.json

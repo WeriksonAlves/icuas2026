@@ -45,6 +45,27 @@ python scripts/classify_tracks_stably.py  --tracks outputs/my_room_01_plane_trac
 python scripts/recolor_by_stable_class.py  --input_dir data/zed_ply/my_room_01  --classification outputs/my_room_01_classification_stable.json  --out_dir outputs/my_room_01_stable_semantic  --distance_threshold 0.04
 
 
+# 1) Tracking
+python scripts/track_planes_temporally.py \
+  --input_dir output/planes/my_room \
+  --output output/planes/plane_tracks.json
+
+# 2) Confidence
 python scripts/compute_track_confidence.py \
   --tracks output/planes/my_room/plane_tracks.json \
-  --output output/my_room_01_track_confidence.json
+  --output output/planes/my_room/track_confidence.json
+
+# 3) Classificação estável (agora chamando o módulo em src/planes)
+python scripts/classify_tracks_stably.py \
+  --tracks output/planes/my_room/plane_tracks.json \
+  --confidence output/planes/my_room/track_confidence.json \
+  --output output/planes/my_room/classification_stable_2.json \
+  --vertical_axis 1 0 0 \
+  --min_confidence 0.3
+
+# 4) Recolorização semântica (como já está hoje)
+python scripts/recolor_by_stable_class.py \
+  --input_dir data/zed_ply/my_room \
+  --classification output/planes/my_room/classification_stable_2.json \
+  --out_dir output/planes/my_room/stable_semantic_2 \
+  --distance_threshold 0.04
