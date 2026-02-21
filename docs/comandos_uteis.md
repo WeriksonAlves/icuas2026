@@ -43,3 +43,8 @@ python scripts/classify_tracks_stably.py  --tracks outputs/my_room_01_plane_trac
 
 
 python scripts/recolor_by_stable_class.py  --input_dir data/zed_ply/my_room_01  --classification outputs/my_room_01_classification_stable.json  --out_dir outputs/my_room_01_stable_semantic  --distance_threshold 0.04
+
+
+python scripts/compute_track_confidence.py \
+  --tracks output/planes/my_room/plane_tracks.json \
+  --output output/my_room_01_track_confidence.json
