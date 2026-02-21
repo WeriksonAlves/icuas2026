@@ -69,3 +69,6 @@ python scripts/recolor_by_stable_class.py \
   --classification output/planes/my_room/classification_stable_2.json \
   --out_dir output/planes/my_room/stable_semantic_2 \
   --distance_threshold 0.04
+
+
+python scripts/run_planes_pipeline.py --experiment home_02_T2_75_05_02 --max_planes 8
