@@ -1,0 +1,114 @@
+{
+  "tracks_file": "/home/werikson/ufv/icuas2026/output/planes/home_02_T1_p8/plane_tracks.json",
+  "total_frames": 88,
+  "tracks_confidence": [
+    {
+      "track_id": 9,
+      "num_detections": 60,
+      "persistence_ratio": 0.6818181818181818,
+      "std_angle_deg": 2.221715506449353,
+      "std_d": 0.07460210625202567,
+      "std_inlier_ratio": 0.13137012117957894,
+      "confidence_score": 0.6318812342916948
+    },
+    {
+      "track_id": 15,
+      "num_detections": 3,
+      "persistence_ratio": 0.03409090909090909,
+      "std_angle_deg": 0.6825418611758658,
+      "std_d": 0.03291133590129212,
+      "std_inlier_ratio": 0.29096129244149416,
+      "confidence_score": 0.5280658174007842
+    },
+    {
+      "track_id": 46,
+      "num_detections": 4,
+      "persistence_ratio": 0.045454545454545456,
+      "std_angle_deg": 0.8250892127105317,
+      "std_d": 0.030876313026043364,
+      "std_inlier_ratio": 0.23580465588396118,
+      "confidence_score": 0.5207959135599567
+    },
+    {
+      "track_id": 37,
+      "num_detections": 3,
+      "persistence_ratio": 0.03409090909090909,
+      "std_angle_deg": 1.1900761349361653,
+      "std_d": 0.0035355304819475433,
+      "std_inlier_ratio": 0.00434382329649302,
+      "confidence_score": 0.5186856981740782
+    },
+    {
+      "track_id": 38,
+      "num_detections": 5,
+      "persistence_ratio": 0.056818181818181816,
+      "std_angle_deg": 1.426219243527097,
+      "std_d": 0.06332658471951334,
+      "std_inlier_ratio": 0.028346279754211612,
+      "confidence_score": 0.4952570521080183
+    },
+    {
+      "track_id": 39,
+      "num_detections": 3,
+      "persistence_ratio": 0.03409090909090909,
+      "std_angle_deg": 1.8192396228111611,
+      "std_d": 0.07470983466266783,
+      "std_inlier_ratio": 0.01578331656686963,
+      "confidence_score": 0.46814025451198304
+    },
+    {
+      "track_id": 33,
+      "num_detections": 3,
+      "persistence_ratio": 0.03409090909090909,
+      "std_angle_deg": 2.025648888535338,
+      "std_d": 0.017885927660840566,
+      "std_inlier_ratio": 0.059677558286737306,
+      "confidence_score": 0.4639431025614427
+    },
+    {
+      "track_id": 1,
+      "num_detections": 16,
+      "persistence_ratio": 0.18181818181818182,
+      "std_angle_deg": 4.0890455147535025,
+      "std_d": 0.16003115711483418,
+      "std_inlier_ratio": 0.22519374235004205,
+      "confidence_score": 0.418159409112878
+    },
+    {
+      "track_id": 36,
+      "num_detections": 4,
+      "persistence_ratio": 0.045454545454545456,
+      "std_angle_deg": 5.8485396292823415,
+      "std_d": 0.009054757696867399,
+      "std_inlier_ratio": 0.021909369589961303,
+      "confidence_score": 0.40973150248902546
+    },
+    {
+      "track_id": 44,
+      "num_detections": 6,
+      "persistence_ratio": 0.06818181818181818,
+      "std_angle_deg": 3.6627397496173426,
+      "std_d": 0.06525395486338738,
+      "std_inlier_ratio": 0.2688768983962768,
+      "confidence_score": 0.4014811446736858
+    },
+    {
+      "track_id": 17,
+      "num_detections": 3,
+      "persistence_ratio": 0.03409090909090909,
+      "std_angle_deg": 3.9058685699008255,
+      "std_d": 0.11899692481465882,
+      "std_inlier_ratio": 0.09678157028595645,
+      "confidence_score": 0.39706568586657476
+    },
+    {
+      "track_id": 21,
+      "num_detections": 6,
+      "persistence_ratio": 0.06818181818181818,
+      "std_angle_deg": 4.744678753094111,
+      "std_d": 0.18242124023695652,
+      "std_inlier_ratio": 0.22166092369890933,
+      "confidence_score": 0.3733086122103666
+    }
+  ]
+}

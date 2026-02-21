@@ -497,10 +497,10 @@ Then run:
 
 ```bash
 python scripts/export_pointcloud2_to_ply.py \
-  --topic /zed2i/point_cloud/cloud_registered \
-  --out_dir data/zed_ply/my_room \
-  --max_frames 50 \
-  --every_k 10 \
+  --topic /zed/zed_node/point_cloud/cloud_registered \
+  --out_dir data/zed_ply/my_home_02_T1_90_05_02 \
+  --max_frames 75 \
+  --every_k 5 \
   --voxel 0.02
 ```
 

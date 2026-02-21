@@ -1,0 +1,3489 @@
+{
+  "input": "/home/werikson/ufv/icuas2026/data/zed_ply/home_02_T2_75_05_02",
+  "out_dir": "/home/werikson/ufv/icuas2026/output/planes/home_02_T2_p8",
+  "preset": "indoor",
+  "num_frames": 75,
+  "processed_frames": 75,
+  "frames": [
+    {
+      "frame_idx": 0,
+      "input_file": "/home/werikson/ufv/icuas2026/data/zed_ply/home_02_T2_75_05_02/frame_00000.ply",
+      "num_points": 12732,
+      "num_planes": 2,
+      "planes": [
+        {
+          "plane_id": 0,
+          "num_inliers": 6730,
+          "inlier_ratio": 0.5285893810870248,
+          "inlier_ratio_total": 0.5285893810870248,
+          "rmse": 0.008705532258658156,
+          "mean_abs_dist": 0.006115840937072636,
+          "std_abs_dist": 0.006195383889555537,
+          "extent_xy": [
+            1.9188214868887916,
+            2.883330438676559
+          ],
+          "centroid": [
+            1.2820009540246375,
+            0.09030050392895836,
+            0.2643422521871019
+          ],
+          "model": {
+            "n": [
+              -0.9535165629423364,
+              0.06500713963234317,
+              0.2942451970575806
+            ],
+            "d": 1.1387575278171496
+          }
+        },
+        {
+          "plane_id": 1,
+          "num_inliers": 1808,
+          "inlier_ratio": 0.3012329223592136,
+          "inlier_ratio_total": 0.1420043983663211,
+          "rmse": 0.009868233499308791,
+          "mean_abs_dist": 0.0075176007643624615,
+          "std_abs_dist": 0.00639278586725202,
+          "extent_xy": [
+            1.5844866476882131,
+            1.0312304155388314
+          ],
+          "centroid": [
+            0.769858017349906,
+            -0.4990104800643663,
+            -0.052059042433944554
+          ],
+          "model": {
+            "n": [
+              0.050822949899310445,
+              0.9985502266331339,
+              0.01773337684845022
+            ],
+            "d": 0.4600837551330758
+          }
+        }
+      ],
+      "colored_ply": "/home/werikson/ufv/icuas2026/output/planes/home_02_T2_p8/colored_planes_00000.ply",
+      "planes_json": "/home/werikson/ufv/icuas2026/output/planes/home_02_T2_p8/planes_00000.json"
+    },
+    {
+      "frame_idx": 1,
+      "input_file": "/home/werikson/ufv/icuas2026/data/zed_ply/home_02_T2_75_05_02/frame_00001.ply",
+      "num_points": 10989,
+      "num_planes": 2,
+      "planes": [
+        {
+          "plane_id": 0,
+          "num_inliers": 6688,
+          "inlier_ratio": 0.6086086086086087,
+          "inlier_ratio_total": 0.6086086086086087,
+          "rmse": 0.008727821987244089,
+          "mean_abs_dist": 0.006101748000625913,
+          "std_abs_dist": 0.006240476582591991,
+          "extent_xy": [
+            1.7151922874577372,
+            2.486824033135107
+          ],
+          "centroid": [
+            1.2056116257157299,
+            0.32114744743245616,
+            0.27668386283837165
+          ],
+          "model": {
+            "n": [
+              -0.9752238601864158,
+              0.06366665223520454,
+              0.21186075596076698
+            ],
+            "d": 1.096676388321126
+          }
+        },
+        {
+          "plane_id": 1,
+          "num_inliers": 1833,
+          "inlier_ratio": 0.4261799581492676,
+          "inlier_ratio_total": 0.1668031668031668,
+          "rmse": 0.009391665707017873,
+          "mean_abs_dist": 0.006982232256615918,
+          "std_abs_dist": 0.006281068178824976,
+          "extent_xy": [
+            0.9474064965698117,
+            0.809035775037803
+          ],
+          "centroid": [
+            0.711849380259469,
+            -0.43452658913090325,
+            -0.04180875521868355
+          ],
+          "model": {
+            "n": [
+              0.007606830735870059,
+              -0.9733672821454898,
+              0.2291250099287685
+            ],
+            "d": -0.41878945137277473
+          }
+        }
+      ],
+      "colored_ply": "/home/werikson/ufv/icuas2026/output/planes/home_02_T2_p8/colored_planes_00001.ply",
+      "planes_json": "/home/werikson/ufv/icuas2026/output/planes/home_02_T2_p8/planes_00001.json"
+    },
+    {
+      "frame_idx": 2,
+      "input_file": "/home/werikson/ufv/icuas2026/data/zed_ply/home_02_T2_75_05_02/frame_00002.ply",
+      "num_points": 10711,
+      "num_planes": 2,
+      "planes": [
+        {
+          "plane_id": 0,
+          "num_inliers": 6960,
+          "inlier_ratio": 0.6497992717766782,
+          "inlier_ratio_total": 0.6497992717766782,
+          "rmse": 0.008574789808691136,
+          "mean_abs_dist": 0.006039955131041932,
+          "std_abs_dist": 0.006086539433720415,
+          "extent_xy": [
+            1.6828845490008204,
+            2.1237386000180534
+          ],
+          "centroid": [
+            1.1985111868952407,
+            0.356685399287868,
+            0.2606063246596192
+          ],
+          "model": {
+            "n": [
+              -0.9745456760155969,
+              0.05127675267702337,
+              0.21824623706768123
+            ],
+            "d": 1.092837876129288
+          }
+        },
+        {
+          "plane_id": 1,
+          "num_inliers": 1614,
+          "inlier_ratio": 0.4302852572647294,
+          "inlier_ratio_total": 0.15068621043786762,
+          "rmse": 0.00927626237567383,
+          "mean_abs_dist": 0.006642075854223732,
+          "std_abs_dist": 0.006475482376555432,
+          "extent_xy": [
+            1.0220332914997217,
+            0.8136334214370702
+          ],
+          "centroid": [
+            0.709744239098888,
+            -0.43697193649477084,
+            -0.08934090363930661
+          ],
+          "model": {
+            "n": [
+              0.014407301859485981,
+              -0.9779997235113583,
+              0.20810807400203493
+            ],
+            "d": -0.4189913691838601
+          }
+        }
+      ],
+      "colored_ply": "/home/werikson/ufv/icuas2026/output/planes/home_02_T2_p8/colored_planes_00002.ply",
+      "planes_json": "/home/werikson/ufv/icuas2026/output/planes/home_02_T2_p8/planes_00002.json"
+    },
+    {
+      "frame_idx": 3,
+      "input_file": "/home/werikson/ufv/icuas2026/data/zed_ply/home_02_T2_75_05_02/frame_00003.ply",
+      "num_points": 10363,
+      "num_planes": 1,
+      "planes": [
+        {
+          "plane_id": 0,
+          "num_inliers": 7204,
+          "inlier_ratio": 0.6951654926179678,
+          "inlier_ratio_total": 0.6951654926179678,
+          "rmse": 0.009398436739177783,
+          "mean_abs_dist": 0.0066754932289933185,
+          "std_abs_dist": 0.006615769289356383,
+          "extent_xy": [
+            1.7297026789514,
+            2.200961603680571
+          ],
+          "centroid": [
+            1.1952384455469132,
+            0.4379517778375532,
+            0.22798658875199881
+          ],
+          "model": {
+            "n": [
+              -0.9703245871332362,
+              0.0684494043440034,
+              0.23191566279504694
+            ],
+            "d": 1.0769180520379
+          }
+        }
+      ],
+      "colored_ply": "/home/werikson/ufv/icuas2026/output/planes/home_02_T2_p8/colored_planes_00003.ply",
+      "planes_json": "/home/werikson/ufv/icuas2026/output/planes/home_02_T2_p8/planes_00003.json"
+    },
+    {
+      "frame_idx": 4,
+      "input_file": "/home/werikson/ufv/icuas2026/data/zed_ply/home_02_T2_75_05_02/frame_00004.ply",
+      "num_points": 9358,
+      "num_planes": 2,
+      "planes": [
+        {
+          "plane_id": 0,
+          "num_inliers": 5386,
+          "inlier_ratio": 0.5755503312673648,
+          "inlier_ratio_total": 0.5755503312673648,
+          "rmse": 0.00968830965008712,
+          "mean_abs_dist": 0.006854236312772724,
+          "std_abs_dist": 0.006847100732765583,
+          "extent_xy": [
+            1.4238461297496907,
+            2.0851932201948165
+          ],
+          "centroid": [
+            1.0977721046077065,
+            0.45842459935368474,
+            -0.006452937309351797
+          ],
+          "model": {
+            "n": [
+              -0.9790464202546573,
+              0.018235167330059397,
+              0.20281909589332517
+            ],
+            "d": 1.0677191789051053
+          }
+        },
+        {
+          "plane_id": 1,
+          "num_inliers": 1803,
+          "inlier_ratio": 0.45392749244712993,
+          "inlier_ratio_total": 0.19266937379782004,
+          "rmse": 0.012758839798917093,
+          "mean_abs_dist": 0.010136553849830192,
+          "std_abs_dist": 0.00774843655610108,
+          "extent_xy": [
+            2.1734995910941404,
+            0.8007402232115943
+          ],
+          "centroid": [
+            0.7876968267221129,
+            -0.029924121024889037,
+            0.3740094531965365
+          ],
+          "model": {
+            "n": [
+              0.41153866948516926,
+              -0.30502310135113636,
+              0.8588345772967639
+            ],
+            "d": -0.654507502868168
+          }
+        }
+      ],
+      "colored_ply": "/home/werikson/ufv/icuas2026/output/planes/home_02_T2_p8/colored_planes_00004.ply",
+      "planes_json": "/home/werikson/ufv/icuas2026/output/planes/home_02_T2_p8/planes_00004.json"
+    },
+    {
+      "frame_idx": 5,
+      "input_file": "/home/werikson/ufv/icuas2026/data/zed_ply/home_02_T2_75_05_02/frame_00005.ply",
+      "num_points": 9075,
+      "num_planes": 2,
+      "planes": [
+        {
+          "plane_id": 0,
+          "num_inliers": 5035,
+          "inlier_ratio": 0.5548209366391185,
+          "inlier_ratio_total": 0.5548209366391185,
+          "rmse": 0.008415141746893501,
+          "mean_abs_dist": 0.005920179292843602,
+          "std_abs_dist": 0.005980475546383885,
+          "extent_xy": [
+            1.359073573606577,
+            1.9397331756869267
+          ],
+          "centroid": [
+            1.0830381536613183,
+            0.4627423809621927,
+            -0.07921917111654211
+          ],
+          "model": {
+            "n": [
+              -0.9790329426223381,
+              0.011276785163333193,
+              0.20338960488831728
+            ],
+            "d": 1.0712241400481979
+          }
+        },
+        {
+          "plane_id": 1,
+          "num_inliers": 2129,
+          "inlier_ratio": 0.526980198019802,
+          "inlier_ratio_total": 0.23460055096418733,
+          "rmse": 0.01301951851426649,
+          "mean_abs_dist": 0.010243091690507388,
+          "std_abs_dist": 0.008036599714007562,
+          "extent_xy": [
+            2.3658241107382434,
+            0.7495806969010737
+          ],
+          "centroid": [
+            0.7857913006011291,
+            -0.11923096519100208,
+            0.16832181637023455
+          ],
+          "model": {
+            "n": [
+              0.299122796138671,
+              -0.4339101833645462,
+              0.8498514609052156
+            ],
+            "d": -0.4298321625304755
+          }
+        }
+      ],
+      "colored_ply": "/home/werikson/ufv/icuas2026/output/planes/home_02_T2_p8/colored_planes_00005.ply",
+      "planes_json": "/home/werikson/ufv/icuas2026/output/planes/home_02_T2_p8/planes_00005.json"
+    },
+    {
+      "frame_idx": 6,
+      "input_file": "/home/werikson/ufv/icuas2026/data/zed_ply/home_02_T2_75_05_02/frame_00006.ply",
+      "num_points": 7917,
+      "num_planes": 2,
+      "planes": [
+        {
+          "plane_id": 0,
+          "num_inliers": 5137,
+          "inlier_ratio": 0.6488568902362006,
+          "inlier_ratio_total": 0.6488568902362006,
+          "rmse": 0.008172848494293708,
+          "mean_abs_dist": 0.005299424060568754,
+          "std_abs_dist": 0.006221861227715057,
+          "extent_xy": [
+            1.6803033485496384,
+            2.2226249265825095
+          ],
+          "centroid": [
+            1.136900473812686,
+            0.6028797141371449,
+            -0.04168496186404264
+          ],
+          "model": {
+            "n": [
+              -0.9723032346381797,
+              0.03608325391096686,
+              0.23092080612047394
+            ],
+            "d": 1.0932840713435177
+          }
+        },
+        {
+          "plane_id": 1,
+          "num_inliers": 1663,
+          "inlier_ratio": 0.5982014388489209,
+          "inlier_ratio_total": 0.21005431350258935,
+          "rmse": 0.013591756853650886,
+          "mean_abs_dist": 0.01096757374623528,
+          "std_abs_dist": 0.008027962412072969,
+          "extent_xy": [
+            2.6202362888025377,
+            1.0694698927002264
+          ],
+          "centroid": [
+            0.7168752301310404,
+            -0.08537040511789214,
+            0.02356514487679059
+          ],
+          "model": {
+            "n": [
+              0.3754776815154163,
+              -0.5762770747645063,
+              0.7258934107599209
+            ],
+            "d": -0.33547344006789837
+          }
+        }
+      ],
+      "colored_ply": "/home/werikson/ufv/icuas2026/output/planes/home_02_T2_p8/colored_planes_00006.ply",
+      "planes_json": "/home/werikson/ufv/icuas2026/output/planes/home_02_T2_p8/planes_00006.json"
+    },
+    {
+      "frame_idx": 7,
+      "input_file": "/home/werikson/ufv/icuas2026/data/zed_ply/home_02_T2_75_05_02/frame_00007.ply",
+      "num_points": 6911,
+      "num_planes": 1,
+      "planes": [
+        {
+          "plane_id": 0,
+          "num_inliers": 4960,
+          "inlier_ratio": 0.7176964259875561,
+          "inlier_ratio_total": 0.7176964259875561,
+          "rmse": 0.0067994404889740075,
+          "mean_abs_dist": 0.00448881247584858,
+          "std_abs_dist": 0.005107147297637424,
+          "extent_xy": [
+            1.634481210355512,
+            1.8562844303675567
+          ],
+          "centroid": [
+            1.1568276387169887,
+            0.7176720762313442,
+            0.08118522542651896
+          ],
+          "model": {
+            "n": [
+              -0.9741530977047841,
+              0.026688509889147782,
+              0.2243066331432722
+            ],
+            "d": 1.0895632448865997
+          }
+        }
+      ],
+      "colored_ply": "/home/werikson/ufv/icuas2026/output/planes/home_02_T2_p8/colored_planes_00007.ply",
+      "planes_json": "/home/werikson/ufv/icuas2026/output/planes/home_02_T2_p8/planes_00007.json"
+    },
+    {
+      "frame_idx": 8,
+      "input_file": "/home/werikson/ufv/icuas2026/data/zed_ply/home_02_T2_75_05_02/frame_00008.ply",
+      "num_points": 8444,
+      "num_planes": 1,
+      "planes": [
+        {
+          "plane_id": 0,
+          "num_inliers": 6510,
+          "inlier_ratio": 0.7709616295594505,
+          "inlier_ratio_total": 0.7709616295594505,
+          "rmse": 0.006791526807142489,
+          "mean_abs_dist": 0.004271057741177472,
+          "std_abs_dist": 0.005280426322150803,
+          "extent_xy": [
+            1.6495770683876194,
+            2.4546485473870625
+          ],
+          "centroid": [
+            1.1967683615771436,
+            0.5513306880987467,
+            0.2497460728745514
+          ],
+          "model": {
+            "n": [
+              -0.9693510113943308,
+              -0.028180242360204086,
+              0.244058375495102
+            ],
+            "d": 1.1146726332787367
+          }
+        }
+      ],
+      "colored_ply": "/home/werikson/ufv/icuas2026/output/planes/home_02_T2_p8/colored_planes_00008.ply",
+      "planes_json": "/home/werikson/ufv/icuas2026/output/planes/home_02_T2_p8/planes_00008.json"
+    },
+    {
+      "frame_idx": 9,
+      "input_file": "/home/werikson/ufv/icuas2026/data/zed_ply/home_02_T2_75_05_02/frame_00009.ply",
+      "num_points": 11309,
+      "num_planes": 1,
+      "planes": [
+        {
+          "plane_id": 0,
+          "num_inliers": 8031,
+          "inlier_ratio": 0.7101423644884605,
+          "inlier_ratio_total": 0.7101423644884605,
+          "rmse": 0.008318406413495072,
+          "mean_abs_dist": 0.005627473140309298,
+          "std_abs_dist": 0.006125963705016,
+          "extent_xy": [
+            1.6655611694023362,
+            2.7934989062271454
+          ],
+          "centroid": [
+            1.208508711232409,
+            0.31495803440809156,
+            0.23180887326518157
+          ],
+          "model": {
+            "n": [
+              -0.9734811681411579,
+              -0.03710515711577713,
+              0.22573795115119674
+            ],
+            "d": 1.13581897916133
+          }
+        }
+      ],
+      "colored_ply": "/home/werikson/ufv/icuas2026/output/planes/home_02_T2_p8/colored_planes_00009.ply",
+      "planes_json": "/home/werikson/ufv/icuas2026/output/planes/home_02_T2_p8/planes_00009.json"
+    },
+    {
+      "frame_idx": 10,
+      "input_file": "/home/werikson/ufv/icuas2026/data/zed_ply/home_02_T2_75_05_02/frame_00010.ply",
+      "num_points": 13226,
+      "num_planes": 1,
+      "planes": [
+        {
+          "plane_id": 0,
+          "num_inliers": 9550,
+          "inlier_ratio": 0.7220626039618933,
+          "inlier_ratio_total": 0.7220626039618933,
+          "rmse": 0.010397857730360676,
+          "mean_abs_dist": 0.007588888436917953,
+          "std_abs_dist": 0.00710803894705384,
+          "extent_xy": [
+            1.7303018693758279,
+            2.9084904149025035
+          ],
+          "centroid": [
+            1.2208104282440375,
+            0.20444673690927534,
+            0.1266942828398088
+          ],
+          "model": {
+            "n": [
+              -0.9678042128366826,
+              -0.002945800697540829,
+              0.2516869640522124
+            ],
+            "d": 1.1502204354590078
+          }
+        }
+      ],
+      "colored_ply": "/home/werikson/ufv/icuas2026/output/planes/home_02_T2_p8/colored_planes_00010.ply",
+      "planes_json": "/home/werikson/ufv/icuas2026/output/planes/home_02_T2_p8/planes_00010.json"
+    },
+    {
+      "frame_idx": 11,
+      "input_file": "/home/werikson/ufv/icuas2026/data/zed_ply/home_02_T2_75_05_02/frame_00011.ply",
+      "num_points": 13322,
+      "num_planes": 2,
+      "planes": [
+        {
+          "plane_id": 0,
+          "num_inliers": 8015,
+          "inlier_ratio": 0.6016363909322925,
+          "inlier_ratio_total": 0.6016363909322925,
+          "rmse": 0.010032880588945602,
+          "mean_abs_dist": 0.00715749031445198,
+          "std_abs_dist": 0.007030577878849471,
+          "extent_xy": [
+            1.7378207436663438,
+            2.757086329514385
+          ],
+          "centroid": [
+            1.174187147080096,
+            0.09807756497069202,
+            -0.04725442212488748
+          ],
+          "model": {
+            "n": [
+              -0.9695850854726263,
+              0.002918563915589617,
+              0.24473709161814933
+            ],
+            "d": 1.1497530095574031
+          }
+        },
+        {
+          "plane_id": 1,
+          "num_inliers": 2558,
+          "inlier_ratio": 0.48200489918974937,
+          "inlier_ratio_total": 0.19201321122954512,
+          "rmse": 0.009528855266237235,
+          "mean_abs_dist": 0.006881232212906636,
+          "std_abs_dist": 0.006591488899858145,
+          "extent_xy": [
+            2.4947873446470097,
+            0.46414277925709857
+          ],
+          "centroid": [
+            1.1040959426818788,
+            0.028266531459590242,
+            0.5503656366466696
+          ],
+          "model": {
+            "n": [
+              0.34229190523780834,
+              0.10640234585033381,
+              0.9335495661218087
+            ],
+            "d": -0.8947243303421184
+          }
+        }
+      ],
+      "colored_ply": "/home/werikson/ufv/icuas2026/output/planes/home_02_T2_p8/colored_planes_00011.ply",
+      "planes_json": "/home/werikson/ufv/icuas2026/output/planes/home_02_T2_p8/planes_00011.json"
+    },
+    {
+      "frame_idx": 12,
+      "input_file": "/home/werikson/ufv/icuas2026/data/zed_ply/home_02_T2_75_05_02/frame_00012.ply",
+      "num_points": 11664,
+      "num_planes": 2,
+      "planes": [
+        {
+          "plane_id": 0,
+          "num_inliers": 6979,
+          "inlier_ratio": 0.5983367626886146,
+          "inlier_ratio_total": 0.5983367626886146,
+          "rmse": 0.012633443270568678,
+          "mean_abs_dist": 0.00953456559450645,
+          "std_abs_dist": 0.008288301864358636,
+          "extent_xy": [
+            1.451153073412411,
+            2.7798449527003344
+          ],
+          "centroid": [
+            1.1339134535810282,
+            0.13492739864022765,
+            -0.20410445271467734
+          ],
+          "model": {
+            "n": [
+              -0.9722326078339939,
+              0.03531848621702139,
+              0.23133603436483816
+            ],
+            "d": 1.144878917251179
+          }
+        },
+        {
+          "plane_id": 1,
+          "num_inliers": 2950,
+          "inlier_ratio": 0.6296691568836713,
+          "inlier_ratio_total": 0.2529149519890261,
+          "rmse": 0.011408769116191706,
+          "mean_abs_dist": 0.008508549055319468,
+          "std_abs_dist": 0.007600303001840907,
+          "extent_xy": [
+            2.268994257753616,
+            0.8329559346984307
+          ],
+          "centroid": [
+            0.8895853972390768,
+            -0.011037336520118384,
+            0.23893478048433361
+          ],
+          "model": {
+            "n": [
+              0.2636142234793978,
+              -0.16188274933151894,
+              0.9509476939602003
+            ],
+            "d": -0.4635085966014285
+          }
+        }
+      ],
+      "colored_ply": "/home/werikson/ufv/icuas2026/output/planes/home_02_T2_p8/colored_planes_00012.ply",
+      "planes_json": "/home/werikson/ufv/icuas2026/output/planes/home_02_T2_p8/planes_00012.json"
+    },
+    {
+      "frame_idx": 13,
+      "input_file": "/home/werikson/ufv/icuas2026/data/zed_ply/home_02_T2_75_05_02/frame_00013.ply",
+      "num_points": 10265,
+      "num_planes": 2,
+      "planes": [
+        {
+          "plane_id": 0,
+          "num_inliers": 5938,
+          "inlier_ratio": 0.5784705309303458,
+          "inlier_ratio_total": 0.5784705309303458,
+          "rmse": 0.008747358736484159,
+          "mean_abs_dist": 0.00650013718717955,
+          "std_abs_dist": 0.005853588763535686,
+          "extent_xy": [
+            1.4625484184189155,
+            2.735018806909719
+          ],
+          "centroid": [
+            1.1197761060009508,
+            0.14357578625970208,
+            -0.28631814654393234
+          ],
+          "model": {
+            "n": [
+              -0.9645277365453554,
+              -0.005943450917500009,
+              0.2639146089663942
+            ],
+            "d": 1.1564719902823697
+          }
+        },
+        {
+          "plane_id": 1,
+          "num_inliers": 2927,
+          "inlier_ratio": 0.6764501964409522,
+          "inlier_ratio_total": 0.2851436921578178,
+          "rmse": 0.011188020271288214,
+          "mean_abs_dist": 0.007974826570675293,
+          "std_abs_dist": 0.007846906317677517,
+          "extent_xy": [
+            2.4208815548582194,
+            0.9025231115807879
+          ],
+          "centroid": [
+            0.8609307522223156,
+            -0.011643470122225451,
+            0.13373719120323724
+          ],
+          "model": {
+            "n": [
+              0.27289560322364376,
+              -0.21399545545614623,
+              0.9379413280079517
+            ],
+            "d": -0.36287350537460755
+          }
+        }
+      ],
+      "colored_ply": "/home/werikson/ufv/icuas2026/output/planes/home_02_T2_p8/colored_planes_00013.ply",
+      "planes_json": "/home/werikson/ufv/icuas2026/output/planes/home_02_T2_p8/planes_00013.json"
+    },
+    {
+      "frame_idx": 14,
+      "input_file": "/home/werikson/ufv/icuas2026/data/zed_ply/home_02_T2_75_05_02/frame_00014.ply",
+      "num_points": 14809,
+      "num_planes": 1,
+      "planes": [
+        {
+          "plane_id": 0,
+          "num_inliers": 10798,
+          "inlier_ratio": 0.7291511918427983,
+          "inlier_ratio_total": 0.7291511918427983,
+          "rmse": 0.009914683110696492,
+          "mean_abs_dist": 0.006626530566239423,
+          "std_abs_dist": 0.00737495992126228,
+          "extent_xy": [
+            1.8397366845119476,
+            2.9723225504686797
+          ],
+          "centroid": [
+            1.312376264996894,
+            0.042050030514389276,
+            0.12225788745197966
+          ],
+          "model": {
+            "n": [
+              -0.9883997427139679,
+              -0.025223308980466017,
+              0.14976559447028553
+            ],
+            "d": 1.2799029783862237
+          }
+        }
+      ],
+      "colored_ply": "/home/werikson/ufv/icuas2026/output/planes/home_02_T2_p8/colored_planes_00014.ply",
+      "planes_json": "/home/werikson/ufv/icuas2026/output/planes/home_02_T2_p8/planes_00014.json"
+    },
+    {
+      "frame_idx": 15,
+      "input_file": "/home/werikson/ufv/icuas2026/data/zed_ply/home_02_T2_75_05_02/frame_00015.ply",
+      "num_points": 14884,
+      "num_planes": 1,
+      "planes": [
+        {
+          "plane_id": 0,
+          "num_inliers": 10584,
+          "inlier_ratio": 0.7110991668906208,
+          "inlier_ratio_total": 0.7110991668906208,
+          "rmse": 0.00950239819126045,
+          "mean_abs_dist": 0.006459856563158704,
+          "std_abs_dist": 0.006968918464775242,
+          "extent_xy": [
+            1.8365136066611312,
+            2.979373890589509
+          ],
+          "centroid": [
+            1.3106601374149518,
+            0.010179083998500742,
+            0.11318423872160903
+          ],
+          "model": {
+            "n": [
+              -0.9891643856948339,
+              -0.01878948834084629,
+              0.1456048529440246
+            ],
+            "d": 1.2801694150262366
+          }
+        }
+      ],
+      "colored_ply": "/home/werikson/ufv/icuas2026/output/planes/home_02_T2_p8/colored_planes_00015.ply",
+      "planes_json": "/home/werikson/ufv/icuas2026/output/planes/home_02_T2_p8/planes_00015.json"
+    },
+    {
+      "frame_idx": 16,
+      "input_file": "/home/werikson/ufv/icuas2026/data/zed_ply/home_02_T2_75_05_02/frame_00016.ply",
+      "num_points": 14861,
+      "num_planes": 1,
+      "planes": [
+        {
+          "plane_id": 0,
+          "num_inliers": 10544,
+          "inlier_ratio": 0.7095081084718391,
+          "inlier_ratio_total": 0.7095081084718391,
+          "rmse": 0.008257937531975224,
+          "mean_abs_dist": 0.005374403702797648,
+          "std_abs_dist": 0.006269714277489844,
+          "extent_xy": [
+            1.8382271014607454,
+            2.93377047640364
+          ],
+          "centroid": [
+            1.3159292432300091,
+            0.05952428114470779,
+            0.10689296898123837
+          ],
+          "model": {
+            "n": [
+              -0.9888973903665187,
+              -0.01741662799726193,
+              0.147575785261316
+            ],
+            "d": 1.286580892962326
+          }
+        }
+      ],
+      "colored_ply": "/home/werikson/ufv/icuas2026/output/planes/home_02_T2_p8/colored_planes_00016.ply",
+      "planes_json": "/home/werikson/ufv/icuas2026/output/planes/home_02_T2_p8/planes_00016.json"
+    },
+    {
+      "frame_idx": 17,
+      "input_file": "/home/werikson/ufv/icuas2026/data/zed_ply/home_02_T2_75_05_02/frame_00017.ply",
+      "num_points": 14925,
+      "num_planes": 1,
+      "planes": [
+        {
+          "plane_id": 0,
+          "num_inliers": 10617,
+          "inlier_ratio": 0.711356783919598,
+          "inlier_ratio_total": 0.711356783919598,
+          "rmse": 0.009398903956371645,
+          "mean_abs_dist": 0.006064403481410195,
+          "std_abs_dist": 0.007180696762554346,
+          "extent_xy": [
+            1.8252310089430144,
+            2.93180808510325
+          ],
+          "centroid": [
+            1.3138508486031162,
+            0.032554583876043014,
+            0.10401462758502464
+          ],
+          "model": {
+            "n": [
+              -0.9890557548217441,
+              0.002923314580657671,
+              0.14751328104903882
+            ],
+            "d": 1.2840330365064714
+          }
+        }
+      ],
+      "colored_ply": "/home/werikson/ufv/icuas2026/output/planes/home_02_T2_p8/colored_planes_00017.ply",
+      "planes_json": "/home/werikson/ufv/icuas2026/output/planes/home_02_T2_p8/planes_00017.json"
+    },
+    {
+      "frame_idx": 18,
+      "input_file": "/home/werikson/ufv/icuas2026/data/zed_ply/home_02_T2_75_05_02/frame_00018.ply",
+      "num_points": 14523,
+      "num_planes": 1,
+      "planes": [
+        {
+          "plane_id": 0,
+          "num_inliers": 10277,
+          "inlier_ratio": 0.7076361633271363,
+          "inlier_ratio_total": 0.7076361633271363,
+          "rmse": 0.007932667456648116,
+          "mean_abs_dist": 0.005208062594706096,
+          "std_abs_dist": 0.0059835856296527835,
+          "extent_xy": [
+            1.8142865257572705,
+            2.9525439995643596
+          ],
+          "centroid": [
+            1.3085299746580747,
+            0.0048245325411931895,
+            0.10086457862643486
+          ],
+          "model": {
+            "n": [
+              -0.989487621009856,
+              0.01528319538808201,
+              0.14380775989836375
+            ],
+            "d": 1.2801953682656624
+          }
+        }
+      ],
+      "colored_ply": "/home/werikson/ufv/icuas2026/output/planes/home_02_T2_p8/colored_planes_00018.ply",
+      "planes_json": "/home/werikson/ufv/icuas2026/output/planes/home_02_T2_p8/planes_00018.json"
+    },
+    {
+      "frame_idx": 19,
+      "input_file": "/home/werikson/ufv/icuas2026/data/zed_ply/home_02_T2_75_05_02/frame_00019.ply",
+      "num_points": 14766,
+      "num_planes": 1,
+      "planes": [
+        {
+          "plane_id": 0,
+          "num_inliers": 10480,
+          "inlier_ratio": 0.7097385886496005,
+          "inlier_ratio_total": 0.7097385886496005,
+          "rmse": 0.00864408236178313,
+          "mean_abs_dist": 0.005774712232703849,
+          "std_abs_dist": 0.006432173699982825,
+          "extent_xy": [
+            1.8280905049097447,
+            2.9472078287228936
+          ],
+          "centroid": [
+            1.3095306642984226,
+            0.0053743955153269535,
+            0.11181022892963662
+          ],
+          "model": {
+            "n": [
+              -0.9873455059952253,
+              0.01925519082428046,
+              0.15741057593869967
+            ],
+            "d": 1.2752556188151247
+          }
+        }
+      ],
+      "colored_ply": "/home/werikson/ufv/icuas2026/output/planes/home_02_T2_p8/colored_planes_00019.ply",
+      "planes_json": "/home/werikson/ufv/icuas2026/output/planes/home_02_T2_p8/planes_00019.json"
+    },
+    {
+      "frame_idx": 20,
+      "input_file": "/home/werikson/ufv/icuas2026/data/zed_ply/home_02_T2_75_05_02/frame_00020.ply",
+      "num_points": 14474,
+      "num_planes": 1,
+      "planes": [
+        {
+          "plane_id": 0,
+          "num_inliers": 10409,
+          "inlier_ratio": 0.7191515821472986,
+          "inlier_ratio_total": 0.7191515821472986,
+          "rmse": 0.008896187145049913,
+          "mean_abs_dist": 0.005673077931378679,
+          "std_abs_dist": 0.006852615012114392,
+          "extent_xy": [
+            1.811045715235487,
+            2.9544969425457404
+          ],
+          "centroid": [
+            1.3030648739829764,
+            0.01851424329431962,
+            0.11244164568151577
+          ],
+          "model": {
+            "n": [
+              -0.9889516947401046,
+              0.0012969555601524965,
+              0.14823246397786846
+            ],
+            "d": 1.271976701137885
+          }
+        }
+      ],
+      "colored_ply": "/home/werikson/ufv/icuas2026/output/planes/home_02_T2_p8/colored_planes_00020.ply",
+      "planes_json": "/home/werikson/ufv/icuas2026/output/planes/home_02_T2_p8/planes_00020.json"
+    },
+    {
+      "frame_idx": 21,
+      "input_file": "/home/werikson/ufv/icuas2026/data/zed_ply/home_02_T2_75_05_02/frame_00021.ply",
+      "num_points": 14610,
+      "num_planes": 1,
+      "planes": [
+        {
+          "plane_id": 0,
+          "num_inliers": 10364,
+          "inlier_ratio": 0.7093771389459275,
+          "inlier_ratio_total": 0.7093771389459275,
+          "rmse": 0.008269086681870565,
+          "mean_abs_dist": 0.005510438576438226,
+          "std_abs_dist": 0.006165457099647245,
+          "extent_xy": [
+            1.8167735189735905,
+            2.8913835240601067
+          ],
+          "centroid": [
+            1.3027749318998356,
+            0.049420363135868214,
+            0.11255411173144138
+          ],
+          "model": {
+            "n": [
+              -0.9870928097132599,
+              -0.00369635077145966,
+              0.16010659575219377
+            ],
+            "d": 1.2681217872831794
+          }
+        }
+      ],
+      "colored_ply": "/home/werikson/ufv/icuas2026/output/planes/home_02_T2_p8/colored_planes_00021.ply",
+      "planes_json": "/home/werikson/ufv/icuas2026/output/planes/home_02_T2_p8/planes_00021.json"
+    },
+    {
+      "frame_idx": 22,
+      "input_file": "/home/werikson/ufv/icuas2026/data/zed_ply/home_02_T2_75_05_02/frame_00022.ply",
+      "num_points": 14661,
+      "num_planes": 1,
+      "planes": [
+        {
+          "plane_id": 0,
+          "num_inliers": 10394,
+          "inlier_ratio": 0.708955732896801,
+          "inlier_ratio_total": 0.708955732896801,
+          "rmse": 0.008374358986136757,
+          "mean_abs_dist": 0.005681631119199794,
+          "std_abs_dist": 0.006152150538960336,
+          "extent_xy": [
+            1.8135142426515218,
+            2.8265101794750263
+          ],
+          "centroid": [
+            1.2925723010424692,
+            0.0901017323370699,
+            0.12712004734416868
+          ],
+          "model": {
+            "n": [
+              -0.9846161873303294,
+              -0.02120143057872984,
+              0.17344008472236458
+            ],
+            "d": 1.2525501847431109
+          }
+        }
+      ],
+      "colored_ply": "/home/werikson/ufv/icuas2026/output/planes/home_02_T2_p8/colored_planes_00022.ply",
+      "planes_json": "/home/werikson/ufv/icuas2026/output/planes/home_02_T2_p8/planes_00022.json"
+    },
+    {
+      "frame_idx": 23,
+      "input_file": "/home/werikson/ufv/icuas2026/data/zed_ply/home_02_T2_75_05_02/frame_00023.ply",
+      "num_points": 14698,
+      "num_planes": 1,
+      "planes": [
+        {
+          "plane_id": 0,
+          "num_inliers": 10153,
+          "inlier_ratio": 0.6907742550006803,
+          "inlier_ratio_total": 0.6907742550006803,
+          "rmse": 0.009059018713306085,
+          "mean_abs_dist": 0.006135986361646308,
+          "std_abs_dist": 0.006664494835898693,
+          "extent_xy": [
+            1.7356852666917364,
+            2.9500774410405657
+          ],
+          "centroid": [
+            1.2601428227117424,
+            -0.0531999391790917,
+            0.10140549485253447
+          ],
+          "model": {
+            "n": [
+              -0.9902412313355089,
+              -0.01013598975810101,
+              0.13899483974147683
+            ],
+            "d": 1.2332113058760956
+          }
+        }
+      ],
+      "colored_ply": "/home/werikson/ufv/icuas2026/output/planes/home_02_T2_p8/colored_planes_00023.ply",
+      "planes_json": "/home/werikson/ufv/icuas2026/output/planes/home_02_T2_p8/planes_00023.json"
+    },
+    {
+      "frame_idx": 24,
+      "input_file": "/home/werikson/ufv/icuas2026/data/zed_ply/home_02_T2_75_05_02/frame_00024.ply",
+      "num_points": 15175,
+      "num_planes": 1,
+      "planes": [
+        {
+          "plane_id": 0,
+          "num_inliers": 9870,
+          "inlier_ratio": 0.6504118616144975,
+          "inlier_ratio_total": 0.6504118616144975,
+          "rmse": 0.009429985213535235,
+          "mean_abs_dist": 0.006465802506572404,
+          "std_abs_dist": 0.006864256629344153,
+          "extent_xy": [
+            1.9047961901418542,
+            2.886207614167043
+          ],
+          "centroid": [
+            1.3118137726830776,
+            0.017805352078082728,
+            0.09248040133739843
+          ],
+          "model": {
+            "n": [
+              -0.9691064480496274,
+              0.014086408262497598,
+              0.24624025960613566
+            ],
+            "d": 1.2482639742550488
+          }
+        }
+      ],
+      "colored_ply": "/home/werikson/ufv/icuas2026/output/planes/home_02_T2_p8/colored_planes_00024.ply",
+      "planes_json": "/home/werikson/ufv/icuas2026/output/planes/home_02_T2_p8/planes_00024.json"
+    },
+    {
+      "frame_idx": 25,
+      "input_file": "/home/werikson/ufv/icuas2026/data/zed_ply/home_02_T2_75_05_02/frame_00025.ply",
+      "num_points": 13471,
+      "num_planes": 1,
+      "planes": [
+        {
+          "plane_id": 0,
+          "num_inliers": 9109,
+          "inlier_ratio": 0.6761933041348082,
+          "inlier_ratio_total": 0.6761933041348082,
+          "rmse": 0.008639608427470104,
+          "mean_abs_dist": 0.005711873768389806,
+          "std_abs_dist": 0.006482077740508277,
+          "extent_xy": [
+            1.88461470178905,
+            2.610191080393178
+          ],
+          "centroid": [
+            1.273466477618201,
+            0.04981808862579151,
+            0.03581873877150257
+          ],
+          "model": {
+            "n": [
+              -0.9698620574980691,
+              0.020047398525379123,
+              0.24282852229088922
+            ],
+            "d": 1.225390283654946
+          }
+        }
+      ],
+      "colored_ply": "/home/werikson/ufv/icuas2026/output/planes/home_02_T2_p8/colored_planes_00025.ply",
+      "planes_json": "/home/werikson/ufv/icuas2026/output/planes/home_02_T2_p8/planes_00025.json"
+    },
+    {
+      "frame_idx": 26,
+      "input_file": "/home/werikson/ufv/icuas2026/data/zed_ply/home_02_T2_75_05_02/frame_00026.ply",
+      "num_points": 13484,
+      "num_planes": 1,
+      "planes": [
+        {
+          "plane_id": 0,
+          "num_inliers": 8424,
+          "inlier_ratio": 0.6247404331059033,
+          "inlier_ratio_total": 0.6247404331059033,
+          "rmse": 0.009297024557934257,
+          "mean_abs_dist": 0.006362650319525052,
+          "std_abs_dist": 0.006778742253713472,
+          "extent_xy": [
+            1.9015856557302644,
+            2.649438687535082
+          ],
+          "centroid": [
+            1.2801241468712883,
+            0.1823843128411616,
+            -0.007911651682895234
+          ],
+          "model": {
+            "n": [
+              -0.9671568008908692,
+              0.010932725148974226,
+              0.25394526577858606
+            ],
+            "d": 1.238095943556772
+          }
+        }
+      ],
+      "colored_ply": "/home/werikson/ufv/icuas2026/output/planes/home_02_T2_p8/colored_planes_00026.ply",
+      "planes_json": "/home/werikson/ufv/icuas2026/output/planes/home_02_T2_p8/planes_00026.json"
+    },
+    {
+      "frame_idx": 27,
+      "input_file": "/home/werikson/ufv/icuas2026/data/zed_ply/home_02_T2_75_05_02/frame_00027.ply",
+      "num_points": 13793,
+      "num_planes": 1,
+      "planes": [
+        {
+          "plane_id": 0,
+          "num_inliers": 9248,
+          "inlier_ratio": 0.6704850286377148,
+          "inlier_ratio_total": 0.6704850286377148,
+          "rmse": 0.0097214984023531,
+          "mean_abs_dist": 0.007143644668299905,
+          "std_abs_dist": 0.006593623589501015,
+          "extent_xy": [
+            1.8661528541010428,
+            2.7748877059121986
+          ],
+          "centroid": [
+            1.277693450650283,
+            0.39952566618594587,
+            0.033415825021256805
+          ],
+          "model": {
+            "n": [
+              -0.9707721211661496,
+              0.006591235921457939,
+              0.23991257652653863
+            ],
+            "d": 1.2296989366877535
+          }
+        }
+      ],
+      "colored_ply": "/home/werikson/ufv/icuas2026/output/planes/home_02_T2_p8/colored_planes_00027.ply",
+      "planes_json": "/home/werikson/ufv/icuas2026/output/planes/home_02_T2_p8/planes_00027.json"
+    },
+    {
+      "frame_idx": 28,
+      "input_file": "/home/werikson/ufv/icuas2026/data/zed_ply/home_02_T2_75_05_02/frame_00028.ply",
+      "num_points": 12136,
+      "num_planes": 1,
+      "planes": [
+        {
+          "plane_id": 0,
+          "num_inliers": 9178,
+          "inlier_ratio": 0.7562623599208965,
+          "inlier_ratio_total": 0.7562623599208965,
+          "rmse": 0.008604950654727857,
+          "mean_abs_dist": 0.006021305786263982,
+          "std_abs_dist": 0.00614728008135348,
+          "extent_xy": [
+            1.8219988359693633,
+            2.677060062238336
+          ],
+          "centroid": [
+            1.2701174555611303,
+            0.4514926773635951,
+            0.058464672598297754
+          ],
+          "model": {
+            "n": [
+              -0.9754530604621253,
+              -0.0010506211908111465,
+              0.22020495687015465
+            ],
+            "d": 1.2265400962398705
+          }
+        }
+      ],
+      "colored_ply": "/home/werikson/ufv/icuas2026/output/planes/home_02_T2_p8/colored_planes_00028.ply",
+      "planes_json": "/home/werikson/ufv/icuas2026/output/planes/home_02_T2_p8/planes_00028.json"
+    },
+    {
+      "frame_idx": 29,
+      "input_file": "/home/werikson/ufv/icuas2026/data/zed_ply/home_02_T2_75_05_02/frame_00029.ply",
+      "num_points": 13882,
+      "num_planes": 1,
+      "planes": [
+        {
+          "plane_id": 0,
+          "num_inliers": 9542,
+          "inlier_ratio": 0.6873649330067714,
+          "inlier_ratio_total": 0.6873649330067714,
+          "rmse": 0.009091145794865708,
+          "mean_abs_dist": 0.006364781209414001,
+          "std_abs_dist": 0.006491416796031119,
+          "extent_xy": [
+            1.815238380210074,
+            3.06882608895906
+          ],
+          "centroid": [
+            1.2785030567206095,
+            0.13803572532079628,
+            0.08876710496982254
+          ],
+          "model": {
+            "n": [
+              -0.9745541241081771,
+              0.00981120363248764,
+              0.22393749008825162
+            ],
+            "d": 1.2247378473129578
+          }
+        }
+      ],
+      "colored_ply": "/home/werikson/ufv/icuas2026/output/planes/home_02_T2_p8/colored_planes_00029.ply",
+      "planes_json": "/home/werikson/ufv/icuas2026/output/planes/home_02_T2_p8/planes_00029.json"
+    },
+    {
+      "frame_idx": 30,
+      "input_file": "/home/werikson/ufv/icuas2026/data/zed_ply/home_02_T2_75_05_02/frame_00030.ply",
+      "num_points": 13844,
+      "num_planes": 1,
+      "planes": [
+        {
+          "plane_id": 0,
+          "num_inliers": 8977,
+          "inlier_ratio": 0.6484397572955793,
+          "inlier_ratio_total": 0.6484397572955793,
+          "rmse": 0.01016930029524379,
+          "mean_abs_dist": 0.007150918266789538,
+          "std_abs_dist": 0.007230424360750974,
+          "extent_xy": [
+            1.7937779301263723,
+            2.9303013305551295
+          ],
+          "centroid": [
+            1.2401089703144046,
+            -0.04856485466223114,
+            -0.04829075250792557
+          ],
+          "model": {
+            "n": [
+              -0.9763073302864173,
+              0.0004106541955102295,
+              0.21638814244810303
+            ],
+            "d": 1.2211969676658267
+          }
+        }
+      ],
+      "colored_ply": "/home/werikson/ufv/icuas2026/output/planes/home_02_T2_p8/colored_planes_00030.ply",
+      "planes_json": "/home/werikson/ufv/icuas2026/output/planes/home_02_T2_p8/planes_00030.json"
+    },
+    {
+      "frame_idx": 31,
+      "input_file": "/home/werikson/ufv/icuas2026/data/zed_ply/home_02_T2_75_05_02/frame_00031.ply",
+      "num_points": 13974,
+      "num_planes": 2,
+      "planes": [
+        {
+          "plane_id": 0,
+          "num_inliers": 8078,
+          "inlier_ratio": 0.5780735651925003,
+          "inlier_ratio_total": 0.5780735651925003,
+          "rmse": 0.01456097114772713,
+          "mean_abs_dist": 0.012148845796988557,
+          "std_abs_dist": 0.00802666970579551,
+          "extent_xy": [
+            1.8128070053579397,
+            2.694854906668339
+          ],
+          "centroid": [
+            1.223515475917463,
+            -0.2168302037771581,
+            -0.04324562806383026
+          ],
+          "model": {
+            "n": [
+              -0.9713818664755456,
+              -0.006747351143893716,
+              0.23742734201230128
+            ],
+            "d": 1.1973054116597819
+          }
+        },
+        {
+          "plane_id": 1,
+          "num_inliers": 2418,
+          "inlier_ratio": 0.41010854816824965,
+          "inlier_ratio_total": 0.17303563761270932,
+          "rmse": 0.012130830399661612,
+          "mean_abs_dist": 0.009942053315760932,
+          "std_abs_dist": 0.006950728167028354,
+          "extent_xy": [
+            2.29615494045906,
+            0.9007806164895245
+          ],
+          "centroid": [
+            0.9861809062968896,
+            -0.1441899457456119,
+            0.35440599960901115
+          ],
+          "model": {
+            "n": [
+              0.21448436406887933,
+              0.2725063028958474,
+              0.9379428407168559
+            ],
+            "d": -0.5046402855544427
+          }
+        }
+      ],
+      "colored_ply": "/home/werikson/ufv/icuas2026/output/planes/home_02_T2_p8/colored_planes_00031.ply",
+      "planes_json": "/home/werikson/ufv/icuas2026/output/planes/home_02_T2_p8/planes_00031.json"
+    },
+    {
+      "frame_idx": 32,
+      "input_file": "/home/werikson/ufv/icuas2026/data/zed_ply/home_02_T2_75_05_02/frame_00032.ply",
+      "num_points": 15083,
+      "num_planes": 2,
+      "planes": [
+        {
+          "plane_id": 0,
+          "num_inliers": 9092,
+          "inlier_ratio": 0.6027978518862296,
+          "inlier_ratio_total": 0.6027978518862296,
+          "rmse": 0.01404163351334993,
+          "mean_abs_dist": 0.011587595361771359,
+          "std_abs_dist": 0.007930643445212174,
+          "extent_xy": [
+            1.8990191704258577,
+            2.635508323341958
+          ],
+          "centroid": [
+            1.296541144372361,
+            -0.3068931093620854,
+            0.12108004090016429
+          ],
+          "model": {
+            "n": [
+              -0.9669378877583966,
+              -0.047554041291240856,
+              0.25053888794796186
+            ],
+            "d": 1.2087454891368423
+          }
+        },
+        {
+          "plane_id": 1,
+          "num_inliers": 1719,
+          "inlier_ratio": 0.28693039559339006,
+          "inlier_ratio_total": 0.11396936948882848,
+          "rmse": 0.010311224386179773,
+          "mean_abs_dist": 0.007452491858347744,
+          "std_abs_dist": 0.007126128924136092,
+          "extent_xy": [
+            1.532798777597574,
+            2.735958912273714
+          ],
+          "centroid": [
+            1.3080609661146962,
+            0.21584637053550085,
+            0.1264469994870665
+          ],
+          "model": {
+            "n": [
+              -0.9863532192456631,
+              -0.05161193414467661,
+              0.15634428399389097
+            ],
+            "d": 1.2815811279602873
+          }
+        }
+      ],
+      "colored_ply": "/home/werikson/ufv/icuas2026/output/planes/home_02_T2_p8/colored_planes_00032.ply",
+      "planes_json": "/home/werikson/ufv/icuas2026/output/planes/home_02_T2_p8/planes_00032.json"
+    },
+    {
+      "frame_idx": 33,
+      "input_file": "/home/werikson/ufv/icuas2026/data/zed_ply/home_02_T2_75_05_02/frame_00033.ply",
+      "num_points": 14841,
+      "num_planes": 2,
+      "planes": [
+        {
+          "plane_id": 0,
+          "num_inliers": 10143,
+          "inlier_ratio": 0.6834445118253487,
+          "inlier_ratio_total": 0.6834445118253487,
+          "rmse": 0.009300417918474673,
+          "mean_abs_dist": 0.006942626618230032,
+          "std_abs_dist": 0.006188514288432128,
+          "extent_xy": [
+            1.7131684950079156,
+            3.099471800900657
+          ],
+          "centroid": [
+            1.3001351161184618,
+            -0.11378684049462726,
+            0.24190626359418957
+          ],
+          "model": {
+            "n": [
+              -0.9825904548429498,
+              -0.03136947993254091,
+              0.18311732244735104
+            ],
+            "d": 1.2296336938220362
+          }
+        },
+        {
+          "plane_id": 1,
+          "num_inliers": 1629,
+          "inlier_ratio": 0.34674329501915707,
+          "inlier_ratio_total": 0.10976349302607641,
+          "rmse": 0.01339704354409751,
+          "mean_abs_dist": 0.010386141169939328,
+          "std_abs_dist": 0.00846220109194624,
+          "extent_xy": [
+            1.6562986450804056,
+            2.7475903790338663
+          ],
+          "centroid": [
+            1.1208085635273284,
+            -0.22622937992823847,
+            -0.3405153200855624
+          ],
+          "model": {
+            "n": [
+              -0.9906793676257853,
+              -0.020533689822315515,
+              0.13465793011499533
+            ],
+            "d": 1.1515696832038442
+          }
+        }
+      ],
+      "colored_ply": "/home/werikson/ufv/icuas2026/output/planes/home_02_T2_p8/colored_planes_00033.ply",
+      "planes_json": "/home/werikson/ufv/icuas2026/output/planes/home_02_T2_p8/planes_00033.json"
+    },
+    {
+      "frame_idx": 34,
+      "input_file": "/home/werikson/ufv/icuas2026/data/zed_ply/home_02_T2_75_05_02/frame_00034.ply",
+      "num_points": 15523,
+      "num_planes": 1,
+      "planes": [
+        {
+          "plane_id": 0,
+          "num_inliers": 13246,
+          "inlier_ratio": 0.8533144366424016,
+          "inlier_ratio_total": 0.8533144366424016,
+          "rmse": 0.008176837758823483,
+          "mean_abs_dist": 0.006260988297464363,
+          "std_abs_dist": 0.005259344186601189,
+          "extent_xy": [
+            1.8590873974324498,
+            3.246118589923212
+          ],
+          "centroid": [
+            1.3011233487245006,
+            -0.09237549077685611,
+            0.19466666347829784
+          ],
+          "model": {
+            "n": [
+              -0.9752044231449073,
+              0.04808372447955329,
+              0.21601918553402394
+            ],
+            "d": 1.2312512682852168
+          }
+        }
+      ],
+      "colored_ply": "/home/werikson/ufv/icuas2026/output/planes/home_02_T2_p8/colored_planes_00034.ply",
+      "planes_json": "/home/werikson/ufv/icuas2026/output/planes/home_02_T2_p8/planes_00034.json"
+    },
+    {
+      "frame_idx": 35,
+      "input_file": "/home/werikson/ufv/icuas2026/data/zed_ply/home_02_T2_75_05_02/frame_00035.ply",
+      "num_points": 14340,
+      "num_planes": 1,
+      "planes": [
+        {
+          "plane_id": 0,
+          "num_inliers": 13057,
+          "inlier_ratio": 0.9105299860529986,
+          "inlier_ratio_total": 0.9105299860529986,
+          "rmse": 0.0067492653317453724,
+          "mean_abs_dist": 0.005067210590108395,
+          "std_abs_dist": 0.00445824621951203,
+          "extent_xy": [
+            1.7664913657165198,
+            2.9573092682547797
+          ],
+          "centroid": [
+            1.2461569680665805,
+            0.02570402284403733,
+            0.13218341964593036
+          ],
+          "model": {
+            "n": [
+              -0.9709574149236262,
+              0.0016882473981153223,
+              0.23924641737244862
+            ],
+            "d": 1.1782975439669754
+          }
+        }
+      ],
+      "colored_ply": "/home/werikson/ufv/icuas2026/output/planes/home_02_T2_p8/colored_planes_00035.ply",
+      "planes_json": "/home/werikson/ufv/icuas2026/output/planes/home_02_T2_p8/planes_00035.json"
+    },
+    {
+      "frame_idx": 36,
+      "input_file": "/home/werikson/ufv/icuas2026/data/zed_ply/home_02_T2_75_05_02/frame_00036.ply",
+      "num_points": 13368,
+      "num_planes": 1,
+      "planes": [
+        {
+          "plane_id": 0,
+          "num_inliers": 11447,
+          "inlier_ratio": 0.8562986235786954,
+          "inlier_ratio_total": 0.8562986235786954,
+          "rmse": 0.007116253210101686,
+          "mean_abs_dist": 0.005017681156955915,
+          "std_abs_dist": 0.005046180293787779,
+          "extent_xy": [
+            1.6961061864173925,
+            2.7544121046644134
+          ],
+          "centroid": [
+            1.2083723540939577,
+            -0.0019246700570639162,
+            0.05957621884449105
+          ],
+          "model": {
+            "n": [
+              -0.9763477693417323,
+              -0.0033438334353248222,
+              0.21618013803164365
+            ],
+            "d": 1.1669060214645592
+          }
+        }
+      ],
+      "colored_ply": "/home/werikson/ufv/icuas2026/output/planes/home_02_T2_p8/colored_planes_00036.ply",
+      "planes_json": "/home/werikson/ufv/icuas2026/output/planes/home_02_T2_p8/planes_00036.json"
+    },
+    {
+      "frame_idx": 37,
+      "input_file": "/home/werikson/ufv/icuas2026/data/zed_ply/home_02_T2_75_05_02/frame_00037.ply",
+      "num_points": 13027,
+      "num_planes": 1,
+      "planes": [
+        {
+          "plane_id": 0,
+          "num_inliers": 9494,
+          "inlier_ratio": 0.7287940431411684,
+          "inlier_ratio_total": 0.7287940431411684,
+          "rmse": 0.010066874305455529,
+          "mean_abs_dist": 0.006982662829911034,
+          "std_abs_dist": 0.007251508676518257,
+          "extent_xy": [
+            1.7191955803333405,
+            2.66067847910095
+          ],
+          "centroid": [
+            1.1703280578955733,
+            -0.0009776349039434338,
+            -0.004780266194494255
+          ],
+          "model": {
+            "n": [
+              -0.9795542988277631,
+              -0.07107579979835153,
+              0.1882062866406803
+            ],
+            "d": 1.1472300701172673
+          }
+        }
+      ],
+      "colored_ply": "/home/werikson/ufv/icuas2026/output/planes/home_02_T2_p8/colored_planes_00037.ply",
+      "planes_json": "/home/werikson/ufv/icuas2026/output/planes/home_02_T2_p8/planes_00037.json"
+    },
+    {
+      "frame_idx": 38,
+      "input_file": "/home/werikson/ufv/icuas2026/data/zed_ply/home_02_T2_75_05_02/frame_00038.ply",
+      "num_points": 13155,
+      "num_planes": 2,
+      "planes": [
+        {
+          "plane_id": 0,
+          "num_inliers": 8023,
+          "inlier_ratio": 0.6098821740782973,
+          "inlier_ratio_total": 0.6098821740782973,
+          "rmse": 0.01044627325551759,
+          "mean_abs_dist": 0.007393566163677613,
+          "std_abs_dist": 0.007379688632473836,
+          "extent_xy": [
+            1.4078811151916317,
+            2.4515329775704453
+          ],
+          "centroid": [
+            1.1680954595878552,
+            -0.007394668488386965,
+            -0.11812078573500287
+          ],
+          "model": {
+            "n": [
+              -0.9690282216475856,
+              -0.0976219971821163,
+              0.22683529557080104
+            ],
+            "d": 1.1579895469579573
+          }
+        },
+        {
+          "plane_id": 1,
+          "num_inliers": 1632,
+          "inlier_ratio": 0.3180046765393609,
+          "inlier_ratio_total": 0.12405929304446979,
+          "rmse": 0.007684917123304817,
+          "mean_abs_dist": 0.005783909983616246,
+          "std_abs_dist": 0.005060072775513007,
+          "extent_xy": [
+            1.462904398418183,
+            0.5708664410020641
+          ],
+          "centroid": [
+            1.0451816074746787,
+            0.5154621963377625,
+            0.5113104791318765
+          ],
+          "model": {
+            "n": [
+              0.2995553996350474,
+              0.35027370513273937,
+              0.887454164473901
+            ],
+            "d": -0.9474072615300957
+          }
+        }
+      ],
+      "colored_ply": "/home/werikson/ufv/icuas2026/output/planes/home_02_T2_p8/colored_planes_00038.ply",
+      "planes_json": "/home/werikson/ufv/icuas2026/output/planes/home_02_T2_p8/planes_00038.json"
+    },
+    {
+      "frame_idx": 39,
+      "input_file": "/home/werikson/ufv/icuas2026/data/zed_ply/home_02_T2_75_05_02/frame_00039.ply",
+      "num_points": 12259,
+      "num_planes": 2,
+      "planes": [
+        {
+          "plane_id": 0,
+          "num_inliers": 8174,
+          "inlier_ratio": 0.666775430296109,
+          "inlier_ratio_total": 0.666775430296109,
+          "rmse": 0.009375546242064487,
+          "mean_abs_dist": 0.006204939362133656,
+          "std_abs_dist": 0.0070284845343312734,
+          "extent_xy": [
+            1.283692399103326,
+            2.7309050120133582
+          ],
+          "centroid": [
+            1.140941685843388,
+            -0.07934343713951122,
+            -0.14906722559608646
+          ],
+          "model": {
+            "n": [
+              -0.9803648495377332,
+              -0.07783080114084272,
+              0.18118258245381227
+            ],
+            "d": 1.1393721457880686
+          }
+        },
+        {
+          "plane_id": 1,
+          "num_inliers": 2126,
+          "inlier_ratio": 0.5204406364749082,
+          "inlier_ratio_total": 0.17342360714577046,
+          "rmse": 0.006859248978867188,
+          "mean_abs_dist": 0.004492819037977557,
+          "std_abs_dist": 0.005183037106376626,
+          "extent_xy": [
+            1.8707584485678463,
+            0.5320277594592132
+          ],
+          "centroid": [
+            0.9985532202765988,
+            0.20961704410574664,
+            0.4903511828986441
+          ],
+          "model": {
+            "n": [
+              0.29194945991046334,
+              0.13202943954833685,
+              0.9472770133126535
+            ],
+            "d": -0.7837010982152219
+          }
+        }
+      ],
+      "colored_ply": "/home/werikson/ufv/icuas2026/output/planes/home_02_T2_p8/colored_planes_00039.ply",
+      "planes_json": "/home/werikson/ufv/icuas2026/output/planes/home_02_T2_p8/planes_00039.json"
+    },
+    {
+      "frame_idx": 40,
+      "input_file": "/home/werikson/ufv/icuas2026/data/zed_ply/home_02_T2_75_05_02/frame_00040.ply",
+      "num_points": 11720,
+      "num_planes": 2,
+      "planes": [
+        {
+          "plane_id": 0,
+          "num_inliers": 8101,
+          "inlier_ratio": 0.6912116040955631,
+          "inlier_ratio_total": 0.6912116040955631,
+          "rmse": 0.00891339586647727,
+          "mean_abs_dist": 0.005993474721690553,
+          "std_abs_dist": 0.006597490934665269,
+          "extent_xy": [
+            1.4532833807622962,
+            2.7068578975847624
+          ],
+          "centroid": [
+            1.123509700482877,
+            0.01376801181262953,
+            -0.13657467518849623
+          ],
+          "model": {
+            "n": [
+              -0.983608376054771,
+              -0.08981376327245724,
+              0.15635872371484566
+            ],
+            "d": 1.1276847508316596
+          }
+        },
+        {
+          "plane_id": 1,
+          "num_inliers": 2846,
+          "inlier_ratio": 0.7864050842774247,
+          "inlier_ratio_total": 0.24283276450511945,
+          "rmse": 0.009239220233771165,
+          "mean_abs_dist": 0.006589245938207119,
+          "std_abs_dist": 0.0064764981659804,
+          "extent_xy": [
+            2.4369556185460994,
+            0.6456435327387324
+          ],
+          "centroid": [
+            0.962361654522247,
+            -0.20279390322545995,
+            0.42194686397440534
+          ],
+          "model": {
+            "n": [
+              0.2965266902062354,
+              -0.22602045298981419,
+              0.927893677543723
+            ],
+            "d": -0.7227233134087214
+          }
+        }
+      ],
+      "colored_ply": "/home/werikson/ufv/icuas2026/output/planes/home_02_T2_p8/colored_planes_00040.ply",
+      "planes_json": "/home/werikson/ufv/icuas2026/output/planes/home_02_T2_p8/planes_00040.json"
+    },
+    {
+      "frame_idx": 41,
+      "input_file": "/home/werikson/ufv/icuas2026/data/zed_ply/home_02_T2_75_05_02/frame_00041.ply",
+      "num_points": 11490,
+      "num_planes": 2,
+      "planes": [
+        {
+          "plane_id": 0,
+          "num_inliers": 7803,
+          "inlier_ratio": 0.6791122715404699,
+          "inlier_ratio_total": 0.6791122715404699,
+          "rmse": 0.007898994059484169,
+          "mean_abs_dist": 0.0053824748039477946,
+          "std_abs_dist": 0.005781269076650326,
+          "extent_xy": [
+            1.6766800972728424,
+            2.5060340224406445
+          ],
+          "centroid": [
+            1.1438836146031262,
+            0.15023727760037808,
+            -0.06470862056848051
+          ],
+          "model": {
+            "n": [
+              -0.9790916562968257,
+              -0.06484134390982049,
+              0.19280852857149983
+            ],
+            "d": 1.1421848637352363
+          }
+        },
+        {
+          "plane_id": 1,
+          "num_inliers": 2585,
+          "inlier_ratio": 0.7011120151885001,
+          "inlier_ratio_total": 0.22497824194952132,
+          "rmse": 0.011050445066749815,
+          "mean_abs_dist": 0.008113177591132663,
+          "std_abs_dist": 0.007502578593256996,
+          "extent_xy": [
+            2.0449349008309543,
+            0.6904102199216177
+          ],
+          "centroid": [
+            0.987409281369976,
+            -0.645361858552484,
+            0.1476345785100894
+          ],
+          "model": {
+            "n": [
+              0.29833127417848354,
+              -0.7669363118980623,
+              0.5681611957351896
+            ],
+            "d": -0.8734067513428398
+          }
+        }
+      ],
+      "colored_ply": "/home/werikson/ufv/icuas2026/output/planes/home_02_T2_p8/colored_planes_00041.ply",
+      "planes_json": "/home/werikson/ufv/icuas2026/output/planes/home_02_T2_p8/planes_00041.json"
+    },
+    {
+      "frame_idx": 42,
+      "input_file": "/home/werikson/ufv/icuas2026/data/zed_ply/home_02_T2_75_05_02/frame_00042.ply",
+      "num_points": 11156,
+      "num_planes": 1,
+      "planes": [
+        {
+          "plane_id": 0,
+          "num_inliers": 6526,
+          "inlier_ratio": 0.5849766941556114,
+          "inlier_ratio_total": 0.5849766941556114,
+          "rmse": 0.01043281766319565,
+          "mean_abs_dist": 0.007737599959827884,
+          "std_abs_dist": 0.006998087685586589,
+          "extent_xy": [
+            1.4106055167997298,
+            2.496905158432531
+          ],
+          "centroid": [
+            1.158472933212305,
+            -0.05920317398126862,
+            -0.21578441526313602
+          ],
+          "model": {
+            "n": [
+              -0.9729609205201998,
+              -0.07096995268046959,
+              0.21979607129568401
+            ],
+            "d": 1.1703758117616698
+          }
+        }
+      ],
+      "colored_ply": "/home/werikson/ufv/icuas2026/output/planes/home_02_T2_p8/colored_planes_00042.ply",
+      "planes_json": "/home/werikson/ufv/icuas2026/output/planes/home_02_T2_p8/planes_00042.json"
+    },
+    {
+      "frame_idx": 43,
+      "input_file": "/home/werikson/ufv/icuas2026/data/zed_ply/home_02_T2_75_05_02/frame_00043.ply",
+      "num_points": 10721,
+      "num_planes": 1,
+      "planes": [
+        {
+          "plane_id": 0,
+          "num_inliers": 5288,
+          "inlier_ratio": 0.4932375711220968,
+          "inlier_ratio_total": 0.4932375711220968,
+          "rmse": 0.008826759393545776,
+          "mean_abs_dist": 0.005763509948805434,
+          "std_abs_dist": 0.006685329794525425,
+          "extent_xy": [
+            1.095143808976983,
+            2.5284395093498238
+          ],
+          "centroid": [
+            1.1285648951781428,
+            0.10533400158638068,
+            -0.30825920556558223
+          ],
+          "model": {
+            "n": [
+              -0.9639772378074084,
+              -0.0472757181711811,
+              0.2617496732769656
+            ],
+            "d": 1.173577357254482
+          }
+        }
+      ],
+      "colored_ply": "/home/werikson/ufv/icuas2026/output/planes/home_02_T2_p8/colored_planes_00043.ply",
+      "planes_json": "/home/werikson/ufv/icuas2026/output/planes/home_02_T2_p8/planes_00043.json"
+    },
+    {
+      "frame_idx": 44,
+      "input_file": "/home/werikson/ufv/icuas2026/data/zed_ply/home_02_T2_75_05_02/frame_00044.ply",
+      "num_points": 10793,
+      "num_planes": 2,
+      "planes": [
+        {
+          "plane_id": 0,
+          "num_inliers": 5507,
+          "inlier_ratio": 0.5102381172982489,
+          "inlier_ratio_total": 0.5102381172982489,
+          "rmse": 0.016098288834635315,
+          "mean_abs_dist": 0.013599630946390245,
+          "std_abs_dist": 0.008614229015142841,
+          "extent_xy": [
+            1.6533610291567251,
+            1.9743444575205704
+          ],
+          "centroid": [
+            1.1701122610020278,
+            0.6142670208163176,
+            0.000832116609784318
+          ],
+          "model": {
+            "n": [
+              -0.9717664983310009,
+              -0.05345805623845751,
+              0.22980885305990892
+            ],
+            "d": 1.1697221877086326
+          }
+        },
+        {
+          "plane_id": 1,
+          "num_inliers": 1560,
+          "inlier_ratio": 0.29511918274687854,
+          "inlier_ratio_total": 0.1445381265635134,
+          "rmse": 0.017250699896512105,
+          "mean_abs_dist": 0.015022366160616384,
+          "std_abs_dist": 0.008480280765156925,
+          "extent_xy": [
+            1.7565992642641246,
+            1.5305976662369662
+          ],
+          "centroid": [
+            0.8311997538201507,
+            -0.2060115553870937,
+            0.18027050387610494
+          ],
+          "model": {
+            "n": [
+              0.867750280578323,
+              -0.4783486954230882,
+              0.134877633962312
+            ],
+            "d": -0.8441336373915692
+          }
+        }
+      ],
+      "colored_ply": "/home/werikson/ufv/icuas2026/output/planes/home_02_T2_p8/colored_planes_00044.ply",
+      "planes_json": "/home/werikson/ufv/icuas2026/output/planes/home_02_T2_p8/planes_00044.json"
+    },
+    {
+      "frame_idx": 45,
+      "input_file": "/home/werikson/ufv/icuas2026/data/zed_ply/home_02_T2_75_05_02/frame_00045.ply",
+      "num_points": 13669,
+      "num_planes": 2,
+      "planes": [
+        {
+          "plane_id": 0,
+          "num_inliers": 6962,
+          "inlier_ratio": 0.5093276757626747,
+          "inlier_ratio_total": 0.5093276757626747,
+          "rmse": 0.014350426040553537,
+          "mean_abs_dist": 0.011728694274476537,
+          "std_abs_dist": 0.008268764004448209,
+          "extent_xy": [
+            1.7007668685339343,
+            2.288578900983079
+          ],
+          "centroid": [
+            1.1810133160724885,
+            0.43148229045069425,
+            0.028327392130613218
+          ],
+          "model": {
+            "n": [
+              -0.9766224413055287,
+              -0.02338634062018502,
+              0.21368595230109558
+            ],
+            "d": 1.1574417340094725
+          }
+        },
+        {
+          "plane_id": 1,
+          "num_inliers": 1649,
+          "inlier_ratio": 0.24586253168331593,
+          "inlier_ratio_total": 0.12063793986392567,
+          "rmse": 0.014015025038219017,
+          "mean_abs_dist": 0.011662433398783728,
+          "std_abs_dist": 0.007772295287805254,
+          "extent_xy": [
+            1.6918140753264632,
+            2.1328855255561576
+          ],
+          "centroid": [
+            1.2546431268944749,
+            0.38861718703306447,
+            0.3014951661825951
+          ],
+          "model": {
+            "n": [
+              -0.9658071096828499,
+              -0.08212528606270636,
+              0.2459106835320059
+            ],
+            "d": 1.169517667325823
+          }
+        }
+      ],
+      "colored_ply": "/home/werikson/ufv/icuas2026/output/planes/home_02_T2_p8/colored_planes_00045.ply",
+      "planes_json": "/home/werikson/ufv/icuas2026/output/planes/home_02_T2_p8/planes_00045.json"
+    },
+    {
+      "frame_idx": 46,
+      "input_file": "/home/werikson/ufv/icuas2026/data/zed_ply/home_02_T2_75_05_02/frame_00046.ply",
+      "num_points": 13671,
+      "num_planes": 1,
+      "planes": [
+        {
+          "plane_id": 0,
+          "num_inliers": 9148,
+          "inlier_ratio": 0.6691536829785678,
+          "inlier_ratio_total": 0.6691536829785678,
+          "rmse": 0.0163087406530027,
+          "mean_abs_dist": 0.01382860200613637,
+          "std_abs_dist": 0.008645506823939478,
+          "extent_xy": [
+            1.7330321452358022,
+            2.726671355933786
+          ],
+          "centroid": [
+            1.2214630261567685,
+            0.15307989685373677,
+            0.15380160588158956
+          ],
+          "model": {
+            "n": [
+              -0.9785670834572051,
+              -0.015081410123277824,
+              0.2053753009559644
+            ],
+            "d": 1.166005120667679
+          }
+        }
+      ],
+      "colored_ply": "/home/werikson/ufv/icuas2026/output/planes/home_02_T2_p8/colored_planes_00046.ply",
+      "planes_json": "/home/werikson/ufv/icuas2026/output/planes/home_02_T2_p8/planes_00046.json"
+    },
+    {
+      "frame_idx": 47,
+      "input_file": "/home/werikson/ufv/icuas2026/data/zed_ply/home_02_T2_75_05_02/frame_00047.ply",
+      "num_points": 13908,
+      "num_planes": 2,
+      "planes": [
+        {
+          "plane_id": 0,
+          "num_inliers": 9180,
+          "inlier_ratio": 0.6600517687661778,
+          "inlier_ratio_total": 0.6600517687661778,
+          "rmse": 0.010656302263468071,
+          "mean_abs_dist": 0.0074180336851895875,
+          "std_abs_dist": 0.007650461043348126,
+          "extent_xy": [
+            1.7712984275343338,
+            3.113963075403424
+          ],
+          "centroid": [
+            1.2380368758591607,
+            -0.016242004857195572,
+            0.24620136679030102
+          ],
+          "model": {
+            "n": [
+              -0.9591486165351378,
+              -0.04537870021232357,
+              0.2792395118276982
+            ],
+            "d": 1.1179751661567008
+          }
+        },
+        {
+          "plane_id": 1,
+          "num_inliers": 1509,
+          "inlier_ratio": 0.31916243654822335,
+          "inlier_ratio_total": 0.10849870578084556,
+          "rmse": 0.014724455793962518,
+          "mean_abs_dist": 0.012139761133141375,
+          "std_abs_dist": 0.008332814534035086,
+          "extent_xy": [
+            1.720107336357767,
+            3.0029560896673253
+          ],
+          "centroid": [
+            1.145171943085543,
+            -0.09389709856149998,
+            -0.08996302925082804
+          ],
+          "model": {
+            "n": [
+              -0.9835423369236651,
+              -0.06761221115467139,
+              0.16755017272898273
+            ],
+            "d": 1.135049819717217
+          }
+        }
+      ],
+      "colored_ply": "/home/werikson/ufv/icuas2026/output/planes/home_02_T2_p8/colored_planes_00047.ply",
+      "planes_json": "/home/werikson/ufv/icuas2026/output/planes/home_02_T2_p8/planes_00047.json"
+    },
+    {
+      "frame_idx": 48,
+      "input_file": "/home/werikson/ufv/icuas2026/data/zed_ply/home_02_T2_75_05_02/frame_00048.ply",
+      "num_points": 13948,
+      "num_planes": 1,
+      "planes": [
+        {
+          "plane_id": 0,
+          "num_inliers": 10467,
+          "inlier_ratio": 0.7504301691998853,
+          "inlier_ratio_total": 0.7504301691998853,
+          "rmse": 0.00831155584882917,
+          "mean_abs_dist": 0.0054199809065415385,
+          "std_abs_dist": 0.006301251272638755,
+          "extent_xy": [
+            1.7762760318752324,
+            2.9145512764642607
+          ],
+          "centroid": [
+            1.2194114722111509,
+            -0.1739920127311776,
+            0.14328034466456008
+          ],
+          "model": {
+            "n": [
+              -0.9553408506173562,
+              -0.0012258556876129645,
+              0.2955035641401633
+            ],
+            "d": 1.1224004514967492
+          }
+        }
+      ],
+      "colored_ply": "/home/werikson/ufv/icuas2026/output/planes/home_02_T2_p8/colored_planes_00048.ply",
+      "planes_json": "/home/werikson/ufv/icuas2026/output/planes/home_02_T2_p8/planes_00048.json"
+    },
+    {
+      "frame_idx": 49,
+      "input_file": "/home/werikson/ufv/icuas2026/data/zed_ply/home_02_T2_75_05_02/frame_00049.ply",
+      "num_points": 13862,
+      "num_planes": 1,
+      "planes": [
+        {
+          "plane_id": 0,
+          "num_inliers": 10147,
+          "inlier_ratio": 0.7320011542345982,
+          "inlier_ratio_total": 0.7320011542345982,
+          "rmse": 0.008685252698578984,
+          "mean_abs_dist": 0.005795613897247653,
+          "std_abs_dist": 0.006468730477628774,
+          "extent_xy": [
+            1.784847778708484,
+            2.7215505133857287
+          ],
+          "centroid": [
+            1.2252146041544643,
+            -0.1578889551586961,
+            0.16257811375179085
+          ],
+          "model": {
+            "n": [
+              -0.9585076690857502,
+              0.020556816549389182,
+              0.2843245778984939
+            ],
+            "d": 1.1313983350762766
+          }
+        }
+      ],
+      "colored_ply": "/home/werikson/ufv/icuas2026/output/planes/home_02_T2_p8/colored_planes_00049.ply",
+      "planes_json": "/home/werikson/ufv/icuas2026/output/planes/home_02_T2_p8/planes_00049.json"
+    },
+    {
+      "frame_idx": 50,
+      "input_file": "/home/werikson/ufv/icuas2026/data/zed_ply/home_02_T2_75_05_02/frame_00050.ply",
+      "num_points": 15266,
+      "num_planes": 1,
+      "planes": [
+        {
+          "plane_id": 0,
+          "num_inliers": 12865,
+          "inlier_ratio": 0.842722389624001,
+          "inlier_ratio_total": 0.842722389624001,
+          "rmse": 0.008543969318113074,
+          "mean_abs_dist": 0.006688090152432948,
+          "std_abs_dist": 0.005316846981227408,
+          "extent_xy": [
+            1.823530475092155,
+            3.3409948733246355
+          ],
+          "centroid": [
+            1.2467680904130511,
+            0.10072034416596308,
+            0.19726725096168898
+          ],
+          "model": {
+            "n": [
+              -0.957557448554529,
+              0.03532181899328069,
+              0.2860700994874274
+            ],
+            "d": 1.1338621837213307
+          }
+        }
+      ],
+      "colored_ply": "/home/werikson/ufv/icuas2026/output/planes/home_02_T2_p8/colored_planes_00050.ply",
+      "planes_json": "/home/werikson/ufv/icuas2026/output/planes/home_02_T2_p8/planes_00050.json"
+    },
+    {
+      "frame_idx": 51,
+      "input_file": "/home/werikson/ufv/icuas2026/data/zed_ply/home_02_T2_75_05_02/frame_00051.ply",
+      "num_points": 12996,
+      "num_planes": 1,
+      "planes": [
+        {
+          "plane_id": 0,
+          "num_inliers": 8958,
+          "inlier_ratio": 0.6892890120036934,
+          "inlier_ratio_total": 0.6892890120036934,
+          "rmse": 0.0086942438318568,
+          "mean_abs_dist": 0.006404653160206799,
+          "std_abs_dist": 0.005879650814906702,
+          "extent_xy": [
+            1.6439065413947933,
+            2.8745453007207393
+          ],
+          "centroid": [
+            1.1652564417448983,
+            0.0607132570970952,
+            0.06806845395327464
+          ],
+          "model": {
+            "n": [
+              -0.9769590536305477,
+              0.029006892672301908,
+              0.21144646534478212
+            ],
+            "d": 1.12225389364169
+          }
+        }
+      ],
+      "colored_ply": "/home/werikson/ufv/icuas2026/output/planes/home_02_T2_p8/colored_planes_00051.ply",
+      "planes_json": "/home/werikson/ufv/icuas2026/output/planes/home_02_T2_p8/planes_00051.json"
+    },
+    {
+      "frame_idx": 52,
+      "input_file": "/home/werikson/ufv/icuas2026/data/zed_ply/home_02_T2_75_05_02/frame_00052.ply",
+      "num_points": 13586,
+      "num_planes": 2,
+      "planes": [
+        {
+          "plane_id": 0,
+          "num_inliers": 8345,
+          "inlier_ratio": 0.6142352421610482,
+          "inlier_ratio_total": 0.6142352421610482,
+          "rmse": 0.009153824127983252,
+          "mean_abs_dist": 0.006770532263067615,
+          "std_abs_dist": 0.006160551033861248,
+          "extent_xy": [
+            1.8088512044443137,
+            2.9089747597492295
+          ],
+          "centroid": [
+            1.2378706468977954,
+            -0.12373286740717283,
+            0.07515864051721924
+          ],
+          "model": {
+            "n": [
+              -0.9627671883055201,
+              0.03405013349775488,
+              0.2681789132856429
+            ],
+            "d": 1.175838400315066
+          }
+        },
+        {
+          "plane_id": 1,
+          "num_inliers": 1995,
+          "inlier_ratio": 0.38065254722381225,
+          "inlier_ratio_total": 0.14684233770057412,
+          "rmse": 0.011876656064745658,
+          "mean_abs_dist": 0.009374122599568286,
+          "std_abs_dist": 0.007292515668034104,
+          "extent_xy": [
+            2.533808825552221,
+            0.94482570559819
+          ],
+          "centroid": [
+            0.8976078522487225,
+            0.3402106296723533,
+            0.050330791745755644
+          ],
+          "model": {
+            "n": [
+              0.3134775331917253,
+              -0.04985754264827392,
+              0.9482858543841653
+            ],
+            "d": -0.312145807170622
+          }
+        }
+      ],
+      "colored_ply": "/home/werikson/ufv/icuas2026/output/planes/home_02_T2_p8/colored_planes_00052.ply",
+      "planes_json": "/home/werikson/ufv/icuas2026/output/planes/home_02_T2_p8/planes_00052.json"
+    },
+    {
+      "frame_idx": 53,
+      "input_file": "/home/werikson/ufv/icuas2026/data/zed_ply/home_02_T2_75_05_02/frame_00053.ply",
+      "num_points": 11648,
+      "num_planes": 1,
+      "planes": [
+        {
+          "plane_id": 0,
+          "num_inliers": 7216,
+          "inlier_ratio": 0.6195054945054945,
+          "inlier_ratio_total": 0.6195054945054945,
+          "rmse": 0.01098413193869477,
+          "mean_abs_dist": 0.009023535770649465,
+          "std_abs_dist": 0.006263142712924886,
+          "extent_xy": [
+            1.8395716371068578,
+            2.603293643898284
+          ],
+          "centroid": [
+            1.2467532293815762,
+            -0.1946490474628988,
+            0.16784202033393053
+          ],
+          "model": {
+            "n": [
+              -0.9651264335150146,
+              0.03697549478143359,
+              0.2591597579028355
+            ],
+            "d": 1.1669738452293785
+          }
+        }
+      ],
+      "colored_ply": "/home/werikson/ufv/icuas2026/output/planes/home_02_T2_p8/colored_planes_00053.ply",
+      "planes_json": "/home/werikson/ufv/icuas2026/output/planes/home_02_T2_p8/planes_00053.json"
+    },
+    {
+      "frame_idx": 54,
+      "input_file": "/home/werikson/ufv/icuas2026/data/zed_ply/home_02_T2_75_05_02/frame_00054.ply",
+      "num_points": 17396,
+      "num_planes": 2,
+      "planes": [
+        {
+          "plane_id": 0,
+          "num_inliers": 8897,
+          "inlier_ratio": 0.5114394113589331,
+          "inlier_ratio_total": 0.5114394113589331,
+          "rmse": 0.01340171081512149,
+          "mean_abs_dist": 0.0106288563394153,
+          "std_abs_dist": 0.008162920169168352,
+          "extent_xy": [
+            2.02763591068882,
+            3.385104420544605
+          ],
+          "centroid": [
+            1.3075271696296389,
+            0.021472961214885216,
+            0.2820610628943538
+          ],
+          "model": {
+            "n": [
+              -0.9413779279147647,
+              0.08322950789491523,
+              0.3269257497513377
+            ],
+            "d": 1.1368770091808493
+          }
+        },
+        {
+          "plane_id": 1,
+          "num_inliers": 1794,
+          "inlier_ratio": 0.21108365690081185,
+          "inlier_ratio_total": 0.10312715566796965,
+          "rmse": 0.01601524269180186,
+          "mean_abs_dist": 0.01364184883343526,
+          "std_abs_dist": 0.008389753207515342,
+          "extent_xy": [
+            1.9212045870569427,
+            3.4291160366197797
+          ],
+          "centroid": [
+            1.3731483885246085,
+            0.6593665060970597,
+            0.47389016823744806
+          ],
+          "model": {
+            "n": [
+              -0.941255531218997,
+              0.09470253100348833,
+              0.32414418947619184
+            ],
+            "d": 1.0764310944128577
+          }
+        }
+      ],
+      "colored_ply": "/home/werikson/ufv/icuas2026/output/planes/home_02_T2_p8/colored_planes_00054.ply",
+      "planes_json": "/home/werikson/ufv/icuas2026/output/planes/home_02_T2_p8/planes_00054.json"
+    },
+    {
+      "frame_idx": 55,
+      "input_file": "/home/werikson/ufv/icuas2026/data/zed_ply/home_02_T2_75_05_02/frame_00055.ply",
+      "num_points": 13681,
+      "num_planes": 2,
+      "planes": [
+        {
+          "plane_id": 0,
+          "num_inliers": 7218,
+          "inlier_ratio": 0.5275930122067101,
+          "inlier_ratio_total": 0.5275930122067101,
+          "rmse": 0.012318023555354522,
+          "mean_abs_dist": 0.009832724659045505,
+          "std_abs_dist": 0.0074196516151142375,
+          "extent_xy": [
+            1.8173570886250785,
+            3.0797809772739986
+          ],
+          "centroid": [
+            1.2127551049371823,
+            0.0670067498287532,
+            0.04384886420951307
+          ],
+          "model": {
+            "n": [
+              -0.953667542171714,
+              0.07284026860273386,
+              0.2919118262044958
+            ],
+            "d": 1.1388843884975273
+          }
+        },
+        {
+          "plane_id": 1,
+          "num_inliers": 1939,
+          "inlier_ratio": 0.3000154726907009,
+          "inlier_ratio_total": 0.14172940574519408,
+          "rmse": 0.012480316804269875,
+          "mean_abs_dist": 0.009963204239677717,
+          "std_abs_dist": 0.007516173814741711,
+          "extent_xy": [
+            1.579115472246177,
+            1.0121654102237183
+          ],
+          "centroid": [
+            0.8005445525588577,
+            -0.5912342160609523,
+            0.03940650819026678
+          ],
+          "model": {
+            "n": [
+              0.15276943750459196,
+              0.8980309651381826,
+              0.4125553109796489
+            ],
+            "d": 0.39239052843909417
+          }
+        }
+      ],
+      "colored_ply": "/home/werikson/ufv/icuas2026/output/planes/home_02_T2_p8/colored_planes_00055.ply",
+      "planes_json": "/home/werikson/ufv/icuas2026/output/planes/home_02_T2_p8/planes_00055.json"
+    },
+    {
+      "frame_idx": 56,
+      "input_file": "/home/werikson/ufv/icuas2026/data/zed_ply/home_02_T2_75_05_02/frame_00056.ply",
+      "num_points": 11554,
+      "num_planes": 2,
+      "planes": [
+        {
+          "plane_id": 0,
+          "num_inliers": 6302,
+          "inlier_ratio": 0.5454388090704518,
+          "inlier_ratio_total": 0.5454388090704518,
+          "rmse": 0.01044194981506001,
+          "mean_abs_dist": 0.00787378808582806,
+          "std_abs_dist": 0.006858409226613989,
+          "extent_xy": [
+            1.823731014618283,
+            2.724810610658491
+          ],
+          "centroid": [
+            1.2426053046302659,
+            -0.04909862060097387,
+            0.177460509343683
+          ],
+          "model": {
+            "n": [
+              -0.9579598221413282,
+              0.07383306568629276,
+              0.2772393506959617
+            ],
+            "d": 1.1447920219108012
+          }
+        },
+        {
+          "plane_id": 1,
+          "num_inliers": 1809,
+          "inlier_ratio": 0.34444021325209445,
+          "inlier_ratio_total": 0.1565691535398996,
+          "rmse": 0.010391079859846228,
+          "mean_abs_dist": 0.007908884035385534,
+          "std_abs_dist": 0.006739739903625788,
+          "extent_xy": [
+            1.0610679956027145,
+            0.7810734201782806
+          ],
+          "centroid": [
+            0.7640392082275449,
+            -0.5293256483462775,
+            -0.05819620109743076
+          ],
+          "model": {
+            "n": [
+              0.06786184974481682,
+              0.984496682400503,
+              0.1617437840895749
+            ],
+            "d": 0.47868310454365537
+          }
+        }
+      ],
+      "colored_ply": "/home/werikson/ufv/icuas2026/output/planes/home_02_T2_p8/colored_planes_00056.ply",
+      "planes_json": "/home/werikson/ufv/icuas2026/output/planes/home_02_T2_p8/planes_00056.json"
+    },
+    {
+      "frame_idx": 57,
+      "input_file": "/home/werikson/ufv/icuas2026/data/zed_ply/home_02_T2_75_05_02/frame_00057.ply",
+      "num_points": 10989,
+      "num_planes": 2,
+      "planes": [
+        {
+          "plane_id": 0,
+          "num_inliers": 6704,
+          "inlier_ratio": 0.6100646100646101,
+          "inlier_ratio_total": 0.6100646100646101,
+          "rmse": 0.008693231105189651,
+          "mean_abs_dist": 0.0060302933942731245,
+          "std_abs_dist": 0.006261615496596929,
+          "extent_xy": [
+            1.7152733601781216,
+            2.4867965999366337
+          ],
+          "centroid": [
+            1.204919296024977,
+            0.3191030609226917,
+            0.27301993324606133
+          ],
+          "model": {
+            "n": [
+              -0.9749897056926584,
+              0.06473385171665612,
+              0.21261373952609272
+            ],
+            "d": 1.0960793506140878
+          }
+        },
+        {
+          "plane_id": 1,
+          "num_inliers": 1839,
+          "inlier_ratio": 0.42917152858809804,
+          "inlier_ratio_total": 0.16734916734916735,
+          "rmse": 0.010793093050115768,
+          "mean_abs_dist": 0.007911525490575576,
+          "std_abs_dist": 0.007341568088659954,
+          "extent_xy": [
+            1.4739523866625817,
+            0.9428335248464225
+          ],
+          "centroid": [
+            0.7142698283451497,
+            -0.4335809083353851,
+            -0.04016721335192437
+          ],
+          "model": {
+            "n": [
+              0.006042497085050729,
+              -0.9761085455794439,
+              0.2171994370981657
+            ],
+            "d": -0.4188137070521423
+          }
+        }
+      ],
+      "colored_ply": "/home/werikson/ufv/icuas2026/output/planes/home_02_T2_p8/colored_planes_00057.ply",
+      "planes_json": "/home/werikson/ufv/icuas2026/output/planes/home_02_T2_p8/planes_00057.json"
+    },
+    {
+      "frame_idx": 58,
+      "input_file": "/home/werikson/ufv/icuas2026/data/zed_ply/home_02_T2_75_05_02/frame_00058.ply",
+      "num_points": 9697,
+      "num_planes": 1,
+      "planes": [
+        {
+          "plane_id": 0,
+          "num_inliers": 6225,
+          "inlier_ratio": 0.6419511189027535,
+          "inlier_ratio_total": 0.6419511189027535,
+          "rmse": 0.00748748436790362,
+          "mean_abs_dist": 0.005187200314709333,
+          "std_abs_dist": 0.005399571747340754,
+          "extent_xy": [
+            1.6023311880495537,
+            1.9759006823663527
+          ],
+          "centroid": [
+            1.14247234960772,
+            0.3320681830206471,
+            0.22096828009335673
+          ],
+          "model": {
+            "n": [
+              -0.9825922146067374,
+              0.052233523496000536,
+              0.17828123518031916
+            ],
+            "d": 1.0658448469772148
+          }
+        }
+      ],
+      "colored_ply": "/home/werikson/ufv/icuas2026/output/planes/home_02_T2_p8/colored_planes_00058.ply",
+      "planes_json": "/home/werikson/ufv/icuas2026/output/planes/home_02_T2_p8/planes_00058.json"
+    },
+    {
+      "frame_idx": 59,
+      "input_file": "/home/werikson/ufv/icuas2026/data/zed_ply/home_02_T2_75_05_02/frame_00059.ply",
+      "num_points": 10083,
+      "num_planes": 1,
+      "planes": [
+        {
+          "plane_id": 0,
+          "num_inliers": 6856,
+          "inlier_ratio": 0.6799563621937915,
+          "inlier_ratio_total": 0.6799563621937915,
+          "rmse": 0.00924298247928196,
+          "mean_abs_dist": 0.006646990518666708,
+          "std_abs_dist": 0.006422635141207088,
+          "extent_xy": [
+            1.6658960543318582,
+            2.0940866642871896
+          ],
+          "centroid": [
+            1.1615954691475388,
+            0.4512904336803071,
+            0.18045479516001028
+          ],
+          "model": {
+            "n": [
+              -0.9756726356701927,
+              0.07237645521041365,
+              0.2069409498759355
+            ],
+            "d": 1.0633306243855023
+          }
+        }
+      ],
+      "colored_ply": "/home/werikson/ufv/icuas2026/output/planes/home_02_T2_p8/colored_planes_00059.ply",
+      "planes_json": "/home/werikson/ufv/icuas2026/output/planes/home_02_T2_p8/planes_00059.json"
+    },
+    {
+      "frame_idx": 60,
+      "input_file": "/home/werikson/ufv/icuas2026/data/zed_ply/home_02_T2_75_05_02/frame_00060.ply",
+      "num_points": 9328,
+      "num_planes": 2,
+      "planes": [
+        {
+          "plane_id": 0,
+          "num_inliers": 5249,
+          "inlier_ratio": 0.5627144082332761,
+          "inlier_ratio_total": 0.5627144082332761,
+          "rmse": 0.011043184992110756,
+          "mean_abs_dist": 0.00789353214272832,
+          "std_abs_dist": 0.007722958311534194,
+          "extent_xy": [
+            1.3034388790730989,
+            2.0834240977377663
+          ],
+          "centroid": [
+            1.0852181601369588,
+            0.41846707508344083,
+            -0.08974463140224813
+          ],
+          "model": {
+            "n": [
+              -0.9780424835774585,
+              0.011565005013288554,
+              0.20808448038400068
+            ],
+            "d": 1.0752243557350656
+          }
+        },
+        {
+          "plane_id": 1,
+          "num_inliers": 2067,
+          "inlier_ratio": 0.5067418484922775,
+          "inlier_ratio_total": 0.2215909090909091,
+          "rmse": 0.012253131251270675,
+          "mean_abs_dist": 0.009566048375821068,
+          "std_abs_dist": 0.007657019258975203,
+          "extent_xy": [
+            2.0617681007280204,
+            0.7864066103373699
+          ],
+          "centroid": [
+            0.7664569558421618,
+            -0.01981563244227145,
+            0.29909756500620344
+          ],
+          "model": {
+            "n": [
+              0.4295077308507982,
+              -0.3144576587093743,
+              0.8465456219356503
+            ],
+            "d": -0.5886300994698346
+          }
+        }
+      ],
+      "colored_ply": "/home/werikson/ufv/icuas2026/output/planes/home_02_T2_p8/colored_planes_00060.ply",
+      "planes_json": "/home/werikson/ufv/icuas2026/output/planes/home_02_T2_p8/planes_00060.json"
+    },
+    {
+      "frame_idx": 61,
+      "input_file": "/home/werikson/ufv/icuas2026/data/zed_ply/home_02_T2_75_05_02/frame_00061.ply",
+      "num_points": 7714,
+      "num_planes": 1,
+      "planes": [
+        {
+          "plane_id": 0,
+          "num_inliers": 5111,
+          "inlier_ratio": 0.6625615763546798,
+          "inlier_ratio_total": 0.6625615763546798,
+          "rmse": 0.006990770667465878,
+          "mean_abs_dist": 0.004490833836827016,
+          "std_abs_dist": 0.005357544771171853,
+          "extent_xy": [
+            1.6606200447294928,
+            2.1964595118865513
+          ],
+          "centroid": [
+            1.1373715791296868,
+            0.6088588444627723,
+            -0.02609340784288743
+          ],
+          "model": {
+            "n": [
+              -0.9750973232616825,
+              0.033114350669194305,
+              0.21929124457592816
+            ],
+            "d": 1.0946080729607839
+          }
+        }
+      ],
+      "colored_ply": "/home/werikson/ufv/icuas2026/output/planes/home_02_T2_p8/colored_planes_00061.ply",
+      "planes_json": "/home/werikson/ufv/icuas2026/output/planes/home_02_T2_p8/planes_00061.json"
+    },
+    {
+      "frame_idx": 62,
+      "input_file": "/home/werikson/ufv/icuas2026/data/zed_ply/home_02_T2_75_05_02/frame_00062.ply",
+      "num_points": 6911,
+      "num_planes": 1,
+      "planes": [
+        {
+          "plane_id": 0,
+          "num_inliers": 4955,
+          "inlier_ratio": 0.7169729416871654,
+          "inlier_ratio_total": 0.7169729416871654,
+          "rmse": 0.007688713071289346,
+          "mean_abs_dist": 0.004863988001279998,
+          "std_abs_dist": 0.005954656112322513,
+          "extent_xy": [
+            1.634494941242926,
+            1.855873671203328
+          ],
+          "centroid": [
+            1.1539773566028348,
+            0.7135507629986315,
+            0.07027599148122068
+          ],
+          "model": {
+            "n": [
+              -0.9737745880077144,
+              0.026260515211559286,
+              0.22599432977672126
+            ],
+            "d": 1.0890936387360186
+          }
+        }
+      ],
+      "colored_ply": "/home/werikson/ufv/icuas2026/output/planes/home_02_T2_p8/colored_planes_00062.ply",
+      "planes_json": "/home/werikson/ufv/icuas2026/output/planes/home_02_T2_p8/planes_00062.json"
+    },
+    {
+      "frame_idx": 63,
+      "input_file": "/home/werikson/ufv/icuas2026/data/zed_ply/home_02_T2_75_05_02/frame_00063.ply",
+      "num_points": 10600,
+      "num_planes": 1,
+      "planes": [
+        {
+          "plane_id": 0,
+          "num_inliers": 7693,
+          "inlier_ratio": 0.725754716981132,
+          "inlier_ratio_total": 0.725754716981132,
+          "rmse": 0.008154478526475622,
+          "mean_abs_dist": 0.0055286550145230194,
+          "std_abs_dist": 0.005994121601130688,
+          "extent_xy": [
+            1.6706621539879314,
+            2.7531773224809566
+          ],
+          "centroid": [
+            1.2348477918223904,
+            0.44876798561954456,
+            0.2682925734652714
+          ],
+          "model": {
+            "n": [
+              -0.9674981261709956,
+              -0.02242184226938221,
+              0.2518821884231976
+            ],
+            "d": 1.13719700914154
+          }
+        }
+      ],
+      "colored_ply": "/home/werikson/ufv/icuas2026/output/planes/home_02_T2_p8/colored_planes_00063.ply",
+      "planes_json": "/home/werikson/ufv/icuas2026/output/planes/home_02_T2_p8/planes_00063.json"
+    },
+    {
+      "frame_idx": 64,
+      "input_file": "/home/werikson/ufv/icuas2026/data/zed_ply/home_02_T2_75_05_02/frame_00064.ply",
+      "num_points": 12333,
+      "num_planes": 1,
+      "planes": [
+        {
+          "plane_id": 0,
+          "num_inliers": 8433,
+          "inlier_ratio": 0.6837752371685721,
+          "inlier_ratio_total": 0.6837752371685721,
+          "rmse": 0.009115064146172237,
+          "mean_abs_dist": 0.006561782852563387,
+          "std_abs_dist": 0.006326721124298091,
+          "extent_xy": [
+            1.657641525987473,
+            2.817287355230107
+          ],
+          "centroid": [
+            1.2034187285958295,
+            0.2893773053334212,
+            0.18618277023695054
+          ],
+          "model": {
+            "n": [
+              -0.9728659968680351,
+              -0.03350384950841695,
+              0.2289306537056185
+            ],
+            "d": 1.1378374714350192
+          }
+        }
+      ],
+      "colored_ply": "/home/werikson/ufv/icuas2026/output/planes/home_02_T2_p8/colored_planes_00064.ply",
+      "planes_json": "/home/werikson/ufv/icuas2026/output/planes/home_02_T2_p8/planes_00064.json"
+    },
+    {
+      "frame_idx": 65,
+      "input_file": "/home/werikson/ufv/icuas2026/data/zed_ply/home_02_T2_75_05_02/frame_00065.ply",
+      "num_points": 12607,
+      "num_planes": 1,
+      "planes": [
+        {
+          "plane_id": 0,
+          "num_inliers": 9577,
+          "inlier_ratio": 0.759657333227572,
+          "inlier_ratio_total": 0.759657333227572,
+          "rmse": 0.008028290079792904,
+          "mean_abs_dist": 0.005763864778198279,
+          "std_abs_dist": 0.0055884975104178464,
+          "extent_xy": [
+            1.726541080356082,
+            2.779485932647085
+          ],
+          "centroid": [
+            1.197245988674428,
+            0.15560172876006778,
+            0.09228402087199741
+          ],
+          "model": {
+            "n": [
+              -0.9690555214043773,
+              -0.00649029297332357,
+              0.24675751768246268
+            ],
+            "d": 1.138435960698875
+          }
+        }
+      ],
+      "colored_ply": "/home/werikson/ufv/icuas2026/output/planes/home_02_T2_p8/colored_planes_00065.ply",
+      "planes_json": "/home/werikson/ufv/icuas2026/output/planes/home_02_T2_p8/planes_00065.json"
+    },
+    {
+      "frame_idx": 66,
+      "input_file": "/home/werikson/ufv/icuas2026/data/zed_ply/home_02_T2_75_05_02/frame_00066.ply",
+      "num_points": 13164,
+      "num_planes": 2,
+      "planes": [
+        {
+          "plane_id": 0,
+          "num_inliers": 8335,
+          "inlier_ratio": 0.6331662108781525,
+          "inlier_ratio_total": 0.6331662108781525,
+          "rmse": 0.008581981940614406,
+          "mean_abs_dist": 0.0061773512216682135,
+          "std_abs_dist": 0.005957411007575859,
+          "extent_xy": [
+            1.3993343031911074,
+            2.5911731948795413
+          ],
+          "centroid": [
+            1.1924328897076635,
+            0.13047257880303914,
+            0.005601793445583625
+          ],
+          "model": {
+            "n": [
+              -0.9680861766735325,
+              0.011818893141239298,
+              0.2503387071520064
+            ],
+            "d": 1.151433409941229
+          }
+        },
+        {
+          "plane_id": 1,
+          "num_inliers": 2080,
+          "inlier_ratio": 0.4307310002070822,
+          "inlier_ratio_total": 0.15800668489820724,
+          "rmse": 0.009708936353124836,
+          "mean_abs_dist": 0.006913791917457128,
+          "std_abs_dist": 0.0068163719404925,
+          "extent_xy": [
+            2.5198465788266553,
+            0.41530992099805775
+          ],
+          "centroid": [
+            1.1814800760060051,
+            0.17270730689770586,
+            0.6429215165148868
+          ],
+          "model": {
+            "n": [
+              0.3591489778667595,
+              0.11097089147084238,
+              0.9266593079138787
+            ],
+            "d": -1.0392620530140912
+          }
+        }
+      ],
+      "colored_ply": "/home/werikson/ufv/icuas2026/output/planes/home_02_T2_p8/colored_planes_00066.ply",
+      "planes_json": "/home/werikson/ufv/icuas2026/output/planes/home_02_T2_p8/planes_00066.json"
+    },
+    {
+      "frame_idx": 67,
+      "input_file": "/home/werikson/ufv/icuas2026/data/zed_ply/home_02_T2_75_05_02/frame_00067.ply",
+      "num_points": 12460,
+      "num_planes": 2,
+      "planes": [
+        {
+          "plane_id": 0,
+          "num_inliers": 7286,
+          "inlier_ratio": 0.5847512038523275,
+          "inlier_ratio_total": 0.5847512038523275,
+          "rmse": 0.011108302261630143,
+          "mean_abs_dist": 0.007960986720488358,
+          "std_abs_dist": 0.007747068450191038,
+          "extent_xy": [
+            1.421703720423297,
+            2.789125001684746
+          ],
+          "centroid": [
+            1.1412203552883136,
+            0.0537541708103817,
+            -0.1435612150543536
+          ],
+          "model": {
+            "n": [
+              -0.9745992681153619,
+              0.015721423878969912,
+              0.22340345436053305
+            ],
+            "d": 1.143459502273109
+          }
+        },
+        {
+          "plane_id": 1,
+          "num_inliers": 2917,
+          "inlier_ratio": 0.5637804406648628,
+          "inlier_ratio_total": 0.2341091492776886,
+          "rmse": 0.010579808043537108,
+          "mean_abs_dist": 0.007996119815166021,
+          "std_abs_dist": 0.006927799516412249,
+          "extent_xy": [
+            2.475817366728762,
+            0.5563272154694758
+          ],
+          "centroid": [
+            0.9976561329954956,
+            -0.09967530738713178,
+            0.3805960486952162
+          ],
+          "model": {
+            "n": [
+              0.30034779422687885,
+              0.02188837297889268,
+              0.9535785765375528
+            ],
+            "d": -0.6603903269878408
+          }
+        }
+      ],
+      "colored_ply": "/home/werikson/ufv/icuas2026/output/planes/home_02_T2_p8/colored_planes_00067.ply",
+      "planes_json": "/home/werikson/ufv/icuas2026/output/planes/home_02_T2_p8/planes_00067.json"
+    },
+    {
+      "frame_idx": 68,
+      "input_file": "/home/werikson/ufv/icuas2026/data/zed_ply/home_02_T2_75_05_02/frame_00068.ply",
+      "num_points": 10939,
+      "num_planes": 2,
+      "planes": [
+        {
+          "plane_id": 0,
+          "num_inliers": 6434,
+          "inlier_ratio": 0.5881707651522077,
+          "inlier_ratio_total": 0.5881707651522077,
+          "rmse": 0.009967636861458268,
+          "mean_abs_dist": 0.0073937912578319115,
+          "std_abs_dist": 0.006684731515738686,
+          "extent_xy": [
+            1.3698260505344058,
+            2.780226011320388
+          ],
+          "centroid": [
+            1.126231113087475,
+            0.1320072525794074,
+            -0.2520819324688033
+          ],
+          "model": {
+            "n": [
+              -0.9697274825134634,
+              0.028853847871726013,
+              0.24247899934034703
+            ],
+            "d": 1.1494529195755785
+          }
+        },
+        {
+          "plane_id": 1,
+          "num_inliers": 2926,
+          "inlier_ratio": 0.6495005549389568,
+          "inlier_ratio_total": 0.26748331657372704,
+          "rmse": 0.010295417993458589,
+          "mean_abs_dist": 0.007495178348745792,
+          "std_abs_dist": 0.007058182002507671,
+          "extent_xy": [
+            2.3361737291467852,
+            0.8947573707436709
+          ],
+          "centroid": [
+            0.8819882065635568,
+            0.004499881121703879,
+            0.19386855148993576
+          ],
+          "model": {
+            "n": [
+              0.2633970182894058,
+              -0.17233251309258604,
+              0.9491699087557739
+            ],
+            "d": -0.41555178328125664
+          }
+        }
+      ],
+      "colored_ply": "/home/werikson/ufv/icuas2026/output/planes/home_02_T2_p8/colored_planes_00068.ply",
+      "planes_json": "/home/werikson/ufv/icuas2026/output/planes/home_02_T2_p8/planes_00068.json"
+    },
+    {
+      "frame_idx": 69,
+      "input_file": "/home/werikson/ufv/icuas2026/data/zed_ply/home_02_T2_75_05_02/frame_00069.ply",
+      "num_points": 10349,
+      "num_planes": 2,
+      "planes": [
+        {
+          "plane_id": 0,
+          "num_inliers": 6026,
+          "inlier_ratio": 0.5822784810126582,
+          "inlier_ratio_total": 0.5822784810126582,
+          "rmse": 0.009279220781468851,
+          "mean_abs_dist": 0.006808760902717852,
+          "std_abs_dist": 0.0063043408284184765,
+          "extent_xy": [
+            1.345191824514452,
+            2.718160321441603
+          ],
+          "centroid": [
+            1.1181604714418114,
+            0.1374457041146379,
+            -0.2818258694704015
+          ],
+          "model": {
+            "n": [
+              -0.9669350930379494,
+              -0.00880912108685786,
+              0.25487040871268135
+            ],
+            "d": 1.1542284498730875
+          }
+        },
+        {
+          "plane_id": 1,
+          "num_inliers": 2899,
+          "inlier_ratio": 0.6705991209808003,
+          "inlier_ratio_total": 0.28012368344767613,
+          "rmse": 0.010132635592181338,
+          "mean_abs_dist": 0.0072908478080190705,
+          "std_abs_dist": 0.0070366072992773705,
+          "extent_xy": [
+            2.403026703331083,
+            0.9058795065357556
+          ],
+          "centroid": [
+            0.865625671045384,
+            -0.020591040020145147,
+            0.1363775814274056
+          ],
+          "model": {
+            "n": [
+              0.27341401502626433,
+              -0.2098953479693835,
+              0.9387165276525332
+            ],
+            "d": -0.3690160434275874
+          }
+        }
+      ],
+      "colored_ply": "/home/werikson/ufv/icuas2026/output/planes/home_02_T2_p8/colored_planes_00069.ply",
+      "planes_json": "/home/werikson/ufv/icuas2026/output/planes/home_02_T2_p8/planes_00069.json"
+    },
+    {
+      "frame_idx": 70,
+      "input_file": "/home/werikson/ufv/icuas2026/data/zed_ply/home_02_T2_75_05_02/frame_00070.ply",
+      "num_points": 10227,
+      "num_planes": 2,
+      "planes": [
+        {
+          "plane_id": 0,
+          "num_inliers": 5880,
+          "inlier_ratio": 0.5749486652977412,
+          "inlier_ratio_total": 0.5749486652977412,
+          "rmse": 0.008897896642485735,
+          "mean_abs_dist": 0.00661386444910379,
+          "std_abs_dist": 0.00595225685847309,
+          "extent_xy": [
+            1.2756626124628163,
+            2.8447953509584174
+          ],
+          "centroid": [
+            1.1185951982009426,
+            0.12075723930790976,
+            -0.29436444069403783
+          ],
+          "model": {
+            "n": [
+              -0.9649139805306718,
+              0.0005233032728970967,
+              0.26256568003099545
+            ],
+            "d": 1.1565749521877848
+          }
+        },
+        {
+          "plane_id": 1,
+          "num_inliers": 2936,
+          "inlier_ratio": 0.6754083275822407,
+          "inlier_ratio_total": 0.2870832111078518,
+          "rmse": 0.0092236826159649,
+          "mean_abs_dist": 0.006462905500658263,
+          "std_abs_dist": 0.00658081860330569,
+          "extent_xy": [
+            2.388631005921021,
+            0.9207173042208249
+          ],
+          "centroid": [
+            0.8692690543568514,
+            0.017454761224928256,
+            0.13813367455487693
+          ],
+          "model": {
+            "n": [
+              0.2825574234968275,
+              -0.1961365720979277,
+              0.9389844234663901
+            ],
+            "d": -0.37190027605435544
+          }
+        }
+      ],
+      "colored_ply": "/home/werikson/ufv/icuas2026/output/planes/home_02_T2_p8/colored_planes_00070.ply",
+      "planes_json": "/home/werikson/ufv/icuas2026/output/planes/home_02_T2_p8/planes_00070.json"
+    },
+    {
+      "frame_idx": 71,
+      "input_file": "/home/werikson/ufv/icuas2026/data/zed_ply/home_02_T2_75_05_02/frame_00071.ply",
+      "num_points": 15047,
+      "num_planes": 1,
+      "planes": [
+        {
+          "plane_id": 0,
+          "num_inliers": 10679,
+          "inlier_ratio": 0.7097095766597993,
+          "inlier_ratio_total": 0.7097095766597993,
+          "rmse": 0.008885093714657408,
+          "mean_abs_dist": 0.0059082938373325265,
+          "std_abs_dist": 0.006636034527485755,
+          "extent_xy": [
+            1.844281824358886,
+            2.9611049939238088
+          ],
+          "centroid": [
+            1.3113354213823962,
+            0.061911564150663026,
+            0.12237225697997244
+          ],
+          "model": {
+            "n": [
+              -0.9887671832250295,
+              -0.02967937541576713,
+              0.14648751500442272
+            ],
+            "d": 1.2805169195880053
+          }
+        }
+      ],
+      "colored_ply": "/home/werikson/ufv/icuas2026/output/planes/home_02_T2_p8/colored_planes_00071.ply",
+      "planes_json": "/home/werikson/ufv/icuas2026/output/planes/home_02_T2_p8/planes_00071.json"
+    },
+    {
+      "frame_idx": 72,
+      "input_file": "/home/werikson/ufv/icuas2026/data/zed_ply/home_02_T2_75_05_02/frame_00072.ply",
+      "num_points": 14690,
+      "num_planes": 1,
+      "planes": [
+        {
+          "plane_id": 0,
+          "num_inliers": 10305,
+          "inlier_ratio": 0.7014976174268209,
+          "inlier_ratio_total": 0.7014976174268209,
+          "rmse": 0.00926773637878706,
+          "mean_abs_dist": 0.00608935802905007,
+          "std_abs_dist": 0.006986462365227235,
+          "extent_xy": [
+            1.8328609337119701,
+            2.850680916474489
+          ],
+          "centroid": [
+            1.3087949141553152,
+            0.005254710682019578,
+            0.08985706862001981
+          ],
+          "model": {
+            "n": [
+              -0.9886912041123407,
+              0.026088402802094818,
+              0.14767903761240395
+            ],
+            "d": 1.2805869271869688
+          }
+        }
+      ],
+      "colored_ply": "/home/werikson/ufv/icuas2026/output/planes/home_02_T2_p8/colored_planes_00072.ply",
+      "planes_json": "/home/werikson/ufv/icuas2026/output/planes/home_02_T2_p8/planes_00072.json"
+    },
+    {
+      "frame_idx": 73,
+      "input_file": "/home/werikson/ufv/icuas2026/data/zed_ply/home_02_T2_75_05_02/frame_00073.ply",
+      "num_points": 14706,
+      "num_planes": 1,
+      "planes": [
+        {
+          "plane_id": 0,
+          "num_inliers": 10473,
+          "inlier_ratio": 0.7121583027335782,
+          "inlier_ratio_total": 0.7121583027335782,
+          "rmse": 0.008165565326782422,
+          "mean_abs_dist": 0.0054167067643994754,
+          "std_abs_dist": 0.006110298268862191,
+          "extent_xy": [
+            1.8389952580190343,
+            2.9146032983341006
+          ],
+          "centroid": [
+            1.3161133990547431,
+            -0.009855261169988848,
+            0.1174607717904544
+          ],
+          "model": {
+            "n": [
+              -0.9861816034423595,
+              0.023547379923465256,
+              0.16398587113101185
+            ],
+            "d": 1.2788969807850166
+          }
+        }
+      ],
+      "colored_ply": "/home/werikson/ufv/icuas2026/output/planes/home_02_T2_p8/colored_planes_00073.ply",
+      "planes_json": "/home/werikson/ufv/icuas2026/output/planes/home_02_T2_p8/planes_00073.json"
+    },
+    {
+      "frame_idx": 74,
+      "input_file": "/home/werikson/ufv/icuas2026/data/zed_ply/home_02_T2_75_05_02/frame_00074.ply",
+      "num_points": 14474,
+      "num_planes": 1,
+      "planes": [
+        {
+          "plane_id": 0,
+          "num_inliers": 10433,
+          "inlier_ratio": 0.7208097277877573,
+          "inlier_ratio_total": 0.7208097277877573,
+          "rmse": 0.009205008079450383,
+          "mean_abs_dist": 0.005859994076886155,
+          "std_abs_dist": 0.007098777582204278,
+          "extent_xy": [
+            1.793689055303116,
+            2.926721595286821
+          ],
+          "centroid": [
+            1.301459089384851,
+            0.047316600737287696,
+            0.10615186577678491
+          ],
+          "model": {
+            "n": [
+              -0.9892955398590412,
+              -0.0038494114805400223,
+              0.14587500418598795
+            ],
+            "d": 1.2722249096390017
+          }
+        }
+      ],
+      "colored_ply": "/home/werikson/ufv/icuas2026/output/planes/home_02_T2_p8/colored_planes_00074.ply",
+      "planes_json": "/home/werikson/ufv/icuas2026/output/planes/home_02_T2_p8/planes_00074.json"
+    }
+  ]
+}

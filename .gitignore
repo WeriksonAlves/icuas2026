@@ -77,10 +77,7 @@ data/mcaps/
 data/zed_ply/
 
 # All outputs from the planes pipeline
-# output/
-output/planes/my_room/*.ply
-output/planes/my_room/semantic/*.ply
-output/planes/my_room/stable_semantic_2/*.ply
+output/planes/*/*/
 
 # Standalone summary files created at the root
 recolor_summary.json
