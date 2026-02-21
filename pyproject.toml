@@ -1,0 +1,76 @@
+[build-system]
+requires = ["setuptools>=64", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "icuas2026"
+version = "0.1.0"
+description = "ICUAS 2026 3D planes processing and analysis pipeline"
+readme = "README.md"
+requires-python = ">=3.10"
+
+# Ajuste o license conforme o que você realmente for usar (MIT é apenas um placeholder).
+license = { text = "MIT" }
+
+authors = [
+  { name = "Wérikson Frederiko de Oliveira Alves", email = "werikson.alves@ufv.br" }
+]
+
+# Dependências puramente Python (não inclui ROS 2).
+# Pacotes ROS (rclpy, sensor_msgs, etc.) continuam vindo do ambiente ROS/apt.
+dependencies = [
+  "numpy>=1.24",
+  "open3d>=0.17",
+  "matplotlib>=3.8",
+  "pyyaml>=6.0",
+]
+
+[project.optional-dependencies]
+dev = [
+  "black>=24.0.0",
+  "isort>=5.13.0",
+  "flake8>=7.0.0",
+]
+
+[project.urls]
+homepage = "https://github.com/WeriksonAlves/icuas2026"
+repository = "https://github.com/WeriksonAlves/icuas2026"
+
+[tool.setuptools]
+package-dir = { "" = "src" }
+
+[tool.setuptools.packages.find]
+where = ["src"]
+include = ["planes*"]
+exclude = []
+
+# Se no futuro você tiver outros pacotes em src/, pode ajustar include = ["*"].
+
+# -------------------------------------------------------------------------
+# Ferramentas de formatação/estilo (opcional, mas útil).
+# -------------------------------------------------------------------------
+
+[tool.black]
+line-length = 88
+target-version = ["py310"]
+skip-string-normalization = false
+
+[tool.isort]
+profile = "black"
+line_length = 88
+known_first_party = ["planes"]
+src_paths = ["src", "scripts"]
+
+# IMPORTANTE: o flake8 "padrão" não lê pyproject.toml.
+# Para usar estas configs no pyproject, é preciso usar flake8-pyproject
+# ou ferramenta equivalente. Se você preferir, pode mover isso para setup.cfg.
+[tool.flake8]
+max-line-length = 88
+extend-ignore = ["E203", "W503"]
+exclude = [
+  ".git",
+  "__pycache__",
+  ".venv",
+  "build",
+  "dist",
+]

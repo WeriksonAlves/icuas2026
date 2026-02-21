@@ -18,23 +18,12 @@ ros2 run zed2i_data_acquisition zed_reconstruction_node --ros-args --params-file
 
 ros2 bag play data/mcaps/reconstruction_experiment_20251214_122302/zed2i_recording/zed2i_recording_0.mcap --loop
 
-python export_pointcloud2_to_ply.py   --topic /zed/zed_node/point_cloud/cloud_registered   --out_dir data/zed_ply   --max_frames 50   --every_k 10   --voxel 0.02
-
-python scripts/segment_planes_open3d.py   --input data/zed_ply/my_room_01/   --out_dir outputs/my_room_01_p4i2500d004_3   --preset indoor   --max_planes 4   --min_inliers 2500   --distance_threshold 0.04
-
-python -c "import open3d as o3d; p=o3d.io.read_point_cloud('output/my_room_01_p1/colored_planes_00000.ply'); o3d.visualization.draw_geometries([p])"
-
-
-
-
-
-
 python - <<'PY'
 import open3d as o3d
 
-raw = o3d.io.read_point_cloud("data/zed_ply/my_room_01/frame_00000.ply")
-# seg = o3d.io.read_point_cloud("outputs/my_room_01_p4i2500d004_3/colored_planes_00049.ply")
-seg = o3d.io.read_point_cloud("outputs/my_room_01_stable_semantic/stable_semantic_00000.ply")
+raw = o3d.io.read_point_cloud("data/zed_ply/my_room/frame_00049.ply")
+# seg = o3d.io.read_point_cloud("output/planes/my_room/colored_planes_00049.ply")
+seg = o3d.io.read_point_cloud("output/planes/my_room/semantic/stable_semantic_00049.ply")
 
 print("raw points:", len(raw.points))
 print("seg points:", len(seg.points))

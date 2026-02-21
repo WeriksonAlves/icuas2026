@@ -1,26 +1,92 @@
-# Data / experiment artifacts
-data/**
-outputs/**
-output/**
-*.mcap
-*.bag
-*.db3
-*.sqlite3
-*.ply
-*.pcd
-
-# Python
+# -----------------------------------------------------------------------------
+# Python basics
+# -----------------------------------------------------------------------------
 __pycache__/
-*.pyc
+*.py[cod]
+*$py.class
+
+# Compiled extensions
+*.so
+*.pyd
+*.dll
+*.dylib
+
+# -----------------------------------------------------------------------------
+# Virtual environments
+# -----------------------------------------------------------------------------
 .venv/
 venv/
-.ipynb_checkpoints/
+env/
+ENV/
+.venv*/
+venv*/
 
-# OS / editors
-.DS_Store
+# -----------------------------------------------------------------------------
+# Packaging / build artifacts
+# -----------------------------------------------------------------------------
+build/
+dist/
+*.egg-info/
+.eggs/
+pip-wheel-metadata/
+*.egg
+
+# -----------------------------------------------------------------------------
+# Jupyter / notebooks
+# -----------------------------------------------------------------------------
+.ipynb_checkpoints/
+*.ipynb~
+
+# -----------------------------------------------------------------------------
+# Editors / IDEs / OS files
+# -----------------------------------------------------------------------------
 .vscode/
 .idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
 
-# Logs
+# -----------------------------------------------------------------------------
+# Logs / temp
+# -----------------------------------------------------------------------------
 *.log
+*.tmp
+*.bak
+
+# -----------------------------------------------------------------------------
+# ROS / bag / MCAP files
+# -----------------------------------------------------------------------------
+*.bag
+*.db3
+*.mcap
 .ros/
+rviz*.config
+.rviz
+.rqt*
+
+# -----------------------------------------------------------------------------
+# Project data directories (generated or heavy)
+# -----------------------------------------------------------------------------
+# Raw bags and converted MCAPs
+data/bags/
+data/mcaps/
+
+# Point cloud frames exported from ROS2
+data/zed_ply/
+
+# All outputs from the planes pipeline
+# output/
+output/planes/my_room/*.ply
+output/planes/my_room/semantic/*.ply
+output/planes/my_room/semantic/*.ply
+
+# Standalone summary files created at the root
+recolor_summary.json
+
+# -----------------------------------------------------------------------------
+# Misc
+# -----------------------------------------------------------------------------
+# Local experiment metadata, if created outside data/output
+*_local_debug.json
