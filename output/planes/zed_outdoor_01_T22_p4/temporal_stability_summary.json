@@ -5,20 +5,20 @@
     "Floor": {
       "name": "Floor",
       "num_samples": 89,
-      "mean_angle_to_first_deg": 4.360744992480817,
-      "std_angle_to_first_deg": 2.5404460867868788,
-      "max_angle_to_first_deg": 15.163682238868253,
-      "mean_delta_angle_deg": 4.525854297985031,
-      "std_delta_angle_deg": 3.181471432297905,
-      "max_delta_angle_deg": 18.14095183332377,
-      "mean_delta_d": 2.881616474581593,
-      "std_delta_d": 2.681468530365122,
-      "max_delta_d": 7.77085674694925,
-      "mean_delta_centroid": 0.38918919502444815,
-      "std_delta_centroid": 0.29094112569538993,
-      "max_delta_centroid": 2.0341687117894938,
-      "mean_inlier_ratio": 0.6668628214397492,
-      "std_inlier_ratio": 0.1648861568182558
+      "mean_angle_to_first_deg": 4.333286869806804,
+      "std_angle_to_first_deg": 2.5298692956380653,
+      "max_angle_to_first_deg": 14.907432529594818,
+      "mean_delta_angle_deg": 4.489031008564444,
+      "std_delta_angle_deg": 3.1948753425581384,
+      "max_delta_angle_deg": 18.129239166575775,
+      "mean_delta_d": 2.8866371595775036,
+      "std_delta_d": 2.6890314449900643,
+      "max_delta_d": 7.76598985298839,
+      "mean_delta_centroid": 0.40582252916774364,
+      "std_delta_centroid": 0.2940068058262885,
+      "max_delta_centroid": 2.0276630095057806,
+      "mean_inlier_ratio": 0.8679072801284848,
+      "std_inlier_ratio": 0.1053754674586554
     }
   }
 }

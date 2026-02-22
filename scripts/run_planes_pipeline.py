@@ -99,6 +99,16 @@ def parse_args() -> argparse.Namespace:
     )
 
     parser.add_argument(
+        "--preset",
+        type=str,
+        default="indoor",
+        help=(
+            "Preset for plane segmentation (default: 'indoor'). "
+            "Options: 'indoor' or 'outdoor'."
+        ),
+    )
+
+    parser.add_argument(
         "--topic",
         default="/zed/zed_node/point_cloud/cloud_registered",
         help=(
@@ -210,6 +220,8 @@ def main() -> None:
             str(planes_dir),
             "--max_planes",
             str(args.max_planes),
+            "--preset",
+            str(args.preset)
         ]
     )
 
