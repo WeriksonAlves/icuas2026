@@ -93,3 +93,20 @@ python scripts/run_planes_pipeline.py --experiment livox_outdoor_01_T21_541_15_0
   python scripts/analyze_temporal_stability.py \
   --input_dir outputs/zed_outdoor_01_T21_p4/json \
   --out_dir outputs/zed_outdoor_01_T21_p4
+
+
+  python scripts/visualize_pointcloud_sequence.py \
+    --raw_dir data/ply/zed_home_02_T1_90_05_02 \
+    --colored_dir output/planes/home_02_T1_p8/ply_colored \
+    --stable_dir output/planes/home_02_T1_p8/ply_stable_semantic \
+    --fps 5 \
+    --max_points 100000 \
+    --rotate_z_180
+
+  python scripts/visualize_pointcloud_sequence.py \
+    --raw_dir data/ply/zed_home_02_T2_75_05_02 \
+    --colored_dir output/planes/home_02_T2_p8/ply_colored \
+    --stable_dir output/planes/home_02_T2_p8/ply_stable_semantic \
+    --fps 5 \
+    --max_points 100000 \
+    --rotate_z_180
