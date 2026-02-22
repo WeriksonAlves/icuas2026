@@ -72,7 +72,7 @@ rviz*.config
 # Raw bags and converted MCAPs
 data/bags/
 data/mcaps/
-data/ply/
+data/ply/*home_*/
 
 # Point cloud frames exported from ROS2
 data/zed_ply/
