@@ -78,7 +78,7 @@ data/ply/
 data/zed_ply/
 
 # All outputs from the planes pipeline
-output/planes/*/*/
+output/planes/home_*/*/
 
 # Standalone summary files created at the root
 recolor_summary.json

@@ -104,9 +104,9 @@ python scripts/run_planes_pipeline.py --experiment livox_outdoor_01_T21_541_15_0
     --rotate_z_180
 
   python scripts/visualize_pointcloud_sequence.py \
-    --raw_dir data/ply/zed_home_02_T2_75_05_02 \
-    --colored_dir output/planes/home_02_T2_p8/ply_colored \
-    --stable_dir output/planes/home_02_T2_p8/ply_stable_semantic \
-    --fps 5 \
+    --raw_dir data/ply/zed_lab_01_T1_50_10_02 \
+    --colored_dir output/planes/lab_01_T1_p8/ply_colored \
+    --stable_dir output/planes/lab_01_T1_p8/ply_stable_semantic \
+    --fps 1 \
     --max_points 100000 \
     --rotate_z_180
