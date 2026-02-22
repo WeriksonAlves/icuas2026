@@ -1,0 +1,24 @@
+{
+  "input_dir": "/home/werikson/ufv/icuas2026/output/planes/zed_outdoor_01_p4/json",
+  "num_series": 1,
+  "series": {
+    "Floor": {
+      "name": "Floor",
+      "num_samples": 89,
+      "mean_angle_to_first_deg": 4.360744992480817,
+      "std_angle_to_first_deg": 2.5404460867868788,
+      "max_angle_to_first_deg": 15.163682238868253,
+      "mean_delta_angle_deg": 4.525854297985031,
+      "std_delta_angle_deg": 3.181471432297905,
+      "max_delta_angle_deg": 18.14095183332377,
+      "mean_delta_d": 2.881616474581593,
+      "std_delta_d": 2.681468530365122,
+      "max_delta_d": 7.77085674694925,
+      "mean_delta_centroid": 0.38918919502444815,
+      "std_delta_centroid": 0.29094112569538993,
+      "max_delta_centroid": 2.0341687117894938,
+      "mean_inlier_ratio": 0.6668628214397492,
+      "std_inlier_ratio": 0.1648861568182558
+    }
+  }
+}
