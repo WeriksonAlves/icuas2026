@@ -71,4 +71,25 @@ python scripts/recolor_by_stable_class.py \
   --distance_threshold 0.04
 
 
-python scripts/run_planes_pipeline.py --experiment home_02_T2_75_05_02 --max_planes 8
+python scripts/run_planes_pipeline.py --experiment livox_outdoor_01_T21_541_15_03 --max_planes 4
+
+(.venv) python scripts/classify_tracks_stably.py \
+  --tracks output/planes/zed_outdoor_01_T21_p4/plane_tracks.json \
+  --confidence output/planes/zed_outdoor_01_T21_p4/track_confidence.json \
+  --output output/planes/zed_outdoor_01_T21_p4/classification_stable.json \
+  --vertical_axis 0 0 1 \
+  --horiz_angle_max 30 \
+  --min_table_height_diff 0.20 \
+  --vertical_band_center 90 \
+  --vertical_band_half_width 30 \
+  --min_confidence 0.2
+
+  (.venv) python scripts/recolor_by_stable_class.py \
+  --input_dir data/ply/livox_outdoor_01_T22_275_15_03 \
+  --classification output/planes/zed_outdoor_01_T21_p4/classification_stable.json \
+  --out_dir output/planes/zed_outdoor_01_T21_p4/recolored_livox \
+  --distance_threshold 0.05
+
+  python scripts/analyze_temporal_stability.py \
+  --input_dir outputs/zed_outdoor_01_T21_p4/json \
+  --out_dir outputs/zed_outdoor_01_T21_p4

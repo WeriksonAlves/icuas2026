@@ -1,0 +1,198 @@
+{
+  "tracks_file": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/plane_tracks.json",
+  "confidence_file": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/track_confidence.json",
+  "vertical_axis": [
+    1.0,
+    0.0,
+    0.0
+  ],
+  "selected_tracks": {
+    "floor_track_id": null,
+    "table_track_id": null,
+    "main_wall_track_id": null
+  },
+  "tracks_summary": [
+    {
+      "track_id": 7,
+      "num_detections": 3,
+      "mean_normal": [
+        0.7399082299215444,
+        -0.04422858008994358,
+        0.6712522953387902
+      ],
+      "mean_centroid": [
+        1.3585158582185033,
+        0.03353140241688401,
+        2.906835355327708
+      ],
+      "mean_inlier_ratio": 0.7108785830258632,
+      "angle_to_vertical_deg": 42.276401244799395,
+      "height_along_vertical": 1.3585158582185033,
+      "confidence_score": 0.5440004860970666
+    },
+    {
+      "track_id": 16,
+      "num_detections": 3,
+      "mean_normal": [
+        0.7212087492982046,
+        -0.007115372684718078,
+        0.6926812480551766
+      ],
+      "mean_centroid": [
+        0.13962168027466987,
+        0.00525351069174312,
+        1.790588611395987
+      ],
+      "mean_inlier_ratio": 0.7897023122724126,
+      "angle_to_vertical_deg": 43.84563260405032,
+      "height_along_vertical": 0.13962168027466987,
+      "confidence_score": 0.5957700537503248
+    },
+    {
+      "track_id": 20,
+      "num_detections": 4,
+      "mean_normal": [
+        0.7169275030456091,
+        -0.038766129262663915,
+        0.6960690645322335
+      ],
+      "mean_centroid": [
+        2.226540525786992,
+        -0.8949676992337747,
+        0.21150243058465423
+      ],
+      "mean_inlier_ratio": 0.5939724053833335,
+      "angle_to_vertical_deg": 44.19861145244867,
+      "height_along_vertical": 2.226540525786992,
+      "confidence_score": 0.5178739874423203
+    },
+    {
+      "track_id": 25,
+      "num_detections": 5,
+      "mean_normal": [
+        0.7116518202089479,
+        -0.027282238515125613,
+        0.7020023976133523
+      ],
+      "mean_centroid": [
+        1.0682239880192381,
+        0.0030657101394372206,
+        2.537682966197192
+      ],
+      "mean_inlier_ratio": 0.7140096500828811,
+      "angle_to_vertical_deg": 44.630528625864876,
+      "height_along_vertical": 1.0682239880192381,
+      "confidence_score": 0.5359783658570086
+    },
+    {
+      "track_id": 40,
+      "num_detections": 3,
+      "mean_normal": [
+        0.735390500303088,
+        -0.007036123848090621,
+        0.6776070432228167
+      ],
+      "mean_centroid": [
+        0.7633007942612031,
+        -0.022282641758411686,
+        0.3035236110803804
+      ],
+      "mean_inlier_ratio": 0.7015240162387895,
+      "angle_to_vertical_deg": 42.6597768249253,
+      "height_along_vertical": 0.7633007942612031,
+      "confidence_score": 0.49643954643125326
+    }
+  ],
+  "frames": {
+    "72": {
+      "floor": null,
+      "table": null,
+      "main_wall": null
+    },
+    "73": {
+      "floor": null,
+      "table": null,
+      "main_wall": null
+    },
+    "74": {
+      "floor": null,
+      "table": null,
+      "main_wall": null
+    },
+    "93": {
+      "floor": null,
+      "table": null,
+      "main_wall": null
+    },
+    "94": {
+      "floor": null,
+      "table": null,
+      "main_wall": null
+    },
+    "95": {
+      "floor": null,
+      "table": null,
+      "main_wall": null
+    },
+    "101": {
+      "floor": null,
+      "table": null,
+      "main_wall": null
+    },
+    "102": {
+      "floor": null,
+      "table": null,
+      "main_wall": null
+    },
+    "103": {
+      "floor": null,
+      "table": null,
+      "main_wall": null
+    },
+    "106": {
+      "floor": null,
+      "table": null,
+      "main_wall": null
+    },
+    "111": {
+      "floor": null,
+      "table": null,
+      "main_wall": null
+    },
+    "112": {
+      "floor": null,
+      "table": null,
+      "main_wall": null
+    },
+    "113": {
+      "floor": null,
+      "table": null,
+      "main_wall": null
+    },
+    "114": {
+      "floor": null,
+      "table": null,
+      "main_wall": null
+    },
+    "115": {
+      "floor": null,
+      "table": null,
+      "main_wall": null
+    },
+    "139": {
+      "floor": null,
+      "table": null,
+      "main_wall": null
+    },
+    "140": {
+      "floor": null,
+      "table": null,
+      "main_wall": null
+    },
+    "141": {
+      "floor": null,
+      "table": null,
+      "main_wall": null
+    }
+  }
+}

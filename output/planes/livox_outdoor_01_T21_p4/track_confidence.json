@@ -1,0 +1,78 @@
+{
+  "tracks_file": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/plane_tracks.json",
+  "total_frames": 28,
+  "tracks_confidence": [
+    {
+      "track_id": 40,
+      "num_detections": 3,
+      "persistence_ratio": 0.10714285714285714,
+      "std_angle_deg": 0.7311148188205565,
+      "std_d": 0.013988966716449046,
+      "std_inlier_ratio": 0.010121772504238347,
+      "confidence_score": 0.5800624617112162
+    },
+    {
+      "track_id": 26,
+      "num_detections": 4,
+      "persistence_ratio": 0.14285714285714285,
+      "std_angle_deg": 0.9853444360737058,
+      "std_d": 0.19579416834454577,
+      "std_inlier_ratio": 0.006307910178229984,
+      "confidence_score": 0.5354615799488517
+    },
+    {
+      "track_id": 35,
+      "num_detections": 5,
+      "persistence_ratio": 0.17857142857142858,
+      "std_angle_deg": 1.1832157483656522,
+      "std_d": 0.16263781375554834,
+      "std_inlier_ratio": 0.014598763406573196,
+      "confidence_score": 0.5337497175554594
+    },
+    {
+      "track_id": 41,
+      "num_detections": 3,
+      "persistence_ratio": 0.10714285714285714,
+      "std_angle_deg": 1.2652487548356526,
+      "std_d": 0.004656680231161491,
+      "std_inlier_ratio": 0.017649784945595583,
+      "confidence_score": 0.5331227043451741
+    },
+    {
+      "track_id": 51,
+      "num_detections": 3,
+      "persistence_ratio": 0.10714285714285714,
+      "std_angle_deg": 1.5120016260500733,
+      "std_d": 0.07938649112875049,
+      "std_inlier_ratio": 0.006356407958093983,
+      "confidence_score": 0.5058169802296
+    },
+    {
+      "track_id": 23,
+      "num_detections": 3,
+      "persistence_ratio": 0.10714285714285714,
+      "std_angle_deg": 1.605314140751337,
+      "std_d": 0.10284621999734196,
+      "std_inlier_ratio": 0.009901940634864466,
+      "confidence_score": 0.496361880879482
+    },
+    {
+      "track_id": 19,
+      "num_detections": 4,
+      "persistence_ratio": 0.14285714285714285,
+      "std_angle_deg": 1.868011362070157,
+      "std_d": 0.12549324907665513,
+      "std_inlier_ratio": 0.023331085075595028,
+      "confidence_score": 0.48917291459567896
+    },
+    {
+      "track_id": 50,
+      "num_detections": 3,
+      "persistence_ratio": 0.10714285714285714,
+      "std_angle_deg": 1.8243555687037203,
+      "std_d": 0.13598341718038984,
+      "std_inlier_ratio": 0.018589951724188238,
+      "confidence_score": 0.47938623838527583
+    }
+  ]
+}

@@ -1,0 +1,302 @@
+{
+  "tracks_file": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/plane_tracks.json",
+  "confidence_file": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/track_confidence.json",
+  "vertical_axis": [
+    1.0,
+    0.0,
+    0.0
+  ],
+  "selected_tracks": {
+    "floor_track_id": null,
+    "table_track_id": null,
+    "main_wall_track_id": null
+  },
+  "tracks_summary": [
+    {
+      "track_id": 19,
+      "num_detections": 4,
+      "mean_normal": [
+        0.7079162763904857,
+        -0.048311047056926376,
+        0.7046421704338258
+      ],
+      "mean_centroid": [
+        2.5676028258856207,
+        -0.8711119354745198,
+        3.438536940871028
+      ],
+      "mean_inlier_ratio": 0.4864121236594905,
+      "angle_to_vertical_deg": 44.93437024107601,
+      "height_along_vertical": 2.5676028258856207,
+      "confidence_score": 0.48917291459567896
+    },
+    {
+      "track_id": 23,
+      "num_detections": 3,
+      "mean_normal": [
+        0.7098655760596855,
+        -0.03296902545941361,
+        0.7035651407550743
+      ],
+      "mean_centroid": [
+        3.0017634716839496,
+        -1.1103845032286612,
+        3.5274827098818693
+      ],
+      "mean_inlier_ratio": 0.3908788124343739,
+      "angle_to_vertical_deg": 44.7760207195434,
+      "height_along_vertical": 3.0017634716839496,
+      "confidence_score": 0.496361880879482
+    },
+    {
+      "track_id": 26,
+      "num_detections": 4,
+      "mean_normal": [
+        0.6944973264727613,
+        -0.017783446905502254,
+        0.7192754775038185
+      ],
+      "mean_centroid": [
+        3.6563995082941303,
+        -0.6679313613717983,
+        3.4959848448670368
+      ],
+      "mean_inlier_ratio": 0.4289307260581021,
+      "angle_to_vertical_deg": 46.01282584889675,
+      "height_along_vertical": 3.6563995082941303,
+      "confidence_score": 0.5354615799488517
+    },
+    {
+      "track_id": 35,
+      "num_detections": 5,
+      "mean_normal": [
+        0.7183246462648428,
+        -0.03007755964065959,
+        0.6950575824883511
+      ],
+      "mean_centroid": [
+        2.9980517702790594,
+        -0.2654803038751888,
+        3.726823255016165
+      ],
+      "mean_inlier_ratio": 0.5011191081793667,
+      "angle_to_vertical_deg": 44.08366720087656,
+      "height_along_vertical": 2.9980517702790594,
+      "confidence_score": 0.5337497175554594
+    },
+    {
+      "track_id": 40,
+      "num_detections": 3,
+      "mean_normal": [
+        0.7369923032726997,
+        -0.03554493397064252,
+        0.6749658529035552
+      ],
+      "mean_centroid": [
+        3.1841001948334253,
+        -0.22270362909412977,
+        3.630834119297004
+      ],
+      "mean_inlier_ratio": 0.5118393554197264,
+      "angle_to_vertical_deg": 42.524167699712805,
+      "height_along_vertical": 3.1841001948334253,
+      "confidence_score": 0.5800624617112162
+    },
+    {
+      "track_id": 41,
+      "num_detections": 3,
+      "mean_normal": [
+        0.7231330535933611,
+        -0.030812499686849425,
+        0.6900211421860847
+      ],
+      "mean_centroid": [
+        2.8885744116433174,
+        0.08544374707409796,
+        4.002281877331498
+      ],
+      "mean_inlier_ratio": 0.5331561584251504,
+      "angle_to_vertical_deg": 43.68623933006369,
+      "height_along_vertical": 2.8885744116433174,
+      "confidence_score": 0.5331227043451741
+    },
+    {
+      "track_id": 50,
+      "num_detections": 3,
+      "mean_normal": [
+        0.728927279056085,
+        -0.01353265168479659,
+        0.6844573684213432
+      ],
+      "mean_centroid": [
+        -0.12528516745235552,
+        0.0857444989934995,
+        1.3921725057952354
+      ],
+      "mean_inlier_ratio": 0.7829539100293026,
+      "angle_to_vertical_deg": 43.20346069776123,
+      "height_along_vertical": -0.12528516745235552,
+      "confidence_score": 0.47938623838527583
+    },
+    {
+      "track_id": 51,
+      "num_detections": 3,
+      "mean_normal": [
+        0.7302020253236684,
+        -0.03062545243708502,
+        0.6825445654872923
+      ],
+      "mean_centroid": [
+        -0.6394910518519724,
+        0.026136241732525513,
+        1.3684000117873507
+      ],
+      "mean_inlier_ratio": 0.7655862210460178,
+      "angle_to_vertical_deg": 43.09666677721133,
+      "height_along_vertical": -0.6394910518519724,
+      "confidence_score": 0.5058169802296
+    }
+  ],
+  "frames": {
+    "308": {
+      "floor": null,
+      "table": null,
+      "main_wall": null
+    },
+    "309": {
+      "floor": null,
+      "table": null,
+      "main_wall": null
+    },
+    "310": {
+      "floor": null,
+      "table": null,
+      "main_wall": null
+    },
+    "311": {
+      "floor": null,
+      "table": null,
+      "main_wall": null
+    },
+    "327": {
+      "floor": null,
+      "table": null,
+      "main_wall": null
+    },
+    "328": {
+      "floor": null,
+      "table": null,
+      "main_wall": null
+    },
+    "329": {
+      "floor": null,
+      "table": null,
+      "main_wall": null
+    },
+    "347": {
+      "floor": null,
+      "table": null,
+      "main_wall": null
+    },
+    "350": {
+      "floor": null,
+      "table": null,
+      "main_wall": null
+    },
+    "351": {
+      "floor": null,
+      "table": null,
+      "main_wall": null
+    },
+    "352": {
+      "floor": null,
+      "table": null,
+      "main_wall": null
+    },
+    "367": {
+      "floor": null,
+      "table": null,
+      "main_wall": null
+    },
+    "368": {
+      "floor": null,
+      "table": null,
+      "main_wall": null
+    },
+    "369": {
+      "floor": null,
+      "table": null,
+      "main_wall": null
+    },
+    "370": {
+      "floor": null,
+      "table": null,
+      "main_wall": null
+    },
+    "371": {
+      "floor": null,
+      "table": null,
+      "main_wall": null
+    },
+    "386": {
+      "floor": null,
+      "table": null,
+      "main_wall": null
+    },
+    "387": {
+      "floor": null,
+      "table": null,
+      "main_wall": null
+    },
+    "388": {
+      "floor": null,
+      "table": null,
+      "main_wall": null
+    },
+    "389": {
+      "floor": null,
+      "table": null,
+      "main_wall": null
+    },
+    "390": {
+      "floor": null,
+      "table": null,
+      "main_wall": null
+    },
+    "391": {
+      "floor": null,
+      "table": null,
+      "main_wall": null
+    },
+    "406": {
+      "floor": null,
+      "table": null,
+      "main_wall": null
+    },
+    "407": {
+      "floor": null,
+      "table": null,
+      "main_wall": null
+    },
+    "408": {
+      "floor": null,
+      "table": null,
+      "main_wall": null
+    },
+    "409": {
+      "floor": null,
+      "table": null,
+      "main_wall": null
+    },
+    "410": {
+      "floor": null,
+      "table": null,
+      "main_wall": null
+    },
+    "411": {
+      "floor": null,
+      "table": null,
+      "main_wall": null
+    }
+  }
+}
