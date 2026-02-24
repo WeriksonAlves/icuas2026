@@ -1,0 +1,53 @@
+{
+  "frame_idx": 369,
+  "input_file": "/home/werikson/ufv/icuas2026/data/ply/livox_outdoor_01_T21_541_15_03/frame_00369.ply",
+  "preset": "outdoor",
+  "params": {
+    "max_planes": 4,
+    "min_inliers": 1500,
+    "distance_threshold": 0.06,
+    "ransac_n": 3,
+    "num_iterations": 2000,
+    "sor_nb_neighbors": 20,
+    "sor_std_ratio": 2.5
+  },
+  "num_points": 4357,
+  "planes": [
+    {
+      "plane_id": 0,
+      "num_inliers": 2254,
+      "inlier_ratio": 0.5173284369979344,
+      "inlier_ratio_total": 0.5173284369979344,
+      "rmse": 0.02302765732806037,
+      "mean_abs_dist": 0.018370280706412046,
+      "std_abs_dist": 0.01388545241561102,
+      "extent_xy": [
+        31.35417741928979,
+        21.835951307293737
+      ],
+      "centroid": [
+        2.840427018420857,
+        -0.22688871626272525,
+        3.9131749486013554
+      ],
+      "model": {
+        "n": [
+          0.6995366019391636,
+          -0.021746138713786393,
+          0.714265810464458
+        ],
+        "d": -4.786963694170719
+      }
+    }
+  ],
+  "classification": {
+    "vertical_axis": [
+      0.0,
+      0.0,
+      1.0
+    ],
+    "floor_plane_id": null,
+    "table_plane_id": null,
+    "main_wall_plane_id": null
+  }
+}

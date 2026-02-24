@@ -1,0 +1,53 @@
+{
+  "frame_idx": 75,
+  "input_file": "/home/werikson/ufv/icuas2026/data/ply/zed_outdoor_01_T22_275_03_03/frame_00075.ply",
+  "preset": "outdoor",
+  "params": {
+    "max_planes": 4,
+    "min_inliers": 1500,
+    "distance_threshold": 0.06,
+    "ransac_n": 3,
+    "num_iterations": 2000,
+    "sor_nb_neighbors": 20,
+    "sor_std_ratio": 2.5
+  },
+  "num_points": 25226,
+  "planes": [
+    {
+      "plane_id": 0,
+      "num_inliers": 23749,
+      "inlier_ratio": 0.9414492983429794,
+      "inlier_ratio_total": 0.9414492983429794,
+      "rmse": 0.022510487954268934,
+      "mean_abs_dist": 0.017931945785997334,
+      "std_abs_dist": 0.01360762243256842,
+      "extent_xy": [
+        3.340344842120522,
+        5.752966956773035
+      ],
+      "centroid": [
+        2.3534388761632625,
+        0.07531329481431978,
+        0.07755282551247743
+      ],
+      "model": {
+        "n": [
+          -0.9995584356806466,
+          0.01773726563108072,
+          0.023839527419631877
+        ],
+        "d": 2.349215006901822
+      }
+    }
+  ],
+  "classification": {
+    "vertical_axis": [
+      1.0,
+      0.0,
+      0.0
+    ],
+    "floor_plane_id": 0,
+    "table_plane_id": null,
+    "main_wall_plane_id": null
+  }
+}

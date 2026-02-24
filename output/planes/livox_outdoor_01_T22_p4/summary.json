@@ -1,0 +1,4293 @@
+{
+  "input": "/home/werikson/ufv/icuas2026/data/ply/livox_outdoor_01_T22_275_15_03",
+  "out_dir": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4",
+  "preset": "outdoor",
+  "num_frames": 275,
+  "processed_frames": 275,
+  "frames": [
+    {
+      "frame_idx": 0,
+      "input_file": "/home/werikson/ufv/icuas2026/data/ply/livox_outdoor_01_T22_275_15_03/frame_00000.ply",
+      "num_points": 1030,
+      "num_planes": 0,
+      "planes": [],
+      "colored_ply": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/ply_colored/planes_00000.ply",
+      "planes_json": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/json/planes_00000.json"
+    },
+    {
+      "frame_idx": 1,
+      "input_file": "/home/werikson/ufv/icuas2026/data/ply/livox_outdoor_01_T22_275_15_03/frame_00001.ply",
+      "num_points": 791,
+      "num_planes": 0,
+      "planes": [],
+      "colored_ply": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/ply_colored/planes_00001.ply",
+      "planes_json": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/json/planes_00001.json"
+    },
+    {
+      "frame_idx": 2,
+      "input_file": "/home/werikson/ufv/icuas2026/data/ply/livox_outdoor_01_T22_275_15_03/frame_00002.ply",
+      "num_points": 1036,
+      "num_planes": 0,
+      "planes": [],
+      "colored_ply": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/ply_colored/planes_00002.ply",
+      "planes_json": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/json/planes_00002.json"
+    },
+    {
+      "frame_idx": 3,
+      "input_file": "/home/werikson/ufv/icuas2026/data/ply/livox_outdoor_01_T22_275_15_03/frame_00003.ply",
+      "num_points": 1423,
+      "num_planes": 0,
+      "planes": [],
+      "colored_ply": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/ply_colored/planes_00003.ply",
+      "planes_json": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/json/planes_00003.json"
+    },
+    {
+      "frame_idx": 4,
+      "input_file": "/home/werikson/ufv/icuas2026/data/ply/livox_outdoor_01_T22_275_15_03/frame_00004.ply",
+      "num_points": 1039,
+      "num_planes": 0,
+      "planes": [],
+      "colored_ply": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/ply_colored/planes_00004.ply",
+      "planes_json": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/json/planes_00004.json"
+    },
+    {
+      "frame_idx": 5,
+      "input_file": "/home/werikson/ufv/icuas2026/data/ply/livox_outdoor_01_T22_275_15_03/frame_00005.ply",
+      "num_points": 1039,
+      "num_planes": 0,
+      "planes": [],
+      "colored_ply": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/ply_colored/planes_00005.ply",
+      "planes_json": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/json/planes_00005.json"
+    },
+    {
+      "frame_idx": 6,
+      "input_file": "/home/werikson/ufv/icuas2026/data/ply/livox_outdoor_01_T22_275_15_03/frame_00006.ply",
+      "num_points": 1128,
+      "num_planes": 0,
+      "planes": [],
+      "colored_ply": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/ply_colored/planes_00006.ply",
+      "planes_json": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/json/planes_00006.json"
+    },
+    {
+      "frame_idx": 7,
+      "input_file": "/home/werikson/ufv/icuas2026/data/ply/livox_outdoor_01_T22_275_15_03/frame_00007.ply",
+      "num_points": 1210,
+      "num_planes": 0,
+      "planes": [],
+      "colored_ply": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/ply_colored/planes_00007.ply",
+      "planes_json": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/json/planes_00007.json"
+    },
+    {
+      "frame_idx": 8,
+      "input_file": "/home/werikson/ufv/icuas2026/data/ply/livox_outdoor_01_T22_275_15_03/frame_00008.ply",
+      "num_points": 503,
+      "num_planes": 0,
+      "planes": [],
+      "colored_ply": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/ply_colored/planes_00008.ply",
+      "planes_json": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/json/planes_00008.json"
+    },
+    {
+      "frame_idx": 9,
+      "input_file": "/home/werikson/ufv/icuas2026/data/ply/livox_outdoor_01_T22_275_15_03/frame_00009.ply",
+      "num_points": 1119,
+      "num_planes": 0,
+      "planes": [],
+      "colored_ply": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/ply_colored/planes_00009.ply",
+      "planes_json": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/json/planes_00009.json"
+    },
+    {
+      "frame_idx": 10,
+      "input_file": "/home/werikson/ufv/icuas2026/data/ply/livox_outdoor_01_T22_275_15_03/frame_00010.ply",
+      "num_points": 1086,
+      "num_planes": 0,
+      "planes": [],
+      "colored_ply": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/ply_colored/planes_00010.ply",
+      "planes_json": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/json/planes_00010.json"
+    },
+    {
+      "frame_idx": 11,
+      "input_file": "/home/werikson/ufv/icuas2026/data/ply/livox_outdoor_01_T22_275_15_03/frame_00011.ply",
+      "num_points": 1073,
+      "num_planes": 0,
+      "planes": [],
+      "colored_ply": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/ply_colored/planes_00011.ply",
+      "planes_json": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/json/planes_00011.json"
+    },
+    {
+      "frame_idx": 12,
+      "input_file": "/home/werikson/ufv/icuas2026/data/ply/livox_outdoor_01_T22_275_15_03/frame_00012.ply",
+      "num_points": 1004,
+      "num_planes": 0,
+      "planes": [],
+      "colored_ply": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/ply_colored/planes_00012.ply",
+      "planes_json": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/json/planes_00012.json"
+    },
+    {
+      "frame_idx": 13,
+      "input_file": "/home/werikson/ufv/icuas2026/data/ply/livox_outdoor_01_T22_275_15_03/frame_00013.ply",
+      "num_points": 946,
+      "num_planes": 0,
+      "planes": [],
+      "colored_ply": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/ply_colored/planes_00013.ply",
+      "planes_json": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/json/planes_00013.json"
+    },
+    {
+      "frame_idx": 14,
+      "input_file": "/home/werikson/ufv/icuas2026/data/ply/livox_outdoor_01_T22_275_15_03/frame_00014.ply",
+      "num_points": 985,
+      "num_planes": 0,
+      "planes": [],
+      "colored_ply": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/ply_colored/planes_00014.ply",
+      "planes_json": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/json/planes_00014.json"
+    },
+    {
+      "frame_idx": 15,
+      "input_file": "/home/werikson/ufv/icuas2026/data/ply/livox_outdoor_01_T22_275_15_03/frame_00015.ply",
+      "num_points": 1009,
+      "num_planes": 0,
+      "planes": [],
+      "colored_ply": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/ply_colored/planes_00015.ply",
+      "planes_json": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/json/planes_00015.json"
+    },
+    {
+      "frame_idx": 16,
+      "input_file": "/home/werikson/ufv/icuas2026/data/ply/livox_outdoor_01_T22_275_15_03/frame_00016.ply",
+      "num_points": 1205,
+      "num_planes": 0,
+      "planes": [],
+      "colored_ply": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/ply_colored/planes_00016.ply",
+      "planes_json": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/json/planes_00016.json"
+    },
+    {
+      "frame_idx": 17,
+      "input_file": "/home/werikson/ufv/icuas2026/data/ply/livox_outdoor_01_T22_275_15_03/frame_00017.ply",
+      "num_points": 1351,
+      "num_planes": 0,
+      "planes": [],
+      "colored_ply": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/ply_colored/planes_00017.ply",
+      "planes_json": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/json/planes_00017.json"
+    },
+    {
+      "frame_idx": 18,
+      "input_file": "/home/werikson/ufv/icuas2026/data/ply/livox_outdoor_01_T22_275_15_03/frame_00018.ply",
+      "num_points": 1320,
+      "num_planes": 0,
+      "planes": [],
+      "colored_ply": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/ply_colored/planes_00018.ply",
+      "planes_json": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/json/planes_00018.json"
+    },
+    {
+      "frame_idx": 19,
+      "input_file": "/home/werikson/ufv/icuas2026/data/ply/livox_outdoor_01_T22_275_15_03/frame_00019.ply",
+      "num_points": 1130,
+      "num_planes": 0,
+      "planes": [],
+      "colored_ply": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/ply_colored/planes_00019.ply",
+      "planes_json": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/json/planes_00019.json"
+    },
+    {
+      "frame_idx": 20,
+      "input_file": "/home/werikson/ufv/icuas2026/data/ply/livox_outdoor_01_T22_275_15_03/frame_00020.ply",
+      "num_points": 1083,
+      "num_planes": 0,
+      "planes": [],
+      "colored_ply": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/ply_colored/planes_00020.ply",
+      "planes_json": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/json/planes_00020.json"
+    },
+    {
+      "frame_idx": 21,
+      "input_file": "/home/werikson/ufv/icuas2026/data/ply/livox_outdoor_01_T22_275_15_03/frame_00021.ply",
+      "num_points": 1027,
+      "num_planes": 0,
+      "planes": [],
+      "colored_ply": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/ply_colored/planes_00021.ply",
+      "planes_json": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/json/planes_00021.json"
+    },
+    {
+      "frame_idx": 22,
+      "input_file": "/home/werikson/ufv/icuas2026/data/ply/livox_outdoor_01_T22_275_15_03/frame_00022.ply",
+      "num_points": 1013,
+      "num_planes": 0,
+      "planes": [],
+      "colored_ply": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/ply_colored/planes_00022.ply",
+      "planes_json": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/json/planes_00022.json"
+    },
+    {
+      "frame_idx": 23,
+      "input_file": "/home/werikson/ufv/icuas2026/data/ply/livox_outdoor_01_T22_275_15_03/frame_00023.ply",
+      "num_points": 1240,
+      "num_planes": 0,
+      "planes": [],
+      "colored_ply": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/ply_colored/planes_00023.ply",
+      "planes_json": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/json/planes_00023.json"
+    },
+    {
+      "frame_idx": 24,
+      "input_file": "/home/werikson/ufv/icuas2026/data/ply/livox_outdoor_01_T22_275_15_03/frame_00024.ply",
+      "num_points": 1026,
+      "num_planes": 0,
+      "planes": [],
+      "colored_ply": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/ply_colored/planes_00024.ply",
+      "planes_json": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/json/planes_00024.json"
+    },
+    {
+      "frame_idx": 25,
+      "input_file": "/home/werikson/ufv/icuas2026/data/ply/livox_outdoor_01_T22_275_15_03/frame_00025.ply",
+      "num_points": 175,
+      "num_planes": 0,
+      "planes": [],
+      "colored_ply": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/ply_colored/planes_00025.ply",
+      "planes_json": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/json/planes_00025.json"
+    },
+    {
+      "frame_idx": 26,
+      "input_file": "/home/werikson/ufv/icuas2026/data/ply/livox_outdoor_01_T22_275_15_03/frame_00026.ply",
+      "num_points": 1111,
+      "num_planes": 0,
+      "planes": [],
+      "colored_ply": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/ply_colored/planes_00026.ply",
+      "planes_json": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/json/planes_00026.json"
+    },
+    {
+      "frame_idx": 27,
+      "input_file": "/home/werikson/ufv/icuas2026/data/ply/livox_outdoor_01_T22_275_15_03/frame_00027.ply",
+      "num_points": 1164,
+      "num_planes": 0,
+      "planes": [],
+      "colored_ply": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/ply_colored/planes_00027.ply",
+      "planes_json": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/json/planes_00027.json"
+    },
+    {
+      "frame_idx": 28,
+      "input_file": "/home/werikson/ufv/icuas2026/data/ply/livox_outdoor_01_T22_275_15_03/frame_00028.ply",
+      "num_points": 807,
+      "num_planes": 0,
+      "planes": [],
+      "colored_ply": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/ply_colored/planes_00028.ply",
+      "planes_json": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/json/planes_00028.json"
+    },
+    {
+      "frame_idx": 29,
+      "input_file": "/home/werikson/ufv/icuas2026/data/ply/livox_outdoor_01_T22_275_15_03/frame_00029.ply",
+      "num_points": 1030,
+      "num_planes": 0,
+      "planes": [],
+      "colored_ply": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/ply_colored/planes_00029.ply",
+      "planes_json": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/json/planes_00029.json"
+    },
+    {
+      "frame_idx": 30,
+      "input_file": "/home/werikson/ufv/icuas2026/data/ply/livox_outdoor_01_T22_275_15_03/frame_00030.ply",
+      "num_points": 1090,
+      "num_planes": 0,
+      "planes": [],
+      "colored_ply": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/ply_colored/planes_00030.ply",
+      "planes_json": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/json/planes_00030.json"
+    },
+    {
+      "frame_idx": 31,
+      "input_file": "/home/werikson/ufv/icuas2026/data/ply/livox_outdoor_01_T22_275_15_03/frame_00031.ply",
+      "num_points": 956,
+      "num_planes": 0,
+      "planes": [],
+      "colored_ply": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/ply_colored/planes_00031.ply",
+      "planes_json": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/json/planes_00031.json"
+    },
+    {
+      "frame_idx": 32,
+      "input_file": "/home/werikson/ufv/icuas2026/data/ply/livox_outdoor_01_T22_275_15_03/frame_00032.ply",
+      "num_points": 990,
+      "num_planes": 0,
+      "planes": [],
+      "colored_ply": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/ply_colored/planes_00032.ply",
+      "planes_json": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/json/planes_00032.json"
+    },
+    {
+      "frame_idx": 33,
+      "input_file": "/home/werikson/ufv/icuas2026/data/ply/livox_outdoor_01_T22_275_15_03/frame_00033.ply",
+      "num_points": 818,
+      "num_planes": 0,
+      "planes": [],
+      "colored_ply": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/ply_colored/planes_00033.ply",
+      "planes_json": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/json/planes_00033.json"
+    },
+    {
+      "frame_idx": 34,
+      "input_file": "/home/werikson/ufv/icuas2026/data/ply/livox_outdoor_01_T22_275_15_03/frame_00034.ply",
+      "num_points": 945,
+      "num_planes": 0,
+      "planes": [],
+      "colored_ply": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/ply_colored/planes_00034.ply",
+      "planes_json": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/json/planes_00034.json"
+    },
+    {
+      "frame_idx": 35,
+      "input_file": "/home/werikson/ufv/icuas2026/data/ply/livox_outdoor_01_T22_275_15_03/frame_00035.ply",
+      "num_points": 743,
+      "num_planes": 0,
+      "planes": [],
+      "colored_ply": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/ply_colored/planes_00035.ply",
+      "planes_json": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/json/planes_00035.json"
+    },
+    {
+      "frame_idx": 36,
+      "input_file": "/home/werikson/ufv/icuas2026/data/ply/livox_outdoor_01_T22_275_15_03/frame_00036.ply",
+      "num_points": 1078,
+      "num_planes": 0,
+      "planes": [],
+      "colored_ply": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/ply_colored/planes_00036.ply",
+      "planes_json": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/json/planes_00036.json"
+    },
+    {
+      "frame_idx": 37,
+      "input_file": "/home/werikson/ufv/icuas2026/data/ply/livox_outdoor_01_T22_275_15_03/frame_00037.ply",
+      "num_points": 1130,
+      "num_planes": 0,
+      "planes": [],
+      "colored_ply": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/ply_colored/planes_00037.ply",
+      "planes_json": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/json/planes_00037.json"
+    },
+    {
+      "frame_idx": 38,
+      "input_file": "/home/werikson/ufv/icuas2026/data/ply/livox_outdoor_01_T22_275_15_03/frame_00038.ply",
+      "num_points": 1273,
+      "num_planes": 0,
+      "planes": [],
+      "colored_ply": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/ply_colored/planes_00038.ply",
+      "planes_json": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/json/planes_00038.json"
+    },
+    {
+      "frame_idx": 39,
+      "input_file": "/home/werikson/ufv/icuas2026/data/ply/livox_outdoor_01_T22_275_15_03/frame_00039.ply",
+      "num_points": 1126,
+      "num_planes": 0,
+      "planes": [],
+      "colored_ply": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/ply_colored/planes_00039.ply",
+      "planes_json": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/json/planes_00039.json"
+    },
+    {
+      "frame_idx": 40,
+      "input_file": "/home/werikson/ufv/icuas2026/data/ply/livox_outdoor_01_T22_275_15_03/frame_00040.ply",
+      "num_points": 1170,
+      "num_planes": 0,
+      "planes": [],
+      "colored_ply": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/ply_colored/planes_00040.ply",
+      "planes_json": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/json/planes_00040.json"
+    },
+    {
+      "frame_idx": 41,
+      "input_file": "/home/werikson/ufv/icuas2026/data/ply/livox_outdoor_01_T22_275_15_03/frame_00041.ply",
+      "num_points": 983,
+      "num_planes": 0,
+      "planes": [],
+      "colored_ply": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/ply_colored/planes_00041.ply",
+      "planes_json": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/json/planes_00041.json"
+    },
+    {
+      "frame_idx": 42,
+      "input_file": "/home/werikson/ufv/icuas2026/data/ply/livox_outdoor_01_T22_275_15_03/frame_00042.ply",
+      "num_points": 1047,
+      "num_planes": 0,
+      "planes": [],
+      "colored_ply": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/ply_colored/planes_00042.ply",
+      "planes_json": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/json/planes_00042.json"
+    },
+    {
+      "frame_idx": 43,
+      "input_file": "/home/werikson/ufv/icuas2026/data/ply/livox_outdoor_01_T22_275_15_03/frame_00043.ply",
+      "num_points": 1036,
+      "num_planes": 0,
+      "planes": [],
+      "colored_ply": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/ply_colored/planes_00043.ply",
+      "planes_json": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/json/planes_00043.json"
+    },
+    {
+      "frame_idx": 44,
+      "input_file": "/home/werikson/ufv/icuas2026/data/ply/livox_outdoor_01_T22_275_15_03/frame_00044.ply",
+      "num_points": 1045,
+      "num_planes": 0,
+      "planes": [],
+      "colored_ply": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/ply_colored/planes_00044.ply",
+      "planes_json": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/json/planes_00044.json"
+    },
+    {
+      "frame_idx": 45,
+      "input_file": "/home/werikson/ufv/icuas2026/data/ply/livox_outdoor_01_T22_275_15_03/frame_00045.ply",
+      "num_points": 1066,
+      "num_planes": 0,
+      "planes": [],
+      "colored_ply": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/ply_colored/planes_00045.ply",
+      "planes_json": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/json/planes_00045.json"
+    },
+    {
+      "frame_idx": 46,
+      "input_file": "/home/werikson/ufv/icuas2026/data/ply/livox_outdoor_01_T22_275_15_03/frame_00046.ply",
+      "num_points": 1164,
+      "num_planes": 0,
+      "planes": [],
+      "colored_ply": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/ply_colored/planes_00046.ply",
+      "planes_json": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/json/planes_00046.json"
+    },
+    {
+      "frame_idx": 47,
+      "input_file": "/home/werikson/ufv/icuas2026/data/ply/livox_outdoor_01_T22_275_15_03/frame_00047.ply",
+      "num_points": 1149,
+      "num_planes": 0,
+      "planes": [],
+      "colored_ply": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/ply_colored/planes_00047.ply",
+      "planes_json": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/json/planes_00047.json"
+    },
+    {
+      "frame_idx": 48,
+      "input_file": "/home/werikson/ufv/icuas2026/data/ply/livox_outdoor_01_T22_275_15_03/frame_00048.ply",
+      "num_points": 1188,
+      "num_planes": 0,
+      "planes": [],
+      "colored_ply": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/ply_colored/planes_00048.ply",
+      "planes_json": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/json/planes_00048.json"
+    },
+    {
+      "frame_idx": 49,
+      "input_file": "/home/werikson/ufv/icuas2026/data/ply/livox_outdoor_01_T22_275_15_03/frame_00049.ply",
+      "num_points": 1080,
+      "num_planes": 0,
+      "planes": [],
+      "colored_ply": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/ply_colored/planes_00049.ply",
+      "planes_json": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/json/planes_00049.json"
+    },
+    {
+      "frame_idx": 50,
+      "input_file": "/home/werikson/ufv/icuas2026/data/ply/livox_outdoor_01_T22_275_15_03/frame_00050.ply",
+      "num_points": 1054,
+      "num_planes": 0,
+      "planes": [],
+      "colored_ply": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/ply_colored/planes_00050.ply",
+      "planes_json": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/json/planes_00050.json"
+    },
+    {
+      "frame_idx": 51,
+      "input_file": "/home/werikson/ufv/icuas2026/data/ply/livox_outdoor_01_T22_275_15_03/frame_00051.ply",
+      "num_points": 866,
+      "num_planes": 0,
+      "planes": [],
+      "colored_ply": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/ply_colored/planes_00051.ply",
+      "planes_json": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/json/planes_00051.json"
+    },
+    {
+      "frame_idx": 52,
+      "input_file": "/home/werikson/ufv/icuas2026/data/ply/livox_outdoor_01_T22_275_15_03/frame_00052.ply",
+      "num_points": 934,
+      "num_planes": 0,
+      "planes": [],
+      "colored_ply": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/ply_colored/planes_00052.ply",
+      "planes_json": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/json/planes_00052.json"
+    },
+    {
+      "frame_idx": 53,
+      "input_file": "/home/werikson/ufv/icuas2026/data/ply/livox_outdoor_01_T22_275_15_03/frame_00053.ply",
+      "num_points": 1255,
+      "num_planes": 0,
+      "planes": [],
+      "colored_ply": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/ply_colored/planes_00053.ply",
+      "planes_json": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/json/planes_00053.json"
+    },
+    {
+      "frame_idx": 54,
+      "input_file": "/home/werikson/ufv/icuas2026/data/ply/livox_outdoor_01_T22_275_15_03/frame_00054.ply",
+      "num_points": 1601,
+      "num_planes": 0,
+      "planes": [],
+      "colored_ply": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/ply_colored/planes_00054.ply",
+      "planes_json": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/json/planes_00054.json"
+    },
+    {
+      "frame_idx": 55,
+      "input_file": "/home/werikson/ufv/icuas2026/data/ply/livox_outdoor_01_T22_275_15_03/frame_00055.ply",
+      "num_points": 1899,
+      "num_planes": 0,
+      "planes": [],
+      "colored_ply": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/ply_colored/planes_00055.ply",
+      "planes_json": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/json/planes_00055.json"
+    },
+    {
+      "frame_idx": 56,
+      "input_file": "/home/werikson/ufv/icuas2026/data/ply/livox_outdoor_01_T22_275_15_03/frame_00056.ply",
+      "num_points": 2039,
+      "num_planes": 0,
+      "planes": [],
+      "colored_ply": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/ply_colored/planes_00056.ply",
+      "planes_json": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/json/planes_00056.json"
+    },
+    {
+      "frame_idx": 57,
+      "input_file": "/home/werikson/ufv/icuas2026/data/ply/livox_outdoor_01_T22_275_15_03/frame_00057.ply",
+      "num_points": 2641,
+      "num_planes": 1,
+      "planes": [
+        {
+          "plane_id": 0,
+          "num_inliers": 1966,
+          "inlier_ratio": 0.7444149943203332,
+          "inlier_ratio_total": 0.7444149943203332,
+          "rmse": 0.021356027054215077,
+          "mean_abs_dist": 0.017484341764317377,
+          "std_abs_dist": 0.012262857929900088,
+          "extent_xy": [
+            29.714843300948544,
+            7.094246761062797
+          ],
+          "centroid": [
+            -0.2182289976914243,
+            0.07620742384744333,
+            0.7347400722624667
+          ],
+          "model": {
+            "n": [
+              0.6861935161952838,
+              -0.032645173413420436,
+              0.7266861433826577
+            ],
+            "d": -0.38169030167256646
+          }
+        }
+      ],
+      "colored_ply": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/ply_colored/planes_00057.ply",
+      "planes_json": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/json/planes_00057.json"
+    },
+    {
+      "frame_idx": 58,
+      "input_file": "/home/werikson/ufv/icuas2026/data/ply/livox_outdoor_01_T22_275_15_03/frame_00058.ply",
+      "num_points": 3316,
+      "num_planes": 1,
+      "planes": [
+        {
+          "plane_id": 0,
+          "num_inliers": 2553,
+          "inlier_ratio": 0.7699034981905911,
+          "inlier_ratio_total": 0.7699034981905911,
+          "rmse": 0.02228139304708442,
+          "mean_abs_dist": 0.01765981060432395,
+          "std_abs_dist": 0.013586447863149123,
+          "extent_xy": [
+            30.387302118664778,
+            8.238046098674985
+          ],
+          "centroid": [
+            0.4181207665333302,
+            -0.03484995588956939,
+            0.6436760284220578
+          ],
+          "model": {
+            "n": [
+              0.7159782587754925,
+              -0.03806561091390315,
+              0.6970840280960146
+            ],
+            "d": -0.7493882419229598
+          }
+        }
+      ],
+      "colored_ply": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/ply_colored/planes_00058.ply",
+      "planes_json": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/json/planes_00058.json"
+    },
+    {
+      "frame_idx": 59,
+      "input_file": "/home/werikson/ufv/icuas2026/data/ply/livox_outdoor_01_T22_275_15_03/frame_00059.ply",
+      "num_points": 3481,
+      "num_planes": 1,
+      "planes": [
+        {
+          "plane_id": 0,
+          "num_inliers": 2479,
+          "inlier_ratio": 0.7121516805515656,
+          "inlier_ratio_total": 0.7121516805515656,
+          "rmse": 0.023221553460435494,
+          "mean_abs_dist": 0.018580831652404373,
+          "std_abs_dist": 0.01392814561314145,
+          "extent_xy": [
+            17.871336498573235,
+            8.089668814548372
+          ],
+          "centroid": [
+            1.1305254470965285,
+            -0.2567078114533691,
+            0.6361256556447163
+          ],
+          "model": {
+            "n": [
+              0.7280617134060816,
+              0.00027633818024308537,
+              0.6855115353583854
+            ],
+            "d": -1.259092830774673
+          }
+        }
+      ],
+      "colored_ply": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/ply_colored/planes_00059.ply",
+      "planes_json": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/json/planes_00059.json"
+    },
+    {
+      "frame_idx": 60,
+      "input_file": "/home/werikson/ufv/icuas2026/data/ply/livox_outdoor_01_T22_275_15_03/frame_00060.ply",
+      "num_points": 3266,
+      "num_planes": 1,
+      "planes": [
+        {
+          "plane_id": 0,
+          "num_inliers": 2075,
+          "inlier_ratio": 0.6353337415799143,
+          "inlier_ratio_total": 0.6353337415799143,
+          "rmse": 0.02416289972167928,
+          "mean_abs_dist": 0.01961244314632409,
+          "std_abs_dist": 0.014113744959865681,
+          "extent_xy": [
+            31.954699221528827,
+            7.732831195544135
+          ],
+          "centroid": [
+            1.974741768580768,
+            -0.6158767892545964,
+            0.5458335340486458
+          ],
+          "model": {
+            "n": [
+              0.7477202853059409,
+              0.0010419681283604376,
+              0.6640130188817248
+            ],
+            "d": -1.8383533273738921
+          }
+        }
+      ],
+      "colored_ply": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/ply_colored/planes_00060.ply",
+      "planes_json": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/json/planes_00060.json"
+    },
+    {
+      "frame_idx": 61,
+      "input_file": "/home/werikson/ufv/icuas2026/data/ply/livox_outdoor_01_T22_275_15_03/frame_00061.ply",
+      "num_points": 2757,
+      "num_planes": 1,
+      "planes": [
+        {
+          "plane_id": 0,
+          "num_inliers": 1554,
+          "inlier_ratio": 0.5636561479869423,
+          "inlier_ratio_total": 0.5636561479869423,
+          "rmse": 0.02548851110874006,
+          "mean_abs_dist": 0.02035787529325707,
+          "std_abs_dist": 0.015336919902136767,
+          "extent_xy": [
+            18.017549132770903,
+            4.95687750774714
+          ],
+          "centroid": [
+            2.924113899737865,
+            -0.6275077214802555,
+            0.33398712997499613
+          ],
+          "model": {
+            "n": [
+              0.7473007076923778,
+              0.0017869614250808357,
+              0.6644836032975807
+            ],
+            "d": -2.4060000261358025
+          }
+        }
+      ],
+      "colored_ply": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/ply_colored/planes_00061.ply",
+      "planes_json": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/json/planes_00061.json"
+    },
+    {
+      "frame_idx": 62,
+      "input_file": "/home/werikson/ufv/icuas2026/data/ply/livox_outdoor_01_T22_275_15_03/frame_00062.ply",
+      "num_points": 2907,
+      "num_planes": 0,
+      "planes": [],
+      "colored_ply": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/ply_colored/planes_00062.ply",
+      "planes_json": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/json/planes_00062.json"
+    },
+    {
+      "frame_idx": 63,
+      "input_file": "/home/werikson/ufv/icuas2026/data/ply/livox_outdoor_01_T22_275_15_03/frame_00063.ply",
+      "num_points": 2582,
+      "num_planes": 0,
+      "planes": [],
+      "colored_ply": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/ply_colored/planes_00063.ply",
+      "planes_json": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/json/planes_00063.json"
+    },
+    {
+      "frame_idx": 64,
+      "input_file": "/home/werikson/ufv/icuas2026/data/ply/livox_outdoor_01_T22_275_15_03/frame_00064.ply",
+      "num_points": 2584,
+      "num_planes": 0,
+      "planes": [],
+      "colored_ply": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/ply_colored/planes_00064.ply",
+      "planes_json": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/json/planes_00064.json"
+    },
+    {
+      "frame_idx": 65,
+      "input_file": "/home/werikson/ufv/icuas2026/data/ply/livox_outdoor_01_T22_275_15_03/frame_00065.ply",
+      "num_points": 2646,
+      "num_planes": 0,
+      "planes": [],
+      "colored_ply": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/ply_colored/planes_00065.ply",
+      "planes_json": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/json/planes_00065.json"
+    },
+    {
+      "frame_idx": 66,
+      "input_file": "/home/werikson/ufv/icuas2026/data/ply/livox_outdoor_01_T22_275_15_03/frame_00066.ply",
+      "num_points": 2703,
+      "num_planes": 0,
+      "planes": [],
+      "colored_ply": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/ply_colored/planes_00066.ply",
+      "planes_json": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/json/planes_00066.json"
+    },
+    {
+      "frame_idx": 67,
+      "input_file": "/home/werikson/ufv/icuas2026/data/ply/livox_outdoor_01_T22_275_15_03/frame_00067.ply",
+      "num_points": 2936,
+      "num_planes": 0,
+      "planes": [],
+      "colored_ply": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/ply_colored/planes_00067.ply",
+      "planes_json": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/json/planes_00067.json"
+    },
+    {
+      "frame_idx": 68,
+      "input_file": "/home/werikson/ufv/icuas2026/data/ply/livox_outdoor_01_T22_275_15_03/frame_00068.ply",
+      "num_points": 3794,
+      "num_planes": 1,
+      "planes": [
+        {
+          "plane_id": 0,
+          "num_inliers": 2118,
+          "inlier_ratio": 0.5582498682129678,
+          "inlier_ratio_total": 0.5582498682129678,
+          "rmse": 0.02664932967597271,
+          "mean_abs_dist": 0.021681447756769896,
+          "std_abs_dist": 0.015495212013687884,
+          "extent_xy": [
+            32.06721247148652,
+            16.67079617537152
+          ],
+          "centroid": [
+            2.8843355375354673,
+            -0.39738125380551925,
+            2.2513836176645596
+          ],
+          "model": {
+            "n": [
+              0.7103211881590187,
+              0.0110024559197367,
+              0.7037916990247144
+            ],
+            "d": -3.628937577775699
+          }
+        }
+      ],
+      "colored_ply": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/ply_colored/planes_00068.ply",
+      "planes_json": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/json/planes_00068.json"
+    },
+    {
+      "frame_idx": 69,
+      "input_file": "/home/werikson/ufv/icuas2026/data/ply/livox_outdoor_01_T22_275_15_03/frame_00069.ply",
+      "num_points": 3800,
+      "num_planes": 1,
+      "planes": [
+        {
+          "plane_id": 0,
+          "num_inliers": 2239,
+          "inlier_ratio": 0.5892105263157895,
+          "inlier_ratio_total": 0.5892105263157895,
+          "rmse": 0.02491064305012732,
+          "mean_abs_dist": 0.020462194536156896,
+          "std_abs_dist": 0.014206995880034852,
+          "extent_xy": [
+            31.923652861477308,
+            21.258847775444284
+          ],
+          "centroid": [
+            2.667180584637412,
+            -0.6103567067881469,
+            2.3423411489216295
+          ],
+          "model": {
+            "n": [
+              0.7517690237467393,
+              -0.0003322156888447836,
+              0.6594264360545541
+            ],
+            "d": -3.549908190200231
+          }
+        }
+      ],
+      "colored_ply": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/ply_colored/planes_00069.ply",
+      "planes_json": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/json/planes_00069.json"
+    },
+    {
+      "frame_idx": 70,
+      "input_file": "/home/werikson/ufv/icuas2026/data/ply/livox_outdoor_01_T22_275_15_03/frame_00070.ply",
+      "num_points": 4020,
+      "num_planes": 1,
+      "planes": [
+        {
+          "plane_id": 0,
+          "num_inliers": 2744,
+          "inlier_ratio": 0.6825870646766169,
+          "inlier_ratio_total": 0.6825870646766169,
+          "rmse": 0.026253580809173966,
+          "mean_abs_dist": 0.02178861401371241,
+          "std_abs_dist": 0.014646050821476853,
+          "extent_xy": [
+            31.579763785623015,
+            26.455966945736858
+          ],
+          "centroid": [
+            2.020990038463942,
+            -0.31864401173349777,
+            2.759563595201346
+          ],
+          "model": {
+            "n": [
+              0.6783402840721692,
+              -0.0742569729905065,
+              0.7309858828781688
+            ],
+            "d": -3.4117825275682447
+          }
+        }
+      ],
+      "colored_ply": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/ply_colored/planes_00070.ply",
+      "planes_json": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/json/planes_00070.json"
+    },
+    {
+      "frame_idx": 71,
+      "input_file": "/home/werikson/ufv/icuas2026/data/ply/livox_outdoor_01_T22_275_15_03/frame_00071.ply",
+      "num_points": 4196,
+      "num_planes": 1,
+      "planes": [
+        {
+          "plane_id": 0,
+          "num_inliers": 2867,
+          "inlier_ratio": 0.6832697807435653,
+          "inlier_ratio_total": 0.6832697807435653,
+          "rmse": 0.024652514384599724,
+          "mean_abs_dist": 0.020036975077168204,
+          "std_abs_dist": 0.014361966969737692,
+          "extent_xy": [
+            19.506325096676836,
+            27.13016362543215
+          ],
+          "centroid": [
+            1.833176548163792,
+            -0.05451592771383433,
+            2.8108506533118574
+          ],
+          "model": {
+            "n": [
+              0.7226491551774571,
+              -0.002989503188759346,
+              0.6912085513012639
+            ],
+            "d": -3.2677904673613303
+          }
+        }
+      ],
+      "colored_ply": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/ply_colored/planes_00071.ply",
+      "planes_json": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/json/planes_00071.json"
+    },
+    {
+      "frame_idx": 72,
+      "input_file": "/home/werikson/ufv/icuas2026/data/ply/livox_outdoor_01_T22_275_15_03/frame_00072.ply",
+      "num_points": 3793,
+      "num_planes": 1,
+      "planes": [
+        {
+          "plane_id": 0,
+          "num_inliers": 2747,
+          "inlier_ratio": 0.7242288426047984,
+          "inlier_ratio_total": 0.7242288426047984,
+          "rmse": 0.022411839994549217,
+          "mean_abs_dist": 0.017557295365641663,
+          "std_abs_dist": 0.013929535217834564,
+          "extent_xy": [
+            22.612335872493276,
+            19.322041993462502
+          ],
+          "centroid": [
+            1.4981853539224173,
+            0.1530695294387464,
+            3.0022947440924477
+          ],
+          "model": {
+            "n": [
+              0.7511844176069156,
+              -0.022733656929223578,
+              0.6597008045979507
+            ],
+            "d": -3.1025499207028293
+          }
+        }
+      ],
+      "colored_ply": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/ply_colored/planes_00072.ply",
+      "planes_json": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/json/planes_00072.json"
+    },
+    {
+      "frame_idx": 73,
+      "input_file": "/home/werikson/ufv/icuas2026/data/ply/livox_outdoor_01_T22_275_15_03/frame_00073.ply",
+      "num_points": 4360,
+      "num_planes": 1,
+      "planes": [
+        {
+          "plane_id": 0,
+          "num_inliers": 3091,
+          "inlier_ratio": 0.7089449541284404,
+          "inlier_ratio_total": 0.7089449541284404,
+          "rmse": 0.021988609472823734,
+          "mean_abs_dist": 0.017814234259630447,
+          "std_abs_dist": 0.01288999628748444,
+          "extent_xy": [
+            22.76339263548963,
+            18.06923996689965
+          ],
+          "centroid": [
+            1.3689191195365016,
+            -0.011822331892393763,
+            2.8581563130070906
+          ],
+          "model": {
+            "n": [
+              0.7332629990883001,
+              -0.04955866188676039,
+              0.6781366478815501
+            ],
+            "d": -2.9425841792737377
+          }
+        }
+      ],
+      "colored_ply": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/ply_colored/planes_00073.ply",
+      "planes_json": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/json/planes_00073.json"
+    },
+    {
+      "frame_idx": 74,
+      "input_file": "/home/werikson/ufv/icuas2026/data/ply/livox_outdoor_01_T22_275_15_03/frame_00074.ply",
+      "num_points": 3903,
+      "num_planes": 1,
+      "planes": [
+        {
+          "plane_id": 0,
+          "num_inliers": 2730,
+          "inlier_ratio": 0.6994619523443505,
+          "inlier_ratio_total": 0.6994619523443505,
+          "rmse": 0.023377780400932736,
+          "mean_abs_dist": 0.01882307184561945,
+          "std_abs_dist": 0.01386407525833884,
+          "extent_xy": [
+            22.888300805382812,
+            17.769430202200567
+          ],
+          "centroid": [
+            1.2084431011965913,
+            -0.04065299029570064,
+            2.8600550088835868
+          ],
+          "model": {
+            "n": [
+              0.734852950514668,
+              -0.06036805724874972,
+              0.6755344837859119
+            ],
+            "d": -2.8225479045143995
+          }
+        }
+      ],
+      "colored_ply": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/ply_colored/planes_00074.ply",
+      "planes_json": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/json/planes_00074.json"
+    },
+    {
+      "frame_idx": 75,
+      "input_file": "/home/werikson/ufv/icuas2026/data/ply/livox_outdoor_01_T22_275_15_03/frame_00075.ply",
+      "num_points": 5197,
+      "num_planes": 1,
+      "planes": [
+        {
+          "plane_id": 0,
+          "num_inliers": 3598,
+          "inlier_ratio": 0.6923224937463921,
+          "inlier_ratio_total": 0.6923224937463921,
+          "rmse": 0.025417343623598276,
+          "mean_abs_dist": 0.02079722419285205,
+          "std_abs_dist": 0.014612214847596562,
+          "extent_xy": [
+            21.817246931120405,
+            17.311872328981995
+          ],
+          "centroid": [
+            1.645210255399782,
+            -0.30870979265681747,
+            2.2743467666734714
+          ],
+          "model": {
+            "n": [
+              0.7297570805836746,
+              -0.047688155725366235,
+              0.6820413793469612
+            ],
+            "d": -2.766524239448306
+          }
+        }
+      ],
+      "colored_ply": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/ply_colored/planes_00075.ply",
+      "planes_json": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/json/planes_00075.json"
+    },
+    {
+      "frame_idx": 76,
+      "input_file": "/home/werikson/ufv/icuas2026/data/ply/livox_outdoor_01_T22_275_15_03/frame_00076.ply",
+      "num_points": 4014,
+      "num_planes": 1,
+      "planes": [
+        {
+          "plane_id": 0,
+          "num_inliers": 2735,
+          "inlier_ratio": 0.6813652217239661,
+          "inlier_ratio_total": 0.6813652217239661,
+          "rmse": 0.02430101087362837,
+          "mean_abs_dist": 0.01939374581876577,
+          "std_abs_dist": 0.014643146949932224,
+          "extent_xy": [
+            29.682774871330682,
+            21.1147433871783
+          ],
+          "centroid": [
+            1.6236142579253279,
+            -0.13071261181256016,
+            2.3412778787246786
+          ],
+          "model": {
+            "n": [
+              0.7333497319977826,
+              -0.03184635734490704,
+              0.6791052791008482
+            ],
+            "d": -2.7848139687465516
+          }
+        }
+      ],
+      "colored_ply": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/ply_colored/planes_00076.ply",
+      "planes_json": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/json/planes_00076.json"
+    },
+    {
+      "frame_idx": 77,
+      "input_file": "/home/werikson/ufv/icuas2026/data/ply/livox_outdoor_01_T22_275_15_03/frame_00077.ply",
+      "num_points": 3874,
+      "num_planes": 1,
+      "planes": [
+        {
+          "plane_id": 0,
+          "num_inliers": 2463,
+          "inlier_ratio": 0.6357769747031492,
+          "inlier_ratio_total": 0.6357769747031492,
+          "rmse": 0.02619171655691185,
+          "mean_abs_dist": 0.020984876197239467,
+          "std_abs_dist": 0.015672938052073798,
+          "extent_xy": [
+            20.372569345196517,
+            28.807748756606493
+          ],
+          "centroid": [
+            2.1023625687178384,
+            -0.19039240618014402,
+            2.089252130860872
+          ],
+          "model": {
+            "n": [
+              0.6970601753326241,
+              -0.019119412546156234,
+              0.7167576717616223
+            ],
+            "d": -2.9666009047614628
+          }
+        }
+      ],
+      "colored_ply": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/ply_colored/planes_00077.ply",
+      "planes_json": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/json/planes_00077.json"
+    },
+    {
+      "frame_idx": 78,
+      "input_file": "/home/werikson/ufv/icuas2026/data/ply/livox_outdoor_01_T22_275_15_03/frame_00078.ply",
+      "num_points": 3703,
+      "num_planes": 1,
+      "planes": [
+        {
+          "plane_id": 0,
+          "num_inliers": 2111,
+          "inlier_ratio": 0.5700783148798272,
+          "inlier_ratio_total": 0.5700783148798272,
+          "rmse": 0.0264638993889474,
+          "mean_abs_dist": 0.022071244581882525,
+          "std_abs_dist": 0.014601305882524751,
+          "extent_xy": [
+            18.905616064699426,
+            8.7747635026621
+          ],
+          "centroid": [
+            2.680298677726359,
+            -0.5145518718484113,
+            1.9366646124705609
+          ],
+          "model": {
+            "n": [
+              0.7181033884722774,
+              0.0015312405027729792,
+              0.6959347518030381
+            ],
+            "d": -3.2717358663315377
+          }
+        }
+      ],
+      "colored_ply": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/ply_colored/planes_00078.ply",
+      "planes_json": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/json/planes_00078.json"
+    },
+    {
+      "frame_idx": 79,
+      "input_file": "/home/werikson/ufv/icuas2026/data/ply/livox_outdoor_01_T22_275_15_03/frame_00079.ply",
+      "num_points": 3292,
+      "num_planes": 1,
+      "planes": [
+        {
+          "plane_id": 0,
+          "num_inliers": 1747,
+          "inlier_ratio": 0.5306804374240583,
+          "inlier_ratio_total": 0.5306804374240583,
+          "rmse": 0.025751806447050354,
+          "mean_abs_dist": 0.020676997894509844,
+          "std_abs_dist": 0.015349830401564043,
+          "extent_xy": [
+            31.82397943069588,
+            7.704830562235504
+          ],
+          "centroid": [
+            3.4761579852253397,
+            -0.9070344364067636,
+            1.3587401242625694
+          ],
+          "model": {
+            "n": [
+              0.7668117524030528,
+              -0.036388096791084575,
+              0.6408397949476001
+            ],
+            "d": -3.569298795764826
+          }
+        }
+      ],
+      "colored_ply": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/ply_colored/planes_00079.ply",
+      "planes_json": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/json/planes_00079.json"
+    },
+    {
+      "frame_idx": 80,
+      "input_file": "/home/werikson/ufv/icuas2026/data/ply/livox_outdoor_01_T22_275_15_03/frame_00080.ply",
+      "num_points": 3089,
+      "num_planes": 0,
+      "planes": [],
+      "colored_ply": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/ply_colored/planes_00080.ply",
+      "planes_json": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/json/planes_00080.json"
+    },
+    {
+      "frame_idx": 81,
+      "input_file": "/home/werikson/ufv/icuas2026/data/ply/livox_outdoor_01_T22_275_15_03/frame_00081.ply",
+      "num_points": 2792,
+      "num_planes": 0,
+      "planes": [],
+      "colored_ply": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/ply_colored/planes_00081.ply",
+      "planes_json": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/json/planes_00081.json"
+    },
+    {
+      "frame_idx": 82,
+      "input_file": "/home/werikson/ufv/icuas2026/data/ply/livox_outdoor_01_T22_275_15_03/frame_00082.ply",
+      "num_points": 3052,
+      "num_planes": 0,
+      "planes": [],
+      "colored_ply": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/ply_colored/planes_00082.ply",
+      "planes_json": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/json/planes_00082.json"
+    },
+    {
+      "frame_idx": 83,
+      "input_file": "/home/werikson/ufv/icuas2026/data/ply/livox_outdoor_01_T22_275_15_03/frame_00083.ply",
+      "num_points": 2746,
+      "num_planes": 0,
+      "planes": [],
+      "colored_ply": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/ply_colored/planes_00083.ply",
+      "planes_json": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/json/planes_00083.json"
+    },
+    {
+      "frame_idx": 84,
+      "input_file": "/home/werikson/ufv/icuas2026/data/ply/livox_outdoor_01_T22_275_15_03/frame_00084.ply",
+      "num_points": 2816,
+      "num_planes": 0,
+      "planes": [],
+      "colored_ply": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/ply_colored/planes_00084.ply",
+      "planes_json": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/json/planes_00084.json"
+    },
+    {
+      "frame_idx": 85,
+      "input_file": "/home/werikson/ufv/icuas2026/data/ply/livox_outdoor_01_T22_275_15_03/frame_00085.ply",
+      "num_points": 3073,
+      "num_planes": 0,
+      "planes": [],
+      "colored_ply": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/ply_colored/planes_00085.ply",
+      "planes_json": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/json/planes_00085.json"
+    },
+    {
+      "frame_idx": 86,
+      "input_file": "/home/werikson/ufv/icuas2026/data/ply/livox_outdoor_01_T22_275_15_03/frame_00086.ply",
+      "num_points": 2952,
+      "num_planes": 0,
+      "planes": [],
+      "colored_ply": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/ply_colored/planes_00086.ply",
+      "planes_json": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/json/planes_00086.json"
+    },
+    {
+      "frame_idx": 87,
+      "input_file": "/home/werikson/ufv/icuas2026/data/ply/livox_outdoor_01_T22_275_15_03/frame_00087.ply",
+      "num_points": 3420,
+      "num_planes": 1,
+      "planes": [
+        {
+          "plane_id": 0,
+          "num_inliers": 1783,
+          "inlier_ratio": 0.5213450292397661,
+          "inlier_ratio_total": 0.5213450292397661,
+          "rmse": 0.026334356243664973,
+          "mean_abs_dist": 0.021466251221525855,
+          "std_abs_dist": 0.015254454341686437,
+          "extent_xy": [
+            19.151711924813394,
+            10.03714220782062
+          ],
+          "centroid": [
+            3.586506353112822,
+            -0.2320553337631771,
+            1.3814972887214119
+          ],
+          "model": {
+            "n": [
+              0.7399506236411948,
+              0.01453484159755869,
+              0.672504136011624
+            ],
+            "d": -3.579527365714817
+          }
+        }
+      ],
+      "colored_ply": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/ply_colored/planes_00087.ply",
+      "planes_json": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/json/planes_00087.json"
+    },
+    {
+      "frame_idx": 88,
+      "input_file": "/home/werikson/ufv/icuas2026/data/ply/livox_outdoor_01_T22_275_15_03/frame_00088.ply",
+      "num_points": 3672,
+      "num_planes": 1,
+      "planes": [
+        {
+          "plane_id": 0,
+          "num_inliers": 2184,
+          "inlier_ratio": 0.5947712418300654,
+          "inlier_ratio_total": 0.5947712418300654,
+          "rmse": 0.02515811312558798,
+          "mean_abs_dist": 0.020697657875795562,
+          "std_abs_dist": 0.014301664745630143,
+          "extent_xy": [
+            20.95409904920301,
+            16.40157512109171
+          ],
+          "centroid": [
+            2.7794693236508476,
+            -0.1902603054366851,
+            1.9556388125002206
+          ],
+          "model": {
+            "n": [
+              0.7110047622424261,
+              0.007536117982288815,
+              0.7031468089910868
+            ],
+            "d": -3.349883292062019
+          }
+        }
+      ],
+      "colored_ply": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/ply_colored/planes_00088.ply",
+      "planes_json": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/json/planes_00088.json"
+    },
+    {
+      "frame_idx": 89,
+      "input_file": "/home/werikson/ufv/icuas2026/data/ply/livox_outdoor_01_T22_275_15_03/frame_00089.ply",
+      "num_points": 3849,
+      "num_planes": 1,
+      "planes": [
+        {
+          "plane_id": 0,
+          "num_inliers": 2424,
+          "inlier_ratio": 0.6297739672642245,
+          "inlier_ratio_total": 0.6297739672642245,
+          "rmse": 0.023636531339155553,
+          "mean_abs_dist": 0.01930108944271985,
+          "std_abs_dist": 0.013643810320838202,
+          "extent_xy": [
+            23.79341492665553,
+            21.23294351579356
+          ],
+          "centroid": [
+            2.328836565010206,
+            -0.3374469884690738,
+            2.071717546172891
+          ],
+          "model": {
+            "n": [
+              0.7382031013434581,
+              -0.01163308163922039,
+              0.6744782076379306
+            ],
+            "d": -3.120408260453093
+          }
+        }
+      ],
+      "colored_ply": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/ply_colored/planes_00089.ply",
+      "planes_json": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/json/planes_00089.json"
+    },
+    {
+      "frame_idx": 90,
+      "input_file": "/home/werikson/ufv/icuas2026/data/ply/livox_outdoor_01_T22_275_15_03/frame_00090.ply",
+      "num_points": 4032,
+      "num_planes": 1,
+      "planes": [
+        {
+          "plane_id": 0,
+          "num_inliers": 2845,
+          "inlier_ratio": 0.7056051587301587,
+          "inlier_ratio_total": 0.7056051587301587,
+          "rmse": 0.02311327824318893,
+          "mean_abs_dist": 0.01893251436529795,
+          "std_abs_dist": 0.013258338167163247,
+          "extent_xy": [
+            30.818528658016966,
+            27.420636181925772
+          ],
+          "centroid": [
+            1.677666490312009,
+            0.0035722318061206897,
+            2.3500867599063824
+          ],
+          "model": {
+            "n": [
+              0.6980401473905703,
+              -0.012973530511841136,
+              0.7159410870574543
+            ],
+            "d": -2.8535558892779895
+          }
+        }
+      ],
+      "colored_ply": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/ply_colored/planes_00090.ply",
+      "planes_json": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/json/planes_00090.json"
+    },
+    {
+      "frame_idx": 91,
+      "input_file": "/home/werikson/ufv/icuas2026/data/ply/livox_outdoor_01_T22_275_15_03/frame_00091.ply",
+      "num_points": 4553,
+      "num_planes": 1,
+      "planes": [
+        {
+          "plane_id": 0,
+          "num_inliers": 3207,
+          "inlier_ratio": 0.7043707445640237,
+          "inlier_ratio_total": 0.7043707445640237,
+          "rmse": 0.02199770875482516,
+          "mean_abs_dist": 0.01793673783334583,
+          "std_abs_dist": 0.012734701659635835,
+          "extent_xy": [
+            17.515612427006495,
+            27.274142166799674
+          ],
+          "centroid": [
+            1.1038805488899832,
+            -0.1343465850172277,
+            2.4113308896475476
+          ],
+          "model": {
+            "n": [
+              0.6534725422429611,
+              -0.013103067448488659,
+              0.7568368028564427
+            ],
+            "d": -2.548099942130479
+          }
+        }
+      ],
+      "colored_ply": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/ply_colored/planes_00091.ply",
+      "planes_json": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/json/planes_00091.json"
+    },
+    {
+      "frame_idx": 92,
+      "input_file": "/home/werikson/ufv/icuas2026/data/ply/livox_outdoor_01_T22_275_15_03/frame_00092.ply",
+      "num_points": 4100,
+      "num_planes": 1,
+      "planes": [
+        {
+          "plane_id": 0,
+          "num_inliers": 3061,
+          "inlier_ratio": 0.7465853658536585,
+          "inlier_ratio_total": 0.7465853658536585,
+          "rmse": 0.022492331731431937,
+          "mean_abs_dist": 0.01755387983934704,
+          "std_abs_dist": 0.014062940279420427,
+          "extent_xy": [
+            16.99869471266588,
+            15.278459656916294
+          ],
+          "centroid": [
+            0.8914547532379629,
+            0.1778287588373568,
+            2.2414496606352747
+          ],
+          "model": {
+            "n": [
+              0.7560277547242431,
+              -0.04710485170172962,
+              0.6528423753347954
+            ],
+            "d": -2.1289012588579186
+          }
+        }
+      ],
+      "colored_ply": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/ply_colored/planes_00092.ply",
+      "planes_json": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/json/planes_00092.json"
+    },
+    {
+      "frame_idx": 93,
+      "input_file": "/home/werikson/ufv/icuas2026/data/ply/livox_outdoor_01_T22_275_15_03/frame_00093.ply",
+      "num_points": 4236,
+      "num_planes": 1,
+      "planes": [
+        {
+          "plane_id": 0,
+          "num_inliers": 3437,
+          "inlier_ratio": 0.8113786591123702,
+          "inlier_ratio_total": 0.8113786591123702,
+          "rmse": 0.023573063833484696,
+          "mean_abs_dist": 0.019134593998242515,
+          "std_abs_dist": 0.013767957401879393,
+          "extent_xy": [
+            12.02428028719245,
+            26.748494411109057
+          ],
+          "centroid": [
+            0.3629023955538422,
+            -0.06929281373265216,
+            1.9662297793872239
+          ],
+          "model": {
+            "n": [
+              0.7272860974822478,
+              -0.00035454009774393835,
+              0.6863343257555762
+            ],
+            "d": -1.6134494240265322
+          }
+        }
+      ],
+      "colored_ply": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/ply_colored/planes_00093.ply",
+      "planes_json": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/json/planes_00093.json"
+    },
+    {
+      "frame_idx": 94,
+      "input_file": "/home/werikson/ufv/icuas2026/data/ply/livox_outdoor_01_T22_275_15_03/frame_00094.ply",
+      "num_points": 3728,
+      "num_planes": 1,
+      "planes": [
+        {
+          "plane_id": 0,
+          "num_inliers": 2832,
+          "inlier_ratio": 0.759656652360515,
+          "inlier_ratio_total": 0.759656652360515,
+          "rmse": 0.023553109958099103,
+          "mean_abs_dist": 0.018826431368522144,
+          "std_abs_dist": 0.014153249472281358,
+          "extent_xy": [
+            12.578493436655037,
+            24.815616781399726
+          ],
+          "centroid": [
+            -0.036493320696956016,
+            0.033427171283112164,
+            1.85466719649683
+          ],
+          "model": {
+            "n": [
+              0.7145073155749456,
+              -0.0035871341106666903,
+              0.6996187736608825
+            ],
+            "d": -1.2713653372082487
+          }
+        }
+      ],
+      "colored_ply": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/ply_colored/planes_00094.ply",
+      "planes_json": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/json/planes_00094.json"
+    },
+    {
+      "frame_idx": 95,
+      "input_file": "/home/werikson/ufv/icuas2026/data/ply/livox_outdoor_01_T22_275_15_03/frame_00095.ply",
+      "num_points": 3630,
+      "num_planes": 1,
+      "planes": [
+        {
+          "plane_id": 0,
+          "num_inliers": 2897,
+          "inlier_ratio": 0.7980716253443526,
+          "inlier_ratio_total": 0.7980716253443526,
+          "rmse": 0.023873001130339553,
+          "mean_abs_dist": 0.01928062103662277,
+          "std_abs_dist": 0.014077564967398773,
+          "extent_xy": [
+            12.749040430979711,
+            11.066709985590673
+          ],
+          "centroid": [
+            0.0924559659671234,
+            0.05162617452476935,
+            1.5508688583039072
+          ],
+          "model": {
+            "n": [
+              0.7217120300418518,
+              -0.01740325199783077,
+              0.6919746184021269
+            ],
+            "d": -1.1389900059792628
+          }
+        }
+      ],
+      "colored_ply": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/ply_colored/planes_00095.ply",
+      "planes_json": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/json/planes_00095.json"
+    },
+    {
+      "frame_idx": 96,
+      "input_file": "/home/werikson/ufv/icuas2026/data/ply/livox_outdoor_01_T22_275_15_03/frame_00096.ply",
+      "num_points": 4469,
+      "num_planes": 1,
+      "planes": [
+        {
+          "plane_id": 0,
+          "num_inliers": 3414,
+          "inlier_ratio": 0.7639292906690535,
+          "inlier_ratio_total": 0.7639292906690535,
+          "rmse": 0.023795761279510417,
+          "mean_abs_dist": 0.019219636257162245,
+          "std_abs_dist": 0.014030104668669505,
+          "extent_xy": [
+            17.228877895786763,
+            27.42882207149333
+          ],
+          "centroid": [
+            0.45358682342735984,
+            0.0046881229417197485,
+            1.1586338116239419
+          ],
+          "model": {
+            "n": [
+              0.7191148095135151,
+              -0.0010055952418258627,
+              0.6948905521854146
+            ],
+            "d": -1.1312999769127356
+          }
+        }
+      ],
+      "colored_ply": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/ply_colored/planes_00096.ply",
+      "planes_json": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/json/planes_00096.json"
+    },
+    {
+      "frame_idx": 97,
+      "input_file": "/home/werikson/ufv/icuas2026/data/ply/livox_outdoor_01_T22_275_15_03/frame_00097.ply",
+      "num_points": 3858,
+      "num_planes": 1,
+      "planes": [
+        {
+          "plane_id": 0,
+          "num_inliers": 2925,
+          "inlier_ratio": 0.7581648522550545,
+          "inlier_ratio_total": 0.7581648522550545,
+          "rmse": 0.024123762202617673,
+          "mean_abs_dist": 0.019383011993879616,
+          "std_abs_dist": 0.01436157194925277,
+          "extent_xy": [
+            29.804428250277525,
+            26.809713741641595
+          ],
+          "centroid": [
+            0.636441338266872,
+            -0.006189657763453284,
+            1.132082051121951
+          ],
+          "model": {
+            "n": [
+              0.7228368699985015,
+              -0.027261500189814658,
+              0.6904807527934216
+            ],
+            "d": -1.241892871129382
+          }
+        }
+      ],
+      "colored_ply": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/ply_colored/planes_00097.ply",
+      "planes_json": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/json/planes_00097.json"
+    },
+    {
+      "frame_idx": 98,
+      "input_file": "/home/werikson/ufv/icuas2026/data/ply/livox_outdoor_01_T22_275_15_03/frame_00098.ply",
+      "num_points": 3481,
+      "num_planes": 1,
+      "planes": [
+        {
+          "plane_id": 0,
+          "num_inliers": 2517,
+          "inlier_ratio": 0.7230680838839414,
+          "inlier_ratio_total": 0.7230680838839414,
+          "rmse": 0.02527854548889801,
+          "mean_abs_dist": 0.020680266134009,
+          "std_abs_dist": 0.014537243709205892,
+          "extent_xy": [
+            30.125455832920572,
+            8.780469533640677
+          ],
+          "centroid": [
+            1.1129365655905277,
+            -0.2973483288642145,
+            0.9013226720059337
+          ],
+          "model": {
+            "n": [
+              0.7366106803338065,
+              -0.03465456285643854,
+              0.6754285801558859
+            ],
+            "d": -1.4388845297161676
+          }
+        }
+      ],
+      "colored_ply": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/ply_colored/planes_00098.ply",
+      "planes_json": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/json/planes_00098.json"
+    },
+    {
+      "frame_idx": 99,
+      "input_file": "/home/werikson/ufv/icuas2026/data/ply/livox_outdoor_01_T22_275_15_03/frame_00099.ply",
+      "num_points": 3548,
+      "num_planes": 1,
+      "planes": [
+        {
+          "plane_id": 0,
+          "num_inliers": 2365,
+          "inlier_ratio": 0.6665727170236753,
+          "inlier_ratio_total": 0.6665727170236753,
+          "rmse": 0.025442692492573235,
+          "mean_abs_dist": 0.020901816576046357,
+          "std_abs_dist": 0.014506711036377478,
+          "extent_xy": [
+            30.137427721199657,
+            8.913851141784694
+          ],
+          "centroid": [
+            1.5750720942081848,
+            -0.24124869447177869,
+            0.6326990143999204
+          ],
+          "model": {
+            "n": [
+              0.7616008269426335,
+              -0.004849719322144618,
+              0.6480282869001887
+            ],
+            "d": -1.6107530563232595
+          }
+        }
+      ],
+      "colored_ply": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/ply_colored/planes_00099.ply",
+      "planes_json": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/json/planes_00099.json"
+    },
+    {
+      "frame_idx": 100,
+      "input_file": "/home/werikson/ufv/icuas2026/data/ply/livox_outdoor_01_T22_275_15_03/frame_00100.ply",
+      "num_points": 3300,
+      "num_planes": 1,
+      "planes": [
+        {
+          "plane_id": 0,
+          "num_inliers": 2089,
+          "inlier_ratio": 0.633030303030303,
+          "inlier_ratio_total": 0.633030303030303,
+          "rmse": 0.02647118397140092,
+          "mean_abs_dist": 0.021653749516386506,
+          "std_abs_dist": 0.015226250777172427,
+          "extent_xy": [
+            18.121501217191412,
+            6.499573505902392
+          ],
+          "centroid": [
+            1.792092468240986,
+            -0.4757530695112466,
+            0.5008931707106395
+          ],
+          "model": {
+            "n": [
+              0.7409865593791793,
+              -0.04161172149025977,
+              0.6702293513820647
+            ],
+            "d": -1.6834266412749652
+          }
+        }
+      ],
+      "colored_ply": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/ply_colored/planes_00100.ply",
+      "planes_json": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/json/planes_00100.json"
+    },
+    {
+      "frame_idx": 101,
+      "input_file": "/home/werikson/ufv/icuas2026/data/ply/livox_outdoor_01_T22_275_15_03/frame_00101.ply",
+      "num_points": 3212,
+      "num_planes": 1,
+      "planes": [
+        {
+          "plane_id": 0,
+          "num_inliers": 1856,
+          "inlier_ratio": 0.5778331257783312,
+          "inlier_ratio_total": 0.5778331257783312,
+          "rmse": 0.02281759178370708,
+          "mean_abs_dist": 0.018104895597479662,
+          "std_abs_dist": 0.013887233353417032,
+          "extent_xy": [
+            30.916422620142306,
+            9.449490999037229
+          ],
+          "centroid": [
+            2.0937675120872337,
+            -0.9427268779970406,
+            0.20685977924232696
+          ],
+          "model": {
+            "n": [
+              0.722048161037361,
+              -0.03812322282284336,
+              0.690791627789571
+            ],
+            "d": -1.6906377722003205
+          }
+        }
+      ],
+      "colored_ply": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/ply_colored/planes_00101.ply",
+      "planes_json": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/json/planes_00101.json"
+    },
+    {
+      "frame_idx": 102,
+      "input_file": "/home/werikson/ufv/icuas2026/data/ply/livox_outdoor_01_T22_275_15_03/frame_00102.ply",
+      "num_points": 3029,
+      "num_planes": 1,
+      "planes": [
+        {
+          "plane_id": 0,
+          "num_inliers": 1796,
+          "inlier_ratio": 0.5929349620336745,
+          "inlier_ratio_total": 0.5929349620336745,
+          "rmse": 0.025454777133765552,
+          "mean_abs_dist": 0.020048600120838315,
+          "std_abs_dist": 0.015684365212669443,
+          "extent_xy": [
+            17.700350362025418,
+            3.4762433721242223
+          ],
+          "centroid": [
+            2.294113678253396,
+            -0.6499654796712914,
+            0.10129134188611949
+          ],
+          "model": {
+            "n": [
+              0.6791147041026592,
+              -0.004574973787583316,
+              0.7340179073336023
+            ],
+            "d": -1.6352895656195099
+          }
+        }
+      ],
+      "colored_ply": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/ply_colored/planes_00102.ply",
+      "planes_json": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/json/planes_00102.json"
+    },
+    {
+      "frame_idx": 103,
+      "input_file": "/home/werikson/ufv/icuas2026/data/ply/livox_outdoor_01_T22_275_15_03/frame_00103.ply",
+      "num_points": 2875,
+      "num_planes": 1,
+      "planes": [
+        {
+          "plane_id": 0,
+          "num_inliers": 1670,
+          "inlier_ratio": 0.5808695652173913,
+          "inlier_ratio_total": 0.5808695652173913,
+          "rmse": 0.02334320296668017,
+          "mean_abs_dist": 0.01842632819376022,
+          "std_abs_dist": 0.014330929978178777,
+          "extent_xy": [
+            18.005816093008136,
+            3.629071883728659
+          ],
+          "centroid": [
+            2.2976710062838364,
+            -0.9256893706610221,
+            -0.011117265189492688
+          ],
+          "model": {
+            "n": [
+              0.7189971322226519,
+              -0.046605552015523875,
+              0.6934486616736172
+            ],
+            "d": -1.6874518757566488
+          }
+        }
+      ],
+      "colored_ply": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/ply_colored/planes_00103.ply",
+      "planes_json": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/json/planes_00103.json"
+    },
+    {
+      "frame_idx": 104,
+      "input_file": "/home/werikson/ufv/icuas2026/data/ply/livox_outdoor_01_T22_275_15_03/frame_00104.ply",
+      "num_points": 3042,
+      "num_planes": 1,
+      "planes": [
+        {
+          "plane_id": 0,
+          "num_inliers": 1692,
+          "inlier_ratio": 0.5562130177514792,
+          "inlier_ratio_total": 0.5562130177514792,
+          "rmse": 0.02230443105898978,
+          "mean_abs_dist": 0.017749204120322725,
+          "std_abs_dist": 0.013507531157111827,
+          "extent_xy": [
+            18.070921760031535,
+            3.960338432164768
+          ],
+          "centroid": [
+            2.75130289535855,
+            -0.9587381791728538,
+            0.06304343973741103
+          ],
+          "model": {
+            "n": [
+              0.6347553041588961,
+              0.026375998986353958,
+              0.7722629154113378
+            ],
+            "d": -1.7698025395036978
+          }
+        }
+      ],
+      "colored_ply": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/ply_colored/planes_00104.ply",
+      "planes_json": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/json/planes_00104.json"
+    },
+    {
+      "frame_idx": 105,
+      "input_file": "/home/werikson/ufv/icuas2026/data/ply/livox_outdoor_01_T22_275_15_03/frame_00105.ply",
+      "num_points": 4346,
+      "num_planes": 1,
+      "planes": [
+        {
+          "plane_id": 0,
+          "num_inliers": 2747,
+          "inlier_ratio": 0.6320754716981132,
+          "inlier_ratio_total": 0.6320754716981132,
+          "rmse": 0.023232135504038392,
+          "mean_abs_dist": 0.018036364794389862,
+          "std_abs_dist": 0.014643143961653012,
+          "extent_xy": [
+            30.98973356630858,
+            9.122602189285587
+          ],
+          "centroid": [
+            1.975420701287372,
+            -0.639804817592399,
+            0.6805188082413235
+          ],
+          "model": {
+            "n": [
+              0.7313175744948098,
+              -0.04777083200236599,
+              0.6803620748137201
+            ],
+            "d": -1.938223072652655
+          }
+        }
+      ],
+      "colored_ply": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/ply_colored/planes_00105.ply",
+      "planes_json": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/json/planes_00105.json"
+    },
+    {
+      "frame_idx": 106,
+      "input_file": "/home/werikson/ufv/icuas2026/data/ply/livox_outdoor_01_T22_275_15_03/frame_00106.ply",
+      "num_points": 3175,
+      "num_planes": 1,
+      "planes": [
+        {
+          "plane_id": 0,
+          "num_inliers": 1982,
+          "inlier_ratio": 0.624251968503937,
+          "inlier_ratio_total": 0.624251968503937,
+          "rmse": 0.02387113684152666,
+          "mean_abs_dist": 0.01918043555543572,
+          "std_abs_dist": 0.014210632146764919,
+          "extent_xy": [
+            30.299156505055276,
+            10.141542106592109
+          ],
+          "centroid": [
+            2.220609906523503,
+            -1.0614890686057452,
+            0.5489758663996631
+          ],
+          "model": {
+            "n": [
+              0.7451365251639959,
+              -0.06563026478023315,
+              0.663674790248509
+            ],
+            "d": -2.0886648011098767
+          }
+        }
+      ],
+      "colored_ply": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/ply_colored/planes_00106.ply",
+      "planes_json": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/json/planes_00106.json"
+    },
+    {
+      "frame_idx": 107,
+      "input_file": "/home/werikson/ufv/icuas2026/data/ply/livox_outdoor_01_T22_275_15_03/frame_00107.ply",
+      "num_points": 2685,
+      "num_planes": 1,
+      "planes": [
+        {
+          "plane_id": 0,
+          "num_inliers": 1776,
+          "inlier_ratio": 0.6614525139664804,
+          "inlier_ratio_total": 0.6614525139664804,
+          "rmse": 0.02533387351830882,
+          "mean_abs_dist": 0.020581563396118836,
+          "std_abs_dist": 0.014771743147415282,
+          "extent_xy": [
+            17.375331824862492,
+            5.465351134576005
+          ],
+          "centroid": [
+            1.9620080255415966,
+            -0.3821948676065236,
+            1.1761101259774454
+          ],
+          "model": {
+            "n": [
+              0.7563065754296997,
+              -0.027850091146597533,
+              0.6536243082879694
+            ],
+            "d": -2.2632579002240396
+          }
+        }
+      ],
+      "colored_ply": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/ply_colored/planes_00107.ply",
+      "planes_json": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/json/planes_00107.json"
+    },
+    {
+      "frame_idx": 108,
+      "input_file": "/home/werikson/ufv/icuas2026/data/ply/livox_outdoor_01_T22_275_15_03/frame_00108.ply",
+      "num_points": 3713,
+      "num_planes": 1,
+      "planes": [
+        {
+          "plane_id": 0,
+          "num_inliers": 2410,
+          "inlier_ratio": 0.64907083221115,
+          "inlier_ratio_total": 0.64907083221115,
+          "rmse": 0.0262824748629155,
+          "mean_abs_dist": 0.021956604467947952,
+          "std_abs_dist": 0.014445622352736246,
+          "extent_xy": [
+            31.934482879296148,
+            8.430247857259717
+          ],
+          "centroid": [
+            1.9641154914108305,
+            -0.2098415651262054,
+            1.476822060485851
+          ],
+          "model": {
+            "n": [
+              0.7165504166862767,
+              0.0016466035142590485,
+              0.6975333605237746
+            ],
+            "d": -2.437174902678168
+          }
+        }
+      ],
+      "colored_ply": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/ply_colored/planes_00108.ply",
+      "planes_json": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/json/planes_00108.json"
+    },
+    {
+      "frame_idx": 109,
+      "input_file": "/home/werikson/ufv/icuas2026/data/ply/livox_outdoor_01_T22_275_15_03/frame_00109.ply",
+      "num_points": 3987,
+      "num_planes": 1,
+      "planes": [
+        {
+          "plane_id": 0,
+          "num_inliers": 2658,
+          "inlier_ratio": 0.6666666666666666,
+          "inlier_ratio_total": 0.6666666666666666,
+          "rmse": 0.024944493009052646,
+          "mean_abs_dist": 0.020383445013119374,
+          "std_abs_dist": 0.014378556981693786,
+          "extent_xy": [
+            30.12408875933059,
+            11.132286737937061
+          ],
+          "centroid": [
+            1.6715134184910667,
+            -0.11232129267643709,
+            1.955371897375192
+          ],
+          "model": {
+            "n": [
+              0.7062018368629926,
+              0.013810764346403272,
+              0.7078758566298919
+            ],
+            "d": -2.5630351604597745
+          }
+        }
+      ],
+      "colored_ply": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/ply_colored/planes_00109.ply",
+      "planes_json": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/json/planes_00109.json"
+    },
+    {
+      "frame_idx": 110,
+      "input_file": "/home/werikson/ufv/icuas2026/data/ply/livox_outdoor_01_T22_275_15_03/frame_00110.ply",
+      "num_points": 4068,
+      "num_planes": 1,
+      "planes": [
+        {
+          "plane_id": 0,
+          "num_inliers": 2880,
+          "inlier_ratio": 0.7079646017699115,
+          "inlier_ratio_total": 0.7079646017699115,
+          "rmse": 0.024523045118917387,
+          "mean_abs_dist": 0.02007657328477012,
+          "std_abs_dist": 0.014082291967066743,
+          "extent_xy": [
+            20.578619250895226,
+            21.641855659022276
+          ],
+          "centroid": [
+            1.5173717603610353,
+            -0.21968993038301252,
+            2.297501331716086
+          ],
+          "model": {
+            "n": [
+              0.753937494087453,
+              -0.014585729686739992,
+              0.6567842198916151
+            ],
+            "d": -2.656170420396228
+          }
+        }
+      ],
+      "colored_ply": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/ply_colored/planes_00110.ply",
+      "planes_json": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/json/planes_00110.json"
+    },
+    {
+      "frame_idx": 111,
+      "input_file": "/home/werikson/ufv/icuas2026/data/ply/livox_outdoor_01_T22_275_15_03/frame_00111.ply",
+      "num_points": 4754,
+      "num_planes": 1,
+      "planes": [
+        {
+          "plane_id": 0,
+          "num_inliers": 3292,
+          "inlier_ratio": 0.6924694993689524,
+          "inlier_ratio_total": 0.6924694993689524,
+          "rmse": 0.02371538411157172,
+          "mean_abs_dist": 0.019213585948712475,
+          "std_abs_dist": 0.013901710633976919,
+          "extent_xy": [
+            14.000741992792257,
+            27.411469949288865
+          ],
+          "centroid": [
+            1.0799122103881404,
+            -0.005652338911395623,
+            2.5779555995257195
+          ],
+          "model": {
+            "n": [
+              0.6712524181635794,
+              -0.01929534730256066,
+              0.7409776519450643
+            ],
+            "d": -2.6352102334249805
+          }
+        }
+      ],
+      "colored_ply": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/ply_colored/planes_00111.ply",
+      "planes_json": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/json/planes_00111.json"
+    },
+    {
+      "frame_idx": 112,
+      "input_file": "/home/werikson/ufv/icuas2026/data/ply/livox_outdoor_01_T22_275_15_03/frame_00112.ply",
+      "num_points": 4327,
+      "num_planes": 1,
+      "planes": [
+        {
+          "plane_id": 0,
+          "num_inliers": 3196,
+          "inlier_ratio": 0.7386179801247977,
+          "inlier_ratio_total": 0.7386179801247977,
+          "rmse": 0.02209553890258094,
+          "mean_abs_dist": 0.01702955309954136,
+          "std_abs_dist": 0.014078606487339893,
+          "extent_xy": [
+            13.504309700093703,
+            26.72938155441418
+          ],
+          "centroid": [
+            0.9286273475303647,
+            0.07896735543493162,
+            2.6847569370734776
+          ],
+          "model": {
+            "n": [
+              0.6930859450737755,
+              -0.0694648842424729,
+              0.717500176026718
+            ],
+            "d": -2.5644466795193868
+          }
+        }
+      ],
+      "colored_ply": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/ply_colored/planes_00112.ply",
+      "planes_json": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/json/planes_00112.json"
+    },
+    {
+      "frame_idx": 113,
+      "input_file": "/home/werikson/ufv/icuas2026/data/ply/livox_outdoor_01_T22_275_15_03/frame_00113.ply",
+      "num_points": 4152,
+      "num_planes": 1,
+      "planes": [
+        {
+          "plane_id": 0,
+          "num_inliers": 3027,
+          "inlier_ratio": 0.7290462427745664,
+          "inlier_ratio_total": 0.7290462427745664,
+          "rmse": 0.024167757560607305,
+          "mean_abs_dist": 0.019158692289531376,
+          "std_abs_dist": 0.014731768911551067,
+          "extent_xy": [
+            16.314751714508287,
+            27.334679304737815
+          ],
+          "centroid": [
+            0.9730598505858816,
+            -0.1593588804137981,
+            2.6332775033783147
+          ],
+          "model": {
+            "n": [
+              0.7417329862106525,
+              -0.04453062418267206,
+              0.6692153619552751
+            ],
+            "d": -2.4910766967026374
+          }
+        }
+      ],
+      "colored_ply": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/ply_colored/planes_00113.ply",
+      "planes_json": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/json/planes_00113.json"
+    },
+    {
+      "frame_idx": 114,
+      "input_file": "/home/werikson/ufv/icuas2026/data/ply/livox_outdoor_01_T22_275_15_03/frame_00114.ply",
+      "num_points": 4462,
+      "num_planes": 1,
+      "planes": [
+        {
+          "plane_id": 0,
+          "num_inliers": 3109,
+          "inlier_ratio": 0.6967727476467952,
+          "inlier_ratio_total": 0.6967727476467952,
+          "rmse": 0.024260667265531503,
+          "mean_abs_dist": 0.019067434744250465,
+          "std_abs_dist": 0.01500043027524817,
+          "extent_xy": [
+            16.091762021506973,
+            10.316226368037356
+          ],
+          "centroid": [
+            1.1079526665634158,
+            0.11781263917722898,
+            2.397354775332965
+          ],
+          "model": {
+            "n": [
+              0.7265617988245945,
+              -0.0037835227337434944,
+              0.6870907053981249
+            ],
+            "d": -2.4517505193052624
+          }
+        }
+      ],
+      "colored_ply": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/ply_colored/planes_00114.ply",
+      "planes_json": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/json/planes_00114.json"
+    },
+    {
+      "frame_idx": 115,
+      "input_file": "/home/werikson/ufv/icuas2026/data/ply/livox_outdoor_01_T22_275_15_03/frame_00115.ply",
+      "num_points": 4246,
+      "num_planes": 1,
+      "planes": [
+        {
+          "plane_id": 0,
+          "num_inliers": 3028,
+          "inlier_ratio": 0.7131417804992934,
+          "inlier_ratio_total": 0.7131417804992934,
+          "rmse": 0.0228484517293675,
+          "mean_abs_dist": 0.018347454538257736,
+          "std_abs_dist": 0.013616998876250317,
+          "extent_xy": [
+            14.08760976305298,
+            10.606191193835382
+          ],
+          "centroid": [
+            1.2515678650283872,
+            -0.01644022458978079,
+            2.3950700156754827
+          ],
+          "model": {
+            "n": [
+              0.7221188544689098,
+              0.0007976357525782963,
+              0.691768547852326
+            ],
+            "d": -2.5606017464219613
+          }
+        }
+      ],
+      "colored_ply": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/ply_colored/planes_00115.ply",
+      "planes_json": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/json/planes_00115.json"
+    },
+    {
+      "frame_idx": 116,
+      "input_file": "/home/werikson/ufv/icuas2026/data/ply/livox_outdoor_01_T22_275_15_03/frame_00116.ply",
+      "num_points": 3773,
+      "num_planes": 1,
+      "planes": [
+        {
+          "plane_id": 0,
+          "num_inliers": 2485,
+          "inlier_ratio": 0.6586270871985158,
+          "inlier_ratio_total": 0.6586270871985158,
+          "rmse": 0.023103894514366775,
+          "mean_abs_dist": 0.018273943603511842,
+          "std_abs_dist": 0.014136934848355766,
+          "extent_xy": [
+            30.336436121097858,
+            9.03375766605371
+          ],
+          "centroid": [
+            1.856562173473171,
+            0.09928289583511275,
+            2.119631793153598
+          ],
+          "model": {
+            "n": [
+              0.7583973652432318,
+              -0.03778000732516418,
+              0.6506966324168544
+            ],
+            "d": -2.7834982220091313
+          }
+        }
+      ],
+      "colored_ply": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/ply_colored/planes_00116.ply",
+      "planes_json": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/json/planes_00116.json"
+    },
+    {
+      "frame_idx": 117,
+      "input_file": "/home/werikson/ufv/icuas2026/data/ply/livox_outdoor_01_T22_275_15_03/frame_00117.ply",
+      "num_points": 3896,
+      "num_planes": 1,
+      "planes": [
+        {
+          "plane_id": 0,
+          "num_inliers": 2494,
+          "inlier_ratio": 0.6401437371663244,
+          "inlier_ratio_total": 0.6401437371663244,
+          "rmse": 0.024917094926850628,
+          "mean_abs_dist": 0.02032862382719767,
+          "std_abs_dist": 0.014408631888072392,
+          "extent_xy": [
+            30.574353245928275,
+            10.92327064766488
+          ],
+          "centroid": [
+            2.209760828177727,
+            -0.2334986000673572,
+            1.982178830763485
+          ],
+          "model": {
+            "n": [
+              0.7404942469972605,
+              -0.0003777750424985849,
+              0.6720625919138615
+            ],
+            "d": -2.968551633088768
+          }
+        }
+      ],
+      "colored_ply": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/ply_colored/planes_00117.ply",
+      "planes_json": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/json/planes_00117.json"
+    },
+    {
+      "frame_idx": 118,
+      "input_file": "/home/werikson/ufv/icuas2026/data/ply/livox_outdoor_01_T22_275_15_03/frame_00118.ply",
+      "num_points": 3544,
+      "num_planes": 1,
+      "planes": [
+        {
+          "plane_id": 0,
+          "num_inliers": 1992,
+          "inlier_ratio": 0.5620767494356659,
+          "inlier_ratio_total": 0.5620767494356659,
+          "rmse": 0.02592548714195367,
+          "mean_abs_dist": 0.021393396170299873,
+          "std_abs_dist": 0.014644230394534358,
+          "extent_xy": [
+            30.257508436366514,
+            11.226399305033171
+          ],
+          "centroid": [
+            2.731633784497996,
+            -0.3092006357134865,
+            1.6291065920852474
+          ],
+          "model": {
+            "n": [
+              0.7369709636887168,
+              -0.0002636945026547322,
+              0.6759243516436833
+            ],
+            "d": -3.114369134127671
+          }
+        }
+      ],
+      "colored_ply": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/ply_colored/planes_00118.ply",
+      "planes_json": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/json/planes_00118.json"
+    },
+    {
+      "frame_idx": 119,
+      "input_file": "/home/werikson/ufv/icuas2026/data/ply/livox_outdoor_01_T22_275_15_03/frame_00119.ply",
+      "num_points": 3441,
+      "num_planes": 1,
+      "planes": [
+        {
+          "plane_id": 0,
+          "num_inliers": 1675,
+          "inlier_ratio": 0.4867770996803255,
+          "inlier_ratio_total": 0.4867770996803255,
+          "rmse": 0.023248534853928866,
+          "mean_abs_dist": 0.0180051883909193,
+          "std_abs_dist": 0.01470739826964138,
+          "extent_xy": [
+            17.75519246533213,
+            7.779668101551955
+          ],
+          "centroid": [
+            3.528770448573267,
+            -0.8984107474693611,
+            1.3518125373026384
+          ],
+          "model": {
+            "n": [
+              0.5804773417163481,
+              -0.024202347127434853,
+              0.8139166432426881
+            ],
+            "d": -3.170377660943032
+          }
+        }
+      ],
+      "colored_ply": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/ply_colored/planes_00119.ply",
+      "planes_json": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/json/planes_00119.json"
+    },
+    {
+      "frame_idx": 120,
+      "input_file": "/home/werikson/ufv/icuas2026/data/ply/livox_outdoor_01_T22_275_15_03/frame_00120.ply",
+      "num_points": 2986,
+      "num_planes": 1,
+      "planes": [
+        {
+          "plane_id": 0,
+          "num_inliers": 1566,
+          "inlier_ratio": 0.5244474212993971,
+          "inlier_ratio_total": 0.5244474212993971,
+          "rmse": 0.02373979007039073,
+          "mean_abs_dist": 0.01826984543177386,
+          "std_abs_dist": 0.015158838362002354,
+          "extent_xy": [
+            18.255571268744543,
+            7.861482242166485
+          ],
+          "centroid": [
+            3.468420394129731,
+            -1.4749147528826096,
+            0.8125589623234603
+          ],
+          "model": {
+            "n": [
+              0.75014299973899,
+              -0.11117607905387467,
+              0.6518629912710157
+            ],
+            "d": -3.295463633736813
+          }
+        }
+      ],
+      "colored_ply": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/ply_colored/planes_00120.ply",
+      "planes_json": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/json/planes_00120.json"
+    },
+    {
+      "frame_idx": 121,
+      "input_file": "/home/werikson/ufv/icuas2026/data/ply/livox_outdoor_01_T22_275_15_03/frame_00121.ply",
+      "num_points": 3011,
+      "num_planes": 0,
+      "planes": [],
+      "colored_ply": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/ply_colored/planes_00121.ply",
+      "planes_json": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/json/planes_00121.json"
+    },
+    {
+      "frame_idx": 122,
+      "input_file": "/home/werikson/ufv/icuas2026/data/ply/livox_outdoor_01_T22_275_15_03/frame_00122.ply",
+      "num_points": 2983,
+      "num_planes": 0,
+      "planes": [],
+      "colored_ply": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/ply_colored/planes_00122.ply",
+      "planes_json": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/json/planes_00122.json"
+    },
+    {
+      "frame_idx": 123,
+      "input_file": "/home/werikson/ufv/icuas2026/data/ply/livox_outdoor_01_T22_275_15_03/frame_00123.ply",
+      "num_points": 2924,
+      "num_planes": 0,
+      "planes": [],
+      "colored_ply": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/ply_colored/planes_00123.ply",
+      "planes_json": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/json/planes_00123.json"
+    },
+    {
+      "frame_idx": 124,
+      "input_file": "/home/werikson/ufv/icuas2026/data/ply/livox_outdoor_01_T22_275_15_03/frame_00124.ply",
+      "num_points": 2862,
+      "num_planes": 0,
+      "planes": [],
+      "colored_ply": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/ply_colored/planes_00124.ply",
+      "planes_json": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/json/planes_00124.json"
+    },
+    {
+      "frame_idx": 125,
+      "input_file": "/home/werikson/ufv/icuas2026/data/ply/livox_outdoor_01_T22_275_15_03/frame_00125.ply",
+      "num_points": 3094,
+      "num_planes": 0,
+      "planes": [],
+      "colored_ply": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/ply_colored/planes_00125.ply",
+      "planes_json": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/json/planes_00125.json"
+    },
+    {
+      "frame_idx": 126,
+      "input_file": "/home/werikson/ufv/icuas2026/data/ply/livox_outdoor_01_T22_275_15_03/frame_00126.ply",
+      "num_points": 3034,
+      "num_planes": 1,
+      "planes": [
+        {
+          "plane_id": 0,
+          "num_inliers": 1575,
+          "inlier_ratio": 0.519116677653263,
+          "inlier_ratio_total": 0.519116677653263,
+          "rmse": 0.02429503141255833,
+          "mean_abs_dist": 0.018436561106019194,
+          "std_abs_dist": 0.015822192197076115,
+          "extent_xy": [
+            17.934396275498553,
+            6.5418264116238145
+          ],
+          "centroid": [
+            3.8111580967524694,
+            -0.9439368248742724,
+            0.7064282536252386
+          ],
+          "model": {
+            "n": [
+              0.739639927513732,
+              -0.049751686837028686,
+              0.6711613422153809
+            ],
+            "d": -3.339974482612436
+          }
+        }
+      ],
+      "colored_ply": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/ply_colored/planes_00126.ply",
+      "planes_json": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/json/planes_00126.json"
+    },
+    {
+      "frame_idx": 127,
+      "input_file": "/home/werikson/ufv/icuas2026/data/ply/livox_outdoor_01_T22_275_15_03/frame_00127.ply",
+      "num_points": 3318,
+      "num_planes": 1,
+      "planes": [
+        {
+          "plane_id": 0,
+          "num_inliers": 1842,
+          "inlier_ratio": 0.5551537070524413,
+          "inlier_ratio_total": 0.5551537070524413,
+          "rmse": 0.021673617689216867,
+          "mean_abs_dist": 0.016551341133257506,
+          "std_abs_dist": 0.013992812813329291,
+          "extent_xy": [
+            18.383565948191098,
+            6.265810686468902
+          ],
+          "centroid": [
+            3.240970953506186,
+            -0.6049598280449644,
+            1.3681522806728816
+          ],
+          "model": {
+            "n": [
+              0.6820450476353156,
+              -0.018339438540870282,
+              0.7310801720674319
+            ],
+            "d": -3.2218118167237066
+          }
+        }
+      ],
+      "colored_ply": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/ply_colored/planes_00127.ply",
+      "planes_json": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/json/planes_00127.json"
+    },
+    {
+      "frame_idx": 128,
+      "input_file": "/home/werikson/ufv/icuas2026/data/ply/livox_outdoor_01_T22_275_15_03/frame_00128.ply",
+      "num_points": 3524,
+      "num_planes": 1,
+      "planes": [
+        {
+          "plane_id": 0,
+          "num_inliers": 2181,
+          "inlier_ratio": 0.6188989784335982,
+          "inlier_ratio_total": 0.6188989784335982,
+          "rmse": 0.023661999411355942,
+          "mean_abs_dist": 0.018959669248232492,
+          "std_abs_dist": 0.014157017981928118,
+          "extent_xy": [
+            29.516563863741737,
+            12.03611228034128
+          ],
+          "centroid": [
+            2.636587039907631,
+            -0.37134601997478317,
+            1.6560921581577606
+          ],
+          "model": {
+            "n": [
+              0.7321419311881388,
+              -0.019698098012647325,
+              0.6808672245972682
+            ],
+            "d": -3.0652496088438355
+          }
+        }
+      ],
+      "colored_ply": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/ply_colored/planes_00128.ply",
+      "planes_json": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/json/planes_00128.json"
+    },
+    {
+      "frame_idx": 129,
+      "input_file": "/home/werikson/ufv/icuas2026/data/ply/livox_outdoor_01_T22_275_15_03/frame_00129.ply",
+      "num_points": 3745,
+      "num_planes": 1,
+      "planes": [
+        {
+          "plane_id": 0,
+          "num_inliers": 2418,
+          "inlier_ratio": 0.6456608811748998,
+          "inlier_ratio_total": 0.6456608811748998,
+          "rmse": 0.023788180693174767,
+          "mean_abs_dist": 0.018943900892978368,
+          "std_abs_dist": 0.014387708630916395,
+          "extent_xy": [
+            28.005931525342543,
+            12.155166389671432
+          ],
+          "centroid": [
+            1.931531982436488,
+            0.24229928199946477,
+            2.0625953261874286
+          ],
+          "model": {
+            "n": [
+              0.7342843973221977,
+              0.004767885629992198,
+              0.6788252286971929
+            ],
+            "d": -2.8195907969056715
+          }
+        }
+      ],
+      "colored_ply": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/ply_colored/planes_00129.ply",
+      "planes_json": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/json/planes_00129.json"
+    },
+    {
+      "frame_idx": 130,
+      "input_file": "/home/werikson/ufv/icuas2026/data/ply/livox_outdoor_01_T22_275_15_03/frame_00130.ply",
+      "num_points": 3507,
+      "num_planes": 1,
+      "planes": [
+        {
+          "plane_id": 0,
+          "num_inliers": 2542,
+          "inlier_ratio": 0.7248360422013117,
+          "inlier_ratio_total": 0.7248360422013117,
+          "rmse": 0.019713995239440906,
+          "mean_abs_dist": 0.015689309549429285,
+          "std_abs_dist": 0.01193679915902441,
+          "extent_xy": [
+            16.091512730464384,
+            16.596688968508126
+          ],
+          "centroid": [
+            1.3924108316324297,
+            0.04681936782776701,
+            2.230637884283828
+          ],
+          "model": {
+            "n": [
+              0.7517556155617208,
+              -0.00717181044996529,
+              0.6594028052763258
+            ],
+            "d": -2.517305760669601
+          }
+        }
+      ],
+      "colored_ply": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/ply_colored/planes_00130.ply",
+      "planes_json": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/json/planes_00130.json"
+    },
+    {
+      "frame_idx": 131,
+      "input_file": "/home/werikson/ufv/icuas2026/data/ply/livox_outdoor_01_T22_275_15_03/frame_00131.ply",
+      "num_points": 4308,
+      "num_planes": 1,
+      "planes": [
+        {
+          "plane_id": 0,
+          "num_inliers": 3278,
+          "inlier_ratio": 0.7609099350046425,
+          "inlier_ratio_total": 0.7609099350046425,
+          "rmse": 0.020966301020179462,
+          "mean_abs_dist": 0.016389847036868726,
+          "std_abs_dist": 0.013075117306426881,
+          "extent_xy": [
+            13.727918864980111,
+            27.666496561699176
+          ],
+          "centroid": [
+            0.8228037937841349,
+            0.031327588795457946,
+            2.1895763437686617
+          ],
+          "model": {
+            "n": [
+              0.7216851020195024,
+              -0.014885718262292898,
+              0.6920614343502433
+            ],
+            "d": -2.108660251286392
+          }
+        }
+      ],
+      "colored_ply": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/ply_colored/planes_00131.ply",
+      "planes_json": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/json/planes_00131.json"
+    },
+    {
+      "frame_idx": 132,
+      "input_file": "/home/werikson/ufv/icuas2026/data/ply/livox_outdoor_01_T22_275_15_03/frame_00132.ply",
+      "num_points": 4273,
+      "num_planes": 1,
+      "planes": [
+        {
+          "plane_id": 0,
+          "num_inliers": 3501,
+          "inlier_ratio": 0.8193306810203604,
+          "inlier_ratio_total": 0.8193306810203604,
+          "rmse": 0.02078815535000196,
+          "mean_abs_dist": 0.016099962923631674,
+          "std_abs_dist": 0.013150612028095907,
+          "extent_xy": [
+            12.145783980010943,
+            27.769358699578856
+          ],
+          "centroid": [
+            0.34493275250099253,
+            0.10489291210930984,
+            2.067714086015214
+          ],
+          "model": {
+            "n": [
+              0.718905492593635,
+              -0.02658407711981902,
+              0.6945992942426523
+            ],
+            "d": -1.6814183139253267
+          }
+        }
+      ],
+      "colored_ply": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/ply_colored/planes_00132.ply",
+      "planes_json": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/json/planes_00132.json"
+    },
+    {
+      "frame_idx": 133,
+      "input_file": "/home/werikson/ufv/icuas2026/data/ply/livox_outdoor_01_T22_275_15_03/frame_00133.ply",
+      "num_points": 3694,
+      "num_planes": 1,
+      "planes": [
+        {
+          "plane_id": 0,
+          "num_inliers": 2889,
+          "inlier_ratio": 0.7820790471034109,
+          "inlier_ratio_total": 0.7820790471034109,
+          "rmse": 0.022435366312963827,
+          "mean_abs_dist": 0.017428518978548233,
+          "std_abs_dist": 0.014127717006340981,
+          "extent_xy": [
+            11.737185850439735,
+            27.034323791401228
+          ],
+          "centroid": [
+            -0.19589336554195208,
+            -0.02594348778831057,
+            2.020097289882318
+          ],
+          "model": {
+            "n": [
+              0.7041313779336015,
+              -0.009386354599517754,
+              0.7100076752801057
+            ],
+            "d": -1.2965934299978104
+          }
+        }
+      ],
+      "colored_ply": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/ply_colored/planes_00133.ply",
+      "planes_json": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/json/planes_00133.json"
+    },
+    {
+      "frame_idx": 134,
+      "input_file": "/home/werikson/ufv/icuas2026/data/ply/livox_outdoor_01_T22_275_15_03/frame_00134.ply",
+      "num_points": 3494,
+      "num_planes": 1,
+      "planes": [
+        {
+          "plane_id": 0,
+          "num_inliers": 2844,
+          "inlier_ratio": 0.813966800228964,
+          "inlier_ratio_total": 0.813966800228964,
+          "rmse": 0.020746097355301755,
+          "mean_abs_dist": 0.01576890364999215,
+          "std_abs_dist": 0.01348118070322191,
+          "extent_xy": [
+            11.356748795832775,
+            27.845049611415373
+          ],
+          "centroid": [
+            -0.34576589306523475,
+            0.14682799956689133,
+            1.8063710629217724
+          ],
+          "model": {
+            "n": [
+              0.6982541461526774,
+              -0.010559476879982599,
+              0.7157720620620902
+            ],
+            "d": -1.0499670452590626
+          }
+        }
+      ],
+      "colored_ply": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/ply_colored/planes_00134.ply",
+      "planes_json": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/json/planes_00134.json"
+    },
+    {
+      "frame_idx": 135,
+      "input_file": "/home/werikson/ufv/icuas2026/data/ply/livox_outdoor_01_T22_275_15_03/frame_00135.ply",
+      "num_points": 3207,
+      "num_planes": 1,
+      "planes": [
+        {
+          "plane_id": 0,
+          "num_inliers": 2628,
+          "inlier_ratio": 0.8194574368568756,
+          "inlier_ratio_total": 0.8194574368568756,
+          "rmse": 0.020046189063797456,
+          "mean_abs_dist": 0.01543188925138574,
+          "std_abs_dist": 0.012794783707217481,
+          "extent_xy": [
+            26.30812523090805,
+            11.48914883646972
+          ],
+          "centroid": [
+            -0.13422128782901352,
+            0.010904043217207079,
+            1.465563509329687
+          ],
+          "model": {
+            "n": [
+              0.7170200189780076,
+              -0.028852541158531857,
+              0.6964551839518985
+            ],
+            "d": -0.9241453437812663
+          }
+        }
+      ],
+      "colored_ply": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/ply_colored/planes_00135.ply",
+      "planes_json": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/json/planes_00135.json"
+    },
+    {
+      "frame_idx": 136,
+      "input_file": "/home/werikson/ufv/icuas2026/data/ply/livox_outdoor_01_T22_275_15_03/frame_00136.ply",
+      "num_points": 3287,
+      "num_planes": 1,
+      "planes": [
+        {
+          "plane_id": 0,
+          "num_inliers": 2707,
+          "inlier_ratio": 0.8235473075752966,
+          "inlier_ratio_total": 0.8235473075752966,
+          "rmse": 0.020014408643225783,
+          "mean_abs_dist": 0.015401375012143531,
+          "std_abs_dist": 0.012781791778672964,
+          "extent_xy": [
+            15.167477606448907,
+            9.449498896844453
+          ],
+          "centroid": [
+            0.1840739073243197,
+            0.02617948576266683,
+            1.120821438373977
+          ],
+          "model": {
+            "n": [
+              0.771710542182668,
+              0.007091771993184226,
+              0.6359343880103744
+            ],
+            "d": -0.8550063292481231
+          }
+        }
+      ],
+      "colored_ply": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/ply_colored/planes_00136.ply",
+      "planes_json": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/json/planes_00136.json"
+    },
+    {
+      "frame_idx": 137,
+      "input_file": "/home/werikson/ufv/icuas2026/data/ply/livox_outdoor_01_T22_275_15_03/frame_00137.ply",
+      "num_points": 3328,
+      "num_planes": 1,
+      "planes": [
+        {
+          "plane_id": 0,
+          "num_inliers": 2673,
+          "inlier_ratio": 0.8031850961538461,
+          "inlier_ratio_total": 0.8031850961538461,
+          "rmse": 0.01954642006288996,
+          "mean_abs_dist": 0.014749821760532805,
+          "std_abs_dist": 0.012825961769296684,
+          "extent_xy": [
+            16.775224800903302,
+            6.748850332576167
+          ],
+          "centroid": [
+            0.363297687542809,
+            0.003790584544965116,
+            0.8930281268397661
+          ],
+          "model": {
+            "n": [
+              0.7147583163476368,
+              0.023342717906677635,
+              0.6989818786868661
+            ],
+            "d": -0.8839690038454951
+          }
+        }
+      ],
+      "colored_ply": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/ply_colored/planes_00137.ply",
+      "planes_json": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/json/planes_00137.json"
+    },
+    {
+      "frame_idx": 138,
+      "input_file": "/home/werikson/ufv/icuas2026/data/ply/livox_outdoor_01_T22_275_15_03/frame_00138.ply",
+      "num_points": 3468,
+      "num_planes": 1,
+      "planes": [
+        {
+          "plane_id": 0,
+          "num_inliers": 2762,
+          "inlier_ratio": 0.7964244521337946,
+          "inlier_ratio_total": 0.7964244521337946,
+          "rmse": 0.021870080160146244,
+          "mean_abs_dist": 0.017079500943713237,
+          "std_abs_dist": 0.013659833590674563,
+          "extent_xy": [
+            26.771364950064676,
+            14.033744520703898
+          ],
+          "centroid": [
+            0.6235364165592086,
+            -0.09658172234628491,
+            0.6999772085648106
+          ],
+          "model": {
+            "n": [
+              0.7146997054548915,
+              -0.08645802099101185,
+              0.6940672457543355
+            ],
+            "d": -0.9398228110726142
+          }
+        }
+      ],
+      "colored_ply": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/ply_colored/planes_00138.ply",
+      "planes_json": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/json/planes_00138.json"
+    },
+    {
+      "frame_idx": 139,
+      "input_file": "/home/werikson/ufv/icuas2026/data/ply/livox_outdoor_01_T22_275_15_03/frame_00139.ply",
+      "num_points": 3240,
+      "num_planes": 1,
+      "planes": [
+        {
+          "plane_id": 0,
+          "num_inliers": 2400,
+          "inlier_ratio": 0.7407407407407407,
+          "inlier_ratio_total": 0.7407407407407407,
+          "rmse": 0.020925874285102113,
+          "mean_abs_dist": 0.01583428568006534,
+          "std_abs_dist": 0.013680921445501234,
+          "extent_xy": [
+            16.627202291358806,
+            6.761411820133309
+          ],
+          "centroid": [
+            0.8080254856333421,
+            0.08913038084128254,
+            0.4779698959865831
+          ],
+          "model": {
+            "n": [
+              0.7571718735779933,
+              0.02030450385587623,
+              0.652900054361736
+            ],
+            "d": -0.9256904900901465
+          }
+        }
+      ],
+      "colored_ply": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/ply_colored/planes_00139.ply",
+      "planes_json": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/json/planes_00139.json"
+    },
+    {
+      "frame_idx": 140,
+      "input_file": "/home/werikson/ufv/icuas2026/data/ply/livox_outdoor_01_T22_275_15_03/frame_00140.ply",
+      "num_points": 2749,
+      "num_planes": 1,
+      "planes": [
+        {
+          "plane_id": 0,
+          "num_inliers": 1914,
+          "inlier_ratio": 0.6962531829756275,
+          "inlier_ratio_total": 0.6962531829756275,
+          "rmse": 0.021332870172384114,
+          "mean_abs_dist": 0.016869196249292576,
+          "std_abs_dist": 0.013058390700796526,
+          "extent_xy": [
+            17.145912774090995,
+            4.530075357297466
+          ],
+          "centroid": [
+            0.7775698700931709,
+            -0.15880319651726207,
+            0.2933343347225304
+          ],
+          "model": {
+            "n": [
+              0.7218832380666007,
+              -0.0034229211396119563,
+              0.6920064119712703
+            ],
+            "d": -0.764847466943599
+          }
+        }
+      ],
+      "colored_ply": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/ply_colored/planes_00140.ply",
+      "planes_json": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/json/planes_00140.json"
+    },
+    {
+      "frame_idx": 141,
+      "input_file": "/home/werikson/ufv/icuas2026/data/ply/livox_outdoor_01_T22_275_15_03/frame_00141.ply",
+      "num_points": 2560,
+      "num_planes": 1,
+      "planes": [
+        {
+          "plane_id": 0,
+          "num_inliers": 1709,
+          "inlier_ratio": 0.667578125,
+          "inlier_ratio_total": 0.667578125,
+          "rmse": 0.021656938154048455,
+          "mean_abs_dist": 0.016692008334406983,
+          "std_abs_dist": 0.01379854441498695,
+          "extent_xy": [
+            29.735121043622883,
+            11.038244681772861
+          ],
+          "centroid": [
+            0.7043070270570965,
+            0.0028248904007444767,
+            0.13926660253202758
+          ],
+          "model": {
+            "n": [
+              0.725878309551016,
+              -0.03797810846949656,
+              0.6867738659853319
+            ],
+            "d": -0.6067785732346161
+          }
+        }
+      ],
+      "colored_ply": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/ply_colored/planes_00141.ply",
+      "planes_json": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/json/planes_00141.json"
+    },
+    {
+      "frame_idx": 142,
+      "input_file": "/home/werikson/ufv/icuas2026/data/ply/livox_outdoor_01_T22_275_15_03/frame_00142.ply",
+      "num_points": 2146,
+      "num_planes": 0,
+      "planes": [],
+      "colored_ply": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/ply_colored/planes_00142.ply",
+      "planes_json": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/json/planes_00142.json"
+    },
+    {
+      "frame_idx": 143,
+      "input_file": "/home/werikson/ufv/icuas2026/data/ply/livox_outdoor_01_T22_275_15_03/frame_00143.ply",
+      "num_points": 1863,
+      "num_planes": 0,
+      "planes": [],
+      "colored_ply": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/ply_colored/planes_00143.ply",
+      "planes_json": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/json/planes_00143.json"
+    },
+    {
+      "frame_idx": 144,
+      "input_file": "/home/werikson/ufv/icuas2026/data/ply/livox_outdoor_01_T22_275_15_03/frame_00144.ply",
+      "num_points": 1888,
+      "num_planes": 0,
+      "planes": [],
+      "colored_ply": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/ply_colored/planes_00144.ply",
+      "planes_json": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/json/planes_00144.json"
+    },
+    {
+      "frame_idx": 145,
+      "input_file": "/home/werikson/ufv/icuas2026/data/ply/livox_outdoor_01_T22_275_15_03/frame_00145.ply",
+      "num_points": 1757,
+      "num_planes": 0,
+      "planes": [],
+      "colored_ply": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/ply_colored/planes_00145.ply",
+      "planes_json": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/json/planes_00145.json"
+    },
+    {
+      "frame_idx": 146,
+      "input_file": "/home/werikson/ufv/icuas2026/data/ply/livox_outdoor_01_T22_275_15_03/frame_00146.ply",
+      "num_points": 1470,
+      "num_planes": 0,
+      "planes": [],
+      "colored_ply": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/ply_colored/planes_00146.ply",
+      "planes_json": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/json/planes_00146.json"
+    },
+    {
+      "frame_idx": 147,
+      "input_file": "/home/werikson/ufv/icuas2026/data/ply/livox_outdoor_01_T22_275_15_03/frame_00147.ply",
+      "num_points": 1160,
+      "num_planes": 0,
+      "planes": [],
+      "colored_ply": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/ply_colored/planes_00147.ply",
+      "planes_json": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/json/planes_00147.json"
+    },
+    {
+      "frame_idx": 148,
+      "input_file": "/home/werikson/ufv/icuas2026/data/ply/livox_outdoor_01_T22_275_15_03/frame_00148.ply",
+      "num_points": 1436,
+      "num_planes": 0,
+      "planes": [],
+      "colored_ply": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/ply_colored/planes_00148.ply",
+      "planes_json": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/json/planes_00148.json"
+    },
+    {
+      "frame_idx": 149,
+      "input_file": "/home/werikson/ufv/icuas2026/data/ply/livox_outdoor_01_T22_275_15_03/frame_00149.ply",
+      "num_points": 1213,
+      "num_planes": 0,
+      "planes": [],
+      "colored_ply": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/ply_colored/planes_00149.ply",
+      "planes_json": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/json/planes_00149.json"
+    },
+    {
+      "frame_idx": 150,
+      "input_file": "/home/werikson/ufv/icuas2026/data/ply/livox_outdoor_01_T22_275_15_03/frame_00150.ply",
+      "num_points": 981,
+      "num_planes": 0,
+      "planes": [],
+      "colored_ply": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/ply_colored/planes_00150.ply",
+      "planes_json": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/json/planes_00150.json"
+    },
+    {
+      "frame_idx": 151,
+      "input_file": "/home/werikson/ufv/icuas2026/data/ply/livox_outdoor_01_T22_275_15_03/frame_00151.ply",
+      "num_points": 1005,
+      "num_planes": 0,
+      "planes": [],
+      "colored_ply": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/ply_colored/planes_00151.ply",
+      "planes_json": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/json/planes_00151.json"
+    },
+    {
+      "frame_idx": 152,
+      "input_file": "/home/werikson/ufv/icuas2026/data/ply/livox_outdoor_01_T22_275_15_03/frame_00152.ply",
+      "num_points": 862,
+      "num_planes": 0,
+      "planes": [],
+      "colored_ply": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/ply_colored/planes_00152.ply",
+      "planes_json": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/json/planes_00152.json"
+    },
+    {
+      "frame_idx": 153,
+      "input_file": "/home/werikson/ufv/icuas2026/data/ply/livox_outdoor_01_T22_275_15_03/frame_00153.ply",
+      "num_points": 1534,
+      "num_planes": 0,
+      "planes": [],
+      "colored_ply": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/ply_colored/planes_00153.ply",
+      "planes_json": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/json/planes_00153.json"
+    },
+    {
+      "frame_idx": 154,
+      "input_file": "/home/werikson/ufv/icuas2026/data/ply/livox_outdoor_01_T22_275_15_03/frame_00154.ply",
+      "num_points": 859,
+      "num_planes": 0,
+      "planes": [],
+      "colored_ply": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/ply_colored/planes_00154.ply",
+      "planes_json": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/json/planes_00154.json"
+    },
+    {
+      "frame_idx": 155,
+      "input_file": "/home/werikson/ufv/icuas2026/data/ply/livox_outdoor_01_T22_275_15_03/frame_00155.ply",
+      "num_points": 909,
+      "num_planes": 0,
+      "planes": [],
+      "colored_ply": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/ply_colored/planes_00155.ply",
+      "planes_json": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/json/planes_00155.json"
+    },
+    {
+      "frame_idx": 156,
+      "input_file": "/home/werikson/ufv/icuas2026/data/ply/livox_outdoor_01_T22_275_15_03/frame_00156.ply",
+      "num_points": 967,
+      "num_planes": 0,
+      "planes": [],
+      "colored_ply": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/ply_colored/planes_00156.ply",
+      "planes_json": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/json/planes_00156.json"
+    },
+    {
+      "frame_idx": 157,
+      "input_file": "/home/werikson/ufv/icuas2026/data/ply/livox_outdoor_01_T22_275_15_03/frame_00157.ply",
+      "num_points": 1064,
+      "num_planes": 0,
+      "planes": [],
+      "colored_ply": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/ply_colored/planes_00157.ply",
+      "planes_json": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/json/planes_00157.json"
+    },
+    {
+      "frame_idx": 158,
+      "input_file": "/home/werikson/ufv/icuas2026/data/ply/livox_outdoor_01_T22_275_15_03/frame_00158.ply",
+      "num_points": 1276,
+      "num_planes": 0,
+      "planes": [],
+      "colored_ply": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/ply_colored/planes_00158.ply",
+      "planes_json": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/json/planes_00158.json"
+    },
+    {
+      "frame_idx": 159,
+      "input_file": "/home/werikson/ufv/icuas2026/data/ply/livox_outdoor_01_T22_275_15_03/frame_00159.ply",
+      "num_points": 1129,
+      "num_planes": 0,
+      "planes": [],
+      "colored_ply": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/ply_colored/planes_00159.ply",
+      "planes_json": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/json/planes_00159.json"
+    },
+    {
+      "frame_idx": 160,
+      "input_file": "/home/werikson/ufv/icuas2026/data/ply/livox_outdoor_01_T22_275_15_03/frame_00160.ply",
+      "num_points": 1177,
+      "num_planes": 0,
+      "planes": [],
+      "colored_ply": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/ply_colored/planes_00160.ply",
+      "planes_json": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/json/planes_00160.json"
+    },
+    {
+      "frame_idx": 161,
+      "input_file": "/home/werikson/ufv/icuas2026/data/ply/livox_outdoor_01_T22_275_15_03/frame_00161.ply",
+      "num_points": 1020,
+      "num_planes": 0,
+      "planes": [],
+      "colored_ply": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/ply_colored/planes_00161.ply",
+      "planes_json": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/json/planes_00161.json"
+    },
+    {
+      "frame_idx": 162,
+      "input_file": "/home/werikson/ufv/icuas2026/data/ply/livox_outdoor_01_T22_275_15_03/frame_00162.ply",
+      "num_points": 945,
+      "num_planes": 0,
+      "planes": [],
+      "colored_ply": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/ply_colored/planes_00162.ply",
+      "planes_json": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/json/planes_00162.json"
+    },
+    {
+      "frame_idx": 163,
+      "input_file": "/home/werikson/ufv/icuas2026/data/ply/livox_outdoor_01_T22_275_15_03/frame_00163.ply",
+      "num_points": 980,
+      "num_planes": 0,
+      "planes": [],
+      "colored_ply": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/ply_colored/planes_00163.ply",
+      "planes_json": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/json/planes_00163.json"
+    },
+    {
+      "frame_idx": 164,
+      "input_file": "/home/werikson/ufv/icuas2026/data/ply/livox_outdoor_01_T22_275_15_03/frame_00164.ply",
+      "num_points": 982,
+      "num_planes": 0,
+      "planes": [],
+      "colored_ply": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/ply_colored/planes_00164.ply",
+      "planes_json": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/json/planes_00164.json"
+    },
+    {
+      "frame_idx": 165,
+      "input_file": "/home/werikson/ufv/icuas2026/data/ply/livox_outdoor_01_T22_275_15_03/frame_00165.ply",
+      "num_points": 984,
+      "num_planes": 0,
+      "planes": [],
+      "colored_ply": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/ply_colored/planes_00165.ply",
+      "planes_json": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/json/planes_00165.json"
+    },
+    {
+      "frame_idx": 166,
+      "input_file": "/home/werikson/ufv/icuas2026/data/ply/livox_outdoor_01_T22_275_15_03/frame_00166.ply",
+      "num_points": 1094,
+      "num_planes": 0,
+      "planes": [],
+      "colored_ply": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/ply_colored/planes_00166.ply",
+      "planes_json": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/json/planes_00166.json"
+    },
+    {
+      "frame_idx": 167,
+      "input_file": "/home/werikson/ufv/icuas2026/data/ply/livox_outdoor_01_T22_275_15_03/frame_00167.ply",
+      "num_points": 540,
+      "num_planes": 0,
+      "planes": [],
+      "colored_ply": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/ply_colored/planes_00167.ply",
+      "planes_json": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/json/planes_00167.json"
+    },
+    {
+      "frame_idx": 168,
+      "input_file": "/home/werikson/ufv/icuas2026/data/ply/livox_outdoor_01_T22_275_15_03/frame_00168.ply",
+      "num_points": 1207,
+      "num_planes": 0,
+      "planes": [],
+      "colored_ply": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/ply_colored/planes_00168.ply",
+      "planes_json": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/json/planes_00168.json"
+    },
+    {
+      "frame_idx": 169,
+      "input_file": "/home/werikson/ufv/icuas2026/data/ply/livox_outdoor_01_T22_275_15_03/frame_00169.ply",
+      "num_points": 1095,
+      "num_planes": 0,
+      "planes": [],
+      "colored_ply": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/ply_colored/planes_00169.ply",
+      "planes_json": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/json/planes_00169.json"
+    },
+    {
+      "frame_idx": 170,
+      "input_file": "/home/werikson/ufv/icuas2026/data/ply/livox_outdoor_01_T22_275_15_03/frame_00170.ply",
+      "num_points": 1017,
+      "num_planes": 0,
+      "planes": [],
+      "colored_ply": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/ply_colored/planes_00170.ply",
+      "planes_json": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/json/planes_00170.json"
+    },
+    {
+      "frame_idx": 171,
+      "input_file": "/home/werikson/ufv/icuas2026/data/ply/livox_outdoor_01_T22_275_15_03/frame_00171.ply",
+      "num_points": 962,
+      "num_planes": 0,
+      "planes": [],
+      "colored_ply": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/ply_colored/planes_00171.ply",
+      "planes_json": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/json/planes_00171.json"
+    },
+    {
+      "frame_idx": 172,
+      "input_file": "/home/werikson/ufv/icuas2026/data/ply/livox_outdoor_01_T22_275_15_03/frame_00172.ply",
+      "num_points": 914,
+      "num_planes": 0,
+      "planes": [],
+      "colored_ply": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/ply_colored/planes_00172.ply",
+      "planes_json": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/json/planes_00172.json"
+    },
+    {
+      "frame_idx": 173,
+      "input_file": "/home/werikson/ufv/icuas2026/data/ply/livox_outdoor_01_T22_275_15_03/frame_00173.ply",
+      "num_points": 765,
+      "num_planes": 0,
+      "planes": [],
+      "colored_ply": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/ply_colored/planes_00173.ply",
+      "planes_json": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/json/planes_00173.json"
+    },
+    {
+      "frame_idx": 174,
+      "input_file": "/home/werikson/ufv/icuas2026/data/ply/livox_outdoor_01_T22_275_15_03/frame_00174.ply",
+      "num_points": 852,
+      "num_planes": 0,
+      "planes": [],
+      "colored_ply": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/ply_colored/planes_00174.ply",
+      "planes_json": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/json/planes_00174.json"
+    },
+    {
+      "frame_idx": 175,
+      "input_file": "/home/werikson/ufv/icuas2026/data/ply/livox_outdoor_01_T22_275_15_03/frame_00175.ply",
+      "num_points": 866,
+      "num_planes": 0,
+      "planes": [],
+      "colored_ply": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/ply_colored/planes_00175.ply",
+      "planes_json": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/json/planes_00175.json"
+    },
+    {
+      "frame_idx": 176,
+      "input_file": "/home/werikson/ufv/icuas2026/data/ply/livox_outdoor_01_T22_275_15_03/frame_00176.ply",
+      "num_points": 1063,
+      "num_planes": 0,
+      "planes": [],
+      "colored_ply": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/ply_colored/planes_00176.ply",
+      "planes_json": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/json/planes_00176.json"
+    },
+    {
+      "frame_idx": 177,
+      "input_file": "/home/werikson/ufv/icuas2026/data/ply/livox_outdoor_01_T22_275_15_03/frame_00177.ply",
+      "num_points": 1090,
+      "num_planes": 0,
+      "planes": [],
+      "colored_ply": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/ply_colored/planes_00177.ply",
+      "planes_json": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/json/planes_00177.json"
+    },
+    {
+      "frame_idx": 178,
+      "input_file": "/home/werikson/ufv/icuas2026/data/ply/livox_outdoor_01_T22_275_15_03/frame_00178.ply",
+      "num_points": 1140,
+      "num_planes": 0,
+      "planes": [],
+      "colored_ply": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/ply_colored/planes_00178.ply",
+      "planes_json": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/json/planes_00178.json"
+    },
+    {
+      "frame_idx": 179,
+      "input_file": "/home/werikson/ufv/icuas2026/data/ply/livox_outdoor_01_T22_275_15_03/frame_00179.ply",
+      "num_points": 1089,
+      "num_planes": 0,
+      "planes": [],
+      "colored_ply": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/ply_colored/planes_00179.ply",
+      "planes_json": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/json/planes_00179.json"
+    },
+    {
+      "frame_idx": 180,
+      "input_file": "/home/werikson/ufv/icuas2026/data/ply/livox_outdoor_01_T22_275_15_03/frame_00180.ply",
+      "num_points": 1160,
+      "num_planes": 0,
+      "planes": [],
+      "colored_ply": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/ply_colored/planes_00180.ply",
+      "planes_json": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/json/planes_00180.json"
+    },
+    {
+      "frame_idx": 181,
+      "input_file": "/home/werikson/ufv/icuas2026/data/ply/livox_outdoor_01_T22_275_15_03/frame_00181.ply",
+      "num_points": 1086,
+      "num_planes": 0,
+      "planes": [],
+      "colored_ply": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/ply_colored/planes_00181.ply",
+      "planes_json": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/json/planes_00181.json"
+    },
+    {
+      "frame_idx": 182,
+      "input_file": "/home/werikson/ufv/icuas2026/data/ply/livox_outdoor_01_T22_275_15_03/frame_00182.ply",
+      "num_points": 1070,
+      "num_planes": 0,
+      "planes": [],
+      "colored_ply": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/ply_colored/planes_00182.ply",
+      "planes_json": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/json/planes_00182.json"
+    },
+    {
+      "frame_idx": 183,
+      "input_file": "/home/werikson/ufv/icuas2026/data/ply/livox_outdoor_01_T22_275_15_03/frame_00183.ply",
+      "num_points": 1377,
+      "num_planes": 0,
+      "planes": [],
+      "colored_ply": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/ply_colored/planes_00183.ply",
+      "planes_json": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/json/planes_00183.json"
+    },
+    {
+      "frame_idx": 184,
+      "input_file": "/home/werikson/ufv/icuas2026/data/ply/livox_outdoor_01_T22_275_15_03/frame_00184.ply",
+      "num_points": 1268,
+      "num_planes": 0,
+      "planes": [],
+      "colored_ply": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/ply_colored/planes_00184.ply",
+      "planes_json": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/json/planes_00184.json"
+    },
+    {
+      "frame_idx": 185,
+      "input_file": "/home/werikson/ufv/icuas2026/data/ply/livox_outdoor_01_T22_275_15_03/frame_00185.ply",
+      "num_points": 1017,
+      "num_planes": 0,
+      "planes": [],
+      "colored_ply": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/ply_colored/planes_00185.ply",
+      "planes_json": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/json/planes_00185.json"
+    },
+    {
+      "frame_idx": 186,
+      "input_file": "/home/werikson/ufv/icuas2026/data/ply/livox_outdoor_01_T22_275_15_03/frame_00186.ply",
+      "num_points": 1058,
+      "num_planes": 0,
+      "planes": [],
+      "colored_ply": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/ply_colored/planes_00186.ply",
+      "planes_json": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/json/planes_00186.json"
+    },
+    {
+      "frame_idx": 187,
+      "input_file": "/home/werikson/ufv/icuas2026/data/ply/livox_outdoor_01_T22_275_15_03/frame_00187.ply",
+      "num_points": 1074,
+      "num_planes": 0,
+      "planes": [],
+      "colored_ply": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/ply_colored/planes_00187.ply",
+      "planes_json": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/json/planes_00187.json"
+    },
+    {
+      "frame_idx": 188,
+      "input_file": "/home/werikson/ufv/icuas2026/data/ply/livox_outdoor_01_T22_275_15_03/frame_00188.ply",
+      "num_points": 1172,
+      "num_planes": 0,
+      "planes": [],
+      "colored_ply": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/ply_colored/planes_00188.ply",
+      "planes_json": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/json/planes_00188.json"
+    },
+    {
+      "frame_idx": 189,
+      "input_file": "/home/werikson/ufv/icuas2026/data/ply/livox_outdoor_01_T22_275_15_03/frame_00189.ply",
+      "num_points": 1292,
+      "num_planes": 0,
+      "planes": [],
+      "colored_ply": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/ply_colored/planes_00189.ply",
+      "planes_json": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/json/planes_00189.json"
+    },
+    {
+      "frame_idx": 190,
+      "input_file": "/home/werikson/ufv/icuas2026/data/ply/livox_outdoor_01_T22_275_15_03/frame_00190.ply",
+      "num_points": 1007,
+      "num_planes": 0,
+      "planes": [],
+      "colored_ply": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/ply_colored/planes_00190.ply",
+      "planes_json": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/json/planes_00190.json"
+    },
+    {
+      "frame_idx": 191,
+      "input_file": "/home/werikson/ufv/icuas2026/data/ply/livox_outdoor_01_T22_275_15_03/frame_00191.ply",
+      "num_points": 928,
+      "num_planes": 0,
+      "planes": [],
+      "colored_ply": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/ply_colored/planes_00191.ply",
+      "planes_json": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/json/planes_00191.json"
+    },
+    {
+      "frame_idx": 192,
+      "input_file": "/home/werikson/ufv/icuas2026/data/ply/livox_outdoor_01_T22_275_15_03/frame_00192.ply",
+      "num_points": 853,
+      "num_planes": 0,
+      "planes": [],
+      "colored_ply": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/ply_colored/planes_00192.ply",
+      "planes_json": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/json/planes_00192.json"
+    },
+    {
+      "frame_idx": 193,
+      "input_file": "/home/werikson/ufv/icuas2026/data/ply/livox_outdoor_01_T22_275_15_03/frame_00193.ply",
+      "num_points": 1008,
+      "num_planes": 0,
+      "planes": [],
+      "colored_ply": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/ply_colored/planes_00193.ply",
+      "planes_json": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/json/planes_00193.json"
+    },
+    {
+      "frame_idx": 194,
+      "input_file": "/home/werikson/ufv/icuas2026/data/ply/livox_outdoor_01_T22_275_15_03/frame_00194.ply",
+      "num_points": 801,
+      "num_planes": 0,
+      "planes": [],
+      "colored_ply": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/ply_colored/planes_00194.ply",
+      "planes_json": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/json/planes_00194.json"
+    },
+    {
+      "frame_idx": 195,
+      "input_file": "/home/werikson/ufv/icuas2026/data/ply/livox_outdoor_01_T22_275_15_03/frame_00195.ply",
+      "num_points": 871,
+      "num_planes": 0,
+      "planes": [],
+      "colored_ply": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/ply_colored/planes_00195.ply",
+      "planes_json": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/json/planes_00195.json"
+    },
+    {
+      "frame_idx": 196,
+      "input_file": "/home/werikson/ufv/icuas2026/data/ply/livox_outdoor_01_T22_275_15_03/frame_00196.ply",
+      "num_points": 899,
+      "num_planes": 0,
+      "planes": [],
+      "colored_ply": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/ply_colored/planes_00196.ply",
+      "planes_json": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/json/planes_00196.json"
+    },
+    {
+      "frame_idx": 197,
+      "input_file": "/home/werikson/ufv/icuas2026/data/ply/livox_outdoor_01_T22_275_15_03/frame_00197.ply",
+      "num_points": 1087,
+      "num_planes": 0,
+      "planes": [],
+      "colored_ply": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/ply_colored/planes_00197.ply",
+      "planes_json": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/json/planes_00197.json"
+    },
+    {
+      "frame_idx": 198,
+      "input_file": "/home/werikson/ufv/icuas2026/data/ply/livox_outdoor_01_T22_275_15_03/frame_00198.ply",
+      "num_points": 1283,
+      "num_planes": 0,
+      "planes": [],
+      "colored_ply": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/ply_colored/planes_00198.ply",
+      "planes_json": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/json/planes_00198.json"
+    },
+    {
+      "frame_idx": 199,
+      "input_file": "/home/werikson/ufv/icuas2026/data/ply/livox_outdoor_01_T22_275_15_03/frame_00199.ply",
+      "num_points": 1219,
+      "num_planes": 0,
+      "planes": [],
+      "colored_ply": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/ply_colored/planes_00199.ply",
+      "planes_json": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/json/planes_00199.json"
+    },
+    {
+      "frame_idx": 200,
+      "input_file": "/home/werikson/ufv/icuas2026/data/ply/livox_outdoor_01_T22_275_15_03/frame_00200.ply",
+      "num_points": 1069,
+      "num_planes": 0,
+      "planes": [],
+      "colored_ply": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/ply_colored/planes_00200.ply",
+      "planes_json": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/json/planes_00200.json"
+    },
+    {
+      "frame_idx": 201,
+      "input_file": "/home/werikson/ufv/icuas2026/data/ply/livox_outdoor_01_T22_275_15_03/frame_00201.ply",
+      "num_points": 1331,
+      "num_planes": 0,
+      "planes": [],
+      "colored_ply": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/ply_colored/planes_00201.ply",
+      "planes_json": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/json/planes_00201.json"
+    },
+    {
+      "frame_idx": 202,
+      "input_file": "/home/werikson/ufv/icuas2026/data/ply/livox_outdoor_01_T22_275_15_03/frame_00202.ply",
+      "num_points": 1190,
+      "num_planes": 0,
+      "planes": [],
+      "colored_ply": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/ply_colored/planes_00202.ply",
+      "planes_json": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/json/planes_00202.json"
+    },
+    {
+      "frame_idx": 203,
+      "input_file": "/home/werikson/ufv/icuas2026/data/ply/livox_outdoor_01_T22_275_15_03/frame_00203.ply",
+      "num_points": 1185,
+      "num_planes": 0,
+      "planes": [],
+      "colored_ply": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/ply_colored/planes_00203.ply",
+      "planes_json": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/json/planes_00203.json"
+    },
+    {
+      "frame_idx": 204,
+      "input_file": "/home/werikson/ufv/icuas2026/data/ply/livox_outdoor_01_T22_275_15_03/frame_00204.ply",
+      "num_points": 1277,
+      "num_planes": 0,
+      "planes": [],
+      "colored_ply": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/ply_colored/planes_00204.ply",
+      "planes_json": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/json/planes_00204.json"
+    },
+    {
+      "frame_idx": 205,
+      "input_file": "/home/werikson/ufv/icuas2026/data/ply/livox_outdoor_01_T22_275_15_03/frame_00205.ply",
+      "num_points": 1183,
+      "num_planes": 0,
+      "planes": [],
+      "colored_ply": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/ply_colored/planes_00205.ply",
+      "planes_json": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/json/planes_00205.json"
+    },
+    {
+      "frame_idx": 206,
+      "input_file": "/home/werikson/ufv/icuas2026/data/ply/livox_outdoor_01_T22_275_15_03/frame_00206.ply",
+      "num_points": 1240,
+      "num_planes": 0,
+      "planes": [],
+      "colored_ply": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/ply_colored/planes_00206.ply",
+      "planes_json": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/json/planes_00206.json"
+    },
+    {
+      "frame_idx": 207,
+      "input_file": "/home/werikson/ufv/icuas2026/data/ply/livox_outdoor_01_T22_275_15_03/frame_00207.ply",
+      "num_points": 1285,
+      "num_planes": 0,
+      "planes": [],
+      "colored_ply": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/ply_colored/planes_00207.ply",
+      "planes_json": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/json/planes_00207.json"
+    },
+    {
+      "frame_idx": 208,
+      "input_file": "/home/werikson/ufv/icuas2026/data/ply/livox_outdoor_01_T22_275_15_03/frame_00208.ply",
+      "num_points": 29,
+      "num_planes": 0,
+      "planes": [],
+      "colored_ply": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/ply_colored/planes_00208.ply",
+      "planes_json": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/json/planes_00208.json"
+    },
+    {
+      "frame_idx": 209,
+      "input_file": "/home/werikson/ufv/icuas2026/data/ply/livox_outdoor_01_T22_275_15_03/frame_00209.ply",
+      "num_points": 1120,
+      "num_planes": 0,
+      "planes": [],
+      "colored_ply": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/ply_colored/planes_00209.ply",
+      "planes_json": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/json/planes_00209.json"
+    },
+    {
+      "frame_idx": 210,
+      "input_file": "/home/werikson/ufv/icuas2026/data/ply/livox_outdoor_01_T22_275_15_03/frame_00210.ply",
+      "num_points": 893,
+      "num_planes": 0,
+      "planes": [],
+      "colored_ply": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/ply_colored/planes_00210.ply",
+      "planes_json": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/json/planes_00210.json"
+    },
+    {
+      "frame_idx": 211,
+      "input_file": "/home/werikson/ufv/icuas2026/data/ply/livox_outdoor_01_T22_275_15_03/frame_00211.ply",
+      "num_points": 832,
+      "num_planes": 0,
+      "planes": [],
+      "colored_ply": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/ply_colored/planes_00211.ply",
+      "planes_json": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/json/planes_00211.json"
+    },
+    {
+      "frame_idx": 212,
+      "input_file": "/home/werikson/ufv/icuas2026/data/ply/livox_outdoor_01_T22_275_15_03/frame_00212.ply",
+      "num_points": 806,
+      "num_planes": 0,
+      "planes": [],
+      "colored_ply": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/ply_colored/planes_00212.ply",
+      "planes_json": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/json/planes_00212.json"
+    },
+    {
+      "frame_idx": 213,
+      "input_file": "/home/werikson/ufv/icuas2026/data/ply/livox_outdoor_01_T22_275_15_03/frame_00213.ply",
+      "num_points": 802,
+      "num_planes": 0,
+      "planes": [],
+      "colored_ply": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/ply_colored/planes_00213.ply",
+      "planes_json": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/json/planes_00213.json"
+    },
+    {
+      "frame_idx": 214,
+      "input_file": "/home/werikson/ufv/icuas2026/data/ply/livox_outdoor_01_T22_275_15_03/frame_00214.ply",
+      "num_points": 866,
+      "num_planes": 0,
+      "planes": [],
+      "colored_ply": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/ply_colored/planes_00214.ply",
+      "planes_json": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/json/planes_00214.json"
+    },
+    {
+      "frame_idx": 215,
+      "input_file": "/home/werikson/ufv/icuas2026/data/ply/livox_outdoor_01_T22_275_15_03/frame_00215.ply",
+      "num_points": 900,
+      "num_planes": 0,
+      "planes": [],
+      "colored_ply": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/ply_colored/planes_00215.ply",
+      "planes_json": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/json/planes_00215.json"
+    },
+    {
+      "frame_idx": 216,
+      "input_file": "/home/werikson/ufv/icuas2026/data/ply/livox_outdoor_01_T22_275_15_03/frame_00216.ply",
+      "num_points": 973,
+      "num_planes": 0,
+      "planes": [],
+      "colored_ply": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/ply_colored/planes_00216.ply",
+      "planes_json": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/json/planes_00216.json"
+    },
+    {
+      "frame_idx": 217,
+      "input_file": "/home/werikson/ufv/icuas2026/data/ply/livox_outdoor_01_T22_275_15_03/frame_00217.ply",
+      "num_points": 588,
+      "num_planes": 0,
+      "planes": [],
+      "colored_ply": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/ply_colored/planes_00217.ply",
+      "planes_json": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/json/planes_00217.json"
+    },
+    {
+      "frame_idx": 218,
+      "input_file": "/home/werikson/ufv/icuas2026/data/ply/livox_outdoor_01_T22_275_15_03/frame_00218.ply",
+      "num_points": 1136,
+      "num_planes": 0,
+      "planes": [],
+      "colored_ply": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/ply_colored/planes_00218.ply",
+      "planes_json": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/json/planes_00218.json"
+    },
+    {
+      "frame_idx": 219,
+      "input_file": "/home/werikson/ufv/icuas2026/data/ply/livox_outdoor_01_T22_275_15_03/frame_00219.ply",
+      "num_points": 1118,
+      "num_planes": 0,
+      "planes": [],
+      "colored_ply": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/ply_colored/planes_00219.ply",
+      "planes_json": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/json/planes_00219.json"
+    },
+    {
+      "frame_idx": 220,
+      "input_file": "/home/werikson/ufv/icuas2026/data/ply/livox_outdoor_01_T22_275_15_03/frame_00220.ply",
+      "num_points": 1107,
+      "num_planes": 0,
+      "planes": [],
+      "colored_ply": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/ply_colored/planes_00220.ply",
+      "planes_json": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/json/planes_00220.json"
+    },
+    {
+      "frame_idx": 221,
+      "input_file": "/home/werikson/ufv/icuas2026/data/ply/livox_outdoor_01_T22_275_15_03/frame_00221.ply",
+      "num_points": 1164,
+      "num_planes": 0,
+      "planes": [],
+      "colored_ply": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/ply_colored/planes_00221.ply",
+      "planes_json": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/json/planes_00221.json"
+    },
+    {
+      "frame_idx": 222,
+      "input_file": "/home/werikson/ufv/icuas2026/data/ply/livox_outdoor_01_T22_275_15_03/frame_00222.ply",
+      "num_points": 1023,
+      "num_planes": 0,
+      "planes": [],
+      "colored_ply": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/ply_colored/planes_00222.ply",
+      "planes_json": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/json/planes_00222.json"
+    },
+    {
+      "frame_idx": 223,
+      "input_file": "/home/werikson/ufv/icuas2026/data/ply/livox_outdoor_01_T22_275_15_03/frame_00223.ply",
+      "num_points": 933,
+      "num_planes": 0,
+      "planes": [],
+      "colored_ply": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/ply_colored/planes_00223.ply",
+      "planes_json": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/json/planes_00223.json"
+    },
+    {
+      "frame_idx": 224,
+      "input_file": "/home/werikson/ufv/icuas2026/data/ply/livox_outdoor_01_T22_275_15_03/frame_00224.ply",
+      "num_points": 1030,
+      "num_planes": 0,
+      "planes": [],
+      "colored_ply": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/ply_colored/planes_00224.ply",
+      "planes_json": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/json/planes_00224.json"
+    },
+    {
+      "frame_idx": 225,
+      "input_file": "/home/werikson/ufv/icuas2026/data/ply/livox_outdoor_01_T22_275_15_03/frame_00225.ply",
+      "num_points": 1026,
+      "num_planes": 0,
+      "planes": [],
+      "colored_ply": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/ply_colored/planes_00225.ply",
+      "planes_json": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/json/planes_00225.json"
+    },
+    {
+      "frame_idx": 226,
+      "input_file": "/home/werikson/ufv/icuas2026/data/ply/livox_outdoor_01_T22_275_15_03/frame_00226.ply",
+      "num_points": 1110,
+      "num_planes": 0,
+      "planes": [],
+      "colored_ply": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/ply_colored/planes_00226.ply",
+      "planes_json": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/json/planes_00226.json"
+    },
+    {
+      "frame_idx": 227,
+      "input_file": "/home/werikson/ufv/icuas2026/data/ply/livox_outdoor_01_T22_275_15_03/frame_00227.ply",
+      "num_points": 1161,
+      "num_planes": 0,
+      "planes": [],
+      "colored_ply": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/ply_colored/planes_00227.ply",
+      "planes_json": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/json/planes_00227.json"
+    },
+    {
+      "frame_idx": 228,
+      "input_file": "/home/werikson/ufv/icuas2026/data/ply/livox_outdoor_01_T22_275_15_03/frame_00228.ply",
+      "num_points": 1111,
+      "num_planes": 0,
+      "planes": [],
+      "colored_ply": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/ply_colored/planes_00228.ply",
+      "planes_json": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/json/planes_00228.json"
+    },
+    {
+      "frame_idx": 229,
+      "input_file": "/home/werikson/ufv/icuas2026/data/ply/livox_outdoor_01_T22_275_15_03/frame_00229.ply",
+      "num_points": 1150,
+      "num_planes": 0,
+      "planes": [],
+      "colored_ply": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/ply_colored/planes_00229.ply",
+      "planes_json": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/json/planes_00229.json"
+    },
+    {
+      "frame_idx": 230,
+      "input_file": "/home/werikson/ufv/icuas2026/data/ply/livox_outdoor_01_T22_275_15_03/frame_00230.ply",
+      "num_points": 1054,
+      "num_planes": 0,
+      "planes": [],
+      "colored_ply": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/ply_colored/planes_00230.ply",
+      "planes_json": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/json/planes_00230.json"
+    },
+    {
+      "frame_idx": 231,
+      "input_file": "/home/werikson/ufv/icuas2026/data/ply/livox_outdoor_01_T22_275_15_03/frame_00231.ply",
+      "num_points": 933,
+      "num_planes": 0,
+      "planes": [],
+      "colored_ply": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/ply_colored/planes_00231.ply",
+      "planes_json": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/json/planes_00231.json"
+    },
+    {
+      "frame_idx": 232,
+      "input_file": "/home/werikson/ufv/icuas2026/data/ply/livox_outdoor_01_T22_275_15_03/frame_00232.ply",
+      "num_points": 905,
+      "num_planes": 0,
+      "planes": [],
+      "colored_ply": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/ply_colored/planes_00232.ply",
+      "planes_json": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/json/planes_00232.json"
+    },
+    {
+      "frame_idx": 233,
+      "input_file": "/home/werikson/ufv/icuas2026/data/ply/livox_outdoor_01_T22_275_15_03/frame_00233.ply",
+      "num_points": 769,
+      "num_planes": 0,
+      "planes": [],
+      "colored_ply": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/ply_colored/planes_00233.ply",
+      "planes_json": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/json/planes_00233.json"
+    },
+    {
+      "frame_idx": 234,
+      "input_file": "/home/werikson/ufv/icuas2026/data/ply/livox_outdoor_01_T22_275_15_03/frame_00234.ply",
+      "num_points": 825,
+      "num_planes": 0,
+      "planes": [],
+      "colored_ply": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/ply_colored/planes_00234.ply",
+      "planes_json": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/json/planes_00234.json"
+    },
+    {
+      "frame_idx": 235,
+      "input_file": "/home/werikson/ufv/icuas2026/data/ply/livox_outdoor_01_T22_275_15_03/frame_00235.ply",
+      "num_points": 977,
+      "num_planes": 0,
+      "planes": [],
+      "colored_ply": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/ply_colored/planes_00235.ply",
+      "planes_json": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/json/planes_00235.json"
+    },
+    {
+      "frame_idx": 236,
+      "input_file": "/home/werikson/ufv/icuas2026/data/ply/livox_outdoor_01_T22_275_15_03/frame_00236.ply",
+      "num_points": 942,
+      "num_planes": 0,
+      "planes": [],
+      "colored_ply": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/ply_colored/planes_00236.ply",
+      "planes_json": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/json/planes_00236.json"
+    },
+    {
+      "frame_idx": 237,
+      "input_file": "/home/werikson/ufv/icuas2026/data/ply/livox_outdoor_01_T22_275_15_03/frame_00237.ply",
+      "num_points": 1184,
+      "num_planes": 0,
+      "planes": [],
+      "colored_ply": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/ply_colored/planes_00237.ply",
+      "planes_json": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/json/planes_00237.json"
+    },
+    {
+      "frame_idx": 238,
+      "input_file": "/home/werikson/ufv/icuas2026/data/ply/livox_outdoor_01_T22_275_15_03/frame_00238.ply",
+      "num_points": 1115,
+      "num_planes": 0,
+      "planes": [],
+      "colored_ply": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/ply_colored/planes_00238.ply",
+      "planes_json": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/json/planes_00238.json"
+    },
+    {
+      "frame_idx": 239,
+      "input_file": "/home/werikson/ufv/icuas2026/data/ply/livox_outdoor_01_T22_275_15_03/frame_00239.ply",
+      "num_points": 1212,
+      "num_planes": 0,
+      "planes": [],
+      "colored_ply": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/ply_colored/planes_00239.ply",
+      "planes_json": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/json/planes_00239.json"
+    },
+    {
+      "frame_idx": 240,
+      "input_file": "/home/werikson/ufv/icuas2026/data/ply/livox_outdoor_01_T22_275_15_03/frame_00240.ply",
+      "num_points": 1085,
+      "num_planes": 0,
+      "planes": [],
+      "colored_ply": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/ply_colored/planes_00240.ply",
+      "planes_json": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/json/planes_00240.json"
+    },
+    {
+      "frame_idx": 241,
+      "input_file": "/home/werikson/ufv/icuas2026/data/ply/livox_outdoor_01_T22_275_15_03/frame_00241.ply",
+      "num_points": 1111,
+      "num_planes": 0,
+      "planes": [],
+      "colored_ply": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/ply_colored/planes_00241.ply",
+      "planes_json": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/json/planes_00241.json"
+    },
+    {
+      "frame_idx": 242,
+      "input_file": "/home/werikson/ufv/icuas2026/data/ply/livox_outdoor_01_T22_275_15_03/frame_00242.ply",
+      "num_points": 1049,
+      "num_planes": 0,
+      "planes": [],
+      "colored_ply": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/ply_colored/planes_00242.ply",
+      "planes_json": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/json/planes_00242.json"
+    },
+    {
+      "frame_idx": 243,
+      "input_file": "/home/werikson/ufv/icuas2026/data/ply/livox_outdoor_01_T22_275_15_03/frame_00243.ply",
+      "num_points": 992,
+      "num_planes": 0,
+      "planes": [],
+      "colored_ply": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/ply_colored/planes_00243.ply",
+      "planes_json": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/json/planes_00243.json"
+    },
+    {
+      "frame_idx": 244,
+      "input_file": "/home/werikson/ufv/icuas2026/data/ply/livox_outdoor_01_T22_275_15_03/frame_00244.ply",
+      "num_points": 978,
+      "num_planes": 0,
+      "planes": [],
+      "colored_ply": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/ply_colored/planes_00244.ply",
+      "planes_json": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/json/planes_00244.json"
+    },
+    {
+      "frame_idx": 245,
+      "input_file": "/home/werikson/ufv/icuas2026/data/ply/livox_outdoor_01_T22_275_15_03/frame_00245.ply",
+      "num_points": 1009,
+      "num_planes": 0,
+      "planes": [],
+      "colored_ply": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/ply_colored/planes_00245.ply",
+      "planes_json": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/json/planes_00245.json"
+    },
+    {
+      "frame_idx": 246,
+      "input_file": "/home/werikson/ufv/icuas2026/data/ply/livox_outdoor_01_T22_275_15_03/frame_00246.ply",
+      "num_points": 1004,
+      "num_planes": 0,
+      "planes": [],
+      "colored_ply": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/ply_colored/planes_00246.ply",
+      "planes_json": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/json/planes_00246.json"
+    },
+    {
+      "frame_idx": 247,
+      "input_file": "/home/werikson/ufv/icuas2026/data/ply/livox_outdoor_01_T22_275_15_03/frame_00247.ply",
+      "num_points": 1155,
+      "num_planes": 0,
+      "planes": [],
+      "colored_ply": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/ply_colored/planes_00247.ply",
+      "planes_json": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/json/planes_00247.json"
+    },
+    {
+      "frame_idx": 248,
+      "input_file": "/home/werikson/ufv/icuas2026/data/ply/livox_outdoor_01_T22_275_15_03/frame_00248.ply",
+      "num_points": 1146,
+      "num_planes": 0,
+      "planes": [],
+      "colored_ply": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/ply_colored/planes_00248.ply",
+      "planes_json": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/json/planes_00248.json"
+    },
+    {
+      "frame_idx": 249,
+      "input_file": "/home/werikson/ufv/icuas2026/data/ply/livox_outdoor_01_T22_275_15_03/frame_00249.ply",
+      "num_points": 1111,
+      "num_planes": 0,
+      "planes": [],
+      "colored_ply": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/ply_colored/planes_00249.ply",
+      "planes_json": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/json/planes_00249.json"
+    },
+    {
+      "frame_idx": 250,
+      "input_file": "/home/werikson/ufv/icuas2026/data/ply/livox_outdoor_01_T22_275_15_03/frame_00250.ply",
+      "num_points": 979,
+      "num_planes": 0,
+      "planes": [],
+      "colored_ply": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/ply_colored/planes_00250.ply",
+      "planes_json": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/json/planes_00250.json"
+    },
+    {
+      "frame_idx": 251,
+      "input_file": "/home/werikson/ufv/icuas2026/data/ply/livox_outdoor_01_T22_275_15_03/frame_00251.ply",
+      "num_points": 555,
+      "num_planes": 0,
+      "planes": [],
+      "colored_ply": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/ply_colored/planes_00251.ply",
+      "planes_json": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/json/planes_00251.json"
+    },
+    {
+      "frame_idx": 252,
+      "input_file": "/home/werikson/ufv/icuas2026/data/ply/livox_outdoor_01_T22_275_15_03/frame_00252.ply",
+      "num_points": 1258,
+      "num_planes": 0,
+      "planes": [],
+      "colored_ply": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/ply_colored/planes_00252.ply",
+      "planes_json": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/json/planes_00252.json"
+    },
+    {
+      "frame_idx": 253,
+      "input_file": "/home/werikson/ufv/icuas2026/data/ply/livox_outdoor_01_T22_275_15_03/frame_00253.ply",
+      "num_points": 846,
+      "num_planes": 0,
+      "planes": [],
+      "colored_ply": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/ply_colored/planes_00253.ply",
+      "planes_json": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/json/planes_00253.json"
+    },
+    {
+      "frame_idx": 254,
+      "input_file": "/home/werikson/ufv/icuas2026/data/ply/livox_outdoor_01_T22_275_15_03/frame_00254.ply",
+      "num_points": 882,
+      "num_planes": 0,
+      "planes": [],
+      "colored_ply": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/ply_colored/planes_00254.ply",
+      "planes_json": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/json/planes_00254.json"
+    },
+    {
+      "frame_idx": 255,
+      "input_file": "/home/werikson/ufv/icuas2026/data/ply/livox_outdoor_01_T22_275_15_03/frame_00255.ply",
+      "num_points": 1139,
+      "num_planes": 0,
+      "planes": [],
+      "colored_ply": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/ply_colored/planes_00255.ply",
+      "planes_json": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/json/planes_00255.json"
+    },
+    {
+      "frame_idx": 256,
+      "input_file": "/home/werikson/ufv/icuas2026/data/ply/livox_outdoor_01_T22_275_15_03/frame_00256.ply",
+      "num_points": 908,
+      "num_planes": 0,
+      "planes": [],
+      "colored_ply": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/ply_colored/planes_00256.ply",
+      "planes_json": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/json/planes_00256.json"
+    },
+    {
+      "frame_idx": 257,
+      "input_file": "/home/werikson/ufv/icuas2026/data/ply/livox_outdoor_01_T22_275_15_03/frame_00257.ply",
+      "num_points": 1156,
+      "num_planes": 0,
+      "planes": [],
+      "colored_ply": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/ply_colored/planes_00257.ply",
+      "planes_json": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/json/planes_00257.json"
+    },
+    {
+      "frame_idx": 258,
+      "input_file": "/home/werikson/ufv/icuas2026/data/ply/livox_outdoor_01_T22_275_15_03/frame_00258.ply",
+      "num_points": 1279,
+      "num_planes": 0,
+      "planes": [],
+      "colored_ply": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/ply_colored/planes_00258.ply",
+      "planes_json": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/json/planes_00258.json"
+    },
+    {
+      "frame_idx": 259,
+      "input_file": "/home/werikson/ufv/icuas2026/data/ply/livox_outdoor_01_T22_275_15_03/frame_00259.ply",
+      "num_points": 1050,
+      "num_planes": 0,
+      "planes": [],
+      "colored_ply": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/ply_colored/planes_00259.ply",
+      "planes_json": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/json/planes_00259.json"
+    },
+    {
+      "frame_idx": 260,
+      "input_file": "/home/werikson/ufv/icuas2026/data/ply/livox_outdoor_01_T22_275_15_03/frame_00260.ply",
+      "num_points": 1039,
+      "num_planes": 0,
+      "planes": [],
+      "colored_ply": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/ply_colored/planes_00260.ply",
+      "planes_json": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/json/planes_00260.json"
+    },
+    {
+      "frame_idx": 261,
+      "input_file": "/home/werikson/ufv/icuas2026/data/ply/livox_outdoor_01_T22_275_15_03/frame_00261.ply",
+      "num_points": 1042,
+      "num_planes": 0,
+      "planes": [],
+      "colored_ply": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/ply_colored/planes_00261.ply",
+      "planes_json": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/json/planes_00261.json"
+    },
+    {
+      "frame_idx": 262,
+      "input_file": "/home/werikson/ufv/icuas2026/data/ply/livox_outdoor_01_T22_275_15_03/frame_00262.ply",
+      "num_points": 1048,
+      "num_planes": 0,
+      "planes": [],
+      "colored_ply": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/ply_colored/planes_00262.ply",
+      "planes_json": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/json/planes_00262.json"
+    },
+    {
+      "frame_idx": 263,
+      "input_file": "/home/werikson/ufv/icuas2026/data/ply/livox_outdoor_01_T22_275_15_03/frame_00263.ply",
+      "num_points": 1678,
+      "num_planes": 0,
+      "planes": [],
+      "colored_ply": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/ply_colored/planes_00263.ply",
+      "planes_json": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/json/planes_00263.json"
+    },
+    {
+      "frame_idx": 264,
+      "input_file": "/home/werikson/ufv/icuas2026/data/ply/livox_outdoor_01_T22_275_15_03/frame_00264.ply",
+      "num_points": 1162,
+      "num_planes": 0,
+      "planes": [],
+      "colored_ply": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/ply_colored/planes_00264.ply",
+      "planes_json": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/json/planes_00264.json"
+    },
+    {
+      "frame_idx": 265,
+      "input_file": "/home/werikson/ufv/icuas2026/data/ply/livox_outdoor_01_T22_275_15_03/frame_00265.ply",
+      "num_points": 1159,
+      "num_planes": 0,
+      "planes": [],
+      "colored_ply": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/ply_colored/planes_00265.ply",
+      "planes_json": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/json/planes_00265.json"
+    },
+    {
+      "frame_idx": 266,
+      "input_file": "/home/werikson/ufv/icuas2026/data/ply/livox_outdoor_01_T22_275_15_03/frame_00266.ply",
+      "num_points": 1194,
+      "num_planes": 0,
+      "planes": [],
+      "colored_ply": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/ply_colored/planes_00266.ply",
+      "planes_json": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/json/planes_00266.json"
+    },
+    {
+      "frame_idx": 267,
+      "input_file": "/home/werikson/ufv/icuas2026/data/ply/livox_outdoor_01_T22_275_15_03/frame_00267.ply",
+      "num_points": 1032,
+      "num_planes": 0,
+      "planes": [],
+      "colored_ply": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/ply_colored/planes_00267.ply",
+      "planes_json": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/json/planes_00267.json"
+    },
+    {
+      "frame_idx": 268,
+      "input_file": "/home/werikson/ufv/icuas2026/data/ply/livox_outdoor_01_T22_275_15_03/frame_00268.ply",
+      "num_points": 1037,
+      "num_planes": 0,
+      "planes": [],
+      "colored_ply": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/ply_colored/planes_00268.ply",
+      "planes_json": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/json/planes_00268.json"
+    },
+    {
+      "frame_idx": 269,
+      "input_file": "/home/werikson/ufv/icuas2026/data/ply/livox_outdoor_01_T22_275_15_03/frame_00269.ply",
+      "num_points": 992,
+      "num_planes": 0,
+      "planes": [],
+      "colored_ply": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/ply_colored/planes_00269.ply",
+      "planes_json": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/json/planes_00269.json"
+    },
+    {
+      "frame_idx": 270,
+      "input_file": "/home/werikson/ufv/icuas2026/data/ply/livox_outdoor_01_T22_275_15_03/frame_00270.ply",
+      "num_points": 706,
+      "num_planes": 0,
+      "planes": [],
+      "colored_ply": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/ply_colored/planes_00270.ply",
+      "planes_json": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/json/planes_00270.json"
+    },
+    {
+      "frame_idx": 271,
+      "input_file": "/home/werikson/ufv/icuas2026/data/ply/livox_outdoor_01_T22_275_15_03/frame_00271.ply",
+      "num_points": 1045,
+      "num_planes": 0,
+      "planes": [],
+      "colored_ply": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/ply_colored/planes_00271.ply",
+      "planes_json": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/json/planes_00271.json"
+    },
+    {
+      "frame_idx": 272,
+      "input_file": "/home/werikson/ufv/icuas2026/data/ply/livox_outdoor_01_T22_275_15_03/frame_00272.ply",
+      "num_points": 956,
+      "num_planes": 0,
+      "planes": [],
+      "colored_ply": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/ply_colored/planes_00272.ply",
+      "planes_json": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/json/planes_00272.json"
+    },
+    {
+      "frame_idx": 273,
+      "input_file": "/home/werikson/ufv/icuas2026/data/ply/livox_outdoor_01_T22_275_15_03/frame_00273.ply",
+      "num_points": 1133,
+      "num_planes": 0,
+      "planes": [],
+      "colored_ply": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/ply_colored/planes_00273.ply",
+      "planes_json": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/json/planes_00273.json"
+    },
+    {
+      "frame_idx": 274,
+      "input_file": "/home/werikson/ufv/icuas2026/data/ply/livox_outdoor_01_T22_275_15_03/frame_00274.ply",
+      "num_points": 929,
+      "num_planes": 0,
+      "planes": [],
+      "colored_ply": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/ply_colored/planes_00274.ply",
+      "planes_json": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/json/planes_00274.json"
+    }
+  ]
+}

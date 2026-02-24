@@ -1,0 +1,150 @@
+{
+  "tracks_file": "/home/werikson/ufv/icuas2026/output/planes/zed_outdoor_01_p4/plane_tracks.json",
+  "total_frames": 56,
+  "tracks_confidence": [
+    {
+      "track_id": 39,
+      "num_detections": 4,
+      "persistence_ratio": 0.07142857142857142,
+      "std_angle_deg": 1.1223428271281377,
+      "std_d": 0.05799384940958385,
+      "std_inlier_ratio": 0.015386568804347614,
+      "confidence_score": 0.5231046698203541
+    },
+    {
+      "track_id": 57,
+      "num_detections": 3,
+      "persistence_ratio": 0.05357142857142857,
+      "std_angle_deg": 0.9550768368115606,
+      "std_d": 0.12761936035583837,
+      "std_inlier_ratio": 0.00025419494245945744,
+      "confidence_score": 0.5224192216707356
+    },
+    {
+      "track_id": 101,
+      "num_detections": 6,
+      "persistence_ratio": 0.10714285714285714,
+      "std_angle_deg": 1.145852253575082,
+      "std_d": 0.21028021750650341,
+      "std_inlier_ratio": 0.025292189496876852,
+      "confidence_score": 0.5067989604999698
+    },
+    {
+      "track_id": 112,
+      "num_detections": 3,
+      "persistence_ratio": 0.05357142857142857,
+      "std_angle_deg": 1.1787102851880067,
+      "std_d": 0.15193233575537327,
+      "std_inlier_ratio": 0.0007960345712849286,
+      "confidence_score": 0.5002189259176049
+    },
+    {
+      "track_id": 36,
+      "num_detections": 5,
+      "persistence_ratio": 0.08928571428571429,
+      "std_angle_deg": 1.3205333342465293,
+      "std_d": 0.2557533798907317,
+      "std_inlier_ratio": 0.016068896347498307,
+      "confidence_score": 0.4845078360867544
+    },
+    {
+      "track_id": 44,
+      "num_detections": 4,
+      "persistence_ratio": 0.07142857142857142,
+      "std_angle_deg": 1.3747134182220753,
+      "std_d": 0.20966711269260407,
+      "std_inlier_ratio": 0.055946415760422016,
+      "confidence_score": 0.47620218167509487
+    },
+    {
+      "track_id": 99,
+      "num_detections": 3,
+      "persistence_ratio": 0.05357142857142857,
+      "std_angle_deg": 1.5735632570666613,
+      "std_d": 0.15732234443749385,
+      "std_inlier_ratio": 0.017267660318838876,
+      "confidence_score": 0.47233615834814824
+    },
+    {
+      "track_id": 98,
+      "num_detections": 6,
+      "persistence_ratio": 0.10714285714285714,
+      "std_angle_deg": 1.8077449213972985,
+      "std_d": 0.2601394431467198,
+      "std_inlier_ratio": 0.01650768348400128,
+      "confidence_score": 0.46307470881661267
+    },
+    {
+      "track_id": 75,
+      "num_detections": 4,
+      "persistence_ratio": 0.07142857142857142,
+      "std_angle_deg": 1.8303660999653535,
+      "std_d": 0.1808072717681212,
+      "std_inlier_ratio": 0.041245071626748966,
+      "confidence_score": 0.4585214416744589
+    },
+    {
+      "track_id": 4,
+      "num_detections": 3,
+      "persistence_ratio": 0.05357142857142857,
+      "std_angle_deg": 1.6305365925294943,
+      "std_d": 0.076443100383868,
+      "std_inlier_ratio": 0.27139337506245576,
+      "confidence_score": 0.4529020182429129
+    },
+    {
+      "track_id": 79,
+      "num_detections": 3,
+      "persistence_ratio": 0.05357142857142857,
+      "std_angle_deg": 1.5137147434153408,
+      "std_d": 0.10106418928359258,
+      "std_inlier_ratio": 0.35313490469049597,
+      "confidence_score": 0.4478037380637689
+    },
+    {
+      "track_id": 69,
+      "num_detections": 3,
+      "persistence_ratio": 0.05357142857142857,
+      "std_angle_deg": 1.8900828135205459,
+      "std_d": 0.19183080485071058,
+      "std_inlier_ratio": 0.05462070799655962,
+      "confidence_score": 0.44721550838960733
+    },
+    {
+      "track_id": 8,
+      "num_detections": 9,
+      "persistence_ratio": 0.16071428571428573,
+      "std_angle_deg": 2.1555016692114695,
+      "std_d": 0.2575005597300509,
+      "std_inlier_ratio": 0.23688631956150538,
+      "confidence_score": 0.43944958815971646
+    },
+    {
+      "track_id": 5,
+      "num_detections": 5,
+      "persistence_ratio": 0.08928571428571429,
+      "std_angle_deg": 2.8069036720795943,
+      "std_d": 0.22504125154511356,
+      "std_inlier_ratio": 0.025847795843293487,
+      "confidence_score": 0.4282042783197543
+    },
+    {
+      "track_id": 83,
+      "num_detections": 4,
+      "persistence_ratio": 0.07142857142857142,
+      "std_angle_deg": 2.657332838786774,
+      "std_d": 0.1354041881851594,
+      "std_inlier_ratio": 0.4082269253314409,
+      "confidence_score": 0.399792373725181
+    },
+    {
+      "track_id": 72,
+      "num_detections": 4,
+      "persistence_ratio": 0.07142857142857142,
+      "std_angle_deg": 3.058880275304848,
+      "std_d": 0.15549013287187022,
+      "std_inlier_ratio": 0.2974491544834207,
+      "confidence_score": 0.39635743934081913
+    }
+  ]
+}

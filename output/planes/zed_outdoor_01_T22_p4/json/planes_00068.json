@@ -1,0 +1,79 @@
+{
+  "frame_idx": 68,
+  "input_file": "/home/werikson/ufv/icuas2026/data/ply/zed_outdoor_01_T22_275_03_03/frame_00068.ply",
+  "preset": "outdoor",
+  "params": {
+    "max_planes": 4,
+    "min_inliers": 1500,
+    "distance_threshold": 0.06,
+    "ransac_n": 3,
+    "num_iterations": 2000,
+    "sor_nb_neighbors": 20,
+    "sor_std_ratio": 2.5
+  },
+  "num_points": 40283,
+  "planes": [
+    {
+      "plane_id": 0,
+      "num_inliers": 34707,
+      "inlier_ratio": 0.8615793262666633,
+      "inlier_ratio_total": 0.8615793262666633,
+      "rmse": 0.02637392008162946,
+      "mean_abs_dist": 0.021086834486683234,
+      "std_abs_dist": 0.015840740885558483,
+      "extent_xy": [
+        4.2107051479903195,
+        7.139531062183465
+      ],
+      "centroid": [
+        2.9354475185201996,
+        -0.04059306576725139,
+        0.0206183220643331
+      ],
+      "model": {
+        "n": [
+          0.9995772153238284,
+          -0.029026496045802392,
+          0.0016891218913370814
+        ],
+        "d": -2.935419557613805
+      }
+    },
+    {
+      "plane_id": 1,
+      "num_inliers": 3378,
+      "inlier_ratio": 0.6058106169296987,
+      "inlier_ratio_total": 0.08385671375021721,
+      "rmse": 0.015884629441751074,
+      "mean_abs_dist": 0.012559203445145734,
+      "std_abs_dist": 0.009725629096628384,
+      "extent_xy": [
+        4.015848822998532,
+        6.850355430365598
+      ],
+      "centroid": [
+        2.9153958318553745,
+        1.4503844114173041,
+        0.20209562588485458
+      ],
+      "model": {
+        "n": [
+          0.9994210402816708,
+          -0.033893397080263815,
+          0.002970164416739492
+        ],
+        "d": -2.865149737567336
+      }
+    }
+  ],
+  "classification": {
+    "vertical_axis": [
+      1.0,
+      0.0,
+      0.0
+    ],
+    "floor_plane_id": 0,
+    "table_plane_id": null,
+    "main_wall_plane_id": null
+  }
+}

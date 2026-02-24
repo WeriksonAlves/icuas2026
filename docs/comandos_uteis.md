@@ -43,3 +43,70 @@ python scripts/classify_tracks_stably.py  --tracks outputs/my_room_01_plane_trac
 
 
 python scripts/recolor_by_stable_class.py  --input_dir data/zed_ply/my_room_01  --classification outputs/my_room_01_classification_stable.json  --out_dir outputs/my_room_01_stable_semantic  --distance_threshold 0.04
+
+
+# 1) Tracking
+python scripts/track_planes_temporally.py \
+  --input_dir output/planes/my_room \
+  --output output/planes/plane_tracks.json
+
+# 2) Confidence
+python scripts/compute_track_confidence.py \
+  --tracks output/planes/my_room/plane_tracks.json \
+  --output output/planes/my_room/track_confidence.json
+
+# 3) Classificação estável (agora chamando o módulo em src/planes)
+python scripts/classify_tracks_stably.py \
+  --tracks output/planes/my_room/plane_tracks.json \
+  --confidence output/planes/my_room/track_confidence.json \
+  --output output/planes/my_room/classification_stable_2.json \
+  --vertical_axis 1 0 0 \
+  --min_confidence 0.3
+
+# 4) Recolorização semântica (como já está hoje)
+python scripts/recolor_by_stable_class.py \
+  --input_dir data/zed_ply/my_room \
+  --classification output/planes/my_room/classification_stable_2.json \
+  --out_dir output/planes/my_room/stable_semantic_2 \
+  --distance_threshold 0.04
+
+
+python scripts/run_planes_pipeline.py --experiment livox_outdoor_01_T21_541_15_03 --max_planes 4
+
+(.venv) python scripts/classify_tracks_stably.py \
+  --tracks output/planes/zed_outdoor_01_T21_p4/plane_tracks.json \
+  --confidence output/planes/zed_outdoor_01_T21_p4/track_confidence.json \
+  --output output/planes/zed_outdoor_01_T21_p4/classification_stable.json \
+  --vertical_axis 0 0 1 \
+  --horiz_angle_max 30 \
+  --min_table_height_diff 0.20 \
+  --vertical_band_center 90 \
+  --vertical_band_half_width 30 \
+  --min_confidence 0.2
+
+  (.venv) python scripts/recolor_by_stable_class.py \
+  --input_dir data/ply/livox_outdoor_01_T22_275_15_03 \
+  --classification output/planes/zed_outdoor_01_T21_p4/classification_stable.json \
+  --out_dir output/planes/zed_outdoor_01_T21_p4/recolored_livox \
+  --distance_threshold 0.05
+
+  python scripts/analyze_temporal_stability.py \
+  --input_dir outputs/zed_outdoor_01_T21_p4/json \
+  --out_dir outputs/zed_outdoor_01_T21_p4
+
+
+  python scripts/visualize_pointcloud_sequence.py \
+    --raw_dir data/ply/zed_home_02_T1_90_05_02 \
+    --colored_dir output/planes/home_02_T1_p8/ply_colored \
+    --stable_dir output/planes/home_02_T1_p8/ply_stable_semantic \
+    --fps 5 \
+    --max_points 100000 \
+    --rotate_z_180
+
+  python scripts/visualize_pointcloud_sequence.py \
+    --raw_dir data/ply/zed_lab_01_T1_50_10_02 \
+    --colored_dir output/planes/lab_01_T1_p8/ply_colored \
+    --stable_dir output/planes/lab_01_T1_p8/ply_stable_semantic \
+    --fps 1 \
+    --max_points 100000 \
+    --rotate_z_180

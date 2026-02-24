@@ -1,70 +1,120 @@
 # Planes Processing Pipeline
 
-This document describes the internal **planes** pipeline used in this
-repository to segment, track, classify and analyze planar structures in 3D
-point clouds.
+This document explains the **planes pipeline** used in this repository to:
 
-The pipeline is implemented as a small library under `src/planes/` and a set
-of CLI scripts under `scripts/`. Each script is a **thin wrapper** around a
-`run_*` function in the corresponding module.
+1. Segment planar structures in 3D point clouds.
+2. Track planes over time.
+3. Assign stable semantic labels (floor / table / main wall).
+4. Recolor point clouds with fixed semantic colors.
+5. Analyze temporal stability of these planes.
 
----
+The pipeline is implemented as:
 
-## 1. Overview
+* A small library under `src/planes/`
+* A set of CLI scripts under `scripts/`
 
-The planes pipeline is composed of five main stages:
-
-1. **Segmentation**  
-   Detect multiple planes per frame using Open3D RANSAC and store per-plane
-   metrics and coarse per-frame classification (floor/table/wall).
-
-2. **Tracking**  
-   Track planes over time across frames, building temporal tracks for
-   geometrically compatible planes.
-
-3. **Stable classification**  
-   Assign *global* semantic labels (floor, table, main wall) to tracks and
-   propagate these labels back to per-frame detections.
-
-4. **Recoloring**  
-   Recolor raw point clouds using the stable semantic labels (floor/table/wall)
-   with fixed RGB colors.
-
-5. **Temporal stability analysis**  
-   Analyze the temporal stability of semantic planes across the sequence
-   (angles, offsets, centroids, inlier ratios), and optionally generate plots.
-
-All heavy logic (geometry, data structures, algorithms) lives inside
-`src/planes/`. The scripts in `scripts/` only handle **argparse, logging and
-file I/O**.
+Each script is a **thin wrapper** around a `run_*` function in the corresponding module (for example, `planes.segmentation.run_segmentation`).
 
 ---
 
-## 2. Directory layout (relevant to planes)
+## 1. High-level overview
 
-Typical layout in this repository:
+The pipeline has five main stages:
+
+1. **Segmentation (per frame)**
+   Multi-plane detection using Open3D RANSAC. For each frame:
+
+   * Detect multiple planes.
+   * Compute per-plane metrics (normal, offset, extent, inliers, etc.).
+   * Optionally assign a *coarse* per-frame semantic class (floor / table / wall).
+
+2. **Temporal tracking**
+   Associate geometrically compatible planes across frames and build **tracks** (time series of the same physical plane).
+
+3. **Stable semantic classification**
+   Use plane tracks to assign **global semantic labels** (floor, table/bed, main wall).
+   These labels are then propagated back to each frame.
+
+4. **Recoloring**
+   Recolor raw point clouds using the **stable semantic labels**, with fixed RGB colors per class (e.g., floor always red, table always green, wall always blue).
+
+5. **Temporal stability analysis**
+   Analyze **how stable** the main semantic planes are over time:
+
+   * Orientation drift (angles).
+   * Offset variations (`d`).
+   * Centroid variations.
+   * Inlier ratios.
+     Optionally generate plots.
+
+All heavy logic (geometry, data structures, algorithms) lives inside `src/planes/`.
+The scripts in `scripts/` handle only:
+
+* `argparse`
+* Logging
+* File I/O
+
+---
+
+## 2. Data flow and directory layout
+
+A typical repository layout (relevant to planes):
 
 ```text
 configs/
 data/
-  zed_ply/
-    my_room/
+  bags/
+    outdoor_01/
+    ...
+  mcaps/
+    lab_01/
+    ...
+  ply/
+    zed_outdoor_01/
       frame_00000.ply
       frame_00001.ply
       ...
-  mcaps/
+    livox_outdoor_01/
+      frame_00000.ply
+      frame_00001.ply
+      ...
+    zed_lab_01/
+      frame_00000.ply
+      ...
 docs/
-notebooks/
 output/
+  planes/
+    zed_outdoor_01/
+      ply_stable_semantic/
+        planes_00000.ply
+        planes_00001.ply
+        ...
+      ply_colored/
+        planes_00000.ply
+        planes_00001.ply
+        ...
+      json/
+        planes_00000.json
+        planes_00001.json
+        ...
+      plane_tracks.json
+      track_confidence.json
+      classification_stable.json
+      temporal_stability_summary.json
+      summary.json
 scripts/
+  export_pointcloud2_to_ply.py
   segment_planes_open3d.py
   track_planes_temporally.py
+  compute_track_confidence.py
   classify_tracks_stably.py
   recolor_by_stable_class.py
   analyze_temporal_stability.py
+  run_planes_pipeline.py
 src/
   planes/
     __init__.py
+    ros_export.py
     geometry.py
     segmentation.py
     tracking.py
@@ -73,43 +123,324 @@ src/
     temporal_analysis.py
 ```
 
+### Naming conventions
+
+* **Input frames** (from ROS / bags):
+  `frame_XXXXX.ply` in `data/ply/<experiment_name>/`.
+
+* **Segmentation outputs** (per frame) in `output/planes/<base_id>_p<max_planes>/`:
+
+  * `ply_colored/planes_XXXXX.ply` — per-plane colored PLY (RANSAC labels).
+  * `json/planes_XXXXX.json` — per-frame JSON with plane parameters and metrics.
+  * `summary.json` — global summary for the entire sequence.
+
+* **Tracking & classification** in the same `planes` directory:
+
+  * `plane_tracks.json` — temporal tracks of planes.
+  * `track_confidence.json` — confidence metrics per track.
+  * `classification_stable.json` — stable semantic assignment (floor/table/wall).
+
+* **Recoloring outputs**:
+
+  * Typically written either directly into `output/planes/...` or into a subfolder (e.g. `semantic/`), depending on the CLI arguments.
+  * Files like `stable_semantic_XXXXX.ply`.
+
+* **Temporal stability analysis outputs**:
+
+  * `temporal_stability_summary.json`
+  * Optional plots (`*_orientation_offset.png`, `*_deltas.png`, etc.)
+
 > **Note:**
-> The pipeline itself is agnostic to the actual dataset name. It only expects:
+> The pipeline itself is **agnostic** to the dataset name. It only assumes a consistent naming pattern for:
 >
-> * input PLY frames: `frame_XXXXX.ply`, or
-> * per-frame JSONs: `planes_XXXXX.json`.
+> * PLY frames: `frame_XXXXX.ply`
+> * Per-frame plane JSONs: `planes_XXXXX.json` (either in the root of a directory or inside `json/`).
 
 ---
 
-## 3. Modules and responsibilities
+## 3. Working with ROS1 and ROS2 bags
 
-### 3.1. `planes.geometry`
+The pipeline works with point clouds originally recorded as:
 
-Generic geometric helpers:
+* **ROS1 (`.bag`, e.g. Noetic)**
+* **ROS2 rosbag2 (sqlite3, `.db3`)**
+* **ROS2 rosbag2 (MCAP, `.mcap`)**
+
+Internal processing is **ROS2-oriented**:
+
+* We export `sensor_msgs/msg/PointCloud2` to PLY, then run the planes pipeline on the PLY dataset.
+* ROS1 bags must be converted to ROS2-compatible rosbag2 before export.
+
+### 3.1. Converting ROS1 `.bag` → ROS2 (sqlite3) with `rosbags`
+
+We use the `rosbags` Python library for offline conversion (no ROS1 environment required).
+
+**Step 1 — Install `rosbags`:**
+
+```bash
+pip install "rosbags>=0.9.11"
+```
+
+**Step 2 — Convert ROS1 `.bag` to ROS2 rosbag2 (sqlite3):**
+
+```bash
+rosbags-convert \
+  --src flight_0.bag \
+  --dst flight_0_ros2 \
+  --dst-storage sqlite3 \
+  --dst-version 5
+```
+
+This produces:
+
+```text
+flight_0_ros2/
+  metadata.yaml
+  flight_0_ros2_0.db3
+```
+
+**Step 3 — Validate the converted bag:**
+
+```bash
+source /opt/ros/humble/setup.bash
+ros2 bag info flight_0_ros2
+```
+
+If no error appears, the bag is ready for ROS2 playback and PLY export.
+
+### 3.2. Using ROS2 rosbag2 `.db3`
+
+If your dataset is already in ROS2 sqlite3 format, no conversion is required.
+
+To replay:
+
+```bash
+ros2 bag play flight_0_ros2 --clock
+```
+
+Then, in another terminal (from the project root and inside the venv), you can export PLY frames (see Section 4).
+
+### 3.3. Using ROS2 rosbag2 (MCAP, `.mcap`)
+
+If the bag is stored in MCAP format:
+
+```text
+flight_0_mcap/
+  metadata.yaml
+  flight_0_mcap_0.mcap
+```
+
+Playback is identical:
+
+```bash
+ros2 bag play flight_0_mcap --clock --loop
+```
+
+Again, the export step is the same — the exporter subscribes to a `PointCloud2` topic while the bag is playing.
+
+### 3.4. Summary of supported input bag types
+
+| Input Type   | Requires Conversion | Tool              |
+| ------------ | ------------------- | ----------------- |
+| ROS1 `.bag`  | ✅ Yes               | `rosbags-convert` |
+| ROS2 `.db3`  | ❌ No                | Direct use        |
+| ROS2 `.mcap` | ❌ No                | Direct use        |
+
+### 3.5. Common bag-related issues
+
+**Corrupted ROS1 bag**
+
+If conversion fails with:
+
+```text
+Bag index looks damaged
+```
+
+You must reindex the bag using ROS1:
+
+```bash
+rosbag reindex corrupted_file.bag
+```
+
+Then retry:
+
+```bash
+rosbags-convert ...
+```
+
+---
+
+## 4. Exporting `PointCloud2` to PLY (ROS2 / MCAP workflow)
+
+The planes pipeline operates on PLY frames:
+
+```text
+frame_00000.ply
+frame_00001.ply
+...
+```
+
+These frames are typically generated from a ROS2 `sensor_msgs/msg/PointCloud2` topic, either:
+
+* **Live** — directly from a running sensor node (e.g. ZED2i, Livox), or
+* **Offline** — by replaying a recorded `.db3` or `.mcap` rosbag2.
+
+The exporter converts `PointCloud2` messages to Open3D `PointCloud` objects and writes them as `.ply`.
+
+### 4.1. Live export from a running ROS2 system
+
+If a sensor is publishing a `PointCloud2` topic, for example:
+
+```bash
+ros2 topic list
+# ...
+# /zed/zed_node/point_cloud/cloud_registered
+# /zed2i/zed_node/point_cloud/cloud_registered
+# /livox/lidar
+```
+
+You can run:
+
+```bash
+python scripts/export_pointcloud2_to_ply.py \
+  --topic /zed/zed_node/point_cloud/cloud_registered \
+  --out_dir data/ply/zed_outdoor_01 \
+  --max_frames 75 \
+  --every_k 5 \
+  --voxel 0.02
+```
+
+Parameters:
+
+* `--topic` : `PointCloud2` topic name.
+* `--out_dir` : Output directory for `frame_XXXXX.ply`.
+* `--max_frames` : Maximum number of frames to export.
+* `--every_k` : Save one frame every K received messages.
+* `--voxel` : Optional voxel size (meters) for downsampling.
+* `--keep_nans` : If set, disable NaN/Inf filtering.
+
+Output:
+
+```text
+data/ply/zed_outdoor_01/
+  frame_00000.ply
+  frame_00001.ply
+  ...
+```
+
+These PLYs are the input for the segmentation stage.
+
+### 4.2. Offline export from rosbag2 (`.db3` / `.mcap`)
+
+For a recorded bag (e.g. MCAP):
+
+```bash
+ros2 bag info recording.mcap
+```
+
+Replay it:
+
+```bash
+ros2 bag play recording.mcap --clock
+```
+
+In another terminal:
+
+```bash
+python scripts/export_pointcloud2_to_ply.py \
+  --topic /zed/zed_node/point_cloud/cloud_registered \
+  --out_dir data/ply/zed_outdoor_01 \
+  --max_frames 50 \
+  --every_k 10 \
+  --voxel 0.03
+```
+
+The exporter subscribes to the topic being replayed and writes the PLY frames.
+
+### 4.3. Internal architecture of the exporter
+
+The exporter lives in:
+
+```text
+src/planes/ros_export.py
+```
+
+Key components:
+
+* `ExportConfig` – configuration dataclass.
+* `PointCloudExporter(Node)` – ROS2 node that subscribes to `PointCloud2`.
+* `run_export(cfg)` – high-level entry point.
+* Efficient conversion using `np.frombuffer` and cached dtypes.
+* Optional voxel downsampling via Open3D.
+
+The CLI script:
+
+```text
+scripts/export_pointcloud2_to_ply.py
+```
+
+is a thin wrapper around `run_export`.
+
+### 4.4. Typical ROS → PLY → planes workflow
+
+```bash
+# 1) Play bag (or start live sensor)
+ros2 bag play recording.mcap --clock  # or .db3
+
+# 2) Export PLY frames
+python scripts/export_pointcloud2_to_ply.py \
+  --topic /zed/zed_node/point_cloud/cloud_registered \
+  --out_dir data/ply/zed_outdoor_01
+
+# 3) Run plane segmentation and subsequent stages
+python scripts/segment_planes_open3d.py \
+  --input data/ply/zed_outdoor_01 \
+  --out_dir output/planes/my_room_01_p8 \
+  --preset indoor
+```
+
+This clearly separates:
+
+1. ROS acquisition,
+2. Dataset materialization (PLY),
+3. Geometric processing (planes pipeline).
+
+---
+
+## 5. Modules and responsibilities
+
+This section describes each module in `src/planes/` and the corresponding CLI script(s).
+
+### 5.1. `planes.geometry`
+
+Generic geometric utilities, reused across the pipeline:
 
 * `safe_acos(x: float) -> float`
-  Clamped `acos` for numerical robustness.
+  `acos` with clamping to avoid NaNs from slight numerical drift.
+
 * `stabilize_normal(normal: np.ndarray) -> np.ndarray`
-  Enforce a deterministic orientation convention for normals.
+  Enforce a deterministic normal orientation convention.
+
 * `refit_plane_svd(points: np.ndarray) -> (normal, d)`
-  Refits a plane in Hessian form using SVD.
+  Refits a plane in Hessian form (`n^T x + d = 0`) using SVD.
+
 * `point_plane_distances(points, normal, d) -> np.ndarray`
   Signed distances from points to a plane.
+
 * `plane_extent_on_basis(points, normal) -> (dx, dy)`
   Planar extents on an orthonormal basis aligned with the plane.
 
-Used by: segmentation, tracking, classification, temporal analysis.
+Used by: segmentation, tracking, classification, and temporal analysis.
 
 ---
 
-### 3.2. `planes.segmentation` + `scripts/segment_planes_open3d.py`
+### 5.2. `planes.segmentation` + `scripts/segment_planes_open3d.py`
 
 **Goal:** multi-plane segmentation per frame using Open3D RANSAC.
 
 Key types and functions:
 
-* `SegConfig`
-  Holds parameters such as:
+* `SegConfig` – configuration dataclass. Main fields:
 
   * `input_path: Path`
   * `out_dir: Path`
@@ -119,84 +450,91 @@ Key types and functions:
   * `sor_nb_neighbors`, `sor_std_ratio`, `seed`
 
 * `segment_planes(pcd, cfg, rng) -> (List[PlaneMetrics], colored_pcd)`
-  Iterative plane extraction using RANSAC on the remaining points.
+  Iteratively extracts planes with RANSAC from the remaining points.
 
 * `classify_floor_and_wall(planes: List[PlaneMetrics]) -> Dict`
-  Coarse classification of floor-like, table-like and wall-like planes inside
-  each frame.
+  Lightweight per-frame classification of candidate floor/table/wall planes.
 
 * `process_frame(frame_path, frame_idx, cfg) -> Dict`
-  Load, filter, segment, classify and write:
+  For a single `frame_XXXXX.ply`:
 
-  * `colored_planes_XXXXX.ply`
-  * `planes_XXXXX.json`
+  * Load and optionally filter.
+  * Segment planes.
+  * Compute metrics and coarse classes.
+  * Write:
+
+    * `ply_colored/planes_XXXXX.ply`
+    * `json/planes_XXXXX.json`
 
 * `run_segmentation(cfg: SegConfig) -> Dict`
-  High-level entry point: segment **all** frames in `cfg.input_path` and
-  write a global `summary.json`.
+  Process all frames in `cfg.input_path` and write `summary.json` at the root of `cfg.out_dir`.
 
-**CLI script:**
+**CLI usage:**
 
 ```bash
 python scripts/segment_planes_open3d.py \
-  --input data/zed_ply/my_room \
-  --out_dir output/planes/my_room \
+  --input data/ply/zed_outdoor_01 \
+  --out_dir output/planes/my_room_01_p8 \
   --preset indoor \
   --max_planes 4 \
   --min_inliers 1500
 ```
 
-Outputs (per frame):
+Outputs:
 
-* `colored_planes_00000.ply`
-* `planes_00000.json`
+* Per-frame:
 
-Global:
+  * `ply_colored/planes_00000.ply`
+  * `json/planes_00000.json`
+* Global:
 
-* `summary.json`
+  * `summary.json`
 
 ---
 
-### 3.3. `planes.tracking` + `scripts/track_planes_temporally.py`
+### 5.3. `planes.tracking` + `scripts/track_planes_temporally.py`
 
-**Goal:** track planes across frames and build temporal tracks.
+**Goal:** track planes across frames and build temporal plane tracks.
 
 Key types and functions:
 
 * `PlaneDetection`
-  Single plane detection in a given frame.
+  Represents a single plane detection in a given frame.
 
 * `PlaneTrack`
-  Temporal track with exponential moving average for:
+  Accumulates a time series for one physical plane, with exponential moving averages for:
 
-  * normal, offset `d` and centroid.
+  * plane normal,
+  * offset `d`,
+  * centroid.
 
 * `TrackerConfig`
-  Parameters for association:
+  Defines association thresholds and weights:
 
   * `max_angle_deg`, `max_centroid_dist`, `max_d_diff`
   * `max_frame_gap`, `min_track_length`
   * `ema_alpha`
-  * cost weights: `w_angle`, `w_centroid`, `w_d`.
+  * `w_angle`, `w_centroid`, `w_d` (cost weights)
 
 * `PlaneTracker`
-  Greedy tracker using geometric compatibility and weighted cost.
+  Greedy tracker that associates planes based on geometric compatibility and weighted cost.
 
 * `load_detections(input_dir) -> Dict[int, List[PlaneDetection]]`
   Reads `planes_XXXXX.json` and groups detections per frame.
+  Supports both layouts:
+
+  * `input_dir/planes_XXXXX.json`
+  * `input_dir/json/planes_XXXXX.json`
 
 * `run_tracking(input_dir: Path, cfg: TrackerConfig) -> Dict`
-  Main entry point:
+  Runs the tracker over all frames and returns a summary dict that is written as `plane_tracks.json`.
 
-  * runs the tracker over all frames,
-  * returns a summary dict ready to be written as `plane_tracks.json`.
-
-**CLI script:**
+**CLI usage:**
 
 ```bash
 python scripts/track_planes_temporally.py \
-  --input_dir output/planes/my_room \
-  --output output/planes/my_room/plane_tracks.json \
+  --input_dir output/planes/my_room_01_p8 \
+  --output output/planes/my_room_01_p8/plane_tracks.json \
   --max_angle_deg 15 \
   --max_centroid_dist 0.5 \
   --max_d_diff 0.7 \
@@ -206,41 +544,46 @@ python scripts/track_planes_temporally.py \
 Output:
 
 * `plane_tracks.json`
-  Contains the list of tracks and a frame-wise index mapping frames to
-  `(track_id, local_id)` pairs.
+  Contains the list of tracks and a frame-wise index mapping from frame indices to `(track_id, local_plane_id)` pairs.
 
 ---
 
-### 3.4. `planes.classification` + `scripts/classify_tracks_stably.py`
+### 5.4. `planes.classification` + `scripts/classify_tracks_stably.py`
 
-**Goal:** assign *stable* semantic labels to tracks and propagate them
-per frame.
+**Goal:** assign **stable semantic labels** to tracks and propagate them per frame.
 
-Key types and functions:
+Key elements:
 
-* `ClassificationConfig`
+* `ClassificationConfig`, including parameters such as:
 
-  * `vertical_axis: (vx, vy, vz)`
-  * `horiz_angle_max`
-  * `min_table_height_diff`
-  * `vertical_band_center`
-  * `vertical_band_half_width`
+  * `vertical_axis: (vx, vy, vz)` — sensor-specific gravity direction.
+  * `horiz_angle_max` — max angle for considering a plane “horizontal”.
+  * `min_table_height_diff` — minimum height difference between floor and table.
+  * `vertical_band_center`, `vertical_band_half_width` — controls which planes can be considered vertical.
 
 * `run_classification(tracks_path: Path, cfg: ClassificationConfig) -> Dict`
-  Reads `plane_tracks.json`, computes per-track metrics and selects:
+  Reads `plane_tracks.json`, computes per-track metrics, and selects:
 
   * `floor_track_id`
   * `table_track_id`
   * `main_wall_track_id`
-    Then builds a per-frame map
-    `"frame_idx" -> {floor, table, main_wall}` with `(track_id, plane_id)`.
 
-**CLI script:**
+  It then builds a per-frame map:
+
+  ```json
+  "frames": {
+    "0": { "floor": {...}, "table": {...}, "main_wall": {...} },
+    "1": { ... },
+    ...
+  }
+  ```
+
+**CLI usage:**
 
 ```bash
 python scripts/classify_tracks_stably.py \
-  --tracks output/planes/my_room/plane_tracks.json \
-  --output output/planes/my_room/classification_stable.json \
+  --tracks output/planes/my_room_01_p8/plane_tracks.json \
+  --output output/planes/my_room_01_p8/classification_stable.json \
   --vertical_axis 1 0 0 \
   --horiz_angle_max 35.0 \
   --min_table_height_diff 0.20
@@ -248,79 +591,79 @@ python scripts/classify_tracks_stably.py \
 
 Output:
 
-* `classification_stable.json`
-  Contains:
+* `classification_stable.json`, containing:
 
-  * `selected_tracks` (IDs for floor/table/main_wall),
-  * `tracks_summary` (per-track cached metrics),
+  * `selected_tracks` (IDs for floor / table / main wall),
+  * `tracks_summary` (cached per-track metrics),
   * `frames` (per-frame semantic assignments).
 
 ---
 
-### 3.5. `planes.recolor` + `scripts/recolor_by_stable_class.py`
+### 5.5. `planes.recolor` + `scripts/recolor_by_stable_class.py`
 
 **Goal:** recolor raw point clouds according to stable semantic classes.
 
-Key types and functions:
+Key elements:
 
-* `RecolorConfig`
+* `RecolorConfig`:
 
-  * `input_dir: Path` (with `frame_XXXXX.ply`),
+  * `input_dir: Path` (directory with `frame_XXXXX.ply`),
   * `classification_path: Path` (`classification_stable.json`),
   * `out_dir: Path`,
-  * `distance_threshold: float` (max point-plane distance).
+  * `distance_threshold: float` (max distance from a semantic plane).
 
 * `run_recolor(cfg: RecolorConfig) -> Dict`
   For each frame:
 
-  * load `frame_XXXXX.ply`,
-  * read semantic roles from `classification_stable.json`,
-  * reconstruct plane parameters for each track (floor/table/main_wall),
-  * assign each point to the closest semantic plane within `distance_threshold`,
-  * write `stable_semantic_XXXXX.ply`.
+  1. Load `frame_XXXXX.ply`.
+  2. Retrieve the semantic roles (floor / table / wall) from `classification_stable.json`.
+  3. Reconstruct plane parameters for each semantic track.
+  4. Assign each point to the closest semantic plane within `distance_threshold`.
+  5. Assign a fixed RGB color per class.
+  6. Save:
 
-**CLI script:**
+     * `stable_semantic_XXXXX.ply` (or into a subfolder, depending on `out_dir`).
+
+**CLI usage:**
 
 ```bash
 python scripts/recolor_by_stable_class.py \
-  --input_dir data/zed_ply/my_room \
-  --classification output/planes/my_room/classification_stable.json \
-  --out_dir output/planes/my_room/semantic \
+  --input_dir data/ply/zed_outdoor_01 \
+  --classification output/planes/my_room_01_p8/classification_stable.json \
+  --out_dir output/planes/my_room_01_p8/semantic \
   --distance_threshold 0.04
 ```
 
 Outputs:
 
-* `stable_semantic_00000.ply`, `stable_semantic_00001.ply`, ...
+* `semantic/stable_semantic_00000.ply`, `semantic/stable_semantic_00001.ply`, …
 
-Additionally, the script writes an optional summary:
+Optional summary:
 
-* `recolor_summary.json`
-  with counts of processed frames, missing input frames, etc.
+* `recolor_summary.json` — counts processed frames, missing frames, etc.
 
 ---
 
-### 3.6. `planes.temporal_analysis` + `scripts/analyze_temporal_stability.py`
+### 5.6. `planes.temporal_analysis` + `scripts/analyze_temporal_stability.py`
 
-**Goal:** analyze temporal stability of semantic planes.
+**Goal:** analyze the **temporal stability** of semantic planes.
 
-Key types and functions:
+Key elements:
 
 * `PlaneTimeSeries`
-  Holds time series for a class (frames, normals, offsets, centroids,
-  inlier ratios).
+  Time series for one semantic class (frames, normals, offsets, centroids, inlier ratios).
 
 * `TemporalStabilityMetrics`
-  Aggregated metrics:
+  Aggregated metrics such as:
 
-  * angle to first frame (mean, std, max),
-  * per-frame angular/offset/centroid deltas,
-  * inlier ratio statistics.
+  * Mean / std / max angle to the first frame,
+  * Per-frame angular / offset / centroid deltas,
+  * Inlier ratio statistics.
 
-* `TemporalAnalysisConfig`
+* `TemporalAnalysisConfig`:
 
-  * `input_dir: Path` (with `planes_XXXXX.json`),
-  * `out_dir: Path` (for plots and summary),
+  * `input_dir: Path` (directory with `planes_XXXXX.json`, usually `.../json/`),
+  * `out_dir: Path`,
   * `make_plots: bool`.
 
 * `run_temporal_analysis(cfg: TemporalAnalysisConfig) -> Dict`
@@ -329,281 +672,130 @@ Key types and functions:
   * Floor,
   * Table/Bed,
   * Main wall,
-    computes metrics, optionally generates plots, and returns a summary
-    dictionary.
+    computes metrics and optionally generates plots.
 
-**CLI script:**
+**CLI usage:**
 
 ```bash
 python scripts/analyze_temporal_stability.py \
-  --input_dir output/planes/my_room \
-  --out_dir output/planes/my_room/stability
+  --input_dir output/planes/my_room_01_p8/json \
+  --out_dir output/planes/my_room_01_p8/stability
 ```
 
 Outputs:
 
 * `temporal_stability_summary.json`
-* Plots:
+* Plots such as:
 
-  * `floor_orientation_offset.png`, `floor_deltas.png`,
-  * `table_bed_orientation_offset.png`, `table_bed_deltas.png`,
+  * `floor_orientation_offset.png`, `floor_deltas.png`
+  * `table_bed_orientation_offset.png`, `table_bed_deltas.png`
   * `main_wall_orientation_offset.png`, `main_wall_deltas.png`
-    (file names may vary slightly depending on slugified names).
+    (exact names may vary slightly).
 
 ---
 
-## 4. End-to-end pipeline example
+## 6. End-to-end examples
+
+### 6.1. Manual step-by-step pipeline
 
 Assuming:
 
-* input PLY frames in `data/zed_ply/my_room/`,
-* outputs in `output/planes/my_room/`:
+* PLY frames in `data/ply/zed_outdoor_01/`
+* Outputs in `output/planes/my_room_01_p8/`
 
 ```bash
 # 1) Segment planes per frame
 python scripts/segment_planes_open3d.py \
-  --input data/zed_ply/my_room \
-  --out_dir output/planes/my_room \
+  --input data/ply/zed_outdoor_01 \
+  --out_dir output/planes/my_room_01_p8 \
   --preset indoor
 
 # 2) Track planes temporally
 python scripts/track_planes_temporally.py \
-  --input_dir output/planes/my_room \
-  --output output/planes/my_room/plane_tracks.json
+  --input_dir output/planes/my_room_01_p8 \
+  --output output/planes/my_room_01_p8/plane_tracks.json
 
-# 3) Classify tracks stably (floor/table/main_wall)
+# 3) Compute track confidence (optional but recommended)
+python scripts/compute_track_confidence.py \
+  --tracks output/planes/my_room_01_p8/plane_tracks.json \
+  --output output/planes/my_room_01_p8/track_confidence.json
+
+# 4) Classify tracks stably (floor/table/main_wall)
 python scripts/classify_tracks_stably.py \
-  --tracks output/planes/my_room/plane_tracks.json \
-  --output output/planes/my_room/classification_stable.json \
+  --tracks output/planes/my_room_01_p8/plane_tracks.json \
+  --confidence output/planes/my_room_01_p8/track_confidence.json \
+  --output output/planes/my_room_01_p8/classification_stable.json \
   --vertical_axis 1 0 0
 
-# 4) Recolor original frames with semantic classes
+# 5) Recolor original frames with semantic classes
 python scripts/recolor_by_stable_class.py \
-  --input_dir data/zed_ply/my_room \
-  --classification output/planes/my_room/classification_stable.json \
-  --out_dir output/planes/my_room/semantic
+  --input_dir data/ply/zed_outdoor_01 \
+  --classification output/planes/my_room_01_p8/classification_stable.json \
+  --out_dir output/planes/my_room_01_p8/semantic \
+  --distance_threshold 0.04
 
-# 5) Analyze temporal stability
+# 6) Analyze temporal stability (using the JSON planes)
 python scripts/analyze_temporal_stability.py \
-  --input_dir output/planes/my_room \
-  --out_dir output/planes/my_room/stability
+  --input_dir output/planes/my_room_01_p8/json \
+  --out_dir output/planes/my_room_01_p8/stability
 ```
 
 ---
 
-## 5. Using the library API from Python
+## 7. Orchestrating the pipeline with `run_planes_pipeline.py`
 
-All CLI scripts are thin wrappers. You can directly call the underlying
-functions from Python code or notebooks, for example:
+For convenience, there is a single orchestrator script:
 
-```python
-from pathlib import Path
-
-from planes.segmentation import SegConfig, run_segmentation
-from planes.tracking import TrackerConfig, run_tracking
-from planes.classification import ClassificationConfig, run_classification
-from planes.recolor import RecolorConfig, run_recolor
-from planes.temporal_analysis import TemporalAnalysisConfig, run_temporal_analysis
-
-# 1) Segmentation
-seg_cfg = SegConfig(
-    input_path=Path("data/zed_ply/my_room"),
-    out_dir=Path("output/planes/my_room"),
-    preset="indoor",
-    max_planes=4,
-    min_inliers=1500,
-    distance_threshold=0.03,
-    ransac_n=3,
-    num_iterations=2000,
-    sor_nb_neighbors=20,
-    sor_std_ratio=2.0,
-    seed=7,
-)
-seg_summary = run_segmentation(seg_cfg)
-
-# 2) Tracking
-trk_cfg = TrackerConfig(
-    max_angle_deg=15.0,
-    max_centroid_dist=0.5,
-    max_d_diff=0.7,
-    max_frame_gap=5,
-    min_track_length=3,
-    ema_alpha=0.8,
-)
-trk_summary = run_tracking(
-    Path("output/planes/my_room"),
-    trk_cfg,
-)
-
-# 3) Stable classification
-cls_cfg = ClassificationConfig(
-    vertical_axis=(1.0, 0.0, 0.0),
-    horiz_angle_max=35.0,
-    min_table_height_diff=0.20,
-    vertical_band_center=90.0,
-    vertical_band_half_width=30.0,
-)
-cls_payload = run_classification(
-    Path("output/planes/my_room/plane_tracks.json"),
-    cls_cfg,
-)
-
-# 4) Recolor
-rec_cfg = RecolorConfig(
-    input_dir=Path("data/zed_ply/my_room"),
-    classification_path=Path("output/planes/my_room/classification_stable.json"),
-    out_dir=Path("output/planes/my_room/semantic"),
-    distance_threshold=0.04,
-)
-rec_summary = run_recolor(rec_cfg)
-
-# 5) Temporal stability
-tmp_cfg = TemporalAnalysisConfig(
-    input_dir=Path("output/planes/my_room"),
-    out_dir=Path("output/planes/my_room/stability"),
-    make_plots=True,
-)
-tmp_summary = run_temporal_analysis(tmp_cfg)
+```text
+scripts/run_planes_pipeline.py
 ```
 
-This enables tight integration with notebooks and other processing
-pipelines without going through CLI wrappers.
+Given an experiment folder under `data/ply/` (for example, `home_02_T1_90_05_02`), it:
 
+1. Runs plane segmentation (`segment_planes_open3d.py`).
+2. Runs temporal tracking (`track_planes_temporally.py`).
+3. Computes track confidence (`compute_track_confidence.py`).
+4. Classifies tracks stably (`classify_tracks_stably.py`).
+5. Recolors PLY frames (`recolor_by_stable_class.py`).
+6. Optionally analyzes temporal stability (`analyze_temporal_stability.py`).
 
+It assumes:
 
-## 6. Exporting PointCloud2 to PLY (ROS 2 / MCAP workflow)
+* PLY frames are already exported at:
+  `data/ply/<experiment_name>/`
+* The **base id** used for outputs is composed of the first three components of the experiment name, e.g.:
 
-The planes pipeline operates on PLY frames (`frame_XXXXX.ply`).  
-These frames are typically generated from a ROS 2 `PointCloud2` topic,
-either:
+  ```text
+  experiment_name = "home_02_T1_90_05_02"
+  base_id = "home_02_T1"
+  planes_dir = output/planes/home_02_T1_p8
+  ```
 
-- **Live**, directly from a running sensor node (e.g., ZED2i), or
-- **Offline**, by replaying a recorded `.mcap` or `.db3` bag file.
+### 7.1. Basic usage
 
-The export step converts `sensor_msgs/msg/PointCloud2` into Open3D
-`PointCloud` objects and writes them as `.ply` files.
+```bash
+python scripts/run_planes_pipeline.py \
+  --experiment home_02_T1_90_05_02 \
+  --max_planes 8
+```
+
+Optional arguments:
+
+* `--topic` — only documented for traceability (export topic), not used internally.
+* `--no_temporal_analysis` — skip the temporal stability analysis step.
+
+Internally, the script:
+
+* Calls `derive_paths(...)` to build:
+
+  * `ply_dir` (input PLY directory),
+  * `planes_dir` (output directory for planes),
+  * `json_planes_dir` (usually `planes_dir / "json"`),
+  * `tracks_path`, `confidence_path`, `classification_path`.
+* Runs the CLI scripts via `subprocess.run`, preserving the same behavior as when they are called manually.
+
+This enables tight integration with notebooks and other pipelines: you can either run each stage manually or use `run_planes_pipeline.py` as a one-command entry point for an entire experiment.
 
 ---
 
-### 6.1. Live export from a running ROS 2 system
-
-If a sensor is publishing a `PointCloud2` topic (e.g. `/zed2i/point_cloud/cloud_registered`):
-
-```bash
-ros2 topic list
-```
-
-Then run:
-
-```bash
-python scripts/export_pointcloud2_to_ply.py \
-  --topic /zed2i/point_cloud/cloud_registered \
-  --out_dir data/zed_ply/my_room \
-  --max_frames 50 \
-  --every_k 10 \
-  --voxel 0.02
-```
-
-Parameters:
-
-* `--topic` : PointCloud2 topic name.
-* `--out_dir` : Directory where `frame_XXXXX.ply` files will be written.
-* `--max_frames` : Number of frames to export.
-* `--every_k` : Save one frame every K received messages.
-* `--voxel` : Optional voxel size (meters) for downsampling.
-* `--keep_nans` : Disable NaN/Inf filtering.
-
-Output:
-
-```
-data/zed_ply/my_room/
-  frame_00000.ply
-  frame_00001.ply
-  ...
-```
-
-These frames can then be used as input to the segmentation stage.
-
----
-
-### 6.2. Offline export from MCAP / rosbag2
-
-If you have a recorded bag (e.g. `.mcap`):
-
-```bash
-ros2 bag info recording.mcap
-```
-
-Replay it:
-
-```bash
-ros2 bag play recording.mcap
-```
-
-In another terminal, run the exporter:
-
-```bash
-python scripts/export_pointcloud2_to_ply.py \
-  --topic /zed/zed_node/point_cloud/cloud_registered \
-  --out_dir data/zed_ply/my_room \
-  --max_frames 50 \
-  --every_k 10
-  --voxel 0.03
-```
-
-The exporter subscribes to the replayed topic and writes PLY frames.
-
----
-
-### 6.3. Internal architecture
-
-The exporter is implemented in:
-
-```
-src/planes/ros_export.py
-```
-
-Key components:
-
-* `ExportConfig` – configuration dataclass.
-* `PointCloudExporter(Node)` – ROS 2 node.
-* `run_export(cfg)` – high-level entry point.
-* Zero-copy conversion using `np.frombuffer`.
-* Structured dtype caching per message layout.
-* Optional voxel downsampling via Open3D.
-
-The CLI script:
-
-```
-scripts/export_pointcloud2_to_ply.py
-```
-
-is a thin wrapper around `run_export`.
-
----
-
-### 6.4. Typical full pipeline (ROS → PLY → planes)
-
-```bash
-# 1) Play bag (or run live sensor)
-ros2 bag play recording.mcap
-
-# 2) Export PLY frames
-python scripts/export_pointcloud2_to_ply.py \
-  --topic /zed2i/point_cloud/cloud_registered \
-  --out_dir data/zed_ply/my_room
-
-# 3) Run planes pipeline
-python scripts/segment_planes_open3d.py \
-  --input data/zed_ply/my_room \
-  --out_dir output/planes/my_room \
-  --preset indoor
-```
-
-This separates:
-
-* ROS acquisition,
-* dataset materialization (PLY frames),
-* geometric processing (planes pipeline).
-
-```
+This concludes the overview of the planes processing pipeline.

@@ -1,0 +1,51 @@
+{
+  "tracks_file": "/home/werikson/ufv/icuas2026/output/planes/livox_outdoor_01_p4/plane_tracks.json",
+  "total_frames": 18,
+  "tracks_confidence": [
+    {
+      "track_id": 16,
+      "num_detections": 3,
+      "persistence_ratio": 0.16666666666666666,
+      "std_angle_deg": 0.5066146545875547,
+      "std_d": 0.19990455782309832,
+      "std_inlier_ratio": 0.021929060575438034,
+      "confidence_score": 0.5957700537503248
+    },
+    {
+      "track_id": 7,
+      "num_detections": 3,
+      "persistence_ratio": 0.16666666666666666,
+      "std_angle_deg": 1.1072334488625228,
+      "std_d": 0.11469712519822903,
+      "std_inlier_ratio": 0.010203068291057613,
+      "confidence_score": 0.5440004860970666
+    },
+    {
+      "track_id": 25,
+      "num_detections": 5,
+      "persistence_ratio": 0.2777777777777778,
+      "std_angle_deg": 1.9851535174716375,
+      "std_d": 0.06366571536871192,
+      "std_inlier_ratio": 0.01785223304358065,
+      "confidence_score": 0.5359783658570086
+    },
+    {
+      "track_id": 20,
+      "num_detections": 4,
+      "persistence_ratio": 0.2222222222222222,
+      "std_angle_deg": 1.597841565896175,
+      "std_d": 0.1821299178944309,
+      "std_inlier_ratio": 0.018371778615998483,
+      "confidence_score": 0.5178739874423203
+    },
+    {
+      "track_id": 40,
+      "num_detections": 3,
+      "persistence_ratio": 0.16666666666666666,
+      "std_angle_deg": 1.8257181182782967,
+      "std_d": 0.1301968867889326,
+      "std_inlier_ratio": 0.030100147817719646,
+      "confidence_score": 0.49643954643125326
+    }
+  ]
+}
