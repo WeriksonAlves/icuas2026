@@ -1,0 +1,1978 @@
+{
+  "tracks_file": "/home/werikson/ufv/icuas2026/output/planes/zed_outdoor_02_T3_p3/plane_tracks.json",
+  "confidence_file": "/home/werikson/ufv/icuas2026/output/planes/zed_outdoor_02_T3_p3/track_confidence.json",
+  "vertical_axis": [
+    1.0,
+    0.0,
+    0.0
+  ],
+  "selected_tracks": {
+    "floor_track_id": 2,
+    "table_track_id": 51,
+    "main_wall_track_id": null
+  },
+  "tracks_summary": [
+    {
+      "track_id": 2,
+      "num_detections": 28,
+      "mean_normal": [
+        0.9976746348511378,
+        -0.05124679780916044,
+        0.04493427076247922
+      ],
+      "mean_centroid": [
+        6.107576868582838,
+        -0.7266017659121076,
+        0.4321675166478391
+      ],
+      "mean_inlier_ratio": 0.6526640987009265,
+      "angle_to_vertical_deg": 3.9081156188507973,
+      "height_along_vertical": 6.107576868582838,
+      "confidence_score": 0.4050300676807534
+    },
+    {
+      "track_id": 3,
+      "num_detections": 17,
+      "mean_normal": [
+        0.8924145117078389,
+        -0.4389451342955514,
+        0.10451558913157347
+      ],
+      "mean_centroid": [
+        6.752855872844062,
+        6.2701948937065755,
+        -1.3384944519097528
+      ],
+      "mean_inlier_ratio": 0.08850444695712432,
+      "angle_to_vertical_deg": 26.821760820436584,
+      "height_along_vertical": 6.752855872844062,
+      "confidence_score": 0.4245261589534597
+    },
+    {
+      "track_id": 5,
+      "num_detections": 21,
+      "mean_normal": [
+        0.9954583178552744,
+        -0.07352977414382565,
+        0.06046577318703092
+      ],
+      "mean_centroid": [
+        6.773246747912462,
+        -0.08749551822119656,
+        0.8531468675957752
+      ],
+      "mean_inlier_ratio": 0.2068880896508556,
+      "angle_to_vertical_deg": 5.46273966912471,
+      "height_along_vertical": 6.773246747912462,
+      "confidence_score": 0.40248238322254304
+    },
+    {
+      "track_id": 10,
+      "num_detections": 11,
+      "mean_normal": [
+        0.8822809034690755,
+        -0.1831726581277317,
+        0.4336221681236015
+      ],
+      "mean_centroid": [
+        8.682647517064835,
+        2.083260452204812,
+        -3.019442407612816
+      ],
+      "mean_inlier_ratio": 0.15748411576850607,
+      "angle_to_vertical_deg": 28.081256522795364,
+      "height_along_vertical": 8.682647517064835,
+      "confidence_score": 0.42285282725773526
+    },
+    {
+      "track_id": 11,
+      "num_detections": 34,
+      "mean_normal": [
+        0.9363101024641416,
+        -0.20398198706569082,
+        0.2858579034700999
+      ],
+      "mean_centroid": [
+        9.39569339840739,
+        1.4098324122548194,
+        -0.7239484061390967
+      ],
+      "mean_inlier_ratio": 0.1477978650775699,
+      "angle_to_vertical_deg": 20.559157640236325,
+      "height_along_vertical": 9.39569339840739,
+      "confidence_score": 0.37501809804626374
+    },
+    {
+      "track_id": 12,
+      "num_detections": 13,
+      "mean_normal": [
+        0.8745548471918456,
+        -0.17372942283976317,
+        0.45273823219716064
+      ],
+      "mean_centroid": [
+        8.411032021258757,
+        0.40722508509610117,
+        0.22039573733556078
+      ],
+      "mean_inlier_ratio": 0.26800352610557376,
+      "angle_to_vertical_deg": 29.00766435474729,
+      "height_along_vertical": 8.411032021258757,
+      "confidence_score": 0.41261277050166334
+    },
+    {
+      "track_id": 13,
+      "num_detections": 24,
+      "mean_normal": [
+        0.9432752900342634,
+        -0.21212532064960607,
+        0.25541060187485953
+      ],
+      "mean_centroid": [
+        9.313012292450875,
+        -0.1284015749725171,
+        -0.7871373127115421
+      ],
+      "mean_inlier_ratio": 0.23333483292536647,
+      "angle_to_vertical_deg": 19.390919240995835,
+      "height_along_vertical": 9.313012292450875,
+      "confidence_score": 0.42179774505626255
+    },
+    {
+      "track_id": 14,
+      "num_detections": 13,
+      "mean_normal": [
+        0.9492021323273795,
+        -0.20590226081387186,
+        0.23794867298829867
+      ],
+      "mean_centroid": [
+        9.20992570594619,
+        -0.10340609292622018,
+        -0.3766277880982092
+      ],
+      "mean_inlier_ratio": 0.2014306799009183,
+      "angle_to_vertical_deg": 18.340711210256664,
+      "height_along_vertical": 9.20992570594619,
+      "confidence_score": 0.423919459337908
+    },
+    {
+      "track_id": 15,
+      "num_detections": 29,
+      "mean_normal": [
+        0.9521726453855316,
+        -0.21923648405742707,
+        0.21284411534655195
+      ],
+      "mean_centroid": [
+        11.354883207575728,
+        -3.2838023933999305,
+        0.5651820013728789
+      ],
+      "mean_inlier_ratio": 0.23750046030337618,
+      "angle_to_vertical_deg": 17.791891467801456,
+      "height_along_vertical": 11.354883207575728,
+      "confidence_score": 0.419428612633164
+    },
+    {
+      "track_id": 16,
+      "num_detections": 20,
+      "mean_normal": [
+        0.957905498702456,
+        -0.20502622444008173,
+        0.20095099613449058
+      ],
+      "mean_centroid": [
+        11.18768174484833,
+        -1.9060191759026401,
+        0.8222346603276922
+      ],
+      "mean_inlier_ratio": 0.19610503890836933,
+      "angle_to_vertical_deg": 16.6834421848751,
+      "height_along_vertical": 11.18768174484833,
+      "confidence_score": 0.4227411903270252
+    },
+    {
+      "track_id": 17,
+      "num_detections": 25,
+      "mean_normal": [
+        0.9514698294266165,
+        -0.22001136264601953,
+        0.21517472899373405
+      ],
+      "mean_centroid": [
+        11.48867664431661,
+        -3.4370484810505384,
+        0.7785503782993805
+      ],
+      "mean_inlier_ratio": 0.2243656148113887,
+      "angle_to_vertical_deg": 17.923207952689094,
+      "height_along_vertical": 11.48867664431661,
+      "confidence_score": 0.40037434633785596
+    },
+    {
+      "track_id": 19,
+      "num_detections": 39,
+      "mean_normal": [
+        0.9570534762953208,
+        -0.18414025483256544,
+        0.22392188383728764
+      ],
+      "mean_centroid": [
+        10.433846359546743,
+        -0.4262737277419441,
+        0.16438013486795047
+      ],
+      "mean_inlier_ratio": 0.2699417879705771,
+      "angle_to_vertical_deg": 16.8526541880441,
+      "height_along_vertical": 10.433846359546743,
+      "confidence_score": 0.42139234475681786
+    },
+    {
+      "track_id": 20,
+      "num_detections": 52,
+      "mean_normal": [
+        0.9587715224567205,
+        -0.17340532109676018,
+        0.22513942866888464
+      ],
+      "mean_centroid": [
+        10.095083434679701,
+        0.8556843532359217,
+        0.27860542176846675
+      ],
+      "mean_inlier_ratio": 0.21181089657061428,
+      "angle_to_vertical_deg": 16.50972333605296,
+      "height_along_vertical": 10.095083434679701,
+      "confidence_score": 0.4342727583523138
+    },
+    {
+      "track_id": 21,
+      "num_detections": 38,
+      "mean_normal": [
+        0.9561532740226951,
+        -0.1796734800514838,
+        0.23127550052236437
+      ],
+      "mean_centroid": [
+        10.283536779370086,
+        -0.46324479806857505,
+        -0.14886453158415477
+      ],
+      "mean_inlier_ratio": 0.3521580578934066,
+      "angle_to_vertical_deg": 17.029660648620773,
+      "height_along_vertical": 10.283536779370086,
+      "confidence_score": 0.42266108175714967
+    },
+    {
+      "track_id": 28,
+      "num_detections": 14,
+      "mean_normal": [
+        0.9659359425969803,
+        -0.156351509897782,
+        0.206208535594351
+      ],
+      "mean_centroid": [
+        9.50788247846282,
+        0.6785290001133432,
+        -0.028255477255855
+      ],
+      "mean_inlier_ratio": 0.3855015470108891,
+      "angle_to_vertical_deg": 14.997760350173854,
+      "height_along_vertical": 9.50788247846282,
+      "confidence_score": 0.46650981104526934
+    },
+    {
+      "track_id": 29,
+      "num_detections": 13,
+      "mean_normal": [
+        0.9664606742925103,
+        -0.1556429763685364,
+        0.20427684389868953
+      ],
+      "mean_centroid": [
+        9.557324661653906,
+        1.2792195255921637,
+        -0.1500999409924493
+      ],
+      "mean_inlier_ratio": 0.27413019837900376,
+      "angle_to_vertical_deg": 14.881138403054157,
+      "height_along_vertical": 9.557324661653906,
+      "confidence_score": 0.4473910036212367
+    },
+    {
+      "track_id": 30,
+      "num_detections": 16,
+      "mean_normal": [
+        0.953928203853805,
+        -0.16744535711361974,
+        0.24896392162991393
+      ],
+      "mean_centroid": [
+        6.744041077986378,
+        1.268525565173169,
+        -0.1632364747912068
+      ],
+      "mean_inlier_ratio": 0.5370765822755146,
+      "angle_to_vertical_deg": 17.459703381162583,
+      "height_along_vertical": 6.744041077986378,
+      "confidence_score": 0.3888225514188055
+    },
+    {
+      "track_id": 31,
+      "num_detections": 13,
+      "mean_normal": [
+        0.9547709222183689,
+        -0.17672728918360503,
+        0.2391232973679056
+      ],
+      "mean_centroid": [
+        6.745495931829184,
+        1.482006712469528,
+        -0.6247824307100677
+      ],
+      "mean_inlier_ratio": 0.3801829512798296,
+      "angle_to_vertical_deg": 17.29804953065212,
+      "height_along_vertical": 6.745495931829184,
+      "confidence_score": 0.39846189437944785
+    },
+    {
+      "track_id": 32,
+      "num_detections": 49,
+      "mean_normal": [
+        0.9527639754756263,
+        -0.16221304018127788,
+        0.2567639706637737
+      ],
+      "mean_centroid": [
+        7.456803002705082,
+        2.4404257035031076,
+        -0.8736896932289001
+      ],
+      "mean_inlier_ratio": 0.23451047196283062,
+      "angle_to_vertical_deg": 17.680674498555607,
+      "height_along_vertical": 7.456803002705082,
+      "confidence_score": 0.46002033078878024
+    },
+    {
+      "track_id": 35,
+      "num_detections": 30,
+      "mean_normal": [
+        0.9560815283782281,
+        -0.1766246792915391,
+        0.23390560865253396
+      ],
+      "mean_centroid": [
+        7.373441199099516,
+        0.4629038170680272,
+        -0.27416645629213743
+      ],
+      "mean_inlier_ratio": 0.411925407678427,
+      "angle_to_vertical_deg": 17.043691194923504,
+      "height_along_vertical": 7.373441199099516,
+      "confidence_score": 0.4287665831787447
+    },
+    {
+      "track_id": 37,
+      "num_detections": 29,
+      "mean_normal": [
+        0.9518091585794107,
+        -0.17376119807983934,
+        0.2527179686650971
+      ],
+      "mean_centroid": [
+        7.468860566826061,
+        1.2285031169567522,
+        -0.5591688709792241
+      ],
+      "mean_inlier_ratio": 0.39500702854611514,
+      "angle_to_vertical_deg": 17.859923176923893,
+      "height_along_vertical": 7.468860566826061,
+      "confidence_score": 0.4160617267852654
+    },
+    {
+      "track_id": 38,
+      "num_detections": 12,
+      "mean_normal": [
+        0.9455174278587174,
+        -0.1889696287211577,
+        0.26511747025879484
+      ],
+      "mean_centroid": [
+        6.294218421494947,
+        -1.8143180388345872,
+        -0.6132175744965936
+      ],
+      "mean_inlier_ratio": 0.11466072910434588,
+      "angle_to_vertical_deg": 19.000201986449795,
+      "height_along_vertical": 6.294218421494947,
+      "confidence_score": 0.41445826509875905
+    },
+    {
+      "track_id": 40,
+      "num_detections": 42,
+      "mean_normal": [
+        0.9594573007428358,
+        -0.17226463951143348,
+        0.22308424871619137
+      ],
+      "mean_centroid": [
+        10.057641505258815,
+        -0.3404283965700558,
+        -0.16064744029952904
+      ],
+      "mean_inlier_ratio": 0.3845084674369471,
+      "angle_to_vertical_deg": 16.370889570416114,
+      "height_along_vertical": 10.057641505258815,
+      "confidence_score": 0.45693416431198053
+    },
+    {
+      "track_id": 41,
+      "num_detections": 34,
+      "mean_normal": [
+        0.9593597304775923,
+        -0.1797421750179126,
+        0.21753541793876188
+      ],
+      "mean_centroid": [
+        10.487082921927913,
+        -0.2958383417006491,
+        0.10157766953701759
+      ],
+      "mean_inlier_ratio": 0.23465505516900112,
+      "angle_to_vertical_deg": 16.390712152876016,
+      "height_along_vertical": 10.487082921927913,
+      "confidence_score": 0.44151764209536587
+    },
+    {
+      "track_id": 42,
+      "num_detections": 46,
+      "mean_normal": [
+        0.9607016479405417,
+        -0.17164490575505098,
+        0.21815217159741276
+      ],
+      "mean_centroid": [
+        10.104002614349747,
+        0.7675113735779232,
+        0.22701787874610305
+      ],
+      "mean_inlier_ratio": 0.22792119171599962,
+      "angle_to_vertical_deg": 16.116005758013976,
+      "height_along_vertical": 10.104002614349747,
+      "confidence_score": 0.45557181732592195
+    },
+    {
+      "track_id": 49,
+      "num_detections": 13,
+      "mean_normal": [
+        0.9668478118519678,
+        -0.15526111657508168,
+        0.20272960907800536
+      ],
+      "mean_centroid": [
+        9.507259493410771,
+        1.6594363035260964,
+        -0.26198338003903743
+      ],
+      "mean_inlier_ratio": 0.24371582149288062,
+      "angle_to_vertical_deg": 14.794520941350147,
+      "height_along_vertical": 9.507259493410771,
+      "confidence_score": 0.4290353262882556
+    },
+    {
+      "track_id": 51,
+      "num_detections": 13,
+      "mean_normal": [
+        0.9571790513550836,
+        -0.16623688612928492,
+        0.23700962287852623
+      ],
+      "mean_centroid": [
+        6.6033376138298925,
+        0.9366496764359636,
+        -0.210592938176822
+      ],
+      "mean_inlier_ratio": 0.6095869543282565,
+      "angle_to_vertical_deg": 16.827818767414314,
+      "height_along_vertical": 6.6033376138298925,
+      "confidence_score": 0.4216628087933868
+    },
+    {
+      "track_id": 52,
+      "num_detections": 14,
+      "mean_normal": [
+        0.9561469331481613,
+        -0.18661711768077624,
+        0.22573677950188928
+      ],
+      "mean_centroid": [
+        6.938174172509017,
+        1.3278128255379917,
+        -1.0887297245249763
+      ],
+      "mean_inlier_ratio": 0.25678592796053074,
+      "angle_to_vertical_deg": 17.030901119056786,
+      "height_along_vertical": 6.938174172509017,
+      "confidence_score": 0.41327163006289674
+    },
+    {
+      "track_id": 53,
+      "num_detections": 11,
+      "mean_normal": [
+        0.9547454726134741,
+        -0.15755086473727647,
+        0.2522673334869387
+      ],
+      "mean_centroid": [
+        6.736682473559056,
+        3.117854978223801,
+        -0.17588302668360373
+      ],
+      "mean_inlier_ratio": 0.12128109104230887,
+      "angle_to_vertical_deg": 17.30295281646733,
+      "height_along_vertical": 6.736682473559056,
+      "confidence_score": 0.40949773118724614
+    }
+  ],
+  "frames": {
+    "9": {
+      "floor": {
+        "track_id": 2,
+        "local_id": 0
+      },
+      "table": null,
+      "main_wall": null
+    },
+    "10": {
+      "floor": {
+        "track_id": 2,
+        "local_id": 0
+      },
+      "table": null,
+      "main_wall": null
+    },
+    "11": {
+      "floor": {
+        "track_id": 2,
+        "local_id": 0
+      },
+      "table": null,
+      "main_wall": null
+    },
+    "12": {
+      "floor": {
+        "track_id": 2,
+        "local_id": 0
+      },
+      "table": null,
+      "main_wall": null
+    },
+    "13": {
+      "floor": {
+        "track_id": 2,
+        "local_id": 0
+      },
+      "table": null,
+      "main_wall": null
+    },
+    "14": {
+      "floor": {
+        "track_id": 2,
+        "local_id": 0
+      },
+      "table": null,
+      "main_wall": null
+    },
+    "15": {
+      "floor": {
+        "track_id": 2,
+        "local_id": 0
+      },
+      "table": null,
+      "main_wall": null
+    },
+    "16": {
+      "floor": null,
+      "table": null,
+      "main_wall": null
+    },
+    "17": {
+      "floor": null,
+      "table": null,
+      "main_wall": null
+    },
+    "18": {
+      "floor": null,
+      "table": null,
+      "main_wall": null
+    },
+    "19": {
+      "floor": {
+        "track_id": 2,
+        "local_id": 0
+      },
+      "table": null,
+      "main_wall": null
+    },
+    "20": {
+      "floor": {
+        "track_id": 2,
+        "local_id": 0
+      },
+      "table": null,
+      "main_wall": null
+    },
+    "21": {
+      "floor": {
+        "track_id": 2,
+        "local_id": 0
+      },
+      "table": null,
+      "main_wall": null
+    },
+    "22": {
+      "floor": {
+        "track_id": 2,
+        "local_id": 0
+      },
+      "table": null,
+      "main_wall": null
+    },
+    "23": {
+      "floor": {
+        "track_id": 2,
+        "local_id": 0
+      },
+      "table": null,
+      "main_wall": null
+    },
+    "24": {
+      "floor": null,
+      "table": null,
+      "main_wall": null
+    },
+    "25": {
+      "floor": null,
+      "table": null,
+      "main_wall": null
+    },
+    "26": {
+      "floor": {
+        "track_id": 2,
+        "local_id": 0
+      },
+      "table": null,
+      "main_wall": null
+    },
+    "27": {
+      "floor": {
+        "track_id": 2,
+        "local_id": 0
+      },
+      "table": null,
+      "main_wall": null
+    },
+    "28": {
+      "floor": {
+        "track_id": 2,
+        "local_id": 0
+      },
+      "table": null,
+      "main_wall": null
+    },
+    "29": {
+      "floor": {
+        "track_id": 2,
+        "local_id": 0
+      },
+      "table": null,
+      "main_wall": null
+    },
+    "30": {
+      "floor": {
+        "track_id": 2,
+        "local_id": 0
+      },
+      "table": null,
+      "main_wall": null
+    },
+    "31": {
+      "floor": {
+        "track_id": 2,
+        "local_id": 0
+      },
+      "table": null,
+      "main_wall": null
+    },
+    "32": {
+      "floor": {
+        "track_id": 2,
+        "local_id": 0
+      },
+      "table": null,
+      "main_wall": null
+    },
+    "33": {
+      "floor": {
+        "track_id": 2,
+        "local_id": 0
+      },
+      "table": null,
+      "main_wall": null
+    },
+    "34": {
+      "floor": {
+        "track_id": 2,
+        "local_id": 0
+      },
+      "table": null,
+      "main_wall": null
+    },
+    "35": {
+      "floor": {
+        "track_id": 2,
+        "local_id": 0
+      },
+      "table": null,
+      "main_wall": null
+    },
+    "36": {
+      "floor": {
+        "track_id": 2,
+        "local_id": 0
+      },
+      "table": null,
+      "main_wall": null
+    },
+    "37": {
+      "floor": null,
+      "table": null,
+      "main_wall": null
+    },
+    "38": {
+      "floor": null,
+      "table": null,
+      "main_wall": null
+    },
+    "39": {
+      "floor": {
+        "track_id": 2,
+        "local_id": 2
+      },
+      "table": null,
+      "main_wall": null
+    },
+    "40": {
+      "floor": {
+        "track_id": 2,
+        "local_id": 2
+      },
+      "table": null,
+      "main_wall": null
+    },
+    "41": {
+      "floor": {
+        "track_id": 2,
+        "local_id": 0
+      },
+      "table": null,
+      "main_wall": null
+    },
+    "42": {
+      "floor": {
+        "track_id": 2,
+        "local_id": 0
+      },
+      "table": null,
+      "main_wall": null
+    },
+    "43": {
+      "floor": {
+        "track_id": 2,
+        "local_id": 0
+      },
+      "table": null,
+      "main_wall": null
+    },
+    "44": {
+      "floor": null,
+      "table": null,
+      "main_wall": null
+    },
+    "45": {
+      "floor": null,
+      "table": null,
+      "main_wall": null
+    },
+    "46": {
+      "floor": null,
+      "table": null,
+      "main_wall": null
+    },
+    "47": {
+      "floor": null,
+      "table": null,
+      "main_wall": null
+    },
+    "48": {
+      "floor": null,
+      "table": null,
+      "main_wall": null
+    },
+    "49": {
+      "floor": null,
+      "table": null,
+      "main_wall": null
+    },
+    "50": {
+      "floor": null,
+      "table": null,
+      "main_wall": null
+    },
+    "51": {
+      "floor": null,
+      "table": null,
+      "main_wall": null
+    },
+    "52": {
+      "floor": null,
+      "table": null,
+      "main_wall": null
+    },
+    "53": {
+      "floor": null,
+      "table": null,
+      "main_wall": null
+    },
+    "54": {
+      "floor": null,
+      "table": null,
+      "main_wall": null
+    },
+    "55": {
+      "floor": null,
+      "table": null,
+      "main_wall": null
+    },
+    "56": {
+      "floor": null,
+      "table": null,
+      "main_wall": null
+    },
+    "57": {
+      "floor": null,
+      "table": null,
+      "main_wall": null
+    },
+    "58": {
+      "floor": null,
+      "table": null,
+      "main_wall": null
+    },
+    "59": {
+      "floor": null,
+      "table": null,
+      "main_wall": null
+    },
+    "60": {
+      "floor": null,
+      "table": null,
+      "main_wall": null
+    },
+    "61": {
+      "floor": null,
+      "table": null,
+      "main_wall": null
+    },
+    "62": {
+      "floor": null,
+      "table": null,
+      "main_wall": null
+    },
+    "63": {
+      "floor": null,
+      "table": null,
+      "main_wall": null
+    },
+    "64": {
+      "floor": null,
+      "table": null,
+      "main_wall": null
+    },
+    "65": {
+      "floor": null,
+      "table": null,
+      "main_wall": null
+    },
+    "66": {
+      "floor": null,
+      "table": null,
+      "main_wall": null
+    },
+    "67": {
+      "floor": null,
+      "table": null,
+      "main_wall": null
+    },
+    "68": {
+      "floor": null,
+      "table": null,
+      "main_wall": null
+    },
+    "69": {
+      "floor": null,
+      "table": null,
+      "main_wall": null
+    },
+    "70": {
+      "floor": null,
+      "table": null,
+      "main_wall": null
+    },
+    "71": {
+      "floor": null,
+      "table": null,
+      "main_wall": null
+    },
+    "72": {
+      "floor": null,
+      "table": null,
+      "main_wall": null
+    },
+    "73": {
+      "floor": null,
+      "table": null,
+      "main_wall": null
+    },
+    "74": {
+      "floor": null,
+      "table": null,
+      "main_wall": null
+    },
+    "75": {
+      "floor": null,
+      "table": null,
+      "main_wall": null
+    },
+    "76": {
+      "floor": null,
+      "table": null,
+      "main_wall": null
+    },
+    "77": {
+      "floor": null,
+      "table": null,
+      "main_wall": null
+    },
+    "78": {
+      "floor": null,
+      "table": null,
+      "main_wall": null
+    },
+    "79": {
+      "floor": null,
+      "table": null,
+      "main_wall": null
+    },
+    "80": {
+      "floor": null,
+      "table": null,
+      "main_wall": null
+    },
+    "81": {
+      "floor": null,
+      "table": null,
+      "main_wall": null
+    },
+    "82": {
+      "floor": null,
+      "table": null,
+      "main_wall": null
+    },
+    "83": {
+      "floor": null,
+      "table": null,
+      "main_wall": null
+    },
+    "84": {
+      "floor": null,
+      "table": null,
+      "main_wall": null
+    },
+    "85": {
+      "floor": null,
+      "table": null,
+      "main_wall": null
+    },
+    "86": {
+      "floor": null,
+      "table": null,
+      "main_wall": null
+    },
+    "87": {
+      "floor": null,
+      "table": null,
+      "main_wall": null
+    },
+    "88": {
+      "floor": null,
+      "table": null,
+      "main_wall": null
+    },
+    "89": {
+      "floor": null,
+      "table": null,
+      "main_wall": null
+    },
+    "90": {
+      "floor": null,
+      "table": null,
+      "main_wall": null
+    },
+    "91": {
+      "floor": null,
+      "table": null,
+      "main_wall": null
+    },
+    "92": {
+      "floor": null,
+      "table": null,
+      "main_wall": null
+    },
+    "93": {
+      "floor": null,
+      "table": null,
+      "main_wall": null
+    },
+    "94": {
+      "floor": null,
+      "table": null,
+      "main_wall": null
+    },
+    "95": {
+      "floor": null,
+      "table": null,
+      "main_wall": null
+    },
+    "96": {
+      "floor": null,
+      "table": null,
+      "main_wall": null
+    },
+    "97": {
+      "floor": null,
+      "table": null,
+      "main_wall": null
+    },
+    "98": {
+      "floor": null,
+      "table": null,
+      "main_wall": null
+    },
+    "99": {
+      "floor": null,
+      "table": null,
+      "main_wall": null
+    },
+    "100": {
+      "floor": null,
+      "table": null,
+      "main_wall": null
+    },
+    "101": {
+      "floor": null,
+      "table": null,
+      "main_wall": null
+    },
+    "102": {
+      "floor": null,
+      "table": null,
+      "main_wall": null
+    },
+    "103": {
+      "floor": null,
+      "table": null,
+      "main_wall": null
+    },
+    "104": {
+      "floor": null,
+      "table": null,
+      "main_wall": null
+    },
+    "105": {
+      "floor": null,
+      "table": null,
+      "main_wall": null
+    },
+    "106": {
+      "floor": null,
+      "table": null,
+      "main_wall": null
+    },
+    "107": {
+      "floor": null,
+      "table": null,
+      "main_wall": null
+    },
+    "108": {
+      "floor": null,
+      "table": null,
+      "main_wall": null
+    },
+    "109": {
+      "floor": null,
+      "table": null,
+      "main_wall": null
+    },
+    "110": {
+      "floor": null,
+      "table": null,
+      "main_wall": null
+    },
+    "111": {
+      "floor": null,
+      "table": null,
+      "main_wall": null
+    },
+    "112": {
+      "floor": null,
+      "table": null,
+      "main_wall": null
+    },
+    "113": {
+      "floor": null,
+      "table": null,
+      "main_wall": null
+    },
+    "114": {
+      "floor": null,
+      "table": null,
+      "main_wall": null
+    },
+    "115": {
+      "floor": null,
+      "table": null,
+      "main_wall": null
+    },
+    "116": {
+      "floor": null,
+      "table": null,
+      "main_wall": null
+    },
+    "117": {
+      "floor": null,
+      "table": null,
+      "main_wall": null
+    },
+    "118": {
+      "floor": null,
+      "table": null,
+      "main_wall": null
+    },
+    "119": {
+      "floor": null,
+      "table": null,
+      "main_wall": null
+    },
+    "120": {
+      "floor": null,
+      "table": null,
+      "main_wall": null
+    },
+    "121": {
+      "floor": null,
+      "table": null,
+      "main_wall": null
+    },
+    "122": {
+      "floor": null,
+      "table": null,
+      "main_wall": null
+    },
+    "123": {
+      "floor": null,
+      "table": null,
+      "main_wall": null
+    },
+    "124": {
+      "floor": null,
+      "table": null,
+      "main_wall": null
+    },
+    "125": {
+      "floor": null,
+      "table": null,
+      "main_wall": null
+    },
+    "126": {
+      "floor": null,
+      "table": null,
+      "main_wall": null
+    },
+    "127": {
+      "floor": null,
+      "table": null,
+      "main_wall": null
+    },
+    "128": {
+      "floor": null,
+      "table": null,
+      "main_wall": null
+    },
+    "129": {
+      "floor": null,
+      "table": null,
+      "main_wall": null
+    },
+    "130": {
+      "floor": null,
+      "table": null,
+      "main_wall": null
+    },
+    "131": {
+      "floor": null,
+      "table": null,
+      "main_wall": null
+    },
+    "132": {
+      "floor": null,
+      "table": null,
+      "main_wall": null
+    },
+    "133": {
+      "floor": null,
+      "table": null,
+      "main_wall": null
+    },
+    "134": {
+      "floor": null,
+      "table": null,
+      "main_wall": null
+    },
+    "135": {
+      "floor": null,
+      "table": null,
+      "main_wall": null
+    },
+    "136": {
+      "floor": null,
+      "table": null,
+      "main_wall": null
+    },
+    "137": {
+      "floor": null,
+      "table": null,
+      "main_wall": null
+    },
+    "142": {
+      "floor": null,
+      "table": null,
+      "main_wall": null
+    },
+    "143": {
+      "floor": null,
+      "table": null,
+      "main_wall": null
+    },
+    "144": {
+      "floor": null,
+      "table": null,
+      "main_wall": null
+    },
+    "145": {
+      "floor": null,
+      "table": null,
+      "main_wall": null
+    },
+    "146": {
+      "floor": null,
+      "table": null,
+      "main_wall": null
+    },
+    "147": {
+      "floor": null,
+      "table": null,
+      "main_wall": null
+    },
+    "148": {
+      "floor": null,
+      "table": null,
+      "main_wall": null
+    },
+    "149": {
+      "floor": null,
+      "table": null,
+      "main_wall": null
+    },
+    "150": {
+      "floor": null,
+      "table": null,
+      "main_wall": null
+    },
+    "151": {
+      "floor": null,
+      "table": null,
+      "main_wall": null
+    },
+    "152": {
+      "floor": null,
+      "table": null,
+      "main_wall": null
+    },
+    "153": {
+      "floor": null,
+      "table": null,
+      "main_wall": null
+    },
+    "154": {
+      "floor": null,
+      "table": null,
+      "main_wall": null
+    },
+    "155": {
+      "floor": null,
+      "table": null,
+      "main_wall": null
+    },
+    "156": {
+      "floor": null,
+      "table": null,
+      "main_wall": null
+    },
+    "157": {
+      "floor": null,
+      "table": null,
+      "main_wall": null
+    },
+    "158": {
+      "floor": null,
+      "table": null,
+      "main_wall": null
+    },
+    "159": {
+      "floor": null,
+      "table": null,
+      "main_wall": null
+    },
+    "160": {
+      "floor": null,
+      "table": null,
+      "main_wall": null
+    },
+    "161": {
+      "floor": null,
+      "table": null,
+      "main_wall": null
+    },
+    "162": {
+      "floor": null,
+      "table": null,
+      "main_wall": null
+    },
+    "163": {
+      "floor": null,
+      "table": null,
+      "main_wall": null
+    },
+    "164": {
+      "floor": null,
+      "table": null,
+      "main_wall": null
+    },
+    "165": {
+      "floor": null,
+      "table": null,
+      "main_wall": null
+    },
+    "166": {
+      "floor": null,
+      "table": null,
+      "main_wall": null
+    },
+    "167": {
+      "floor": null,
+      "table": null,
+      "main_wall": null
+    },
+    "168": {
+      "floor": null,
+      "table": null,
+      "main_wall": null
+    },
+    "169": {
+      "floor": null,
+      "table": null,
+      "main_wall": null
+    },
+    "170": {
+      "floor": null,
+      "table": null,
+      "main_wall": null
+    },
+    "171": {
+      "floor": null,
+      "table": null,
+      "main_wall": null
+    },
+    "172": {
+      "floor": null,
+      "table": null,
+      "main_wall": null
+    },
+    "173": {
+      "floor": null,
+      "table": null,
+      "main_wall": null
+    },
+    "174": {
+      "floor": null,
+      "table": null,
+      "main_wall": null
+    },
+    "175": {
+      "floor": null,
+      "table": null,
+      "main_wall": null
+    },
+    "176": {
+      "floor": null,
+      "table": null,
+      "main_wall": null
+    },
+    "177": {
+      "floor": null,
+      "table": null,
+      "main_wall": null
+    },
+    "178": {
+      "floor": null,
+      "table": null,
+      "main_wall": null
+    },
+    "179": {
+      "floor": null,
+      "table": null,
+      "main_wall": null
+    },
+    "180": {
+      "floor": null,
+      "table": null,
+      "main_wall": null
+    },
+    "181": {
+      "floor": null,
+      "table": null,
+      "main_wall": null
+    },
+    "182": {
+      "floor": null,
+      "table": null,
+      "main_wall": null
+    },
+    "183": {
+      "floor": null,
+      "table": null,
+      "main_wall": null
+    },
+    "184": {
+      "floor": null,
+      "table": null,
+      "main_wall": null
+    },
+    "185": {
+      "floor": null,
+      "table": null,
+      "main_wall": null
+    },
+    "186": {
+      "floor": null,
+      "table": null,
+      "main_wall": null
+    },
+    "187": {
+      "floor": null,
+      "table": null,
+      "main_wall": null
+    },
+    "188": {
+      "floor": null,
+      "table": null,
+      "main_wall": null
+    },
+    "189": {
+      "floor": null,
+      "table": null,
+      "main_wall": null
+    },
+    "190": {
+      "floor": null,
+      "table": null,
+      "main_wall": null
+    },
+    "191": {
+      "floor": null,
+      "table": null,
+      "main_wall": null
+    },
+    "192": {
+      "floor": null,
+      "table": null,
+      "main_wall": null
+    },
+    "193": {
+      "floor": null,
+      "table": null,
+      "main_wall": null
+    },
+    "194": {
+      "floor": null,
+      "table": null,
+      "main_wall": null
+    },
+    "195": {
+      "floor": null,
+      "table": null,
+      "main_wall": null
+    },
+    "196": {
+      "floor": null,
+      "table": null,
+      "main_wall": null
+    },
+    "197": {
+      "floor": null,
+      "table": null,
+      "main_wall": null
+    },
+    "198": {
+      "floor": null,
+      "table": null,
+      "main_wall": null
+    },
+    "199": {
+      "floor": null,
+      "table": null,
+      "main_wall": null
+    },
+    "200": {
+      "floor": null,
+      "table": null,
+      "main_wall": null
+    },
+    "201": {
+      "floor": null,
+      "table": null,
+      "main_wall": null
+    },
+    "202": {
+      "floor": null,
+      "table": null,
+      "main_wall": null
+    },
+    "203": {
+      "floor": null,
+      "table": null,
+      "main_wall": null
+    },
+    "204": {
+      "floor": null,
+      "table": null,
+      "main_wall": null
+    },
+    "205": {
+      "floor": null,
+      "table": null,
+      "main_wall": null
+    },
+    "206": {
+      "floor": null,
+      "table": null,
+      "main_wall": null
+    },
+    "207": {
+      "floor": null,
+      "table": null,
+      "main_wall": null
+    },
+    "208": {
+      "floor": null,
+      "table": null,
+      "main_wall": null
+    },
+    "209": {
+      "floor": null,
+      "table": null,
+      "main_wall": null
+    },
+    "210": {
+      "floor": null,
+      "table": null,
+      "main_wall": null
+    },
+    "211": {
+      "floor": null,
+      "table": null,
+      "main_wall": null
+    },
+    "212": {
+      "floor": null,
+      "table": null,
+      "main_wall": null
+    },
+    "213": {
+      "floor": null,
+      "table": null,
+      "main_wall": null
+    },
+    "214": {
+      "floor": null,
+      "table": null,
+      "main_wall": null
+    },
+    "215": {
+      "floor": null,
+      "table": null,
+      "main_wall": null
+    },
+    "216": {
+      "floor": null,
+      "table": null,
+      "main_wall": null
+    },
+    "217": {
+      "floor": null,
+      "table": null,
+      "main_wall": null
+    },
+    "218": {
+      "floor": null,
+      "table": null,
+      "main_wall": null
+    },
+    "219": {
+      "floor": null,
+      "table": null,
+      "main_wall": null
+    },
+    "220": {
+      "floor": null,
+      "table": null,
+      "main_wall": null
+    },
+    "221": {
+      "floor": null,
+      "table": null,
+      "main_wall": null
+    },
+    "222": {
+      "floor": null,
+      "table": null,
+      "main_wall": null
+    },
+    "223": {
+      "floor": null,
+      "table": null,
+      "main_wall": null
+    },
+    "224": {
+      "floor": null,
+      "table": null,
+      "main_wall": null
+    },
+    "225": {
+      "floor": null,
+      "table": null,
+      "main_wall": null
+    },
+    "226": {
+      "floor": null,
+      "table": null,
+      "main_wall": null
+    },
+    "227": {
+      "floor": null,
+      "table": null,
+      "main_wall": null
+    },
+    "228": {
+      "floor": null,
+      "table": null,
+      "main_wall": null
+    },
+    "229": {
+      "floor": null,
+      "table": null,
+      "main_wall": null
+    },
+    "230": {
+      "floor": null,
+      "table": null,
+      "main_wall": null
+    },
+    "231": {
+      "floor": null,
+      "table": null,
+      "main_wall": null
+    },
+    "232": {
+      "floor": null,
+      "table": null,
+      "main_wall": null
+    },
+    "233": {
+      "floor": null,
+      "table": null,
+      "main_wall": null
+    },
+    "234": {
+      "floor": null,
+      "table": null,
+      "main_wall": null
+    },
+    "235": {
+      "floor": null,
+      "table": null,
+      "main_wall": null
+    },
+    "236": {
+      "floor": null,
+      "table": null,
+      "main_wall": null
+    },
+    "237": {
+      "floor": null,
+      "table": null,
+      "main_wall": null
+    },
+    "238": {
+      "floor": null,
+      "table": null,
+      "main_wall": null
+    },
+    "239": {
+      "floor": null,
+      "table": null,
+      "main_wall": null
+    },
+    "240": {
+      "floor": null,
+      "table": null,
+      "main_wall": null
+    },
+    "241": {
+      "floor": null,
+      "table": null,
+      "main_wall": null
+    },
+    "242": {
+      "floor": null,
+      "table": null,
+      "main_wall": null
+    },
+    "243": {
+      "floor": null,
+      "table": null,
+      "main_wall": null
+    },
+    "244": {
+      "floor": null,
+      "table": null,
+      "main_wall": null
+    },
+    "249": {
+      "floor": null,
+      "table": null,
+      "main_wall": null
+    },
+    "250": {
+      "floor": null,
+      "table": null,
+      "main_wall": null
+    },
+    "251": {
+      "floor": null,
+      "table": null,
+      "main_wall": null
+    },
+    "252": {
+      "floor": null,
+      "table": null,
+      "main_wall": null
+    },
+    "253": {
+      "floor": null,
+      "table": null,
+      "main_wall": null
+    },
+    "254": {
+      "floor": null,
+      "table": null,
+      "main_wall": null
+    },
+    "255": {
+      "floor": null,
+      "table": null,
+      "main_wall": null
+    },
+    "256": {
+      "floor": null,
+      "table": null,
+      "main_wall": null
+    },
+    "257": {
+      "floor": null,
+      "table": null,
+      "main_wall": null
+    },
+    "258": {
+      "floor": null,
+      "table": null,
+      "main_wall": null
+    },
+    "259": {
+      "floor": null,
+      "table": null,
+      "main_wall": null
+    },
+    "260": {
+      "floor": null,
+      "table": null,
+      "main_wall": null
+    },
+    "261": {
+      "floor": null,
+      "table": null,
+      "main_wall": null
+    },
+    "262": {
+      "floor": null,
+      "table": null,
+      "main_wall": null
+    },
+    "263": {
+      "floor": null,
+      "table": null,
+      "main_wall": null
+    },
+    "264": {
+      "floor": null,
+      "table": null,
+      "main_wall": null
+    },
+    "265": {
+      "floor": null,
+      "table": null,
+      "main_wall": null
+    },
+    "266": {
+      "floor": null,
+      "table": {
+        "track_id": 51,
+        "local_id": 0
+      },
+      "main_wall": null
+    },
+    "267": {
+      "floor": null,
+      "table": {
+        "track_id": 51,
+        "local_id": 0
+      },
+      "main_wall": null
+    },
+    "268": {
+      "floor": null,
+      "table": {
+        "track_id": 51,
+        "local_id": 0
+      },
+      "main_wall": null
+    },
+    "269": {
+      "floor": null,
+      "table": {
+        "track_id": 51,
+        "local_id": 0
+      },
+      "main_wall": null
+    },
+    "270": {
+      "floor": null,
+      "table": {
+        "track_id": 51,
+        "local_id": 0
+      },
+      "main_wall": null
+    },
+    "271": {
+      "floor": null,
+      "table": {
+        "track_id": 51,
+        "local_id": 0
+      },
+      "main_wall": null
+    },
+    "272": {
+      "floor": null,
+      "table": {
+        "track_id": 51,
+        "local_id": 0
+      },
+      "main_wall": null
+    },
+    "273": {
+      "floor": null,
+      "table": {
+        "track_id": 51,
+        "local_id": 0
+      },
+      "main_wall": null
+    },
+    "274": {
+      "floor": null,
+      "table": {
+        "track_id": 51,
+        "local_id": 0
+      },
+      "main_wall": null
+    },
+    "275": {
+      "floor": null,
+      "table": null,
+      "main_wall": null
+    },
+    "276": {
+      "floor": null,
+      "table": {
+        "track_id": 51,
+        "local_id": 2
+      },
+      "main_wall": null
+    },
+    "277": {
+      "floor": null,
+      "table": {
+        "track_id": 51,
+        "local_id": 2
+      },
+      "main_wall": null
+    },
+    "278": {
+      "floor": null,
+      "table": {
+        "track_id": 51,
+        "local_id": 0
+      },
+      "main_wall": null
+    },
+    "279": {
+      "floor": null,
+      "table": {
+        "track_id": 51,
+        "local_id": 0
+      },
+      "main_wall": null
+    }
+  }
+}
