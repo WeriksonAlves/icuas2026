@@ -133,11 +133,11 @@ EOF
 
 python scripts/segment_planes_open3d.py \
   --input data/ply/zed_outdoor_02_T2_279_01_05 \
-  --out_dir output/planes/zed_outdoor_02_p3_tuned \
+  --out_dir output/planes/zed_outdoor_02_T3_p3 \
   --preset outdoor \
   --max_planes 3 \
-  --min_inliers 3000 \  # aumentar
-  --distance_threshold 0.1 \  # aumentar
+  --min_inliers 3500 \
+  --distance_threshold 0.15 \
   --ransac_n 4 \
   --num_iterations 3000 \
   --sor_nb_neighbors 30 \
@@ -145,44 +145,47 @@ python scripts/segment_planes_open3d.py \
   --seed 7
 
 python scripts/track_planes_temporally.py \
-  --input_dir output/planes/zed_outdoor_02_p3_tuned \
-  --output output/planes/zed_outdoor_02_p3_tuned/plane_tracks_tuned.json \
+  --input_dir output/planes/zed_outdoor_02_T3_p3 \
+  --output output/planes/zed_outdoor_02_T3_p3/plane_tracks.json \
   --max_angle_deg 10.0 \
-  --max_centroid_dist 2.5 \  # aumentar
+  --max_centroid_dist 3.0 \
   --max_d_diff 1.0 \
   --max_frame_gap 8 \
-  --min_track_length 9 \  # aumentar
+  --min_track_length 10 \
   --ema_alpha 0.8 \
   --w_angle 2.0 \
   --w_centroid 1.0 \
   --w_d 0.5
 
+python scripts/compute_track_confidence.py \
+  --tracks output/planes/zed_outdoor_02_T3_p3/plane_tracks.json \
+  --output output/planes/zed_outdoor_02_T3_p3/track_confidence.json
+
 python scripts/classify_tracks_stably.py \
-  --tracks output/planes/zed_outdoor_02_p3_tuned/plane_tracks.json \
-  --confidence output/planes/zed_outdoor_02_p3_tuned/track_confidence.json \
-  --output output/planes/zed_outdoor_02_p3_tuned/classification_stable.json \
-  --vertical_axis 1 0 0 \  # mudar
-  --horiz_angle_max 25.0 \
+  --tracks output/planes/zed_outdoor_02_T3_p3/plane_tracks.json \
+  --confidence output/planes/zed_outdoor_02_T3_p3/track_confidence.json \
+  --output output/planes/zed_outdoor_02_T3_p3/classification_stable.json \
+  --vertical_axis 1 0 0 \
+  --horiz_angle_max 30.0 \
   --min_table_height_diff 0.3 \
   --vertical_band_center 90.0 \
   --vertical_band_half_width 20.0 \
-  --min_confidence 0.43  # diminuir
+  --min_confidence 0.40
 
 python scripts/recolor_by_stable_class.py \
   --input_dir data/ply/zed_outdoor_02_T2_279_01_05 \
-  --classification output/planes/zed_outdoor_02_p3_tuned/classification_stable.json \
-  --out_dir output/planes/zed_outdoor_02_p3_tuned \
+  --classification output/planes/zed_outdoor_02_T3_p3/classification_stable.json \
+  --out_dir output/planes/zed_outdoor_02_T3_p3 \
   --distance_threshold 0.07 \
-  --summary output/planes/zed_outdoor_02_p3_tuned/recolor_summary_tuned.json
+  --summary output/planes/zed_outdoor_02_T3_p3/recolor_summary.json
 
 python3 scripts/analyze_temporal_stability.py \
-  --input_dir /home/werikson/ufv/icuas2026/output/planes/zed_outdoor_02_p3_tuned/json \
-  --out_dir  /home/werikson/ufv/icuas2026/output/planes/zed_outdoor_02_p3_tuned/temporal_stability
+  --input_dir /home/werikson/ufv/icuas2026/output/planes/zed_outdoor_02_T3_p3/json \
+  --out_dir  /home/werikson/ufv/icuas2026/output/planes/zed_outdoor_02_T3_p3/temporal_stability
 
 python scripts/visualize_pointcloud_sequence.py \
     --raw_dir data/ply/zed_outdoor_02_T2_279_01_05 \
-    --colored_dir output/planes/zed_outdoor_02_p3_tuned/ply_colored \
-    --stable_dir output/planes/zed_outdoor_02_p3_tuned/ply_stable_semantic \
-    --fps 5 \
-    --max_points 10000 \
+    --colored_dir output/planes/zed_outdoor_02_T3_p3/ply_colored \
+    --fps 1 \
+    --max_points 100000 \
     --rotate_z_180
