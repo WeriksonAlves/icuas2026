@@ -1,0 +1,22 @@
+{
+  "frame_idx": 0,
+  "input_file": "/home/werikson/ufv/icuas2026/data/ply/zed_outdoor_02_T2_279_01_05/frame_00000.ply",
+  "preset": "outdoor",
+  "params": {
+    "max_planes": 3,
+    "min_inliers": 3000,
+    "distance_threshold": 0.1,
+    "ransac_n": 4,
+    "num_iterations": 3000,
+    "sor_nb_neighbors": 30,
+    "sor_std_ratio": 2.0
+  },
+  "num_points": 694,
+  "planes": [],
+  "classification": {
+    "vertical_axis": null,
+    "floor_plane_id": null,
+    "table_plane_id": null,
+    "main_wall_plane_id": null
+  }
+}

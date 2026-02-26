@@ -74,13 +74,10 @@ data/bags/
 data/mcaps/
 
 # Point cloud frames exported from ROS2
-data/zed_ply/
+data/ply/*home_*/
 
 # All outputs from the planes pipeline
-# output/
-output/planes/my_room/*.ply
-output/planes/my_room/semantic/*.ply
-output/planes/my_room/semantic/*.ply
+output/planes/home_*/*/
 
 # Standalone summary files created at the root
 recolor_summary.json

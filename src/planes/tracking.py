@@ -141,7 +141,7 @@ def load_detections(input_dir: Path) -> Dict[int, List[PlaneDetection]]:
     """
     detections_by_frame: Dict[int, List[PlaneDetection]] = {}
 
-    json_paths = sorted(input_dir.glob("planes_*.json"))
+    json_paths = sorted(input_dir.glob("json/planes_*.json"))
     if not json_paths:
         raise FileNotFoundError(
             f"No planes_XXXXX.json files found in: {input_dir}"

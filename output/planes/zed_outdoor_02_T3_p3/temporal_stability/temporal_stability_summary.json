@@ -1,0 +1,42 @@
+{
+  "input_dir": "/home/werikson/ufv/icuas2026/output/planes/zed_outdoor_02_T3_p3/json",
+  "num_series": 2,
+  "series": {
+    "Floor": {
+      "name": "Floor",
+      "num_samples": 276,
+      "mean_angle_to_first_deg": 10.979467798520435,
+      "std_angle_to_first_deg": 2.423755662195041,
+      "max_angle_to_first_deg": 22.880611800127664,
+      "mean_delta_angle_deg": 1.94450955948899,
+      "std_delta_angle_deg": 2.502329173788409,
+      "max_delta_angle_deg": 21.40399154952486,
+      "mean_delta_d": 0.39411247187815096,
+      "std_delta_d": 1.502555870222174,
+      "max_delta_d": 12.75560137255074,
+      "mean_delta_centroid": 0.5817197344948849,
+      "std_delta_centroid": 0.6693733830803816,
+      "max_delta_centroid": 5.101156328151212,
+      "mean_inlier_ratio": 0.4986150996749501,
+      "std_inlier_ratio": 0.1861087111951782
+    },
+    "Table/Bed": {
+      "name": "Table/Bed",
+      "num_samples": 8,
+      "mean_angle_to_first_deg": 15.381829142044086,
+      "std_angle_to_first_deg": 6.087166501306784,
+      "max_angle_to_first_deg": 19.719292427446838,
+      "mean_delta_angle_deg": 4.020030132055475,
+      "std_delta_angle_deg": 4.882805715466191,
+      "max_delta_angle_deg": 15.746321481542171,
+      "mean_delta_d": 1.4280314547311528,
+      "std_delta_d": 1.3424755430091362,
+      "max_delta_d": 4.5958553449426,
+      "mean_delta_centroid": 2.480942902589006,
+      "std_delta_centroid": 2.030257231821058,
+      "max_delta_centroid": 7.004513590197594,
+      "mean_inlier_ratio": 0.18050731302395476,
+      "std_inlier_ratio": 0.04596809148313403
+    }
+  }
+}

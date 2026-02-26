@@ -203,8 +203,10 @@ def _recolor_single_frame(
     out_pcd.points = o3d.utility.Vector3dVector(pts)
     out_pcd.colors = o3d.utility.Vector3dVector(colors)
 
-    cfg.out_dir.mkdir(parents=True, exist_ok=True)
-    out_path = cfg.out_dir / f"stable_semantic_{frame_idx:05d}.ply"
+    ply_dir = cfg.out_dir / "ply_stable_semantic"
+    ply_dir.mkdir(parents=True, exist_ok=True)
+
+    out_path = ply_dir / f"planes_{frame_idx:05d}.ply"
     o3d.io.write_point_cloud(str(out_path), out_pcd, write_ascii=False)
     return out_path
 
